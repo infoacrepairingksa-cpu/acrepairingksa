@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F172A; /* Deep Slate for text/headings */
+  --color-secondary: #0073E6; /* Bright Cerulean/Sky Blue */
+  --color-action: #005BCC; /* Darker blue for hover */
+  --color-action-hover: #004B99;
+  --font-heading: var(--font-outfit), sans-serif;
+  --font-sans: var(--font-open-sans), sans-serif;
+}
+
+:root {
+  --background: #FAFAFA; /* Soft off-white typical of clean SaaS */
+  --foreground: #0F172A;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FAFAFA; 
+    --foreground: #0F172A;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p {
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+/* Force removal of all italics */
+* {
+  font-style: normal !important;
+}
+
+.bg-grid {
+  background-image: radial-gradient(circle at 1px 1px, #eef2f6 1px, transparent 0);
+  background-size: 48px 48px;
+}
+
+::selection {
+  background-color: #4F46E5;
+  color: white;
+}
