@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AC Filter Cleaning Riyadh | Riyadh Home Fix",
+  title: "AC Filter Cleaning Riyadh – Boost Airflow Efficiency",
   description: "Instant AC filter cleaning and washing services in Riyadh for maximum airflow.",
 };
 

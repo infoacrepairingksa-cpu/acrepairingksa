@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing Services Riyadh | Riyadh Home Fix",
+  title: "Plumbing Services Riyadh – Leak Repairs & Detection",
   description: "Expert plumbing services in Riyadh for leak repair, pipe fixing, and bathroom maintenance.",
 };
 

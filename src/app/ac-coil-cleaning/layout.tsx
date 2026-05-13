@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AC Coil Cleaning Riyadh | Riyadh Home Fix",
+  title: "AC Coil Cleaning Riyadh – Extend Unit Lifespan",
   description: "Expert AC coil cleaning services in Riyadh to improve cooling efficiency and unit lifespan.",
 };
 
