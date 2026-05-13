@@ -12,6 +12,9 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   return {
     title: `${data.name} AC Repair & Plumbing | Riyadh Home Fix`,
     description: data.heroDesc,
+    alternates: {
+      canonical: `/locations/${slug}`,
+    },
     openGraph: {
       title: data.heroTitle,
       description: data.heroDesc,
