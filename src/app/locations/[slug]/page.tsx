@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   if (!data) return { title: "Location Not Found" };
 
   return {
-    title: `${data.name} AC Repair & Plumbing | Riyadh Home Fix`,
+    title: `${data.name} AC Repair & Maintenance`,
     description: data.heroDesc,
     alternates: {
       canonical: `/locations/${slug}`,

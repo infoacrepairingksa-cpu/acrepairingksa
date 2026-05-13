@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AC Gas Refill Riyadh – Precise Refrigerant Charging",
+  title: "AC Gas Refill Riyadh – Fast Refrigerant Setup",
   description: "Professional AC gas refill and refrigerant top-up services in Riyadh. Leak testing included.",
   alternates: {
     canonical: "/ac-gas-refill",

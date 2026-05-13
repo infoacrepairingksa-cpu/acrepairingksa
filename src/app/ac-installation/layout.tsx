@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AC Installation Riyadh – Expert System Setup",
+  title: "AC Installation Riyadh – Expert Setup",
   description: "Expert AC installation and mounting services for split and central units in Riyadh.",
   alternates: {
     canonical: "/ac-installation",
