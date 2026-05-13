@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -67,7 +68,7 @@ export default function ACRepairPage() {
                 <ButtonGroup customZapText="Book AC Repair" />
                 <div className="flex items-center gap-6 px-6 py-3 bg-white border border-gray-100 rounded-2xl shadow-sm">
                    <div className="flex -space-x-3">
-                     {[1,2,3,4].map(i => <div key={i} className="w-10 h-10 rounded-full border-4 border-white bg-secondary/10 overflow-hidden"><img src={`https://i.pravatar.cc/100?u=${i+40}`} alt="User" className="w-full h-full object-cover" /></div>)}
+                     {[1,2,3,4].map(i => <div key={i} className="w-10 h-10 rounded-full border-4 border-white bg-secondary/10 overflow-hidden relative"><Image src={`https://i.pravatar.cc/100?u=${i+40}`} alt="User" fill className="object-cover" /></div>)}
                    </div>
                    <div className="flex flex-col">
                       <span className="text-xs font-black uppercase tracking-widest text-primary">Trusted by 5000+ residents</span>
@@ -77,8 +78,14 @@ export default function ACRepairPage() {
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="lg:col-span-5 relative">
-              <div className="relative rounded-[64px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-[12px] border-white group">
-                <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Technician Riyadh" className="w-full h-[650px] object-cover group-hover:scale-105 transition-transform duration-1000" />
+              <div className="relative rounded-[64px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-[12px] border-white group h-[650px]">
+                <Image 
+                  src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  alt="AC Technician Riyadh" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-1000" 
+                  priority
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-[32px] shadow-2xl border border-gray-50 flex flex-col gap-2 items-center">

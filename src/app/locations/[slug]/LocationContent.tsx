@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -113,7 +114,13 @@ export default function LocationContent({ data }: { data: LocationData }) {
                 className="group bg-white border border-gray-100 rounded-[32px] overflow-hidden hover:border-secondary hover:shadow-2xl transition-all flex flex-col"
               >
                 <div className="h-56 relative overflow-hidden">
-                  <img src={service.imageUrl} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <Image 
+                    src={service.imageUrl} 
+                    alt={service.title} 
+                    fill 
+                    className="object-cover transition-transform duration-700 group-hover:scale-110" 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
                   <div className="absolute bottom-6 left-6 flex items-center gap-4 text-white">
                     <div className="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center">
@@ -149,8 +156,13 @@ export default function LocationContent({ data }: { data: LocationData }) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col lg:flex-row items-center gap-20">
             <div className="flex-1 relative">
-              <div className="rounded-[48px] overflow-hidden shadow-2xl border-8 border-white">
-                <img src={data.aboutImage} alt={`Services in ${data.name}`} className="w-full h-[550px] object-cover" />
+              <div className="rounded-[48px] overflow-hidden shadow-2xl border-8 border-white relative h-[550px]">
+                <Image 
+                  src={data.aboutImage} 
+                  alt={`Services in ${data.name}`} 
+                  fill 
+                  className="object-cover" 
+                />
               </div>
               <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-[32px] shadow-2xl border border-gray-100 hidden md:flex items-center gap-6">
                 <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary">

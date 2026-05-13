@@ -15,7 +15,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Riyadh Home Fix | Expert AC Repair & Home Maintenance in Riyadh",
+  title: "Riyadh Home Fix – Premium AC & Home Maintenance Services",
   description: "Fast, reliable, and affordable AC repair, installation, plumbing, and home maintenance services in Riyadh. Certified technicians. Same-day service.",
   keywords: "AC repair Riyadh, AC installation Riyadh, Plumbing services Riyadh, Home maintenance Riyadh, Riyadh Home Fix",
 };

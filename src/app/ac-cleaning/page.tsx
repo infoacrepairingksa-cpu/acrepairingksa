@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -79,8 +80,14 @@ export default function ACCleaningPage() {
               animate={{ opacity: 1, scale: 1 }}
               className="relative"
             >
-              <div className="relative z-10 rounded-[80px] overflow-hidden shadow-[0_60px_100px_-20px_rgba(0,115,230,0.2)] border-[16px] border-white group">
-                <img src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Cleaning" className="w-full h-[700px] object-cover group-hover:scale-105 transition-transform duration-1000" />
+              <div className="relative z-10 rounded-[80px] overflow-hidden shadow-[0_60px_100px_-20px_rgba(0,115,230,0.2)] border-[16px] border-white group h-[700px]">
+                <Image 
+                  src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  alt="AC Cleaning" 
+                  fill 
+                  className="object-cover group-hover:scale-105 transition-transform duration-1000" 
+                  priority
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
                 
                 <div className="absolute bottom-12 left-12 right-12 bg-white/10 backdrop-blur-md p-8 rounded-[40px] border border-white/20">

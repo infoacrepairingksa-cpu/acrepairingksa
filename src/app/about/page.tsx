@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -55,8 +56,13 @@ export default function AboutPage() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative">
-              <div className="relative z-10 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white group">
-                <img src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="About Our Company" className="w-full h-[550px] object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="relative z-10 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white group h-[550px]">
+                <Image 
+                  src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  alt="About Our Company" 
+                  fill 
+                  className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-60" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-[32px] shadow-xl border border-gray-50 flex items-center gap-4">
@@ -133,8 +139,13 @@ export default function AboutPage() {
       <section className="py-32 bg-[#FAFAFA]">
         <div className="container mx-auto px-4 max-w-6xl">
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-              <div className="relative rounded-[40px] overflow-hidden shadow-2xl group">
-                 <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional Technician" className="w-full h-[550px] object-cover group-hover:scale-105 transition-transform duration-1000" />
+              <div className="relative rounded-[40px] overflow-hidden shadow-2xl group h-[550px]">
+                 <Image 
+                   src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                   alt="Professional Technician" 
+                   fill 
+                   className="object-cover group-hover:scale-105 transition-transform duration-1000" 
+                 />
                  <div className="absolute inset-0 bg-secondary/10 opacity-40 group-hover:opacity-0 transition-opacity" />
               </div>
               <div className="flex flex-col gap-8 text-left">

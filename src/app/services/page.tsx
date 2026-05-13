@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -87,8 +88,14 @@ export default function ServicesPage() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative group">
-              <div className="relative z-10 rounded-[64px] overflow-hidden shadow-2xl border-4 border-white">
-                <img src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Home Maintenance Service" className="w-full h-[650px] object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="relative z-10 rounded-[64px] overflow-hidden shadow-2xl border-4 border-white h-[650px]">
+                <Image 
+                  src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  alt="Home Maintenance Service" 
+                  fill 
+                  className="object-cover transition-transform duration-1000 group-hover:scale-105" 
+                  priority
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-60" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-[32px] shadow-xl border border-gray-50 flex items-center gap-4">
@@ -116,7 +123,12 @@ export default function ServicesPage() {
               >
                  {/* Image Background */}
                  <div className="absolute inset-0 overflow-hidden">
-                    <img src={s.img} alt={s.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                    <Image 
+                      src={s.img} 
+                      alt={s.title} 
+                      fill 
+                      className="object-cover transition-transform duration-1000 group-hover:scale-110" 
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
                  </div>
 
@@ -167,8 +179,8 @@ export default function ServicesPage() {
                  </div>
                  <button onClick={() => handleBookNow("Trust Selection")} className="w-fit px-12 py-6 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-sm shadow-xl hover:bg-secondary transition-all border-b-4 border-slate-800 active:scale-95 mt-4">Book Professional Service</button>
               </div>
-              <div className="relative rounded-[48px] overflow-hidden shadow-2xl">
-                 <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Quality Workmanship" className="w-full h-[600px] object-cover" />
+              <div className="relative rounded-[48px] overflow-hidden shadow-2xl h-[600px]">
+                 <Image src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Quality Workmanship" fill className="object-cover" />
               </div>
            </div>
         </div>
@@ -194,8 +206,8 @@ export default function ServicesPage() {
                       </div>
                       <button onClick={() => handleBookNow(cat.title)} className="w-fit px-10 py-5 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest text-[11px] shadow-xl hover:bg-primary transition-all mt-6 italic">Explore {cat.sub}</button>
                    </div>
-                   <div className="relative rounded-[56px] overflow-hidden shadow-3xl">
-                      <img src={cat.img} alt={cat.title} className="w-full h-[500px] object-cover" />
+                   <div className="relative rounded-[56px] overflow-hidden shadow-3xl h-[500px]">
+                      <Image src={cat.img} alt={cat.title} fill className="object-cover" />
                    </div>
                 </div>
              </div>

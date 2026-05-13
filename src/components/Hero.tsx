@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Phone, ArrowRight, Star, Clock, ShieldCheck, CheckCircle2, Zap, MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -75,10 +76,12 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
           >
             <div className="absolute inset-0 bg-primary/5 rounded-[48px] blur-3xl -z-10 translate-x-10 translate-y-10" />
             <div className="relative w-full h-[500px] rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
-              <img 
+              <Image 
                 src="/Ac Services/Fast & Reliable AC Repair.png" 
                 alt="Fast & Reliable AC Repair Technician in Riyadh" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
           </motion.div>

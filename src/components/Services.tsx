@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { 
   Snowflake, 
   Wrench, 
@@ -44,7 +45,13 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
       )}
       
       <Link href={id === "ac-repair" ? "/ac-repair" : id === "ac-cleaning" ? "/ac-cleaning" : id === "ac-installation" ? "/ac-installation" : id === "ac-maintenance" ? "/ac-maintenance" : id === "ac-gas-refill" ? "/ac-gas-refill" : id === "ac-duct-cleaning" ? "/ac-duct-cleaning" : id === "ac-filter-cleaning" ? "/ac-filter-cleaning" : id === "ac-coil-cleaning" ? "/ac-coil-cleaning" : id === "plumbing" ? "/plumbing" : id === "home-maintenance" ? "/home-maintenance" : "#"} className="block h-48 w-full overflow-hidden relative">
-        <img src={imageUrl} alt={title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+        <Image 
+          src={imageUrl} 
+          alt={title} 
+          fill 
+          className="object-cover group-hover:scale-110 transition-transform duration-700" 
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
         <div className="absolute bottom-4 left-6 text-white flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center">

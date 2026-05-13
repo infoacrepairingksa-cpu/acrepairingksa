@@ -1,0 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AC Duct Cleaning Riyadh | Riyadh Home Fix",
+  description: "Deep AC duct cleaning services in Riyadh for better air quality and allergy protection.",
+};
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return children;
+}

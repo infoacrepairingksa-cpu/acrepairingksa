@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -74,8 +75,14 @@ export default function PlumbingPage() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative">
-              <div className="relative z-10 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white group">
-                <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plumbing Service" className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="relative z-10 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white group h-[600px]">
+                <Image 
+                  src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  alt="Plumbing Service" 
+                  fill 
+                  className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                  priority
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-60" />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white p-8 rounded-[32px] shadow-xl border border-gray-50 flex items-center gap-4">
@@ -108,8 +115,13 @@ export default function PlumbingPage() {
                   ))}
                </div>
             </div>
-            <div className="relative rounded-[40px] overflow-hidden shadow-xl">
-               <img src="https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional Plumber" className="w-full h-[500px] object-cover" />
+            <div className="relative rounded-[40px] overflow-hidden shadow-xl h-[500px]">
+               <Image 
+                 src="https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                 alt="Professional Plumber" 
+                 fill 
+                 className="object-cover" 
+               />
             </div>
           </div>
         </div>
@@ -223,8 +235,13 @@ export default function PlumbingPage() {
                </div>
                <button onClick={handleBookNow} className="w-fit px-12 py-6 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-sm shadow-xl hover:bg-secondary transition-all">Hire Plumbing Experts</button>
             </div>
-            <div className="relative rounded-[40px] overflow-hidden shadow-xl">
-               <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Plumbing Team" className="w-full h-[550px] object-cover" />
+            <div className="relative rounded-[40px] overflow-hidden shadow-xl h-[550px]">
+               <Image 
+                 src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                 alt="Plumbing Team" 
+                 fill 
+                 className="object-cover" 
+               />
             </div>
           </div>
         </div>
@@ -260,8 +277,13 @@ export default function PlumbingPage() {
                  </div>
                  <button onClick={handleBookNow} className="w-fit px-10 py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest text-[11px] shadow-lg hover:bg-secondary transition-all">Detect Water Leaks Today</button>
               </div>
-              <div className="flex-1 rounded-[40px] overflow-hidden shadow-xl">
-                 <img src="https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Leak Detection" className="w-full h-[450px] object-cover" />
+              <div className="flex-1 rounded-[40px] overflow-hidden shadow-xl h-[450px] relative">
+                 <Image 
+                   src="https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                   alt="Leak Detection" 
+                   fill 
+                   className="object-cover" 
+                 />
               </div>
            </div>
         </div>
