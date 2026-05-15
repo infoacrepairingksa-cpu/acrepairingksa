@@ -244,7 +244,13 @@ const ProcessSteps = ({ onBookNow }: { onBookNow: (s: string) => void }) => {
   );
 };
 
-import { ArrowRight } from "lucide-react";
+import Schema, { 
+  generateWebSiteSchema, 
+  generateBreadcrumbSchema, 
+  generateOrganizationSchema, 
+  generateLocalBusinessSchema 
+} from "@/components/Schema";
+
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -258,6 +264,8 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Schema type="WebSite" data={generateWebSiteSchema()} />
+      <Schema type="Organization" data={generateOrganizationSchema()} />
+      <Schema type="LocalBusiness" data={generateLocalBusinessSchema()} />
       <Schema type="BreadcrumbList" data={generateBreadcrumbSchema([{ name: "Home", item: "/" }])} />
       
       <Navbar onBookNow={() => handleBookNow("Navbar - General")} />
