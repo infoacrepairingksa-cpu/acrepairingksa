@@ -265,7 +265,6 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Schema type="WebSite" data={generateWebSiteSchema()} />
-      <Schema type="Organization" data={generateOrganizationSchema()} />
       <Schema type="LocalBusiness" data={generateLocalBusinessSchema()} />
       <Schema type="BreadcrumbList" data={generateBreadcrumbSchema([{ name: "Home", item: "/" }])} />
       
