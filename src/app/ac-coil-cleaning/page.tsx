@@ -46,7 +46,7 @@ export default function ACCoilCleaningPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-secondary">The Heart of Cooling</span>
               </div>
               <h1 className="text-[60px] md:text-[84px] lg:text-[96px] font-heading font-black text-primary leading-[1] tracking-tighter">
-                Surgical <br /><span className="text-secondary italic">Coil</span> Cleaning
+                Expert AC <span className="text-secondary italic">Coil Cleaning</span> & Combing in Riyadh
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed">
                 Restore 100% cooling capacity and slash your energy bills with professional evaporator & condenser coil deep-cleaning in Riyadh.
@@ -76,7 +76,7 @@ export default function ACCoilCleaningPage() {
 
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className="relative">
               <div className="relative z-10 rounded-[64px] overflow-hidden shadow-3xl border-8 border-white group">
-                <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Coil Cleaning" className="w-full h-[650px] object-cover transition-transform duration-1000 group-hover:scale-105" />
+                <img src="/optimized/pexels-5691657.webp" alt="AC Coil Cleaning" className="w-full h-[650px] object-cover transition-transform duration-1000 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60" />
               </div>
               
@@ -195,13 +195,13 @@ export default function ACCoilCleaningPage() {
                   <div key={i} className="bg-[#F8FAFC] rounded-[48px] p-10 flex items-center gap-8 border border-gray-100 hover:border-secondary transition-all shadow-sm group">
                      <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-sm transition-transform group-hover:scale-110">{s.i}</div>
                      <div className="flex flex-col gap-2">
-                        <h4 className="text-2xl font-heading font-black text-primary leading-tight tracking-tight">{s.t}</h4>
+                        <h3 className="text-2xl font-heading font-black text-primary leading-tight tracking-tight">{s.t}</h3>
                         <span className="text-[10px] font-black text-primary/30 uppercase tracking-[0.2em]">{s.d}</span>
                      </div>
                   </div>
                 ))}
                 <div className="p-10 bg-secondary rounded-[48px] text-white flex flex-col gap-4">
-                   <h4 className="text-2xl font-heading font-black leading-tight tracking-tight">Weak Airflow?</h4>
+                   <h3 className="text-2xl font-heading font-black leading-tight tracking-tight">Weak Airflow?</h3>
                    <p className="text-white/70 font-medium text-sm">Dirty coils are often the hidden reason for weak fan pressure.</p>
                    <button onClick={handleBookNow} className="w-fit text-[10px] font-black uppercase tracking-widest border-b border-white/40 pb-1">Check My Coils</button>
                 </div>
@@ -229,7 +229,7 @@ export default function ACCoilCleaningPage() {
                     <div key={idx} className="flex items-center gap-10 group">
                        <span className="text-3xl font-heading font-black text-secondary/30 group-hover:text-secondary transition-colors leading-none">0{idx+1}</span>
                        <div className="flex flex-col">
-                          <h4 className="text-2xl font-heading font-black text-white tracking-tight leading-tight">{p.t}</h4>
+                          <h3 className="text-2xl font-heading font-black text-white tracking-tight leading-tight">{p.t}</h3>
                           <p className="text-white/40 font-medium text-sm">{p.d}</p>
                        </div>
                     </div>
@@ -273,7 +273,7 @@ export default function ACCoilCleaningPage() {
             </div>
             <div className="relative group">
                <div className="absolute inset-0 bg-secondary rounded-[64px] rotate-3 opacity-5 group-hover:rotate-0 transition-transform duration-700" />
-               <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Coil Cleaning Process" className="w-full h-[600px] object-cover rounded-[56px] shadow-2xl" />
+               <img src="/optimized/pexels-5691657.webp" alt="Coil Cleaning Process" className="w-full h-[600px] object-cover rounded-[56px] shadow-2xl" />
             </div>
           </div>
         </div>
@@ -311,7 +311,7 @@ export default function ACCoilCleaningPage() {
               </div>
               <div className="flex-1 relative group">
                  <div className="absolute inset-0 bg-white/5 rounded-[48px] rotate-3 opacity-10 group-hover:rotate-0 transition-transform" />
-                 <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Energy Saving AC" className="w-full h-[500px] object-cover rounded-[48px] shadow-2xl" />
+                 <img src="/optimized/pexels-5691657.webp" alt="Energy Saving AC" className="w-full h-[500px] object-cover rounded-[48px] shadow-2xl" />
               </div>
            </div>
         </div>
@@ -355,7 +355,7 @@ export default function ACCoilCleaningPage() {
               { q: "Is coil cleaning necessary in Riyadh?", a: "Absolutely. Riyadh's fine sand acts as an insulator on coils, causing systems to overheat and fail prematurely." }
             ].map((f, idx) => (
               <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[40px] border border-gray-100 hover:border-secondary transition-all shadow-sm">
-                <h4 className="text-2xl font-heading font-black text-primary mb-6 leading-tight tracking-tight">{f.q}</h4>
+                <h3 className="text-2xl font-heading font-black text-primary mb-6 leading-tight tracking-tight">{f.q}</h3>
                 <p className="text-primary/50 text-xl font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

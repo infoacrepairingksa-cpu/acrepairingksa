@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AC Cleaning Riyadh – Deep-wash Air Service",
-  description: "Professional AC cleaning and sanitization services in Riyadh. Fast response and quality work.",
+  description: "Breathe cleaner air with our professional AC deep cleaning and sanitization services in Riyadh. We remove dust and mold for a healthier home environment.",
   alternates: {
     canonical: "/ac-cleaning",
   },

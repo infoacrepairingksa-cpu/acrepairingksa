@@ -47,7 +47,7 @@ export default function ACCleaningPage() {
                 <span className="text-[10px] font-black uppercase tracking-[0.2em]">Riyadh's #1 Hygiene Experts</span>
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[0.95] tracking-tight">
-                Breathable <br /><span className="text-secondary text-stroke">Freshness</span> <br /> For Your Home
+                Deep AC <span className="text-secondary text-stroke">Cleaning</span> & Sanitization in Riyadh
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic">
                 “Professional AC cleaning that removes 99.9% of Riyadh's dust and bacteria. Restore your cooling today.”
@@ -82,7 +82,7 @@ export default function ACCleaningPage() {
             >
               <div className="relative z-10 rounded-[80px] overflow-hidden shadow-[0_60px_100px_-20px_rgba(0,115,230,0.2)] border-[16px] border-white group h-[700px]">
                 <Image 
-                  src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  src="/optimized/pexels-5691632.webp" 
                   alt="AC Cleaning" 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-1000" 
@@ -202,7 +202,7 @@ export default function ACCleaningPage() {
                    <div key={idx} className="flex items-start gap-8 group">
                       <span className="text-3xl font-heading font-black text-secondary/30 group-hover:text-secondary transition-colors">{p.s}</span>
                       <div className="flex flex-col gap-1">
-                         <h4 className="text-xl font-heading font-black text-white">{p.t}</h4>
+                         <h3 className="text-xl font-heading font-black text-white">{p.t}</h3>
                          <p className="text-white/40 font-medium text-sm leading-relaxed">{p.d || p.i}</p>
                       </div>
                    </div>

@@ -36,7 +36,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 </span>
               </div>
               <h1 className="text-[42px] md:text-[56px] lg:text-[64px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
-                Fast & Reliable <span className="text-secondary">AC Repair</span> <br /> Anywhere in Riyadh
+                Expert AC Repair, <span className="text-secondary">Plumbing & Home Services</span> in Riyadh
               </h1>
               <p className="text-base md:text-lg text-primary font-medium leading-relaxed max-w-xl opacity-90">
                 Don't suffer in the heat. Our highly-rated HVAC experts are available 24/7 for split and central AC repair. We guarantee a 30-minute arrival with honest, upfront pricing.
@@ -77,7 +77,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
             <div className="absolute inset-0 bg-primary/5 rounded-[48px] blur-3xl -z-10 translate-x-10 translate-y-10" />
             <div className="relative w-full h-[500px] rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
               <Image 
-                src="/Ac Services/Fast & Reliable AC Repair.png" 
+                src="/Ac Services/Fast & Reliable AC Repair.webp" 
                 alt="Fast & Reliable AC Repair Technician in Riyadh" 
                 fill
                 className="object-cover"

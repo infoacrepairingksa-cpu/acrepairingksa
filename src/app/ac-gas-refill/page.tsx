@@ -47,7 +47,7 @@ export default function ACGasRefillPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-secondary">Sub-Zero Restoration</span>
               </div>
               <h1 className="text-[56px] md:text-[76px] lg:text-[92px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Refill Your <br /><span className="text-secondary italic text-stroke">Cooling</span> <br /> Confidence
+                Expert AC <span className="text-secondary italic text-stroke">Gas Refill</span> & Leak Repair in Riyadh
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic border-l-4 border-secondary/20 pl-8">
                 “Professional AC gas refill for Riyadh's extreme summers. Instant frost restoration in 30 minutes.”
@@ -77,7 +77,7 @@ export default function ACGasRefillPage() {
 
             <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} className="relative group">
               <div className="relative z-10 rounded-[80px] overflow-hidden shadow-[0_80px_160px_-40px_rgba(0,115,230,0.3)] border-[16px] border-white transition-transform duration-1000 group-hover:scale-105">
-                <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Gas Refill Service" className="w-full h-[700px] object-cover" />
+                <img src="/optimized/pexels-5691657.webp" alt="AC Gas Refill Service" className="w-full h-[700px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-80" />
                 
                 <div className="absolute bottom-12 left-12 right-12 bg-white/10 backdrop-blur-md p-8 rounded-[40px] border border-white/20">
@@ -158,7 +158,7 @@ export default function ACGasRefillPage() {
                   <div key={i} className="bg-[#F8FAFC] rounded-[56px] p-12 flex flex-col gap-10 border border-gray-100 hover:border-secondary transition-all shadow-sm group">
                      <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-sm transition-transform group-hover:scale-110">{s.i}</div>
                      <div className="flex flex-col">
-                        <h4 className="text-2xl font-heading font-black text-primary leading-tight tracking-tight">{s.t}</h4>
+                        <h3 className="text-2xl font-heading font-black text-primary leading-tight tracking-tight">{s.t}</h3>
                         <span className="text-[10px] font-black text-primary/30 uppercase tracking-[0.2em] mt-3">{s.d}</span>
                      </div>
                   </div>
@@ -233,7 +233,7 @@ export default function ACGasRefillPage() {
                            <span className="font-heading font-black text-xs leading-none">{i+1}</span>
                         </div>
                         <div className="flex flex-col">
-                           <h4 className="text-2xl font-heading font-black text-white tracking-tight">{p.t}</h4>
+                           <h3 className="text-2xl font-heading font-black text-white tracking-tight">{p.t}</h3>
                            <p className="text-white/30 text-sm font-medium">{p.d}</p>
                         </div>
                      </div>
@@ -277,7 +277,7 @@ export default function ACGasRefillPage() {
             </div>
             <div className="relative group">
                <div className="absolute inset-0 bg-secondary rounded-[80px] -rotate-3 opacity-5 group-hover:rotate-0 transition-transform duration-700" />
-               <img src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Refill Team" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl transition-transform duration-1000 group-hover:scale-105" />
+               <img src="/optimized/pexels-5691632.webp" alt="Refill Team" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl transition-transform duration-1000 group-hover:scale-105" />
             </div>
           </div>
         </div>
@@ -358,7 +358,7 @@ export default function ACGasRefillPage() {
               { q: "Do you refill gas for central AC systems?", a: "Absolutely. we handle all types of residential and commercial HVAC systems." }
             ].map((f, idx) => (
               <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[48px] border border-gray-100 hover:border-secondary transition-all shadow-sm">
-                <h4 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h4>
+                <h3 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h3>
                 <p className="text-primary/50 text-xl font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

@@ -58,7 +58,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Fast & Reliable AC Repair by Certified Technicians Across Riyadh.",
     shortDesc: "Don't let the Riyadh heat get to you. Our emergency AC repair team is available 24/7 to fix cooling issues, leaks, and electrical faults instantly.",
     longDesc: "Professional AC repair services for split AC, central AC, and duct systems in Riyadh. We understand that a broken AC in 45°C weather is an emergency. Our technicians are equipped with advanced diagnostic tools to find the root cause of cooling failures and fix them on the first visit.",
-    heroImage: "https://images.pexels.com/photos/4421160/pexels-photo-4421160.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-4421160.webp",
     icon: <Snowflake />,
     problems: {
       title: "Signs Your AC Needs Urgent Repair",
@@ -127,7 +127,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Breath Pure Air & Boost Cooling with Pro Jet-Wash Cleaning.",
     shortDesc: "Riyadh dust can kill your AC performance. Our deep pressure cleaning removes mold, bacteria, and dust to restore ice-cold airflow instantly.",
     longDesc: "Deep chemical cleaning and high-pressure jet wash for all Riyadh AC units. Dirty coils are the #1 cause of high electricity bills. Our specialized cleaning process not only improves cooling but also sanitizes the air your family breathes.",
-    heroImage: "https://images.pexels.com/photos/5691624/pexels-photo-5691624.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-5691624.webp",
     icon: <Droplets />,
     problems: {
       title: "Signs Your AC Needs Deep Cleaning",
@@ -185,7 +185,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Precision AC Mounting & Setup for New Homes and Offices.",
     shortDesc: "Bought a new AC? Don't risk a poor install. Our master technicians ensure perfect mounting, copper piping, and gas balancing for all brands.",
     longDesc: "Expert AC installation for split and window units in Riyadh. A bad installation leads to gas leaks and water drips. We use high-grade American copper kits and precise leveling to ensure your new unit runs perfectly for years.",
-    heroImage: "https://images.pexels.com/photos/4421110/pexels-photo-4421110.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-4421110.webp",
     icon: <Wrench />,
     problems: {
       title: "Common Bad Installation Issues",
@@ -243,7 +243,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Prevent Breakdowns with Professional Seasonal Tune-ups.",
     shortDesc: "Don't wait for your AC to fail in the middle of a Riyadh summer. Our maintenance plans keep your unit healthy, quiet, and energy-efficient.",
     longDesc: "Annual maintenance contracts (AMC) and seasonal tune-ups for Riyadh villas and offices. Regular checkups extend the life of your compressor and prevent sudden breakdowns during peak heat periods.",
-    heroImage: "https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-5691657.webp",
     icon: <Settings />,
     problems: {
       title: "Risks of Neglecting AC Maintenance",
@@ -301,7 +301,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Restore Ice-Cold Cooling with Original R410A Refrigerant.",
     shortDesc: "Is your AC blowing hot air? You likely have a gas leak. We don't just refill; we find the leak, fix it, and recharge with high-purity gas.",
     longDesc: "Professional AC gas top-up and leak repair in Riyadh. We use industrial-grade nitrogen testing to find hidden leaks in copper pipes and coils, ensuring your gas lasts for years, not just days.",
-    heroImage: "https://images.pexels.com/photos/4421110/pexels-photo-4421110.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-4421110.webp",
     icon: <Zap />,
     problems: {
       title: "Signs Your AC Has a Gas Leak",
@@ -359,7 +359,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Remove Dust, Mold & Allergens from Your Ventilation Vents.",
     shortDesc: "Healthy air starts with clean ducts. Our robotic brush cleaning removes years of Riyadh sand and bacteria from your central AC system.",
     longDesc: "Deep AC duct cleaning for Riyadh villas and buildings. If your family has allergies, dirty ducts are the culprit. We use high-power suction and anti-bacterial fogging to sanitize your entire ventilation system.",
-    heroImage: "https://images.pexels.com/photos/5691624/pexels-photo-5691624.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-5691624.webp",
     icon: <Wind />,
     problems: {
       title: "Signs Your Vents Need Cleaning",
@@ -417,7 +417,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Fast Leak Repair, Drain Unblocking & Master Plumbing.",
     shortDesc: "From pipe bursts to water heater leaks, our emergency plumbers are ready 24/7 to save your Riyadh home from water damage.",
     longDesc: "Professional plumbing services for villas and apartments in Riyadh. We use acoustic leak detectors and thermal cameras to find hidden leaks behind walls without breaking your expensive tiles.",
-    heroImage: "https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-545012.webp",
     icon: <Droplets />,
     problems: {
       title: "Common Plumbing Emergencies",
@@ -475,7 +475,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Your One-Stop Shop for Electrical, Plumbing & General Repairs.",
     shortDesc: "Managing a Riyadh home is easy with us. From flickering lights to villa renovations, our multi-skilled team handles it all under one roof.",
     longDesc: "All-in-one home maintenance solutions for Riyadh residents. We combine AC, plumbing, electrical, and handyman services into a single point of contact, ensuring your home is always in top shape.",
-    heroImage: "https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-5691657.webp",
     icon: <Home />,
     problems: {
       title: "Signs Your Home Needs Maintenance",
@@ -533,7 +533,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Boost Cooling and Filter Out Dust for a Healthier Riyadh Home.",
     shortDesc: "Clogged filters are the #1 reason for AC breakdowns. We provide deep chemical sanitization for filters to ensure pure air and high-efficiency cooling.",
     longDesc: "Professional AC filter cleaning services in Riyadh. Riyadh's sand can clog filters in just 2 weeks. Our service includes chemical sanitization to kill bacteria that grows on dirty filters.",
-    heroImage: "https://images.pexels.com/photos/5691624/pexels-photo-5691624.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-5691624.webp",
     icon: <Wind />,
     problems: {
       title: "Signs Your Filters are Clogged",
@@ -591,7 +591,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Restore Thermal Efficiency with Deep Chemical Coil Wash.",
     shortDesc: "Dirty coils reduce cooling by 60%. We provide professional chemical wash and fin straightening to restore your AC to factory performance.",
     longDesc: "Specialized AC coil cleaning in Riyadh. When your coils are blocked by sand and grime, your compressor overheats. We use safe chemicals to dissolve the buildup and 'comb' the fins for perfect thermal exchange.",
-    heroImage: "https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    heroImage: "/optimized/pexels-5691657.webp",
     icon: <ThermometerSnowflake />,
     problems: {
       title: "Signs Your Coils are Blocked",

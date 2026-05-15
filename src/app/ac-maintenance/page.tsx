@@ -56,7 +56,7 @@ export default function ACMaintenancePage() {
                  ))}
               </div>
               <h1 className="text-[48px] md:text-[68px] lg:text-[80px] font-heading font-black text-primary leading-[1] tracking-tight">
-                Elite <span className="text-secondary text-stroke">Maintenance</span> <br /> For Riyadh Homes
+                Professional AC <span className="text-secondary text-stroke">Maintenance</span> Services in Riyadh
               </h1>
               <p className="text-xl md:text-2xl text-primary/70 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic">
                 “Keep your AC running efficiently with expert maintenance solutions for homes, offices & commercial properties.”
@@ -74,7 +74,7 @@ export default function ACMaintenancePage() {
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="lg:col-span-5 relative">
               <div className="relative rounded-[72px] overflow-hidden shadow-[0_60px_120px_-20px_rgba(0,115,230,0.15)] border-[12px] border-white group">
-                <img src="https://images.pexels.com/photos/5691629/pexels-photo-5691629.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Maintenance Service" className="w-full h-[650px] object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/optimized/pexels-5691629.webp" alt="AC Maintenance Service" className="w-full h-[650px] object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
               </div>
             </motion.div>
@@ -124,7 +124,7 @@ export default function ACMaintenancePage() {
                    <div key={idx} className="group flex items-start gap-8 p-8 rounded-[32px] hover:bg-secondary/5 transition-all">
                       <div className="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-sm">{v.i}</div>
                       <div className="flex flex-col">
-                         <h4 className="text-xl font-heading font-black text-primary tracking-tight">{v.t}</h4>
+                         <h3 className="text-xl font-heading font-black text-primary tracking-tight">{v.t}</h3>
                          <p className="text-primary/50 font-medium text-sm leading-relaxed mt-1">{v.d}</p>
                       </div>
                    </div>
@@ -134,7 +134,7 @@ export default function ACMaintenancePage() {
             <div className="order-1 lg:order-2 relative group">
                <div className="absolute -inset-10 bg-secondary/5 blur-[120px] rounded-full pointer-events-none group-hover:bg-secondary/10 transition-colors" />
                <div className="relative bg-[#F8FAFC] p-12 rounded-[80px] border border-gray-100">
-                  <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Value Advantage" className="w-full h-[500px] object-cover rounded-[56px] shadow-2xl" />
+                  <img src="/optimized/pexels-5691657.webp" alt="Value Advantage" className="w-full h-[500px] object-cover rounded-[56px] shadow-2xl" />
                   <div className="absolute -bottom-10 -left-10 bg-white p-10 rounded-[48px] shadow-2xl border border-gray-100 flex flex-col items-center gap-2">
                      <span className="text-secondary font-black text-4xl">40%</span>
                      <span className="text-[10px] font-black text-primary/40 uppercase tracking-widest">More Efficient</span>
@@ -229,7 +229,7 @@ export default function ACMaintenancePage() {
                   <div key={i} className="bg-[#F8FAFC] rounded-[56px] p-12 flex flex-col gap-8 border border-gray-100 hover:border-secondary hover:bg-white transition-all shadow-sm hover:shadow-xl">
                      <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-sm transition-transform hover:scale-110">{s.i}</div>
                      <div className="flex flex-col gap-2">
-                        <h4 className="text-2xl font-heading font-black text-primary tracking-tight leading-none">{s.t}</h4>
+                        <h3 className="text-2xl font-heading font-black text-primary tracking-tight leading-none">{s.t}</h3>
                         <p className="text-primary/40 font-bold text-xs uppercase tracking-widest mt-2">{s.d}</p>
                      </div>
                   </div>
@@ -301,7 +301,7 @@ export default function ACMaintenancePage() {
             </div>
             <div className="relative group">
                <div className="absolute inset-0 bg-secondary rounded-[80px] rotate-3 opacity-5 group-hover:rotate-0 transition-transform duration-700" />
-               <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Technicians Riyadh" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl" />
+               <img src="/optimized/pexels-5691657.webp" alt="AC Technicians Riyadh" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl" />
             </div>
           </div>
         </div>
@@ -377,7 +377,7 @@ export default function ACMaintenancePage() {
               { q: "How long does AC maintenance take?", a: "A comprehensive tune-up for a split unit takes about 1-1.5 hours." }
             ].map((f, idx) => (
               <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[48px] border border-gray-100 hover:border-secondary transition-all shadow-sm">
-                <h4 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h4>
+                <h3 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h3>
                 <p className="text-primary/50 text-xl font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

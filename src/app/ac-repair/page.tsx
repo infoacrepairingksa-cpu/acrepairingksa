@@ -58,8 +58,8 @@ export default function ACRepairPage() {
                    <span key={t} className="bg-white text-primary border border-gray-100 px-5 py-2.5 rounded-full text-[10px] font-black tracking-widest uppercase flex items-center gap-2 shadow-sm"><CheckCircle2 size={14} className="text-secondary" /> {t}</span>
                  ))}
               </div>
-              <h1 className="text-[44px] md:text-[64px] lg:text-[76px] font-heading font-black text-primary leading-[1] tracking-tight">
-                Professional <span className="text-secondary">AC Repair</span> <br /> Available in Riyadh
+              <h1 className="text-[48px] md:text-[64px] lg:text-[76px] font-heading font-black text-primary leading-[1] tracking-tight">
+                Expert <span className="text-secondary">AC Repair Services</span> in Riyadh
               </h1>
               <p className="text-xl md:text-2xl text-primary/70 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic">
                 “Professional AC technicians for split, central, window & duct AC systems across Riyadh.”
@@ -80,7 +80,7 @@ export default function ACRepairPage() {
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="lg:col-span-5 relative">
               <div className="relative rounded-[64px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-[12px] border-white group h-[650px]">
                 <Image 
-                  src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  src="/optimized/pexels-5691657.webp" 
                   alt="AC Technician Riyadh" 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-1000" 
@@ -338,7 +338,7 @@ export default function ACRepairPage() {
               { q: "How long does AC repair take?", a: "Most repairs take 1-2 hours after the initial diagnostic inspection." }
             ].map((f, idx) => (
               <div key={idx} className="p-12 bg-[#FAFAFA] rounded-[40px] border border-gray-50 hover:border-secondary transition-all shadow-sm">
-                <h4 className="text-2xl font-heading font-black text-primary mb-5 leading-tight">{f.q}</h4>
+                <h3 className="text-2xl font-heading font-black text-primary mb-5 leading-tight">{f.q}</h3>
                 <p className="text-primary/50 text-xl font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

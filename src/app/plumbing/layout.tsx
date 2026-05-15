@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Plumbing Services Riyadh – Leak Detection",
-  description: "Expert plumbing services in Riyadh for leak repair, pipe fixing, and bathroom maintenance.",
+  description: "Solve leaks fast with our expert plumbing services in Riyadh. We specialize in pipe fixing, leak detection, and complete bathroom maintenance solutions.",
   alternates: {
     canonical: "/plumbing",
   },

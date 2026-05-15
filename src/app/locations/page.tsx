@@ -61,7 +61,7 @@ export default function LocationsPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.6em] text-secondary italic">Our Riyadh Network</span>
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[1.1] tracking-tight">
-                Trusted In <br /><span className="text-secondary">Every District</span> <br /> Of Riyadh.
+                Professional AC & <span className="text-secondary">Home Services</span> Across All Riyadh Districts
               </h1>
               <p className="text-xl md:text-2xl text-primary/40 font-medium max-w-xl leading-relaxed italic border-l-4 border-secondary/20 pl-8">
                 Providing rapid response AC repair, plumbing & home maintenance across all 15 major Riyadh neighborhoods.
@@ -87,7 +87,7 @@ export default function LocationsPage() {
 
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative group">
               <div className="relative z-10 rounded-[64px] overflow-hidden shadow-3xl border-4 border-white">
-                <img src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Riyadh Map Coverage" className="w-full h-[650px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" />
+                <img src="/optimized/pexels-5691632.webp" alt="Riyadh Map Coverage" className="w-full h-[650px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-60" />
               </div>
               {/* Floating Map Badge */}
@@ -136,7 +136,7 @@ export default function LocationsPage() {
         <div className="container mx-auto px-4 max-w-7xl">
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
               <div className="relative rounded-[64px] overflow-hidden shadow-3xl group">
-                 <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Maintenance Team in Riyadh" className="w-full h-[600px] object-cover group-hover:scale-105 transition-transform duration-1000" />
+                 <img src="/optimized/pexels-5691657.webp" alt="Maintenance Team in Riyadh" className="w-full h-[600px] object-cover group-hover:scale-105 transition-transform duration-1000" />
                  <div className="absolute inset-0 bg-secondary/10 opacity-40 group-hover:opacity-0 transition-opacity" />
               </div>
               <div className="flex flex-col gap-10">
@@ -154,7 +154,7 @@ export default function LocationsPage() {
                       <div key={idx} className="flex flex-col gap-1">
                          <div className="flex items-center gap-3">
                             <div className="w-3 h-3 rounded-full bg-secondary" />
-                            <h4 className="text-xl font-heading font-black text-primary tracking-tight">{z.t}</h4>
+                            <h3 className="text-xl font-heading font-black text-primary tracking-tight">{z.t}</h3>
                          </div>
                          <p className="text-[10px] font-bold text-primary/30 uppercase tracking-[0.2em] ml-6">{z.d}</p>
                       </div>
@@ -180,7 +180,7 @@ export default function LocationsPage() {
                 <div key={idx} className="p-10 bg-white rounded-[40px] border border-gray-100 flex flex-col items-center text-center gap-6 group hover:border-secondary transition-all shadow-sm">
                    <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-sm group-hover:rotate-12">{item.i}</div>
                    <div className="flex flex-col gap-2">
-                      <h4 className="text-xl font-heading font-black text-primary tracking-tight leading-tight">{item.t}</h4>
+                      <h3 className="text-xl font-heading font-black text-primary tracking-tight leading-tight">{item.t}</h3>
                       <p className="text-[10px] font-bold text-primary/30 uppercase tracking-[0.2em]">{item.d}</p>
                    </div>
                 </div>

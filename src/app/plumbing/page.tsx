@@ -45,8 +45,8 @@ export default function PlumbingPage() {
                  <div className="h-px w-10 bg-secondary" />
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-secondary">Riyadh's Trusted Flow</span>
               </div>
-              <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[1.1] tracking-tight">
-                Reliable <br /><span className="text-secondary italic">Plumbing</span> <br /> Solutions
+              <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
+                24/7 Emergency <span className="text-secondary">Plumbing Services</span> in Riyadh
               </h1>
               <p className="text-lg md:text-xl text-primary/60 font-medium max-w-lg leading-relaxed">
                 Expert plumbers for leak repairs, pipe installation, and complete water system maintenance in Riyadh.
@@ -77,7 +77,7 @@ export default function PlumbingPage() {
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative">
               <div className="relative z-10 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white group h-[600px]">
                 <Image 
-                  src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  src="/optimized/pexels-2219024.webp" 
                   alt="Plumbing Service" 
                   fill 
                   className="object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -117,7 +117,7 @@ export default function PlumbingPage() {
             </div>
             <div className="relative rounded-[40px] overflow-hidden shadow-xl h-[500px]">
                <Image 
-                 src="https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                 src="/optimized/pexels-5445425.webp" 
                  alt="Professional Plumber" 
                  fill 
                  className="object-cover" 
@@ -210,7 +210,7 @@ export default function PlumbingPage() {
                <div key={idx} className="relative z-10 flex flex-col gap-4 bg-white p-8 rounded-[32px] border border-gray-100 hover:border-secondary transition-all shadow-sm text-center h-full">
                   <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-heading font-black text-lg shadow-lg mx-auto leading-none">{idx+1}</div>
                   <div className="flex flex-col gap-1">
-                     <h4 className="text-lg font-heading font-black text-primary tracking-tight leading-tight">{p.t}</h4>
+                     <h3 className="text-lg font-heading font-black text-primary tracking-tight leading-tight">{p.t}</h3>
                      <p className="text-[9px] font-bold text-primary/30 uppercase tracking-widest">{p.d}</p>
                   </div>
                </div>
@@ -237,7 +237,7 @@ export default function PlumbingPage() {
             </div>
             <div className="relative rounded-[40px] overflow-hidden shadow-xl h-[550px]">
                <Image 
-                 src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                 src="/optimized/pexels-2219024.webp" 
                  alt="Plumbing Team" 
                  fill 
                  className="object-cover" 
@@ -279,7 +279,7 @@ export default function PlumbingPage() {
               </div>
               <div className="flex-1 rounded-[40px] overflow-hidden shadow-xl h-[450px] relative">
                  <Image 
-                   src="https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                   src="/optimized/pexels-5445425.webp" 
                    alt="Leak Detection" 
                    fill 
                    className="object-cover" 
@@ -327,7 +327,7 @@ export default function PlumbingPage() {
               { q: "Do you provide commercial plumbing services?", a: "Absolutely. We handle plumbing maintenance for offices, restaurants, and malls across Riyadh." }
             ].map((f, idx) => (
               <div key={idx} className="p-10 bg-[#F8FAFC] rounded-[32px] border border-gray-100 hover:border-secondary transition-all shadow-sm cursor-pointer group">
-                <h4 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h4>
+                <h3 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h3>
                 <p className="text-primary/50 text-lg font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

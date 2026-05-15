@@ -48,8 +48,8 @@ export default function HomeMaintenancePage() {
                  <div className="h-px w-10 bg-secondary" />
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-secondary">Complete Property Care</span>
               </div>
-              <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[1.1] tracking-tight">
-                Professional <br /><span className="text-secondary italic">Home Fix</span> <br /> & Maintenance
+              <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
+                Complete <span className="text-secondary">Home Maintenance</span> Services in Riyadh
               </h1>
               <p className="text-lg md:text-xl text-primary/60 font-medium max-w-lg leading-relaxed">
                 Reliable home repair and maintenance solutions for apartments, villas, and commercial properties across Riyadh.
@@ -79,7 +79,7 @@ export default function HomeMaintenancePage() {
 
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative">
               <div className="relative z-10 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white group">
-                <img src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Home Maintenance Service" className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src="/optimized/pexels-5691632.webp" alt="Home Maintenance Service" className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-60" />
               </div>
               {/* Floating Maintenance Badge */}
@@ -114,7 +114,7 @@ export default function HomeMaintenancePage() {
                </div>
             </div>
             <div className="relative rounded-[40px] overflow-hidden shadow-xl">
-               <img src="https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Maintenance Experts" className="w-full h-[500px] object-cover" />
+               <img src="/optimized/pexels-5445425.webp" alt="Maintenance Experts" className="w-full h-[500px] object-cover" />
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ export default function HomeMaintenancePage() {
                <div key={idx} className="relative z-10 flex flex-col gap-4 bg-white p-8 rounded-[32px] border border-gray-100 hover:border-secondary transition-all shadow-sm text-center h-full">
                   <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-heading font-black text-lg shadow-lg mx-auto leading-none">{idx+1}</div>
                   <div className="flex flex-col gap-1">
-                     <h4 className="text-lg font-heading font-black text-primary tracking-tight leading-tight">{p.t}</h4>
+                     <h3 className="text-lg font-heading font-black text-primary tracking-tight leading-tight">{p.t}</h3>
                      <p className="text-[9px] font-bold text-primary/30 uppercase tracking-widest">{p.d}</p>
                   </div>
                </div>
@@ -231,7 +231,7 @@ export default function HomeMaintenancePage() {
                <button onClick={handleBookNow} className="w-fit px-12 py-6 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-sm shadow-xl hover:bg-secondary transition-all">Hire Maintenance Experts</button>
             </div>
             <div className="relative rounded-[40px] overflow-hidden shadow-xl group">
-               <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Maintenance Team" className="w-full h-[550px] object-cover group-hover:scale-105 transition-transform duration-700" />
+               <img src="/optimized/pexels-2219024.webp" alt="Maintenance Team" className="w-full h-[550px] object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
           </div>
         </div>
@@ -268,7 +268,7 @@ export default function HomeMaintenancePage() {
                  <button onClick={handleBookNow} className="w-fit px-10 py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest text-[11px] shadow-lg hover:bg-secondary transition-all">Protect Your Property</button>
               </div>
               <div className="flex-1 rounded-[40px] overflow-hidden shadow-xl">
-                 <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Home Inspection" className="w-full h-[450px] object-cover" />
+                 <img src="/optimized/pexels-5691657.webp" alt="Home Inspection" className="w-full h-[450px] object-cover" />
               </div>
            </div>
         </div>
@@ -312,7 +312,7 @@ export default function HomeMaintenancePage() {
               { q: "How quickly can technicians arrive?", a: "For emergencies, we aim to be at your doorstep within 30 to 60 minutes anywhere in Riyadh." }
             ].map((f, idx) => (
               <div key={idx} className="p-10 bg-[#F8FAFC] rounded-[32px] border border-gray-100 hover:border-secondary transition-all shadow-sm cursor-pointer group">
-                <h4 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h4>
+                <h3 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h3>
                 <p className="text-primary/50 text-lg font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

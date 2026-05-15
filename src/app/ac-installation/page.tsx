@@ -50,7 +50,7 @@ export default function ACInstallationPage() {
                  ))}
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Precision <span className="text-secondary">AC Setup</span> <br /> For Riyadh Homes
+                Professional AC <span className="text-secondary">Installation Services</span> in Riyadh
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic border-l-4 border-secondary/20 pl-8">
                 “Expert installation for split, central & commercial AC systems with safe setup and maximum cooling performance.”
@@ -84,7 +84,7 @@ export default function ACInstallationPage() {
               className="lg:col-span-5 relative"
             >
               <div className="relative rounded-[72px] overflow-hidden shadow-[0_60px_120px_-20px_rgba(15,23,42,0.2)] border-[14px] border-white group">
-                <img src="https://images.pexels.com/photos/5691631/pexels-photo-5691631.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Installation Riyadh" className="w-full h-[700px] object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <img src="/optimized/pexels-5691631.webp" alt="AC Installation Riyadh" className="w-full h-[700px] object-cover group-hover:scale-110 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-80" />
                 
                 <div className="absolute top-10 left-10 bg-white/10 backdrop-blur-md p-6 rounded-[32px] border border-white/20">
@@ -111,7 +111,7 @@ export default function ACInstallationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="relative group">
                <div className="absolute -inset-4 bg-secondary/10 rounded-[64px] group-hover:inset-0 transition-all duration-500" />
-               <img src="https://images.pexels.com/photos/5691638/pexels-photo-5691638.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Unit Setup" className="relative w-full h-[600px] object-cover rounded-[56px] shadow-2xl" />
+               <img src="/optimized/pexels-5691638.webp" alt="AC Unit Setup" className="relative w-full h-[600px] object-cover rounded-[56px] shadow-2xl" />
             </div>
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-6">
@@ -224,7 +224,7 @@ export default function ACInstallationPage() {
                      <div key={idx} className="flex items-center gap-8 group">
                         <span className="text-3xl font-heading font-black text-secondary/40 group-hover:text-secondary transition-colors leading-none">0{idx+1}</span>
                         <div className="flex flex-col">
-                           <h4 className="text-xl font-heading font-black text-white tracking-tight">{p.t}</h4>
+                           <h3 className="text-xl font-heading font-black text-white tracking-tight">{p.t}</h3>
                            <p className="text-white/40 font-medium text-sm leading-relaxed">{p.d}</p>
                         </div>
                      </div>
@@ -274,7 +274,7 @@ export default function ACInstallationPage() {
             </div>
             <div className="relative group">
                <div className="absolute inset-0 bg-secondary rounded-[80px] -rotate-3 opacity-5 group-hover:rotate-0 transition-transform duration-700" />
-               <img src="https://images.pexels.com/photos/5691629/pexels-photo-5691629.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional AC Technicians" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl" />
+               <img src="/optimized/pexels-5691629.webp" alt="Professional AC Technicians" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl" />
                <div className="absolute -bottom-8 -right-8 bg-white p-10 rounded-[40px] shadow-2xl border border-gray-50 text-center">
                   <span className="block text-4xl font-black text-secondary leading-none">100%</span>
                   <span className="text-[10px] font-black text-primary/30 uppercase tracking-widest mt-2 block">Customer Satisfaction</span>
@@ -367,7 +367,7 @@ export default function ACInstallationPage() {
               { q: "What AC brands do you install?", a: "We install all major brands including Samsung, LG, Gree, Carrier, Zamil, and Daikin." }
             ].map((f, idx) => (
               <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[48px] border border-gray-100 hover:border-secondary transition-all shadow-sm">
-                <h4 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h4>
+                <h3 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h3>
                 <p className="text-primary/50 text-xl font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

@@ -16,9 +16,9 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://acrepairingksa.com"),
-  title: "Riyadh Home Fix – AC & Home Maintenance",
-  description: "Fast, reliable, and affordable AC repair, installation, plumbing, and home maintenance services in Riyadh. Certified technicians. Same-day service.",
-  keywords: "AC repair Riyadh, AC installation Riyadh, Plumbing services Riyadh, Home maintenance Riyadh, Riyadh Home Fix",
+  title: "AC Repairing KSA – Premium AC & Home Maintenance in Riyadh",
+  description: "AC Repairing KSA offers fast, reliable AC repair, installation, deep cleaning, and expert plumbing services across Riyadh. Same-day response guaranteed.",
+  keywords: "AC repair Riyadh, AC installation Riyadh, Plumbing services Riyadh, Home maintenance Riyadh, AC Repairing KSA",
   alternates: {
     canonical: "/",
   },

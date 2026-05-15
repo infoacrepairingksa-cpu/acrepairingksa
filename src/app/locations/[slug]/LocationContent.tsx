@@ -46,12 +46,12 @@ export default function LocationContent({ data }: { data: LocationData }) {
   };
 
   const services = [
-    { title: "AC Repair", desc: `Professional split and central cooling repair for villas in ${data.name}.`, icon: <Snowflake />, badge: "Urgent", imageUrl: "https://images.pexels.com/photos/4421160/pexels-photo-4421160.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { title: "AC Cleaning", desc: `Deep chemical pressure washing to restore airflow in ${data.name}.`, icon: <Droplets />, badge: "Popular", imageUrl: "https://images.pexels.com/photos/5691624/pexels-photo-5691624.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { title: "AC Gas Refill", desc: "Original R410A refrigerant refill with safe leak detection.", icon: <Zap />, imageUrl: "https://images.pexels.com/photos/5691630/pexels-photo-5691630.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { title: "AC Installation", desc: "Expert mounting and configuration of new AC systems.", icon: <Wind />, imageUrl: "https://images.pexels.com/photos/4421110/pexels-photo-4421110.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { title: "AC Maintenance", desc: "Seasonal health check and part optimization for peak efficiency.", icon: <Settings />, imageUrl: "https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { title: "Plumbing Support", desc: "Fast fix for leaks, pipes, and master water heater work.", icon: <Wrench />, imageUrl: "https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { title: "AC Repair", desc: `Professional split and central cooling repair for villas in ${data.name}.`, icon: <Snowflake />, badge: "Urgent", imageUrl: "/optimized/pexels-4421160.webp" },
+    { title: "AC Cleaning", desc: `Deep chemical pressure washing to restore airflow in ${data.name}.`, icon: <Droplets />, badge: "Popular", imageUrl: "/optimized/pexels-5691624.webp" },
+    { title: "AC Gas Refill", desc: "Original R410A refrigerant refill with safe leak detection.", icon: <Zap />, imageUrl: "/optimized/pexels-5691630.webp" },
+    { title: "AC Installation", desc: "Expert mounting and configuration of new AC systems.", icon: <Wind />, imageUrl: "/optimized/pexels-4421110.webp" },
+    { title: "AC Maintenance", desc: "Seasonal health check and part optimization for peak efficiency.", icon: <Settings />, imageUrl: "/optimized/pexels-5691657.webp" },
+    { title: "Plumbing Support", desc: "Fast fix for leaks, pipes, and master water heater work.", icon: <Wrench />, imageUrl: "/optimized/pexels-545012.webp" },
   ];
 
   return (

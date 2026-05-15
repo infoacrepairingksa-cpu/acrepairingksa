@@ -132,7 +132,7 @@ const WhyChooseUs = ({ onBookNow }: { onBookNow: (s: string) => void }) => {
                     {/* Real Job Proof Image */}
                     <div className="col-span-2 relative h-48 rounded-2xl overflow-hidden group shadow-lg">
                       <img 
-                        src="/riyadh_ac_cleaning_proof_1778083746729.png" 
+                        src="/riyadh_ac_cleaning_proof_1778083746729.webp" 
                         alt="Real AC Service Proof Riyadh" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                       />
@@ -152,10 +152,10 @@ const WhyChooseUs = ({ onBookNow }: { onBookNow: (s: string) => void }) => {
                        </div>
                        <div className="flex -space-x-4">
                          {[
-                           "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150",
-                           "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150",
-                           "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=150",
-                           "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=150"
+                           "/optimized/pexels-1222271.webp",
+                           "/optimized/pexels-733872.webp",
+                           "/optimized/pexels-91227.webp",
+                           "/optimized/pexels-1065084.webp"
                          ].map((img, i) => (
                            <img key={i} src={img} alt="Customer" className="w-14 h-14 rounded-full border-4 border-white object-cover" />
                          ))}

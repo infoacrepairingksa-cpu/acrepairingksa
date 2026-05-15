@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AC Coil Cleaning Riyadh – Extend Lifespan",
-  description: "Expert AC coil cleaning services in Riyadh to improve cooling efficiency and unit lifespan.",
+  description: "Maximize your AC's cooling power with expert coil cleaning in Riyadh. Our advanced thermal restoration extends unit lifespan and lowers energy bills.",
   alternates: {
     canonical: "/ac-coil-cleaning",
   },

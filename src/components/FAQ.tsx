@@ -20,12 +20,12 @@ const FAQItem = ({ question, answer, index }: FAQItemProps) => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between text-left focus:outline-none group gap-6"
       >
-        <span className={cn(
+        <h3 className={cn(
           "text-lg font-heading font-black transition-all tracking-tight leading-tight",
           isOpen ? "text-secondary" : "text-primary group-hover:text-secondary"
         )}>
           {question}
-        </span>
+        </h3>
         <div className={cn(
           "flex items-center justify-center w-10 h-10 rounded-xl transition-all shrink-0 shadow-sm",
           isOpen ? "bg-secondary text-white shadow-secondary/20" : "bg-primary/5 text-primary group-hover:bg-primary/10"

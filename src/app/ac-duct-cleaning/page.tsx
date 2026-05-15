@@ -46,7 +46,7 @@ export default function ACDuctCleaningPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-secondary">Advanced Sanitization</span>
               </div>
               <h1 className="text-[58px] md:text-[82px] lg:text-[96px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Surgical <br /><span className="text-secondary italic text-stroke">Clean</span> Air <br /> For Your Home
+                Professional AC <span className="text-secondary italic text-stroke">Duct Cleaning</span> in Riyadh
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic border-l-4 border-secondary/20 pl-8">
                 “Total dust extraction and medical-grade sanitization. Because what's inside your ducts matters more than you think.”
@@ -76,7 +76,7 @@ export default function ACDuctCleaningPage() {
 
             <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} className="relative group">
               <div className="relative z-10 rounded-[80px] overflow-hidden shadow-[0_80px_160px_-40px_rgba(0,115,230,0.3)] border-[16px] border-white transition-transform duration-1000 group-hover:scale-105">
-                <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="AC Duct Cleaning" className="w-full h-[750px] object-cover" />
+                <img src="/optimized/pexels-5691657.webp" alt="AC Duct Cleaning" className="w-full h-[750px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-80" />
               </div>
               
@@ -116,7 +116,7 @@ export default function ACDuctCleaningPage() {
             </div>
             <div className="relative">
                <div className="absolute -inset-10 bg-secondary rounded-[72px] rotate-3 opacity-5 pointer-events-none" />
-               <img src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Duct Inspection" className="w-full h-[600px] object-cover rounded-[64px] shadow-2xl transition-transform duration-700 hover:scale-[1.02]" />
+               <img src="/optimized/pexels-5691632.webp" alt="Duct Inspection" className="w-full h-[600px] object-cover rounded-[64px] shadow-2xl transition-transform duration-700 hover:scale-[1.02]" />
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function ACDuctCleaningPage() {
                   <div key={i} className="bg-[#F8FAFC] rounded-[56px] p-12 flex flex-col gap-10 border border-gray-100 hover:border-secondary transition-all shadow-sm group">
                      <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-sm transition-transform group-hover:scale-110">{s.i}</div>
                      <div className="flex flex-col gap-2">
-                        <h4 className="text-2xl font-heading font-black text-primary leading-tight tracking-tight">{s.t}</h4>
+                        <h3 className="text-2xl font-heading font-black text-primary leading-tight tracking-tight">{s.t}</h3>
                         <span className="text-[10px] font-black text-primary/30 uppercase tracking-[0.2em] mt-2">{s.d}</span>
                      </div>
                   </div>
@@ -248,7 +248,7 @@ export default function ACDuctCleaningPage() {
                     <div key={idx} className="flex items-center gap-10 group relative">
                        <span className="text-3xl font-heading font-black text-secondary/30 group-hover:text-secondary transition-colors leading-none">0{idx+1}</span>
                        <div className="flex flex-col">
-                          <h4 className="text-2xl font-heading font-black text-white tracking-tight">{p.t}</h4>
+                          <h3 className="text-2xl font-heading font-black text-white tracking-tight">{p.t}</h3>
                           <p className="text-white/40 font-medium text-sm">{p.d}</p>
                        </div>
                     </div>
@@ -292,7 +292,7 @@ export default function ACDuctCleaningPage() {
             </div>
             <div className="relative group">
                <div className="absolute inset-0 bg-secondary rounded-[80px] -rotate-3 opacity-5 group-hover:rotate-0 transition-transform duration-700" />
-               <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Duct Team" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl transition-transform duration-1000 group-hover:scale-105" />
+               <img src="/optimized/pexels-5691657.webp" alt="Duct Team" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl transition-transform duration-1000 group-hover:scale-105" />
             </div>
           </div>
         </div>
@@ -330,7 +330,7 @@ export default function ACDuctCleaningPage() {
               </div>
               <div className="flex-1 relative group">
                  <div className="absolute inset-0 bg-secondary rounded-[64px] rotate-3 opacity-5 group-hover:rotate-0 transition-transform duration-700" />
-                 <img src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pure Air Environment" className="w-full h-[500px] object-cover rounded-[56px] shadow-2xl" />
+                 <img src="/optimized/pexels-5691657.webp" alt="Pure Air Environment" className="w-full h-[500px] object-cover rounded-[56px] shadow-2xl" />
               </div>
            </div>
         </div>
@@ -374,7 +374,7 @@ export default function ACDuctCleaningPage() {
               { q: "Do you provide duct sanitization?", a: "Yes, we use medical-grade fogging to kill bacteria and mold inside your ducts." }
             ].map((f, idx) => (
               <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[48px] border border-gray-100 hover:border-secondary transition-all shadow-sm">
-                <h4 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h4>
+                <h3 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h3>
                 <p className="text-primary/50 text-xl font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}

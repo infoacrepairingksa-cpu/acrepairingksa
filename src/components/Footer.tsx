@@ -12,6 +12,7 @@ import {
   Clock,
   ArrowRight
 } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -68,13 +69,8 @@ const Footer = () => {
           
           {/* Brand Column */}
           <div className="flex flex-col gap-8">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary font-bold text-3xl shadow-2xl transition-transform hover:scale-110">
-                R
-              </div>
-              <span className="font-heading font-black text-2xl tracking-tighter text-white">
-                Riyadh Home Fix
-              </span>
+            <Link href="/" className="group">
+              <Logo light />
             </Link>
             <p className="text-white font-medium leading-relaxed text-sm pr-8 opacity-90">
               Professional AC repair, plumbing, and home maintenance services across all areas of Riyadh. Our technicians reach you within 30–60 minutes for fast and reliable service.
@@ -166,7 +162,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-white/5 pt-16 flex flex-col md:flex-row items-center justify-between gap-8 text-white/60 text-xs font-bold uppercase tracking-wider">
-          <p>© {currentYear} Riyadh Home Fix. Trusted Home Services in Riyadh City.</p>
+          <p>© {currentYear} AC Repairing KSA. Trusted Home Services in Riyadh City.</p>
           <div className="flex items-center gap-10">
             <Link href="/" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/" className="hover:text-white transition-colors">Technical Terms</Link>

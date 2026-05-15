@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Service Locations – Riyadh Home Fix",
-  description: "View all areas we serve across Riyadh for AC repair, plumbing, and home maintenance.",
+  description: "Riyadh Home Fix serves all major districts in Riyadh. Find fast, local AC repair, plumbing, and home maintenance experts right in your neighborhood.",
   alternates: {
     canonical: "/locations",
   },

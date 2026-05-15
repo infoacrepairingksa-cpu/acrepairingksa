@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Phone, Menu, X, ShieldCheck, ChevronDown, MapPin } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { Logo } from "@/components/Logo";
 import { cn } from "@/lib/utils";
 
 const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
@@ -48,21 +49,8 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
 
       <nav className="bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.03)] py-4 transition-all">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          {/* Logo with Location targeting */}
-          <Link href="/" className="flex flex-col gap-0 group">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center font-bold text-white text-xl transition-all duration-300 transform group-hover:rotate-12 group-hover:scale-110">
-                R
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading font-black text-xl lg:text-2xl tracking-tighter text-primary leading-none">
-                  Riyadh Home Fix
-                </span>
-                <span className="text-sm font-bold uppercase tracking-wider text-secondary mt-1">
-                  Trusted in Riyadh City
-                </span>
-              </div>
-            </div>
+          <Link href="/" className="group">
+            <Logo />
           </Link>
 
           {/* Desktop Links - Conversion Oriented */}

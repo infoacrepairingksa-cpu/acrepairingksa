@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AC Filter Cleaning Riyadh – Boost Airflow",
-  description: "Instant AC filter cleaning and washing services in Riyadh for maximum airflow.",
+  description: "Get an instant airflow boost with our AC filter cleaning and mesh washing services in Riyadh. Quick, affordable, and essential for peak AC performance.",
   alternates: {
     canonical: "/ac-filter-cleaning",
   },

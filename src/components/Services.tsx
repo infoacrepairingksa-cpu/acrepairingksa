@@ -115,7 +115,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       icon: <Snowflake />,
       isPrimary: true,
       badge: "⭐ Popular Service",
-      imageUrl: "/Ac Services/AC Repair.png",
+      imageUrl: "/Ac Services/AC Repair.webp",
       ctaText: "Chat for Repair",
       benefits: ["Restores Cooling", "30-Min Arrival", "90-Day Warranty"]
     },
@@ -125,7 +125,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Deep chemical sanitization.",
       icon: <Droplets />,
       badge: "⭐ Popular Service",
-      imageUrl: "/Ac Services/AC Cleaning.png",
+      imageUrl: "/Ac Services/AC Cleaning.webp",
       ctaText: "Chat for Cleaning",
       benefits: ["Bacteria Free", "Odor Control", "Power Flush"]
     },
@@ -134,7 +134,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       title: "AC Gas Refill",
       description: "Original refrigerant top-up.",
       icon: <Zap />,
-      imageUrl: "/Ac Services/AC Gas Refill.png",
+      imageUrl: "/Ac Services/AC Gas Refill.webp",
       ctaText: "Check Gas Pricing",
       benefits: ["Pure R410A Gas", "Leak Testing", "Max Chill"]
     },
@@ -144,7 +144,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Split & duct mounting.",
       icon: <Wind />,
       badge: "⭐ Popular Service",
-      imageUrl: "/Ac Services/AC Installation.png",
+      imageUrl: "/Ac Services/AC Installation.webp",
       ctaText: "Chat for Install",
       benefits: ["Copper Kit", "Drainage Info", "Level Fit"]
     },
@@ -153,7 +153,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       title: "AC Maintenance",
       description: "Filter & vital checks.",
       icon: <Settings />,
-      imageUrl: "/Ac Services/AC Maintenance.png",
+      imageUrl: "/Ac Services/AC Maintenance.webp",
       ctaText: "Plan Maintenance",
       benefits: ["Energy Save", "Free Health Check", "Lube Parts"]
     },
@@ -162,7 +162,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       title: "AC Filter Cleaning",
       description: "Pure air flow restoration.",
       icon: <Wind />,
-      imageUrl: "/Ac Services/AC Filter Cleaning.png",
+      imageUrl: "/Ac Services/AC Filter Cleaning.webp",
       ctaText: "Clean Filters",
       benefits: ["Dust Removal", "Clean Air", "Better Flow"]
     },
@@ -171,7 +171,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       title: "AC Duct Cleaning",
       description: "Deep ventilation scrubbing.",
       icon: <Wind />,
-      imageUrl: "/Ac Services/AC Duct Cleaning.png",
+      imageUrl: "/Ac Services/AC Duct Cleaning.webp",
       ctaText: "WhatsApp for Ducts",
       benefits: ["Mold Control", "Odor Removal", "Safe Living"]
     },
@@ -180,7 +180,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       title: "AC Coil Cleaning",
       description: "Max thermal efficiency fix.",
       icon: <Snowflake />,
-      imageUrl: "/Ac Services/AC Coil Cleaning.png",
+      imageUrl: "/Ac Services/AC Coil Cleaning.webp",
       ctaText: "Check Coils",
       benefits: ["Scale Removal", "Faster Cooling", "Low Bills"]
     }
@@ -192,7 +192,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       title: "Plumbing",
       description: "Leak & pipe specialists ready 24/7.",
       icon: <Droplets />,
-      imageUrl: "/Ac Services/Plumbing.png",
+      imageUrl: "/Ac Services/Plumbing.webp",
       ctaText: "WhatsApp Plumber",
       benefits: ["Leak Stop", "Bathroom Fix", "Heater Tech"]
     },
@@ -201,7 +201,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       title: "Home Maintenance",
       description: "Complete repair & villa support.",
       icon: <Settings />,
-      imageUrl: "/Ac Services/Home Maintenance.png",
+      imageUrl: "/Ac Services/Home Maintenance.webp",
       ctaText: "WhatsApp Team",
       benefits: ["All Repairs", "Certified Team", "One Call"]
     }

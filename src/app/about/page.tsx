@@ -45,7 +45,7 @@ export default function AboutPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-secondary">Our Legacy in Riyadh</span>
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[1.1] tracking-tight">
-                Quality You <br /><span className="text-secondary italic">Can Trust</span> <br /> In Every Fix.
+                Riyadh's #1 <span className="text-secondary italic">Home Maintenance</span> & AC Services Company
               </h1>
               <p className="text-lg md:text-xl text-primary/60 font-medium max-w-lg leading-relaxed border-l-4 border-secondary pl-6">
                 Riyadh Home Fix is dedicated to providing elite home maintenance solutions with a focus on precision, speed, and absolute reliability.
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative">
               <div className="relative z-10 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white group h-[550px]">
                 <Image 
-                  src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  src="/optimized/pexels-5691632.webp" 
                   alt="About Our Company" 
                   fill 
                   className="object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -126,7 +126,7 @@ export default function AboutPage() {
                 <div key={idx} className="p-10 bg-[#F8FBFF] rounded-[40px] border border-secondary/5 flex flex-col items-center text-center gap-6 group hover:border-secondary transition-all">
                    <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-secondary shadow-sm group-hover:scale-110 transition-transform">{v.i}</div>
                    <div className="flex flex-col gap-2">
-                      <h4 className="text-xl font-heading font-black text-primary tracking-tight">{v.t}</h4>
+                      <h3 className="text-xl font-heading font-black text-primary tracking-tight">{v.t}</h3>
                       <p className="text-[10px] font-bold text-primary/30 uppercase tracking-widest">{v.d}</p>
                    </div>
                 </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div className="relative rounded-[40px] overflow-hidden shadow-2xl group h-[550px]">
                  <Image 
-                   src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                   src="/optimized/pexels-2219024.webp" 
                    alt="Professional Technician" 
                    fill 
                    className="object-cover group-hover:scale-105 transition-transform duration-1000" 

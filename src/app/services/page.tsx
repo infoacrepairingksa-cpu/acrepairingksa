@@ -36,16 +36,16 @@ export default function ServicesPage() {
   );
 
   const allServices = [
-    { title: "AC Repair", id: "ac-repair", href: "/ac-repair", img: "https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Settings />, desc: "Fast restoration of cooling for all unit types." },
-    { title: "AC Cleaning", id: "ac-cleaning", href: "/ac-cleaning", img: "https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Sparkles />, desc: "Deep-wash sanitization for pure, healthy air." },
-    { title: "AC Installation", id: "ac-installation", href: "/ac-installation", img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <LayoutGrid />, desc: "Professional setup for new homes and offices." },
-    { title: "AC Maintenance", id: "ac-maintenance", href: "/ac-maintenance", img: "https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Clock />, desc: "Scheduled preventive care to stop breakdowns." },
-    { title: "AC Gas Refill", id: "ac-gas-refill", href: "/ac-gas-refill", img: "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Snowflake />, desc: "Precision refrigerant charging and leak tests." },
-    { title: "AC Duct Cleaning", id: "ac-duct-cleaning", href: "/ac-duct-cleaning", img: "https://images.pexels.com/photos/5445424/pexels-photo-5445424.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Wind />, desc: "Medical-grade air vent & duct purification." },
-    { title: "AC Filter Cleaning", id: "ac-filter-cleaning", href: "/ac-filter-cleaning", img: "https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Filter />, desc: "Instant airflow boost with mesh deep-washing." },
-    { title: "AC Coil Cleaning", id: "ac-coil-cleaning", href: "/ac-coil-cleaning", img: "https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Cog />, desc: "Thermal restoration for unit lifespan extension." },
-    { title: "Plumbing Services", id: "plumbing", href: "/plumbing", img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Wrench />, desc: "Expert leak repair and sonar detection services." },
-    { title: "Home Maintenance", id: "home-maintenance", href: "/home-maintenance", img: "https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200", icon: <Shield />, desc: "Total property shield for structural repairs." },
+    { title: "AC Repair", id: "ac-repair", href: "/ac-repair", img: "/optimized/pexels-5691632.webp", icon: <Settings />, desc: "Fast restoration of cooling for all unit types." },
+    { title: "AC Cleaning", id: "ac-cleaning", href: "/ac-cleaning", img: "/optimized/pexels-5445425.webp", icon: <Sparkles />, desc: "Deep-wash sanitization for pure, healthy air." },
+    { title: "AC Installation", id: "ac-installation", href: "/ac-installation", img: "/optimized/pexels-2219024.webp", icon: <LayoutGrid />, desc: "Professional setup for new homes and offices." },
+    { title: "AC Maintenance", id: "ac-maintenance", href: "/ac-maintenance", img: "/optimized/pexels-5691657.webp", icon: <Clock />, desc: "Scheduled preventive care to stop breakdowns." },
+    { title: "AC Gas Refill", id: "ac-gas-refill", href: "/ac-gas-refill", img: "/optimized/pexels-443383.webp", icon: <Snowflake />, desc: "Precision refrigerant charging and leak tests." },
+    { title: "AC Duct Cleaning", id: "ac-duct-cleaning", href: "/ac-duct-cleaning", img: "/optimized/pexels-5445424.webp", icon: <Wind />, desc: "Medical-grade air vent & duct purification." },
+    { title: "AC Filter Cleaning", id: "ac-filter-cleaning", href: "/ac-filter-cleaning", img: "/optimized/pexels-5445425.webp", icon: <Filter />, desc: "Instant airflow boost with mesh deep-washing." },
+    { title: "AC Coil Cleaning", id: "ac-coil-cleaning", href: "/ac-coil-cleaning", img: "/optimized/pexels-5691632.webp", icon: <Cog />, desc: "Thermal restoration for unit lifespan extension." },
+    { title: "Plumbing Services", id: "plumbing", href: "/plumbing", img: "/optimized/pexels-2219024.webp", icon: <Wrench />, desc: "Expert leak repair and sonar detection services." },
+    { title: "Home Maintenance", id: "home-maintenance", href: "/home-maintenance", img: "/optimized/pexels-5691657.webp", icon: <Shield />, desc: "Total property shield for structural repairs." },
   ];
 
   return (
@@ -62,8 +62,8 @@ export default function ServicesPage() {
                  <div className="h-px w-12 bg-secondary" />
                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-secondary">The Riyadh Service Hub</span>
               </div>
-              <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[1.1] tracking-tight">
-                  Professional <span className="text-secondary">AC & Home</span> <br /> Maintenance Services in Riyadh.
+              <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
+                Professional <span className="text-secondary">Home Services</span> in Riyadh
               </h1>
               <p className="text-lg md:text-xl text-primary/40 font-medium max-w-lg leading-relaxed italic border-l-4 border-secondary/20 pl-6">
                 Professional AC, plumbing & property maintenance solutions for homes and businesses across Riyadh city.
@@ -90,7 +90,7 @@ export default function ServicesPage() {
             <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative group">
               <div className="relative z-10 rounded-[64px] overflow-hidden shadow-2xl border-4 border-white h-[650px]">
                 <Image 
-                  src="https://images.pexels.com/photos/5691632/pexels-photo-5691632.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                  src="/optimized/pexels-5691632.webp" 
                   alt="Home Maintenance Service" 
                   fill 
                   className="object-cover transition-transform duration-1000 group-hover:scale-105" 
@@ -180,7 +180,7 @@ export default function ServicesPage() {
                  <button onClick={() => handleBookNow("Trust Selection")} className="w-fit px-12 py-6 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-sm shadow-xl hover:bg-secondary transition-all border-b-4 border-slate-800 active:scale-95 mt-4">Book Professional Service</button>
               </div>
               <div className="relative rounded-[48px] overflow-hidden shadow-2xl h-[600px]">
-                 <Image src="https://images.pexels.com/photos/5691657/pexels-photo-5691657.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Quality Workmanship" fill className="object-cover" />
+                 <Image src="/optimized/pexels-5691657.webp" alt="Quality Workmanship" fill className="object-cover" />
               </div>
            </div>
         </div>
@@ -189,9 +189,9 @@ export default function ServicesPage() {
       {/* 4. INTERACTIVE CATEGORIES */}
       <section className="py-10">
         {[
-          { sub: "Cooling & HVAC", title: "Pure Cooling Solutions", d: "Maintain peak cooling and maximum energy savings with our specialized HVAC engineering.", img: "https://images.pexels.com/photos/5445425/pexels-photo-5445425.jpeg?auto=compress&cs=tinysrgb&w=1200", b: ["AC Repair", "Cleaning", "Install", "Gas Refill"] },
-          { sub: "Air Quality", title: "Deep Cleaning Services", d: "Breathe pure, dust-free air with our medical-grade deep cleaning of ducts, filters and coils.", img: "https://images.pexels.com/photos/5445424/pexels-photo-5445424.jpeg?auto=compress&cs=tinysrgb&w=1200", b: ["Duct Cleaning", "Filter Wash", "Coil Restoring"] },
-          { sub: "Property Hub", title: "Complete Maintenance", d: "From expert plumbing repairs to electrical and structural upkeep, we protect your home.", img: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200", b: ["Plumbing", "Home Repair", "Electrical"] }
+          { sub: "Cooling & HVAC", title: "Pure Cooling Solutions", d: "Maintain peak cooling and maximum energy savings with our specialized HVAC engineering.", img: "/optimized/pexels-5445425.webp", b: ["AC Repair", "Cleaning", "Install", "Gas Refill"] },
+          { sub: "Air Quality", title: "Deep Cleaning Services", d: "Breathe pure, dust-free air with our medical-grade deep cleaning of ducts, filters and coils.", img: "/optimized/pexels-5445424.webp", b: ["Duct Cleaning", "Filter Wash", "Coil Restoring"] },
+          { sub: "Property Hub", title: "Complete Maintenance", d: "From expert plumbing repairs to electrical and structural upkeep, we protect your home.", img: "/optimized/pexels-2219024.webp", b: ["Plumbing", "Home Repair", "Electrical"] }
         ].map((cat, idx) => (
           <div key={idx} className={cn("py-32", idx % 2 === 0 ? "bg-[#F8FBFF]" : "bg-white")}>
              <div className="container mx-auto px-4 max-w-7xl">
@@ -335,7 +335,7 @@ export default function ServicesPage() {
               { q: "Do you provide commercial maintenance?", a: "Yes, we handle offices, malls, and shops with tailored commercial maintenance plans." }
             ].map((f, idx) => (
               <div key={idx} className="p-10 bg-[#F8FAFC] rounded-[32px] border border-gray-100 hover:border-secondary transition-all shadow-sm group">
-                <h4 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h4>
+                <h3 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h3>
                 <p className="text-primary/50 text-lg font-medium leading-relaxed">{f.a}</p>
               </div>
             ))}
