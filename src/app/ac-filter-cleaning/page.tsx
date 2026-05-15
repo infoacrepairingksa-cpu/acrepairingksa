@@ -15,6 +15,7 @@ import {
   Zap as ZapIcon, CheckCircle, RefreshCcw, Droplet, LayoutGrid
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACFilterCleaningPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,6 +30,21 @@ export default function ACFilterCleaningPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "AC Filter Cleaning Riyadh",
+          "Professional AC filter cleaning and air health services in Riyadh. We provide deep-wash and sanitization for all AC filters to restore maximum airflow and air purity.",
+          "/ac-filter-cleaning"
+        )} 
+      />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "AC Filter Cleaning", item: "/ac-filter-cleaning" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. ASYMMETRIC MESH HERO */}

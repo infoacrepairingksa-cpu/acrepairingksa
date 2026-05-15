@@ -18,6 +18,7 @@ import {
   Droplets as WaterDrops, Siren, Shield, Cog, Table, ListChecks, CalendarCheck, Gem
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateBreadcrumbSchema } from "@/components/Schema";
 import Link from "next/link";
 
 export default function ServicesPage() {
@@ -50,6 +51,13 @@ export default function ServicesPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Our Services", item: "/services" }
+        ])} 
+      />
       <Navbar onBookNow={() => handleBookNow("General Hub")} />
 
       {/* 1. PREMIUM HUB HERO */}

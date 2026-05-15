@@ -16,6 +16,7 @@ import {
   Cpu, ThermometerSnowflake, Cog
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACCoilCleaningPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,6 +31,21 @@ export default function ACCoilCleaningPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "Expert AC Coil Cleaning Riyadh",
+          "Professional AC evaporator and condenser coil cleaning services in Riyadh. We provide deep chemical wash and fin combing to restore 100% cooling capacity.",
+          "/ac-coil-cleaning"
+        )} 
+      />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "AC Coil Cleaning", item: "/ac-coil-cleaning" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. CLEAN & PREMIUM HERO */}

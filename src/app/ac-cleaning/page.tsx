@@ -16,6 +16,7 @@ import {
   Wrench, Smartphone, AlertTriangle, Check
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACCleaningPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,6 +24,21 @@ export default function ACCleaningPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "Deep AC Cleaning Riyadh",
+          "Professional AC cleaning and sanitization services in Riyadh. We use high-pressure water and antibacterial chemical spray to restore ice-cold cooling.",
+          "/ac-cleaning"
+        )} 
+      />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "AC Cleaning", item: "/ac-cleaning" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. ULTRA-PREMIUM HERO (Asymmetric & Dynamic) */}

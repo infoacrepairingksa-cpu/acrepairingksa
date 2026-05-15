@@ -11,6 +11,7 @@ import {
   Building2, Home, BadgeCheck, Sparkles, ShieldPlus, Compass, Globe, Navigation
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateBreadcrumbSchema } from "@/components/Schema";
 import Link from "next/link";
 
 export default function LocationsPage() {
@@ -48,6 +49,13 @@ export default function LocationsPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Locations", item: "/locations" }
+        ])} 
+      />
       <Navbar onBookNow={() => handleBookNow("General Location Hub")} />
 
       {/* 1. ELITE LOCATION HERO */}

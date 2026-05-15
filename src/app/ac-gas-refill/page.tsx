@@ -15,6 +15,7 @@ import {
   TrendingDown, IceCream, Zap as ZapIcon, ShieldPlus
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACGasRefillPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,6 +30,21 @@ export default function ACGasRefillPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "AC Gas Refill Riyadh",
+          "Expert AC gas refill and refrigerant recharge services in Riyadh. We provide R410A and R22 gas refill with professional leak inspection.",
+          "/ac-gas-refill"
+        )} 
+      />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "AC Gas Refill", item: "/ac-gas-refill" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. ASYMMETRIC ELITE HERO */}

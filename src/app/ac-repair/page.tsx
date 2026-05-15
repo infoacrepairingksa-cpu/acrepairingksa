@@ -15,6 +15,7 @@ import {
   BadgeCheck, Sparkles, Hammer, CalendarCheck2, Maximize
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACRepairPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,6 +44,21 @@ export default function ACRepairPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "AC Repair Service Riyadh",
+          "Expert AC repairing and diagnostic services in Riyadh. We fix cooling issues, compressor faults, and electrical errors for all AC brands.",
+          "/ac-repair"
+        )} 
+      />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "AC Repair", item: "/ac-repair" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. HERO SECTION (Premium Theme Mastery) */}

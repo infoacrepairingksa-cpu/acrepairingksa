@@ -18,6 +18,7 @@ import {
   Droplets as WaterDrops, Siren
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function PlumbingPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,6 +33,21 @@ export default function PlumbingPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "Emergency Plumbing Service Riyadh",
+          "Professional emergency plumbing services in Riyadh. We fix water leaks, pipe bursts, and provide full sanitary installation and maintenance.",
+          "/plumbing"
+        )} 
+      />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Plumbing", item: "/plumbing" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. CLEAN & BALANCED HERO */}

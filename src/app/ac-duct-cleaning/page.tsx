@@ -14,6 +14,7 @@ import {
   Layers, Maximize, Thermometer, ShieldAlert, Scan, Boxes
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACDuctCleaningPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +29,21 @@ export default function ACDuctCleaningPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "AC Duct Cleaning Riyadh",
+          "Professional AC duct cleaning and sanitization services in Riyadh. We provide medical-grade dust extraction and air duct sanitization for healthy indoor air.",
+          "/ac-duct-cleaning"
+        )} 
+      />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "AC Duct Cleaning", item: "/ac-duct-cleaning" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. ASYMMETRIC BREATHE HERO */}

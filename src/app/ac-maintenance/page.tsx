@@ -15,6 +15,7 @@ import {
   Fan, Check
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACMaintenancePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -14,6 +14,7 @@ import {
   Zap, Wrench, Snowflake, Target, Eye, Gem, Trophy
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function AboutPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +29,13 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "About Us", item: "/about" }
+        ])} 
+      />
       <Navbar onBookNow={handleBookNow} />
 
       {/* 1. ELEGANT STORYTELLING HERO */}

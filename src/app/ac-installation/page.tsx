@@ -14,6 +14,7 @@ import {
   HardHat, Drill, Compass, Thermometer, Droplets, Trash2, Filter, Users, Briefcase, Sparkles
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACInstallationPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
