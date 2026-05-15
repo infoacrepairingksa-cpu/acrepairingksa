@@ -32,7 +32,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import BookingModal from "@/components/BookingModal";
 import { motion } from "framer-motion";
-import Schema, { generateWebSiteSchema, generateBreadcrumbSchema } from "@/components/Schema";
+import Schema, { 
+  generateWebSiteSchema, 
+  generateBreadcrumbSchema, 
+  generateOrganizationSchema, 
+  generateLocalBusinessSchema 
+} from "@/components/Schema";
+import { ArrowRight } from "lucide-react";
 
 
 // --- Why Choose Us (Direct & Powerful) ---
@@ -244,12 +250,7 @@ const ProcessSteps = ({ onBookNow }: { onBookNow: (s: string) => void }) => {
   );
 };
 
-import Schema, { 
-  generateWebSiteSchema, 
-  generateBreadcrumbSchema, 
-  generateOrganizationSchema, 
-  generateLocalBusinessSchema 
-} from "@/components/Schema";
+
 
 
 export default function Home() {
