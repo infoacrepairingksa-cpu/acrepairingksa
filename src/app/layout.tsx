@@ -24,13 +24,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.png?v=3", type: "image/png" },
-      { url: "/icon.png?v=3", type: "image/png" },
+      { url: "/favicon.ico?v=4", sizes: "any" },
+      { url: "/icon.png?v=4", type: "image/png" },
     ],
     apple: [
-      { url: "/favicon.png?v=3", type: "image/png" },
+      { url: "/favicon.ico?v=4", sizes: "any" },
     ],
-    shortcut: "/favicon.png?v=3",
+    shortcut: "/favicon.ico?v=4",
   },
   verification: {
     google: "XrInWqSLRzc4uedrcVCdlOZOIwir040P6YZi5944Lg0",
