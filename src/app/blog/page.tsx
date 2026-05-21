@@ -60,9 +60,6 @@ export default function BlogIndexPage() {
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-500" 
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-primary text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-sm">
-                    {post.category}
-                  </div>
                 </div>
 
                 <div className="p-6 flex flex-col flex-1">
