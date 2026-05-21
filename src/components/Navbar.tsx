@@ -128,6 +128,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
             </div>
 
             <Link href="/about" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">About Us</Link>
+            <Link href="/blog" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Blog</Link>
           </div>
 
           {/* Action Buttons - Dominant CTA */}
@@ -217,6 +218,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
             </div>
 
             <Link href="/about" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+            <Link href="/blog" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
 
             <div className="flex flex-col gap-4 mt-6">
               <a
