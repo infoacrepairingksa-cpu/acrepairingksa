@@ -397,5 +397,373 @@ export const blogPosts: Record<string, BlogPost> = {
         }
       }
     ]
+  },
+  "ac-tripping-circuit-breaker-troubleshooting": {
+    slug: "ac-tripping-circuit-breaker-troubleshooting",
+    title: "Why Does My AC Keep Tripping the Circuit Breaker in Riyadh?",
+    metaDescription: "Does your split AC trip the breaker immediately when turned on? Discover the root causes, from a grounded compressor to electrical shorts, and learn how to fix it.",
+    publishDate: "May 26, 2026",
+    readTime: "14 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-545012.webp",
+    category: "AC Repair & Troubleshooting",
+    sections: [
+      {
+        type: "paragraph",
+        content: "One of the most frustrating and potentially dangerous issues an air conditioner can experience is repeatedly tripping the circuit breaker. You turn on the AC remote, hear a momentary hum, and then total darkness as the main breaker in your distribution panel shuts down. This is not just a nuisance; it is a critical safety mechanism doing its job. A tripped breaker means the AC unit is pulling significantly more electrical current (amperage) than the circuit is designed to handle, which could easily lead to an electrical fire if ignored. In Riyadh's blistering summer heat, an AC system works under maximum load, making these electrical faults surprisingly common."
+      },
+      {
+        type: "alert",
+        content: "🚨 FIRE HAZARD WARNING: Never repeatedly reset a circuit breaker that keeps tripping. Doing so bypasses the safety mechanism and can melt the wiring inside your walls, leading to an electrical fire. If it trips twice, leave it off and call a professional."
+      },
+      {
+        type: "heading",
+        title: "Understanding How Your AC's Electrical Circuit Works",
+        content: "To understand why a breaker trips, you must understand how power flows. Your home's distribution board contains breakers rated for specific amperages (usually 20A or 30A for heavy split AC units). When the AC turns on, there is a massive initial surge of electricity required to jumpstart the compressor—this is called the Locked Rotor Amps (LRA). Once running, it settles into a lower continuous pull called Rated Load Amps (RLA). If a component in the AC fails, or if there is a direct short circuit, the electrical draw spikes violently. The breaker senses this excessive heat and physically breaks the circuit to stop the flow of electricity."
+      },
+      {
+        type: "heading",
+        title: "The Most Common Culprits Behind a Tripping AC Breaker",
+        content: "If your AC is tripping the power, the issue almost always falls into one of these categories:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Grounded or Shorted Compressor:** The most severe cause. The electrical windings inside the hermetically sealed compressor break down over time due to heat. The bare wires touch the copper casing, causing a direct path to ground. This results in an immediate, violent breaker trip.",
+          "**Failed Starting Capacitor:** If the capacitor is blown, the compressor struggles to start. It will pull extremely high LRA current for several seconds, which overheats the circuit and trips the breaker.",
+          "**Dirty Condenser Coils (Overheating):** When Riyadh's dust completely blocks the outdoor unit's coils, the compressor cannot release heat. It works harder and harder, drawing more amps until the thermal overload or breaker shuts it down.",
+          "**Loose Electrical Wiring:** Vibrations from the outdoor unit can loosen wire connections at the contactor or terminal block. Loose connections create electrical resistance, resistance creates immense heat, and heat trips the breaker.",
+          "**Weak or Aging Circuit Breaker:** Sometimes, the AC is fine, but the breaker itself has weakened over years of use and is tripping at a lower amperage than it is rated for."
+        ]
+      },
+      {
+        type: "heading",
+        title: "How to Diagnose the Timing of the Trip",
+        content: "The exact moment the breaker trips provides massive clues as to what component has failed. Pay attention to when the power shuts off:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Timing of the Trip", "Most Likely Cause", "Severity", "Required Fix"],
+          ["Immediately upon turning on at the remote", "Direct electrical short circuit or grounded compressor.", "Critical", "Requires multimeter testing; likely compressor replacement or fixing burnt wires."],
+          ["Trips after 10-30 seconds of humming", "Failed capacitor or locked rotor compressor.", "High", "Replace the starting capacitor. If the compressor is seized, install a hard start kit."],
+          ["Trips after 30 to 60 minutes of running", "Overheating due to dirty coils or a weak breaker.", "Medium", "Requires a deep [AC Coil Cleaning](/ac-cleaning) and tightening of electrical connections."]
+        ]
+      },
+      {
+        type: "heading",
+        title: "The Hard Start Kit Solution for Aging Compressors",
+        content: "As compressors age in the harsh Saudi climate, mechanical wear and tear make them harder to turn over. Even with a good capacitor, an old compressor might pull too many amps during startup, tripping the breaker. In these cases, an HVAC technician might install a 'Hard Start Kit'. This device provides a massive, instantaneous boost of electrical torque (up to 300% more than a standard capacitor) to push the compressor past its sticking point. This can often add years of life to a struggling AC unit and stop the breaker from tripping."
+      },
+      {
+        type: "heading",
+        title: "When You Need an Electrician vs an HVAC Technician",
+        content: "Determining whether the fault lies with the house wiring or the AC unit is crucial. An HVAC technician is equipped to handle everything from the AC isolator switch directly to the indoor and outdoor units. If the wiring inside the wall leading back to the main panel is melted, or if the main distribution board is faulty, a licensed electrician is required. However, 90% of tripping issues originate at the outdoor compressor unit."
+      },
+      {
+        type: "paragraph",
+        content: "If your AC keeps tripping the power, do not put your family at risk. Our diagnostic technicians at [AC Repairing KSA](/ac-repair) use advanced Fluke multimeters to test the exact amp draw and megohm resistance of your compressor. We serve all central and northern Riyadh areas, including [Al Olaya](/locations/al-olaya) and [Al Yasmin](/locations/al-yasmin). Let us diagnose the issue safely and restore your cooling."
+      },
+      {
+        type: "link-box",
+        content: {
+          text: "Is your AC constantly tripping the power? Stop resetting it and let us diagnose the electrical fault safely.",
+          link: "/ac-repair",
+          buttonText: "Book Electrical Diagnostic"
+        }
+      }
+    ]
+  },
+  "how-often-to-clean-ac-filter-riyadh": {
+    slug: "how-often-to-clean-ac-filter-riyadh",
+    title: "How Often Should You Clean Your AC Filters in Riyadh? (The Ultimate Guide)",
+    metaDescription: "Living in Riyadh means dealing with intense dust storms. Learn exactly how often to clean your split AC filters, the consequences of ignoring them, and step-by-step instructions.",
+    publishDate: "May 27, 2026",
+    readTime: "10 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-4421160.webp",
+    category: "AC Maintenance",
+    sections: [
+      {
+        type: "paragraph",
+        content: "In many parts of the world, cleaning an air conditioner filter is a task that can be relegated to a bi-annual spring cleaning checklist. However, in Riyadh, Saudi Arabia, the rules are drastically different. Situated in a desert environment prone to frequent sandstorms, high winds, and fine particulate matter (PM2.5), the air quality presents an extreme challenge for HVAC systems. The air filter in your indoor split unit is the first line of defense, trapping dust before it reaches the delicate cold evaporator coils. When these filters clog—and they will clog quickly—the entire thermodynamic cycle of your AC begins to collapse."
+      },
+      {
+        type: "heading",
+        title: "The 'Riyadh Rule' for AC Filter Cleaning Frequency",
+        content: "Because of the high concentration of airborne sand and dust in the central region of the Kingdom, standard manufacturer recommendations do not apply here. Following a strict cleaning schedule is the most effective way to ensure optimal cooling and low electricity bills."
+      },
+      {
+        type: "table",
+        content: [
+          ["Time of Year / Condition", "Recommended Cleaning Frequency", "Why It Matters"],
+          ["Peak Summer (May to September)", "Every 2 Weeks", "The AC runs 24/7, pulling in massive amounts of circulating indoor dust."],
+          ["During/After Sandstorms (Shamal winds)", "Immediately After", "Fine powdery sand infiltrates houses rapidly, blinding the mesh filters in a single day."],
+          ["Winter / Mild Months", "Once a Month", "Usage is lower, but passive dust still settles on the filters over time."],
+          ["Homes with Pets or Heavy Carpets", "Every 10 to 14 Days", "Pet dander and carpet fibers combine with dust to create a thick, impassable mat."]
+        ]
+      },
+      {
+        type: "heading",
+        title: "What Happens When You Ignore Dirty AC Filters?",
+        content: "Failing to clean your filters isn't just about breathing dusty air; it triggers a cascade of mechanical failures that can destroy your unit. Here is the chain reaction of a neglected filter:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Stage 1: Airflow Restriction:** The thick blanket of dust blocks the blower fan from pulling warm room air over the cold coils. The room stops cooling down properly.",
+          "**Stage 2: Frozen Evaporator Coils:** Because warm air isn't blowing over the coils, the refrigerant inside drops below freezing. The moisture in the air turns to solid ice on the copper pipes.",
+          "**Stage 3: Water Leaks Inside the Room:** When the unit is finally turned off, the massive block of ice melts rapidly, overflowing the drain pan and leaking down your walls. (See our [Water Leak Guide](/blog/water-leaking-from-indoor-ac-unit-diagnostic)).",
+          "**Stage 4: Compressor Overheating & Burnout:** The outdoor compressor has to pump liquid refrigerant instead of gas because the heat exchange failed indoors. This causes 'liquid slugging,' which destroys the compressor valves.",
+          "**Stage 5: High Electricity Bills:** The system runs continuously without ever reaching the set temperature on the thermostat, doubling your monthly energy consumption."
+        ]
+      },
+      {
+        type: "heading",
+        title: "Step-by-Step DIY Guide to Cleaning Split AC Filters",
+        content: "Cleaning the primary nylon mesh filters is incredibly easy and requires no tools. It should take less than 10 minutes per unit:"
+      },
+      {
+        type: "list",
+        content: [
+          "**1. Turn off the power:** Ensure the AC is off via the remote.",
+          "**2. Open the front fascia:** Gently lift the front plastic panel of the indoor unit. It will click and hold open on small hinges.",
+          "**3. Slide out the filters:** Push up slightly on the tabs and slide the two mesh filters downwards.",
+          "**4. Wash with mild water:** Take them to a bathroom or sink. Run lukewarm water *through the back* of the filter to push the dust out the way it came. Do not use stiff brushes as it will tear the mesh.",
+          "**5. Let them dry completely:** Shake off excess water and let them air dry completely in the shade. Never install wet filters, as the moisture will instantly breed mold when the AC turns on.",
+          "**6. Reinstall:** Slide them back along the tracks until they click, then press the front panel firmly closed."
+        ]
+      },
+      {
+        type: "alert",
+        content: "💡 PRO TIP: If you hold your cleaned filter up to the light and cannot see clearly through the mesh, the pores are permanently clogged with grease or pet dander. At this point, the filter must be entirely replaced."
+      },
+      {
+        type: "heading",
+        title: "When DIY Cleaning Is Not Enough: The Deep Wash",
+        content: "Cleaning the plastic mesh filters only solves half the problem. Over time, microscopic dust particles (PM2.5) slip past the filter and coat the aluminum evaporator coils directly. Once the coils themselves are coated in a layer of 'dust mud', washing the filters will not restore cooling. This is indicated by a noticeable drop in air pressure from the vents, even when the fan is set to maximum speed."
+      },
+      {
+        type: "paragraph",
+        content: "When the internal coils and the blower wheel (the barrel fan deep inside the unit) become caked with dust, you need a professional hydro-cleaning. At [AC Repairing KSA](/ac-cleaning), we use specialized plastic catchment bags and high-pressure water jets to blast away years of embedded dirt from the coils and blower fan without making a mess in your living room. A professional deep clean once a year is the secret to extending the lifespan of your AC by a decade."
+      },
+      {
+        type: "link-box",
+        content: {
+          text: "Are your filters clean but the AC still blows weak air? Book our high-pressure deep cleaning service today.",
+          link: "/ac-cleaning",
+          buttonText: "Schedule Deep AC Wash"
+        }
+      }
+    ]
+  },
+  "ac-smells-bad-musty-odor-fix": {
+    slug: "ac-smells-bad-musty-odor-fix",
+    title: "Why Does My Air Conditioner Smell Bad? (Musty & Burning Odors)",
+    metaDescription: "Is your split AC blowing air that smells like old socks, vinegar, or burning plastic? Learn how to identify the source of AC odors and eliminate them for good.",
+    publishDate: "May 28, 2026",
+    readTime: "11 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-2219024.webp",
+    category: "AC Maintenance",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Your home should be an oasis from the harsh Riyadh environment. However, when you turn on your split air conditioner and are immediately hit with a foul odor, that comfort vanishes instantly. Air conditioners circulate the exact same air within a room repeatedly. If there is a contaminant, mold colony, or electrical issue inside the unit, the blower fan will distribute that smell across the entire space in seconds. Depending on whether the smell is biological (like mildew) or mechanical (like burning rubber), the necessary solution ranges from a simple cleaning to an emergency electrical repair."
+      },
+      {
+        type: "heading",
+        title: "The 'Dirty Sock Syndrome' (Musty, Mildew Odors)",
+        content: "The most common complaint from homeowners is an AC that smells like stale, sweaty socks or damp mildew. This is colloquially known in the HVAC industry as 'Dirty Sock Syndrome'."
+      },
+      {
+        type: "paragraph",
+        content: "This smell is exclusively biological. It is caused by a thriving colony of mold, mildew, and bacteria growing on the indoor evaporator coils and inside the condensate drain pan. When the AC runs, condensation forms on the coils. When the unit turns off, the dark, damp, and warm interior becomes a perfect incubator for microbes. Over months, these bacteria feed on the microscopic dust that bypasses the air filters. When you turn the AC on, the air blows right through this microbial slime, filling your room with the odor."
+      },
+      {
+        type: "list",
+        content: [
+          "**The Fix:** This cannot be fixed with air fresheners. The unit requires a professional [AC Coil Cleaning](/ac-cleaning) using specialized biocides and high-pressure water to physically strip the mold from the aluminum fins."
+        ]
+      },
+      {
+        type: "heading",
+        title: "Vinegar or Sweet Chemical Smells (Refrigerant Leaks)",
+        content: "If your AC emits a distinct smell that resembles sweet chemicals, chloroform, or strong vinegar, you likely have a refrigerant leak. While Freon (R22) and Puron (R410A) are technically odorless gases, the heavy synthetic compressor oils that circulate with the gas have a distinct chemical odor. If a copper pipe cracks or a flare joint loosens, this oil leaks out along with the gas and gets blown into the room."
+      },
+      {
+        type: "list",
+        content: [
+          "**The Fix:** Turn the unit off immediately. Inhaling refrigerant gases can cause nausea and headaches. You must call a technician to perform an [AC Gas Leak Repair](/ac-gas-refill) to braze the broken copper lines and recharge the system safely."
+        ]
+      },
+      {
+        type: "heading",
+        title: "Burning Plastic or Electrical Odors",
+        content: "A smell resembling burning plastic, melting rubber, or a fishy electrical odor is an immediate red flag. This is entirely mechanical and electrical in nature."
+      },
+      {
+        type: "table",
+        content: [
+          ["Specific Odor", "Likely Component Failing", "Action Required"],
+          ["Melting Plastic / Fishy smell", "Wiring insulation melting at the terminal block due to loose connections.", "Turn off AC at the breaker immediately. Call for electrical repair."],
+          ["Burning Rubber", "Fan motor belt (in older units) or motor bearings seizing up.", "Turn off AC to prevent motor fire."],
+          ["Gunpowder / Sulphur", "A blown capacitor or a short-circuited control board.", "Do not run the AC. Component replacement needed."]
+        ]
+      },
+      {
+        type: "alert",
+        content: "🚨 FIRE WARNING: If you smell burning plastic, do not assume it will go away. A loose wire creates extreme resistance and heat, which will quickly melt the plastic housing of the indoor unit and can start a fire. Shut off the main isolator switch instantly."
+      },
+      {
+        type: "heading",
+        title: "The Cigarette Smoke Odor Trap",
+        content: "If someone smokes indoors, the sticky tar and nicotine are pulled directly into the return air vent of the split unit. The tar coats the cold evaporator coils and acts like glue, trapping even more dust. Because tar is oily, normal condensation will not wash it away. Every time the AC runs, it releases stale smoke odors. The only solution is an aggressive chemical degreasing of the indoor coils."
+      },
+      {
+        type: "paragraph",
+        content: "At [AC Repairing KSA](/ac-repair), we eliminate AC odors at their source. For biological smells, our high-pressure chemical wash sanitizes the drain pan and coils, leaving your air crisp and fresh. For electrical smells, our technicians carry advanced diagnostic tools to trace the short circuit before it causes permanent damage. Don't breathe in mold or melting plastic—book a service call today."
+      },
+      {
+        type: "link-box",
+        content: {
+          text: "Is a bad smell ruining your indoor comfort? Let our experts deep-clean and sanitize your AC unit today.",
+          link: "/ac-cleaning",
+          buttonText: "Book AC Sanitization"
+        }
+      }
+    ]
+  },
+  "split-ac-fan-not-spinning": {
+    slug: "split-ac-fan-not-spinning",
+    title: "Split AC Fan Not Spinning But Compressor Is Running (Diagnostic)",
+    metaDescription: "Is your outdoor AC fan not spinning while the compressor hums? Learn why this causes immediate overheating and how to diagnose dead capacitors and burnt motors.",
+    publishDate: "May 29, 2026",
+    readTime: "12 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-5691657.webp",
+    category: "AC Repair & Troubleshooting",
+    sections: [
+      {
+        type: "paragraph",
+        content: "You walk outside to inspect your split AC condenser unit because the house is getting warm. You can clearly hear the loud, aggressive buzzing of the heavy compressor running, but the large fan blades on top (or front) of the unit are completely still. This is an extremely dangerous state for an air conditioner. The outdoor fan has one critical job: to pull ambient air through the aluminum condenser coils to exhaust the immense heat generated by the compressor. Without the fan spinning, the heat has nowhere to go. Within minutes, the system pressure spikes dramatically, the compressor overheats, and the internal thermal overload switch forcibly shuts the system down to prevent a catastrophic explosion."
+      },
+      {
+        type: "heading",
+        title: "The Rapid Cascade of Failure",
+        content: "If the compressor runs without the fan, the refrigerant inside the closed loop cannot reject its heat. The temperature and pressure of the R410A or R22 gas rise exponentially. While the compressor has a built-in safety switch that trips when it gets too hot, repeatedly allowing the system to do this will eventually fry the compressor windings. A new fan motor is a cheap repair; a new compressor costs nearly as much as a whole new AC."
+      },
+      {
+        type: "alert",
+        content: "🚨 IMMEDIATE ACTION REQUIRED: If you notice the compressor running but the fan is dead, go to your thermostat or breaker immediately and TURN THE AC OFF. Do not let it run in this state for even 5 more minutes."
+      },
+      {
+        type: "heading",
+        title: "The Top 4 Reasons the Outdoor Fan Won't Spin",
+        content: "In Riyadh's climate, outdoor condenser units are subjected to extreme heat, dust, and wind. This environment accelerates specific component failures:"
+      },
+      {
+        type: "list",
+        content: [
+          "**1. The Dual Run Capacitor Has Failed (Most Common):** The capacitor sends electrical jolts to both the compressor and the fan motor. Many capacitors are 'dual' type, meaning one side can fail while the other works. If the fan side of the capacitor blows, the compressor will still start, but the fan will be dead. Look for a swollen or leaking silver cylinder inside the electrical panel.",
+          "**2. The Fan Motor is Burnt Out:** After years of running in 45°C ambient temperatures, the copper windings inside the fan motor can short out. This requires a total motor replacement.",
+          "**3. Seized Motor Bearings:** Desert sand and dust can infiltrate the sealed bearings of the fan motor. Over time, the lubrication dries up, and the metal bearings lock solid. The motor tries to turn but is physically stuck.",
+          "**4. Physical Obstruction:** Sometimes, during high winds, a small branch, thick palm frond, or heavy plastic debris gets blown through the top grate, physically jamming the fan blades."
+        ]
+      },
+      {
+        type: "heading",
+        title: "The 'Stick Test': A Quick Home Diagnostic",
+        content: "You can perform a quick test to determine if the issue is a dead capacitor or a seized motor. Take a long, thin wooden stick (like a broom handle) and, while the AC is turned ON and humming, gently push the fan blades to give them a manual jumpstart."
+      },
+      {
+        type: "table",
+        content: [
+          ["Stick Test Result", "What It Means", "Next Step"],
+          ["Fan starts spinning and keeps running on its own.", "The starting capacitor has failed. The motor is fine but needs the electrical 'kick' to start.", "Turn unit off. Call a tech to replace the capacitor."],
+          ["Fan refuses to spin, feels stiff and heavy.", "The motor bearings are completely seized.", "Turn unit off. Motor replacement required."],
+          ["Fan spins freely but slows down and stops again.", "The motor windings are burnt out or the control board is not sending voltage.", "Turn unit off. Multimeter diagnosis required."]
+        ]
+      },
+      {
+        type: "heading",
+        title: "What About the Indoor Evaporator Fan?",
+        content: "Sometimes, the outdoor unit is fine, but the *indoor* fan (blower wheel) refuses to spin. You will hear the unit turn on, but no air comes out of the vents. This is usually caused by a burnt indoor blower motor, a failed indoor PCB board (control board), or the barrel fan being so heavily caked with dirt that the motor cannot handle the weight. In this scenario, the indoor coils will rapidly freeze into a solid block of ice."
+      },
+      {
+        type: "paragraph",
+        content: "Attempting to replace electrical components like capacitors or motors yourself is highly dangerous due to the risk of 220V electrocution. Our rapid response teams at [AC Repairing KSA](/ac-repair) carry universal fan motors and a wide range of capacitors on their trucks. Whether you live in [Al Munsiyah](/locations/al-munsiyah) or [Hittin](/locations/hittin), we can restore your outdoor fan's functionality on our first visit."
+      },
+      {
+        type: "link-box",
+        content: {
+          text: "Is your outdoor fan dead while the compressor hums? Turn off your AC and book a technician immediately to prevent compressor burnout.",
+          link: "/ac-repair",
+          buttonText: "Schedule Motor Repair"
+        }
+      }
+    ]
+  },
+  "best-ac-temperature-settings-riyadh": {
+    slug: "best-ac-temperature-settings-riyadh",
+    title: "The Best AC Temperature Settings to Save Electricity in Riyadh",
+    metaDescription: "Want to lower your Saudi Electricity Company bill? Learn the scientifically proven best AC temperature settings for Riyadh summers, and the myths about setting it to 18°C.",
+    publishDate: "May 30, 2026",
+    readTime: "13 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-5691629.webp",
+    category: "Energy Efficiency",
+    sections: [
+      {
+        type: "paragraph",
+        content: "During the peak of the Riyadh summer, when daytime temperatures routinely breach 45°C, air conditioning accounts for up to 70% of a household's total electricity consumption. When the Saudi Electricity Company (SEC) bills arrive in July and August, many homeowners are shocked by the high costs. The immediate instinct for many is to grab the AC remote and set the temperature to the lowest possible setting—usually 16°C or 18°C—assuming this will cool the room faster. This is one of the most expensive and misunderstood myths in HVAC thermodynamics. Understanding how your AC thermostat actually works is the key to achieving profound energy savings without sacrificing comfort."
+      },
+      {
+        type: "heading",
+        title: "The 18°C Myth: Why Setting It Lower Doesn't Cool Faster",
+        content: "Air conditioners do not blow colder air based on the thermostat setting. A split AC is a binary system—it is either ON (blowing air at maximum cooling capacity) or OFF (just blowing the fan). If your room is currently 30°C, setting the thermostat to 18°C will not make the air coming out of the vents any colder than if you set it to 23°C. The only difference is that setting it to 18°C forces the compressor to run continuously without stopping, desperately trying to reach an impossibly low temperature that the poor insulation of a typical house will never allow. This results in maximum wear and tear on the compressor and massive electricity bills."
+      },
+      {
+        type: "alert",
+        content: "💡 EFFICIENCY RULE: For every 1°C you raise your thermostat setting, you save approximately 5% to 7% on your cooling costs. A small adjustment makes a massive financial impact."
+      },
+      {
+        type: "heading",
+        title: "The Recommended Temperature Settings for Riyadh",
+        content: "To strike the perfect balance between human thermal comfort and energy efficiency, follow these recommended guidelines based on the time of day:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Time / Situation", "Ideal Thermostat Setting", "Reasoning"],
+          ["Daytime (At Home)", "23°C to 24°C", "Provides excellent comfort. The compressor cycles on and off naturally, saving power."],
+          ["Nighttime (Sleeping)", "25°C to 26°C", "Human body temperatures drop during sleep. You need less cooling. Use the 'Sleep Mode' on the remote."],
+          ["Away from Home (Work)", "27°C or OFF", "Prevents the house from turning into an oven, making it easier to cool down quickly when you return, without wasting power."],
+          ["High Humidity Days", "22°C with Dry Mode", "Lowering the temp slightly helps extract more moisture from the air, which makes it feel cooler."]
+        ]
+      },
+      {
+        type: "heading",
+        title: "Leveraging 'Auto' vs 'Fan' Mode",
+        content: "Many users leave their indoor unit fan speed set to 'High' at all times. While this creates a strong breeze, it is highly inefficient. Instead, set the fan speed to 'Auto'. In Auto mode, the AC will blow hard when the room is hot, and slowly ramp down the fan speed as the room approaches the target temperature. This ensures quiet operation, better humidity control, and lower power consumption."
+      },
+      {
+        type: "heading",
+        title: "The Role of Maintenance in Energy Efficiency",
+        content: "You can set your thermostat perfectly to 24°C, but if your AC is choked with dust or low on refrigerant, it will still consume maximum electricity. A dirty evaporator coil acts as an insulator, preventing the system from absorbing heat. The compressor is forced to run 45 minutes out of every hour instead of a normal 15-minute cycle. Regular [AC Maintenance](/ac-maintenance) and filter washing is mathematically proven to reduce energy consumption by up to 15%."
+      },
+      {
+        type: "paragraph",
+        content: "By understanding your thermostat and maintaining your equipment, you can conquer the Riyadh heat without breaking the bank. If your AC struggles to reach 24°C and runs continuously without stopping, there is a mechanical fault. Let the experts at [AC Repairing KSA](/ac-repair) inspect your refrigerant levels and clean your coils. Start saving on your electricity bills today."
+      },
+      {
+        type: "link-box",
+        content: {
+          text: "Is your AC running non-stop and driving up your power bills? Book an efficiency tune-up and cleaning today.",
+          link: "/ac-cleaning",
+          buttonText: "Book Efficiency Tune-Up"
+        }
+      }
+    ]
   }
 };

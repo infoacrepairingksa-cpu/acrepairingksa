@@ -145,9 +145,6 @@ export default function BlogContent({ post }: { post: BlogPost }) {
             ← Back to Blog Index
           </Link>
           
-          <span className="bg-secondary/10 text-secondary px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-6 inline-block">
-            {post.category}
-          </span>
           
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-black text-primary leading-tight tracking-tight mb-8">
             {post.title}
@@ -338,9 +335,6 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                         <Image src={op.image} alt={op.title} fill className="object-cover" />
                       </div>
                       <div className="flex flex-col gap-1">
-                        <span className="text-[10px] font-black uppercase text-secondary tracking-wider">
-                          {op.category}
-                        </span>
                         <Link 
                           href={`/blog/${op.slug}`}
                           className="text-sm font-bold text-primary group-hover:text-secondary leading-snug line-clamp-2 transition-colors"
