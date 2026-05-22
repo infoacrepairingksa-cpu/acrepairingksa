@@ -1,5 +1,5 @@
 export interface BlogSection {
-  type: 'paragraph' | 'heading' | 'list' | 'table' | 'alert' | 'link-box';
+  type: 'paragraph' | 'heading' | 'list' | 'table' | 'alert' | 'link-box' | 'image';
   title?: string;
   content: string | string[] | any;
 }
@@ -29,7 +29,11 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "When Riyadh temperatures surge past 45°C during the scorching summer, a fully functioning air conditioning system is a necessity, not a luxury. If your split AC unit suddenly starts blowing warm air, it can transform your living space into an oven within minutes. Diagnosing the underlying issue quickly is vital to prevent permanent system burnout, compressor overheating, and massive repair bills. In Saudi Arabia's extreme desert climate, the cooling loop works under maximum head pressure, meaning even minor system faults can lead to a complete loss of cooling capacity."
+        content: "When Riyadh temperatures surge past 45°C during the scorching summer, a fully functioning air conditioning system is a necessity, not a luxury. If your split AC unit suddenly starts blowing warm air, it can transform your living space into an oven within minutes."
+      },
+      {
+        type: "paragraph",
+        content: "Diagnosing the underlying issue quickly is vital to prevent permanent system burnout, compressor overheating, and massive repair bills. In Saudi Arabia's extreme desert climate, the cooling loop works under maximum head pressure, meaning even minor system faults can lead to a complete loss of cooling capacity."
       },
       {
         type: "alert",
@@ -89,7 +93,11 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "Our certified HVAC technicians at [AC Repairing KSA](/ac-repair) have specialized diagnostic gear to handle high-pressure electrical components and refrigerant pressure lines safely. We serve all central Riyadh districts including [Al Olaya](/locations/al-olaya) and northern suburbs like [Al Malqa](/locations/al-malqa). We carry original spare parts in our mobile service vans, allowing us to resolve 95% of warm air issues on our first visit."
+        content: "Our certified HVAC technicians at [AC Repairing KSA](/ac-repair) have specialized diagnostic gear to handle high-pressure electrical components and refrigerant pressure lines safely. We serve all central Riyadh districts including [Al Olaya](/locations/al-olaya) and northern suburbs like [Al Malqa](/locations/al-malqa)."
+      },
+      {
+        type: "paragraph",
+        content: "We carry original spare parts in our mobile service vans, allowing us to resolve 95% of warm air issues on our first visit."
       },
       {
         type: "link-box",
@@ -113,7 +121,11 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "Air conditioners are designed to run with a consistent, rhythmic hum. When you start hearing unusual clicking noises from the outdoor unit, it is a warning sign that something is mechanically or electrically wrong. Ignoring a clicking sound can quickly lead to complete system failure, resulting in an [AC blowing warm air](/blog/fix-split-ac-blowing-warm-air-riyadh). Understanding the source and frequency of the clicking is essential to diagnosing whether you are dealing with a minor fan blockage or a major compressor failure."
+        content: "Air conditioners are designed to run with a consistent, rhythmic hum. When you start hearing unusual clicking noises from the outdoor unit, it is a warning sign that something is mechanically or electrically wrong. Ignoring a clicking sound can quickly lead to complete system failure, resulting in an [AC blowing warm air](/blog/fix-split-ac-blowing-warm-air-riyadh)."
+      },
+      {
+        type: "paragraph",
+        content: "Understanding the source and frequency of the clicking is essential to diagnosing whether you are dealing with a minor fan blockage or a major compressor failure."
       },
       {
         type: "heading",
@@ -161,7 +173,16 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "If you live in northern Riyadh districts like [Al Yasmin](/locations/al-yasmin) or [Hittin](/locations/hittin), our local crews are equipped to replace electrical components, clean condenser coils, and repair clicking compressors on the spot. Contact [AC Repairing KSA](/ac-repair) today. We carry a wide range of capacitors (35uF, 45uF, 50uF, etc.) and heavy-duty contactors on our trucks to resolve your issue in one visit."
+        content: "If you live in northern Riyadh districts like [Al Yasmin](/locations/al-yasmin) or [Hittin](/locations/hittin), our local crews are equipped to replace electrical components, clean condenser coils, and repair clicking compressors on the spot. Contact [AC Repairing KSA](/ac-repair) today."
+      },
+      {
+        type: "paragraph",
+        content: "We carry a wide range of capacitors (35uF, 45uF, 50uF, etc. ) and heavy-duty contactors on our trucks to resolve your issue in one visit."
+      },
+      {
+        type: "image",
+        title: "AC Repair Image",
+        content: "/optimized/pexels-1065084.webp"
       },
       {
         type: "link-box",
@@ -185,7 +206,11 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "It is 2:00 PM on a scorching July afternoon in Riyadh. The outdoor temperature is touching 47°C. Suddenly, your split air conditioner turns off, and warm air begins to leak into the room. A mid-day AC breakdown in Saudi Arabia is more than just inconvenient; it can quickly become a safety hazard, especially for families with elderly relatives or children. Indoor temperatures can rise to dangerous levels in less than an hour in concrete-and-brick villas."
+        content: "It is 2:00 PM on a scorching July afternoon in Riyadh. The outdoor temperature is touching 47°C. Suddenly, your split air conditioner turns off, and warm air begins to leak into the room. A mid-day AC breakdown in Saudi Arabia is more than just inconvenient; it can quickly become a safety hazard, especially for families with elderly relatives or children."
+      },
+      {
+        type: "paragraph",
+        content: "Indoor temperatures can rise to dangerous levels in less than an hour in concrete-and-brick villas."
       },
       {
         type: "heading",
@@ -196,6 +221,11 @@ export const blogPosts: Record<string, BlogPost> = {
         type: "heading",
         title: "Immediate Action Steps: The Emergency AC Protocol",
         content: "If your AC breaks down during peak hours, remain calm and follow this step-by-step checklist to protect your home and HVAC equipment:"
+      },
+      {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-1222271.webp"
       },
       {
         type: "list",
@@ -257,12 +287,21 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "Water dripping down your walls from your indoor split AC unit can damage paint, wallpapers, drywall, and nearby electrical outlets. While air conditioners naturally produce water through dehumidification, this water is supposed to drain safely outside. A leak indoors means the drainage path is blocked or compromised. Understanding why this happens and how to diagnose it will save you from costly home repairs."
+        content: "Water dripping down your walls from your indoor split AC unit can damage paint, wallpapers, drywall, and nearby electrical outlets. While air conditioners naturally produce water through dehumidification, this water is supposed to drain safely outside."
+      },
+      {
+        type: "paragraph",
+        content: "A leak indoors means the drainage path is blocked or compromised. Understanding why this happens and how to diagnose it will save you from costly home repairs."
       },
       {
         type: "heading",
         title: "The Chemistry of AC Condensate and Dust Mud",
         content: "When warm, humid air passes over the cold evaporator coils of your split AC, moisture in the air condenses on the cold metal surface, just like water droplets forming on a cold soda can. This water drips into a plastic drain pan beneath the coils and flows out through a PVC pipe. However, in Riyadh's dusty air, the fine sand particles pulled into the system mix with this water to form a thick mud. Over months, this mud, combined with algae and mold that thrive in the dark, damp drain pan, creates a thick gel that blocks the drainage pipe."
+      },
+      {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-2219024.webp"
       },
       {
         type: "heading",
@@ -305,8 +344,17 @@ export const blogPosts: Record<string, BlogPost> = {
         content: "To avoid sudden water leaks, schedule a comprehensive [AC Coil Cleaning](/ac-coil-cleaning) and drain flush once a year. Keeping the drainage pipes clear of sand ensures that condensation flows away smoothly. Using antimicrobial tablets in the drain pan can also help prevent algae growth."
       },
       {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-4421110.webp"
+      },
+      {
         type: "paragraph",
-        content: "If you have a water leak that is causing damage, our plumbing and HVAC teams are ready to help. We provide diagnostic services in [Al Munsiyah](/locations/al-munsiyah), [Al Qadisiyah](/locations/al-qadisiyah), and all surrounding suburbs. Contact [AC Repairing KSA](/ac-repair) to resolve your leak today. We use high-pressure water jets to completely clear your drain lines."
+        content: "If you have a water leak that is causing damage, our plumbing and HVAC teams are ready to help. We provide diagnostic services in [Al Munsiyah](/locations/al-munsiyah), [Al Qadisiyah](/locations/al-qadisiyah), and all surrounding suburbs. Contact [AC Repairing KSA](/ac-repair) to resolve your leak today."
+      },
+      {
+        type: "paragraph",
+        content: "We use high-pressure water jets to completely clear your drain lines."
       },
       {
         type: "link-box",
@@ -330,12 +378,21 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "Refrigerant (often called Freon) is the lifeblood of your air conditioner. It circulates between the indoor and outdoor units, absorbing heat from your home and releasing it outside. Unlike fuel or oil, an air conditioning system does not 'consume' refrigerant. It runs in a sealed closed loop. If your gas is low, it means there is a physical leak in the copper lines, flare joints, or evaporator coils. Simply topping up the gas without fixing the leak will not solve the problem."
+        content: "Refrigerant (often called Freon) is the lifeblood of your air conditioner. It circulates between the indoor and outdoor units, absorbing heat from your home and releasing it outside. Unlike fuel or oil, an air conditioning system does not 'consume' refrigerant."
+      },
+      {
+        type: "paragraph",
+        content: "It runs in a sealed closed loop. If your gas is low, it means there is a physical leak in the copper lines, flare joints, or evaporator coils. Simply topping up the gas without fixing the leak will not solve the problem."
       },
       {
         type: "heading",
         title: "The Thermodynamic Behavior of Low Refrigerant Charge",
         content: "When a system loses refrigerant, the pressure inside the evaporator coils drops. According to gas laws, a drop in pressure results in a drop in temperature. When the pressure falls below the system's design specs, the temperature of the coils drops below freezing (0°C). Any humidity in the air that condenses on the coils freezes instantly, forming a layer of ice. This ice acts as an insulator, blocking heat transfer and causing the compressor to draw more current, leading to high energy bills and potential compressor failure."
+      },
+      {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-4421160.webp"
       },
       {
         type: "heading",
@@ -358,6 +415,11 @@ export const blogPosts: Record<string, BlogPost> = {
         content: "Modern systems use R410A, which is environmentally friendly and highly efficient. Older systems run on R22, which is being phased out globally. Knowing your system's refrigerant type is essential before booking service:"
       },
       {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-443383.webp"
+      },
+      {
         type: "table",
         content: [
           ["Refrigerant Type", "Common in System Age", "Availability in KSA", "Environmental Impact", "Operating Pressure"],
@@ -369,6 +431,11 @@ export const blogPosts: Record<string, BlogPost> = {
         type: "heading",
         title: "The Professional Leak Repair Process",
         content: "Fixing a refrigerant leak is a multi-step process that must be carried out by a certified technician:"
+      },
+      {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-5445424.webp"
       },
       {
         type: "list",
@@ -386,7 +453,11 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "If you are located in northern Riyadh districts like [Al Sahafa](/locations/al-sahafa) or [Al Malqa](/locations/al-malqa), our certified technicians can repair your leak and recharge your refrigerant to restore complete cooling. Contact [AC Repairing KSA](/ac-repair) today. We use high-grade copper pipes and original fittings to ensure your repairs last."
+        content: "If you are located in northern Riyadh districts like [Al Sahafa](/locations/al-sahafa) or [Al Malqa](/locations/al-malqa), our certified technicians can repair your leak and recharge your refrigerant to restore complete cooling. Contact [AC Repairing KSA](/ac-repair) today."
+      },
+      {
+        type: "paragraph",
+        content: "We use high-grade copper pipes and original fittings to ensure your repairs last."
       },
       {
         type: "link-box",
@@ -410,7 +481,15 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "One of the most frustrating and potentially dangerous issues an air conditioner can experience is repeatedly tripping the circuit breaker. You turn on the AC remote, hear a momentary hum, and then total darkness as the main breaker in your distribution panel shuts down. This is not just a nuisance; it is a critical safety mechanism doing its job. A tripped breaker means the AC unit is pulling significantly more electrical current (amperage) than the circuit is designed to handle, which could easily lead to an electrical fire if ignored. In Riyadh's blistering summer heat, an AC system works under maximum load, making these electrical faults surprisingly common."
+        content: "One of the most frustrating and potentially dangerous issues an air conditioner can experience is repeatedly tripping the circuit breaker. You turn on the AC remote, hear a momentary hum, and then total darkness as the main breaker in your distribution panel shuts down."
+      },
+      {
+        type: "paragraph",
+        content: "This is not just a nuisance; it is a critical safety mechanism doing its job. A tripped breaker means the AC unit is pulling significantly more electrical current (amperage) than the circuit is designed to handle, which could easily lead to an electrical fire if ignored."
+      },
+      {
+        type: "paragraph",
+        content: "In Riyadh's blistering summer heat, an AC system works under maximum load, making these electrical faults surprisingly common."
       },
       {
         type: "alert",
@@ -461,8 +540,17 @@ export const blogPosts: Record<string, BlogPost> = {
         content: "Determining whether the fault lies with the house wiring or the AC unit is crucial. An HVAC technician is equipped to handle everything from the AC isolator switch directly to the indoor and outdoor units. If the wiring inside the wall leading back to the main panel is melted, or if the main distribution board is faulty, a licensed electrician is required. However, 90% of tripping issues originate at the outdoor compressor unit."
       },
       {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-5445425.webp"
+      },
+      {
         type: "paragraph",
-        content: "If your AC keeps tripping the power, do not put your family at risk. Our diagnostic technicians at [AC Repairing KSA](/ac-repair) use advanced Fluke multimeters to test the exact amp draw and megohm resistance of your compressor. We serve all central and northern Riyadh areas, including [Al Olaya](/locations/al-olaya) and [Al Yasmin](/locations/al-yasmin). Let us diagnose the issue safely and restore your cooling."
+        content: "If your AC keeps tripping the power, do not put your family at risk. Our diagnostic technicians at [AC Repairing KSA](/ac-repair) use advanced Fluke multimeters to test the exact amp draw and megohm resistance of your compressor. We serve all central and northern Riyadh areas, including [Al Olaya](/locations/al-olaya) and [Al Yasmin](/locations/al-yasmin)."
+      },
+      {
+        type: "paragraph",
+        content: "Let us diagnose the issue safely and restore your cooling."
       },
       {
         type: "link-box",
@@ -486,12 +574,26 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "In many parts of the world, cleaning an air conditioner filter is a task that can be relegated to a bi-annual spring cleaning checklist. However, in Riyadh, Saudi Arabia, the rules are drastically different. Situated in a desert environment prone to frequent sandstorms, high winds, and fine particulate matter (PM2.5), the air quality presents an extreme challenge for HVAC systems. The air filter in your indoor split unit is the first line of defense, trapping dust before it reaches the delicate cold evaporator coils. When these filters clog—and they will clog quickly—the entire thermodynamic cycle of your AC begins to collapse."
+        content: "In many parts of the world, cleaning an air conditioner filter is a task that can be relegated to a bi-annual spring cleaning checklist. However, in Riyadh, Saudi Arabia, the rules are drastically different. Situated in a desert environment prone to frequent sandstorms, high winds, and fine particulate matter (PM2."
+      },
+      {
+        type: "paragraph",
+        content: "5), the air quality presents an extreme challenge for HVAC systems. The air filter in your indoor split unit is the first line of defense, trapping dust before it reaches the delicate cold evaporator coils. When these filters clog—and they will clog quickly—the entire thermodynamic cycle of your AC begins to collapse."
+      },
+      {
+        type: "image",
+        title: "AC Repair Image",
+        content: "/optimized/pexels-545012.webp"
       },
       {
         type: "heading",
         title: "The 'Riyadh Rule' for AC Filter Cleaning Frequency",
         content: "Because of the high concentration of airborne sand and dust in the central region of the Kingdom, standard manufacturer recommendations do not apply here. Following a strict cleaning schedule is the most effective way to ensure optimal cooling and low electricity bills."
+      },
+      {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-5691624.webp"
       },
       {
         type: "table",
@@ -524,6 +626,11 @@ export const blogPosts: Record<string, BlogPost> = {
         content: "Cleaning the primary nylon mesh filters is incredibly easy and requires no tools. It should take less than 10 minutes per unit:"
       },
       {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-5691629.webp"
+      },
+      {
         type: "list",
         content: [
           "**1. Turn off the power:** Ensure the AC is off via the remote.",
@@ -545,7 +652,11 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "When the internal coils and the blower wheel (the barrel fan deep inside the unit) become caked with dust, you need a professional hydro-cleaning. At [AC Repairing KSA](/ac-cleaning), we use specialized plastic catchment bags and high-pressure water jets to blast away years of embedded dirt from the coils and blower fan without making a mess in your living room. A professional deep clean once a year is the secret to extending the lifespan of your AC by a decade."
+        content: "When the internal coils and the blower wheel (the barrel fan deep inside the unit) become caked with dust, you need a professional hydro-cleaning. At [AC Repairing KSA](/ac-cleaning), we use specialized plastic catchment bags and high-pressure water jets to blast away years of embedded dirt from the coils and blower fan without making a mess in your living room."
+      },
+      {
+        type: "paragraph",
+        content: "A professional deep clean once a year is the secret to extending the lifespan of your AC by a decade."
       },
       {
         type: "link-box",
@@ -569,7 +680,11 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "Your home should be an oasis from the harsh Riyadh environment. However, when you turn on your split air conditioner and are immediately hit with a foul odor, that comfort vanishes instantly. Air conditioners circulate the exact same air within a room repeatedly. If there is a contaminant, mold colony, or electrical issue inside the unit, the blower fan will distribute that smell across the entire space in seconds. Depending on whether the smell is biological (like mildew) or mechanical (like burning rubber), the necessary solution ranges from a simple cleaning to an emergency electrical repair."
+        content: "Your home should be an oasis from the harsh Riyadh environment. However, when you turn on your split air conditioner and are immediately hit with a foul odor, that comfort vanishes instantly. Air conditioners circulate the exact same air within a room repeatedly."
+      },
+      {
+        type: "paragraph",
+        content: "If there is a contaminant, mold colony, or electrical issue inside the unit, the blower fan will distribute that smell across the entire space in seconds. Depending on whether the smell is biological (like mildew) or mechanical (like burning rubber), the necessary solution ranges from a simple cleaning to an emergency electrical repair."
       },
       {
         type: "heading",
@@ -578,7 +693,11 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "This smell is exclusively biological. It is caused by a thriving colony of mold, mildew, and bacteria growing on the indoor evaporator coils and inside the condensate drain pan. When the AC runs, condensation forms on the coils. When the unit turns off, the dark, damp, and warm interior becomes a perfect incubator for microbes. Over months, these bacteria feed on the microscopic dust that bypasses the air filters. When you turn the AC on, the air blows right through this microbial slime, filling your room with the odor."
+        content: "This smell is exclusively biological. It is caused by a thriving colony of mold, mildew, and bacteria growing on the indoor evaporator coils and inside the condensate drain pan. When the AC runs, condensation forms on the coils. When the unit turns off, the dark, damp, and warm interior becomes a perfect incubator for microbes."
+      },
+      {
+        type: "paragraph",
+        content: "Over months, these bacteria feed on the microscopic dust that bypasses the air filters. When you turn the AC on, the air blows right through this microbial slime, filling your room with the odor."
       },
       {
         type: "list",
@@ -590,6 +709,11 @@ export const blogPosts: Record<string, BlogPost> = {
         type: "heading",
         title: "Vinegar or Sweet Chemical Smells (Refrigerant Leaks)",
         content: "If your AC emits a distinct smell that resembles sweet chemicals, chloroform, or strong vinegar, you likely have a refrigerant leak. While Freon (R22) and Puron (R410A) are technically odorless gases, the heavy synthetic compressor oils that circulate with the gas have a distinct chemical odor. If a copper pipe cracks or a flare joint loosens, this oil leaks out along with the gas and gets blown into the room."
+      },
+      {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-5691630.webp"
       },
       {
         type: "list",
@@ -622,7 +746,16 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "At [AC Repairing KSA](/ac-repair), we eliminate AC odors at their source. For biological smells, our high-pressure chemical wash sanitizes the drain pan and coils, leaving your air crisp and fresh. For electrical smells, our technicians carry advanced diagnostic tools to trace the short circuit before it causes permanent damage. Don't breathe in mold or melting plastic—book a service call today."
+        content: "At [AC Repairing KSA](/ac-repair), we eliminate AC odors at their source. For biological smells, our high-pressure chemical wash sanitizes the drain pan and coils, leaving your air crisp and fresh. For electrical smells, our technicians carry advanced diagnostic tools to trace the short circuit before it causes permanent damage."
+      },
+      {
+        type: "paragraph",
+        content: "Don't breathe in mold or melting plastic—book a service call today."
+      },
+      {
+        type: "image",
+        title: "AC Repair Image",
+        content: "/optimized/pexels-5691631.webp"
       },
       {
         type: "link-box",
@@ -646,7 +779,20 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "You walk outside to inspect your split AC condenser unit because the house is getting warm. You can clearly hear the loud, aggressive buzzing of the heavy compressor running, but the large fan blades on top (or front) of the unit are completely still. This is an extremely dangerous state for an air conditioner. The outdoor fan has one critical job: to pull ambient air through the aluminum condenser coils to exhaust the immense heat generated by the compressor. Without the fan spinning, the heat has nowhere to go. Within minutes, the system pressure spikes dramatically, the compressor overheats, and the internal thermal overload switch forcibly shuts the system down to prevent a catastrophic explosion."
+        content: "You walk outside to inspect your split AC condenser unit because the house is getting warm. You can clearly hear the loud, aggressive buzzing of the heavy compressor running, but the large fan blades on top (or front) of the unit are completely still."
+      },
+      {
+        type: "paragraph",
+        content: "This is an extremely dangerous state for an air conditioner. The outdoor fan has one critical job: to pull ambient air through the aluminum condenser coils to exhaust the immense heat generated by the compressor. Without the fan spinning, the heat has nowhere to go."
+      },
+      {
+        type: "paragraph",
+        content: "Within minutes, the system pressure spikes dramatically, the compressor overheats, and the internal thermal overload switch forcibly shuts the system down to prevent a catastrophic explosion."
+      },
+      {
+        type: "image",
+        title: "AC Repair Image",
+        content: "/optimized/pexels-5691632.webp"
       },
       {
         type: "heading",
@@ -677,6 +823,11 @@ export const blogPosts: Record<string, BlogPost> = {
         content: "You can perform a quick test to determine if the issue is a dead capacitor or a seized motor. Take a long, thin wooden stick (like a broom handle) and, while the AC is turned ON and humming, gently push the fan blades to give them a manual jumpstart."
       },
       {
+        type: "image",
+        title: "Service Overview",
+        content: "/optimized/pexels-5691638.webp"
+      },
+      {
         type: "table",
         content: [
           ["Stick Test Result", "What It Means", "Next Step"],
@@ -692,7 +843,11 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "Attempting to replace electrical components like capacitors or motors yourself is highly dangerous due to the risk of 220V electrocution. Our rapid response teams at [AC Repairing KSA](/ac-repair) carry universal fan motors and a wide range of capacitors on their trucks. Whether you live in [Al Munsiyah](/locations/al-munsiyah) or [Hittin](/locations/hittin), we can restore your outdoor fan's functionality on our first visit."
+        content: "Attempting to replace electrical components like capacitors or motors yourself is highly dangerous due to the risk of 220V electrocution. Our rapid response teams at [AC Repairing KSA](/ac-repair) carry universal fan motors and a wide range of capacitors on their trucks."
+      },
+      {
+        type: "paragraph",
+        content: "Whether you live in [Al Munsiyah](/locations/al-munsiyah) or [Hittin](/locations/hittin), we can restore your outdoor fan's functionality on our first visit."
       },
       {
         type: "link-box",
@@ -716,7 +871,15 @@ export const blogPosts: Record<string, BlogPost> = {
     sections: [
       {
         type: "paragraph",
-        content: "During the peak of the Riyadh summer, when daytime temperatures routinely breach 45°C, air conditioning accounts for up to 70% of a household's total electricity consumption. When the Saudi Electricity Company (SEC) bills arrive in July and August, many homeowners are shocked by the high costs. The immediate instinct for many is to grab the AC remote and set the temperature to the lowest possible setting—usually 16°C or 18°C—assuming this will cool the room faster. This is one of the most expensive and misunderstood myths in HVAC thermodynamics. Understanding how your AC thermostat actually works is the key to achieving profound energy savings without sacrificing comfort."
+        content: "During the peak of the Riyadh summer, when daytime temperatures routinely breach 45°C, air conditioning accounts for up to 70% of a household's total electricity consumption. When the Saudi Electricity Company (SEC) bills arrive in July and August, many homeowners are shocked by the high costs."
+      },
+      {
+        type: "paragraph",
+        content: "The immediate instinct for many is to grab the AC remote and set the temperature to the lowest possible setting—usually 16°C or 18°C—assuming this will cool the room faster. This is one of the most expensive and misunderstood myths in HVAC thermodynamics."
+      },
+      {
+        type: "paragraph",
+        content: "Understanding how your AC thermostat actually works is the key to achieving profound energy savings without sacrificing comfort."
       },
       {
         type: "heading",
@@ -754,7 +917,11 @@ export const blogPosts: Record<string, BlogPost> = {
       },
       {
         type: "paragraph",
-        content: "By understanding your thermostat and maintaining your equipment, you can conquer the Riyadh heat without breaking the bank. If your AC struggles to reach 24°C and runs continuously without stopping, there is a mechanical fault. Let the experts at [AC Repairing KSA](/ac-repair) inspect your refrigerant levels and clean your coils. Start saving on your electricity bills today."
+        content: "By understanding your thermostat and maintaining your equipment, you can conquer the Riyadh heat without breaking the bank. If your AC struggles to reach 24°C and runs continuously without stopping, there is a mechanical fault. Let the experts at [AC Repairing KSA](/ac-repair) inspect your refrigerant levels and clean your coils."
+      },
+      {
+        type: "paragraph",
+        content: "Start saving on your electricity bills today."
       },
       {
         type: "link-box",

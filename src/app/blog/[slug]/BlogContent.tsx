@@ -272,6 +272,17 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                           </Link>
                         </div>
                       );
+                    case 'image':
+                      return (
+                        <div key={idx} className="relative w-full h-[250px] md:h-[400px] rounded-3xl overflow-hidden my-8 shadow-lg">
+                          <Image 
+                            src={section.content as string} 
+                            alt={section.title || "Blog Image"} 
+                            fill 
+                            className="object-cover hover:scale-105 transition-transform duration-700" 
+                          />
+                        </div>
+                      );
                     default:
                       return null;
                   }
