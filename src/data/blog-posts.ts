@@ -1,5 +1,5 @@
 export interface BlogSection {
-  type: 'paragraph' | 'heading' | 'list' | 'table' | 'alert' | 'link-box' | 'image';
+  type: 'paragraph' | 'heading' | 'list' | 'table' | 'alert' | 'link-box' | 'image' | 'faq' | 'comparison';
   title?: string;
   content: string | string[] | any;
 }

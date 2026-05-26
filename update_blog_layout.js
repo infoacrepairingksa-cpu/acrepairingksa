@@ -1,4 +1,9 @@
-"use client";
+const fs = require('fs');
+const path = require('path');
+
+const filePath = path.join(__dirname, 'src', 'app', 'blog', '[slug]', 'BlogContent.tsx');
+
+const content = `"use client";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -11,7 +16,7 @@ import { BlogPost, blogPosts } from "@/data/blog-posts";
 import { locations } from "@/data/locations";
 import { 
   Calendar, Clock, User, Phone, MessageSquare, ArrowRight, ShieldCheck, 
-  Star, Sparkles, MapPin, CheckCircle2, AlertTriangle, ThermometerSun, Zap, Wrench
+  Star, Sparkles, MapPin, CheckCircle2, AlertTriangle, ThermometerSun 
 } from "lucide-react";
 import Schema, { generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
@@ -20,14 +25,14 @@ import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 const FormattedText = ({ text }: { text: string }) => {
   if (!text) return null;
 
-  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
-  const boldRegex = /\*\*([^*]+)\*\*/g;
+  const linkRegex = /\\[([^\\]]+)\\]\\(([^)]+)\\)/g;
+  const boldRegex = /\\*\\*([^*]+)\\*\\*/g;
 
-  let parts: React.ReactNode[] = [];
+  let parts = [];
   let currentIndex = 0;
-  const tokens: { start: number; end: number; type: 'link' | 'bold'; text: string; data: string }[] = [];
+  const tokens = [];
   
-  let match: RegExpExecArray | null;
+  let match;
   while ((match = linkRegex.exec(text)) !== null) {
     tokens.push({ start: match.index, end: linkRegex.lastIndex, type: 'link', text: match[1], data: match[2] });
   }
@@ -35,7 +40,7 @@ const FormattedText = ({ text }: { text: string }) => {
   linkRegex.lastIndex = 0;
 
   while ((match = boldRegex.exec(text)) !== null) {
-    const isOverlapping = tokens.some(t => (match!.index >= t.start && match!.index < t.end));
+    const isOverlapping = tokens.some(t => (match.index >= t.start && match.index < t.end));
     if (!isOverlapping) {
       tokens.push({ start: match.index, end: boldRegex.lastIndex, type: 'bold', text: match[1], data: '' });
     }
@@ -80,7 +85,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
   const generateArticleSchema = () => {
     return {
       "@type": "BlogPosting",
-      "@id": `https://acrepairingksa.com/blog/${post.slug}#article`,
+      "@id": \`https://acrepairingksa.com/blog/\${post.slug}#article\`,
       "isPartOf": {
         "@id": "https://acrepairingksa.com/#website"
       },
@@ -91,8 +96,8 @@ export default function BlogContent({ post }: { post: BlogPost }) {
       "description": post.metaDescription,
       "datePublished": new Date(post.publishDate).toISOString().split('T')[0],
       "dateModified": new Date().toISOString().split('T')[0],
-      "mainEntityOfPage": `https://acrepairingksa.com/blog/${post.slug}`,
-      "image": `https://acrepairingksa.com${post.image}`,
+      "mainEntityOfPage": \`https://acrepairingksa.com/blog/\${post.slug}\`,
+      "image": \`https://acrepairingksa.com\${post.image}\`,
       "author": {
         "@type": "Organization",
         "name": "AC Repairing KSA",
@@ -114,7 +119,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
         data={generateBreadcrumbSchema([
           { name: "Home", item: "/" },
           { name: "Blog", item: "/blog" },
-          { name: post.title, item: `/blog/${post.slug}` }
+          { name: post.title, item: \`/blog/\${post.slug}\` }
         ])} 
       />
       
@@ -188,7 +193,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                   <ul className="flex flex-col gap-3">
                     {headings.map((h, i) => (
                       <li key={i}>
-                        <a href={`#section-${i}`} className="text-primary/70 hover:text-secondary font-medium flex items-center gap-2">
+                        <a href={\`#section-\${i}\`} className="text-primary/70 hover:text-secondary font-medium flex items-center gap-2">
                           <span className="w-1.5 h-1.5 bg-secondary rounded-full" /> {h}
                         </a>
                       </li>
@@ -246,7 +251,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
 
                       {/* Regular Content Rendering */}
                       {section.type === 'heading' && (
-                        <h2 id={`section-${headings.indexOf(section.title)}`} className="text-3xl md:text-4xl mt-12 mb-6 scroll-mt-32">
+                        <h2 id={\`section-\${headings.indexOf(section.title)}\`} className="text-3xl md:text-4xl mt-12 mb-6 scroll-mt-32">
                           <FormattedText text={section.title || ''} />
                         </h2>
                       )}
@@ -364,7 +369,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                  <h4 className="font-heading font-black text-xl text-primary mb-4 flex items-center justify-center gap-2"><MapPin className="text-secondary" /> Expert AC Service Across Riyadh</h4>
                  <div className="flex flex-wrap justify-center gap-2">
                    {Object.values(locations).slice(0, 15).map(loc => (
-                     <Link key={loc.slug} href={`/locations/${loc.slug}`} className="bg-white px-4 py-2 rounded-full border border-gray-200 text-xs font-bold text-primary hover:border-secondary hover:text-secondary transition-all shadow-sm">
+                     <Link key={loc.slug} href={\`/locations/\${loc.slug}\`} className="bg-white px-4 py-2 rounded-full border border-gray-200 text-xs font-bold text-primary hover:border-secondary hover:text-secondary transition-all shadow-sm">
                         {loc.name}
                      </Link>
                    ))}
@@ -429,7 +434,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                   {otherPosts.map((otherPost) => (
                     <Link 
                       key={otherPost.slug} 
-                      href={`/blog/${otherPost.slug}`}
+                      href={\`/blog/\${otherPost.slug}\`}
                       className="group flex flex-col gap-3"
                     >
                       <div className="relative w-full h-32 rounded-2xl overflow-hidden">
@@ -460,3 +465,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
     </main>
   );
 }
+`;
+
+fs.writeFileSync(filePath, content, 'utf8');
+console.log("Updated BlogContent.tsx with supercharged SEO features.");
