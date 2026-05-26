@@ -272,7 +272,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
 
               <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
                 <a 
-                  href="tel:+966501234567" 
+                  href="tel:+966590132864" 
                   className="w-full sm:w-auto bg-secondary text-white px-12 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary/90 transition-all shadow-xl shadow-secondary/20 flex items-center justify-center gap-4 group"
                 >
                   <Phone size={20} fill="currentColor" className="group-hover:rotate-12 transition-transform" /> 
@@ -399,7 +399,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               <span className="text-2xl font-bold text-primary tracking-tight leading-none">Need an emergency fix today?</span>
             </div>
           </div>
-          <a href="https://wa.me/966501234567" className="w-full md:w-auto px-12 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl shadow-[#25D366]/20 flex items-center justify-center gap-4">
+          <a href="https://wa.me/966590132864" className="w-full md:w-auto px-12 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl shadow-[#25D366]/20 flex items-center justify-center gap-4">
              <WhatsAppIcon size={18} className="text-white" /> Chat on WhatsApp
           </a>
         </div>

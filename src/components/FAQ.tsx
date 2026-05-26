@@ -117,7 +117,7 @@ const FAQ = () => {
             </div>
             
             <a
-              href="https://wa.me/966501234567"
+              href="https://wa.me/966590132864"
               className="relative z-10 w-full md:w-auto inline-flex items-center justify-center gap-4 bg-secondary hover:bg-white hover:text-primary text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] transition-all hover:shadow-xl hover:-translate-y-1 group"
             >
               WhatsApp Support <MessageSquare size={18} fill="currentColor" />

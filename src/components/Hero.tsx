@@ -50,12 +50,12 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 mt-4"
             >
               <a 
-                href="https://wa.me/966501234567"
+                href="https://wa.me/966590132864"
                 className="w-full sm:w-auto px-8 md:px-10 py-5 md:py-6 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-[0_20px_40px_-10px_rgba(37,211,102,0.4)] flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-[#128C7E]"
               >
                 <MessageSquare size={20} fill="currentColor" /> Get Technician in 60 Minutes
               </a>
-              <a href="tel:+966501234567" className="w-full sm:w-auto flex items-center justify-center gap-4 px-8 py-5 rounded-[20px] bg-white border-2 border-gray-100 hover:border-secondary hover:shadow-xl transition-all group">
+              <a href="tel:+966590132864" className="w-full sm:w-auto flex items-center justify-center gap-4 px-8 py-5 rounded-[20px] bg-white border-2 border-gray-100 hover:border-secondary hover:shadow-xl transition-all group">
                 <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary group-hover:bg-secondary group-hover:text-white transition-all">
                   <Phone size={20} fill="currentColor" />
                 </div>

@@ -48,7 +48,7 @@ export const generateOrganizationSchema = () => ({
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+966501234568",
+    "telephone": "+966590132864",
     "contactType": "customer service",
     "areaServed": "SA",
     "availableLanguage": ["Arabic", "English"]
@@ -61,7 +61,7 @@ export const generateLocalBusinessSchema = () => ({
   "name": "AC Repairing KSA",
   "image": "https://acrepairingksa.com/icon.png",
   "url": "https://acrepairingksa.com",
-  "telephone": "+966501234568",
+  "telephone": "+966590132864",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",

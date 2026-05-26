@@ -74,7 +74,7 @@ export default function ACCleaningPage() {
                 <button onClick={handleBookNow} className="w-full sm:w-auto px-12 py-6 bg-secondary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-2xl hover:-translate-y-2 border-b-4 border-blue-700 active:scale-95 flex items-center justify-center gap-4">
                   <Zap size={20} /> Book Cleaning
                 </button>
-                <a href="tel:+966501234567" className="w-full sm:w-auto px-12 py-6 bg-primary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-xl hover:-translate-y-2 border-b-4 border-slate-800 active:scale-95 flex items-center justify-center gap-4">
+                <a href="tel:+966590132864" className="w-full sm:w-auto px-12 py-6 bg-primary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-xl hover:-translate-y-2 border-b-4 border-slate-800 active:scale-95 flex items-center justify-center gap-4">
                   <Phone size={20} /> Call Expert
                 </a>
               </div>
@@ -330,7 +330,7 @@ export default function ACCleaningPage() {
                  <button onClick={handleBookNow} className="flex-1 px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all">
                     <Zap size={24} /> Book Now
                  </button>
-                 <a href="tel:+966501234567" className="flex-1 px-12 py-7 bg-white text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all">
+                 <a href="tel:+966590132864" className="flex-1 px-12 py-7 bg-white text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all">
                     <Phone size={24} fill="currentColor" /> Call Expert
                  </a>
               </div>

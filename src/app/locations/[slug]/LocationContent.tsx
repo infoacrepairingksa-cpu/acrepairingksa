@@ -92,7 +92,7 @@ export default function LocationContent({ data }: { data: LocationData }) {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 w-full sm:w-auto">
-              <a href="tel:+966501234567" className="w-full sm:w-auto bg-primary text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary transition-all shadow-xl shadow-primary/10 flex items-center justify-center gap-3">
+              <a href="tel:+966590132864" className="w-full sm:w-auto bg-primary text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary transition-all shadow-xl shadow-primary/10 flex items-center justify-center gap-3">
                 <Phone size={20} fill="currentColor" /> Call Specialist
               </a>
               <button 
@@ -280,10 +280,10 @@ export default function LocationContent({ data }: { data: LocationData }) {
                 Join 1,000+ satisfied residents in {data.name}. We are online 24/7 for all your maintenance needs.
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-6 w-full max-w-xl">
-                <a href="tel:+966501234567" className="w-full sm:flex-1 bg-white text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
+                <a href="tel:+966590132864" className="w-full sm:flex-1 bg-white text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
                   <Phone size={20} fill="currentColor" /> Call Now
                 </a>
-                <a href="https://wa.me/966501234567" className="w-full sm:flex-1 bg-[#25D366] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
+                <a href="https://wa.me/966590132864" className="w-full sm:flex-1 bg-[#25D366] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
                   <WhatsAppIcon size={20} /> WhatsApp
                 </a>
               </div>

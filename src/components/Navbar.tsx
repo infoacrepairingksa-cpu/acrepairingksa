@@ -135,7 +135,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
           <div className="hidden md:flex items-center gap-5">
 
               <button
-                onClick={() => onBookNow ? onBookNow() : window.open('https://wa.me/966501234567', '_blank')}
+                onClick={() => onBookNow ? onBookNow() : window.open('https://wa.me/966590132864', '_blank')}
                 className="bg-[#25D366] hover:bg-[#1DA851] text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition-all duration-300 shadow-xl shadow-[#25D366]/20 hover:-translate-y-1 active:scale-95 flex items-center gap-3"
               >
               <WhatsAppIcon size={18} className="text-white" />
@@ -222,7 +222,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
 
             <div className="flex flex-col gap-4 mt-6">
               <a
-                href="tel:+966501234567"
+                href="tel:+966590132864"
                 className="flex items-center justify-center gap-4 bg-primary text-white py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-lg shadow-primary/20"
               >
                 <Phone size={18} fill="currentColor" /> Call +966 50 123 4567
@@ -230,7 +230,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               <button
                 onClick={() => {
                   if (onBookNow) onBookNow();
-                  else window.open('https://wa.me/966501234567', '_blank');
+                  else window.open('https://wa.me/966590132864', '_blank');
                   setMobileMenuOpen(false);
                 }}
                 className="flex items-center justify-center gap-4 bg-[#25D366] text-white py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-lg shadow-[#25D366]/20"

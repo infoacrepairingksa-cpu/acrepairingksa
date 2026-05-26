@@ -31,7 +31,7 @@ export default function ACMaintenancePage() {
 
   const ButtonGroup = ({ className, customZapText = "Book Maintenance" }: any) => (
     <div className={cn("flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full sm:w-auto", className)}>
-      <a href="tel:+966501234567" className="w-full sm:flex-1 px-8 md:px-10 py-5 md:py-6 bg-secondary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-xl flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-blue-700">
+      <a href="tel:+966590132864" className="w-full sm:flex-1 px-8 md:px-10 py-5 md:py-6 bg-secondary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-xl flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-blue-700">
         <Phone size={20} fill="currentColor" /> Call Now
       </a>
       <button onClick={handleBookNow} className="w-full sm:flex-1 px-8 md:px-10 py-5 md:py-6 bg-primary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-xl flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-slate-800">
@@ -398,7 +398,7 @@ export default function ACMaintenancePage() {
           <p className="text-xl md:text-2xl font-medium text-white/70 max-w-3xl leading-relaxed relative z-10">Book professional AC maintenance services today to improve cooling performance, reduce breakdowns & extend AC lifespan.</p>
           <div className="flex flex-col sm:flex-row gap-8 w-full max-w-3xl relative z-10">
              <button onClick={handleBookNow} className="flex-1 px-14 py-8 bg-secondary text-white rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all"><ShieldPlus size={32} /> Book Now</button>
-             <a href="tel:+966501234567" className="flex-1 px-14 py-8 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all"><Phone size={32} fill="currentColor" /> Call AC Experts</a>
+             <a href="tel:+966590132864" className="flex-1 px-14 py-8 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all"><Phone size={32} fill="currentColor" /> Call AC Experts</a>
           </div>
         </div>
       </section>

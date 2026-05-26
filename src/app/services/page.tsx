@@ -258,7 +258,7 @@ export default function ServicesPage() {
               <p className="text-lg md:text-xl font-medium text-white/60 max-w-2xl leading-relaxed italic">Burst pipes, AC failure, or major leaks? Our elite team reaches you in 30-60 minutes across Riyadh.</p>
               <div className="flex flex-col sm:flex-row gap-8 w-full max-w-xl relative z-10 mt-6">
                  <button onClick={() => handleBookNow("Emergency Hub")} className="flex-1 px-12 py-6 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-white hover:text-secondary transition-all active:scale-95 border-b-4 border-blue-700">Request Support</button>
-                 <a href="tel:+966501234567" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-secondary hover:text-white transition-all active:scale-95 border-b-4 border-slate-100">Call Now</a>
+                 <a href="tel:+966590132864" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-secondary hover:text-white transition-all active:scale-95 border-b-4 border-slate-100">Call Now</a>
               </div>
            </div>
         </div>
@@ -362,7 +362,7 @@ export default function ServicesPage() {
           <p className="text-lg md:text-xl font-medium text-white/60 max-w-2xl leading-relaxed relative z-10 italic border-l-4 border-secondary/40 pl-12">"Book experienced technicians today for professional AC, plumbing & property maintenance solutions across Riyadh."</p>
           <div className="flex flex-col sm:flex-row gap-8 w-full max-w-2xl relative z-10">
              <button onClick={() => handleBookNow("Final Hub CTA")} className="flex-1 px-12 py-6 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-blue-700 shadow-xl hover:bg-white hover:text-secondary transition-all active:scale-95"><ShieldCheck size={24} /> Book Now</button>
-             <a href="tel:+966501234567" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-slate-100 shadow-xl hover:bg-secondary hover:text-white transition-all active:scale-95"><Phone size={24} fill="currentColor" /> Call Expert</a>
+             <a href="tel:+966590132864" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-slate-100 shadow-xl hover:bg-secondary hover:text-white transition-all active:scale-95"><Phone size={24} fill="currentColor" /> Call Expert</a>
           </div>
         </div>
       </section>

@@ -114,7 +114,7 @@ export default function BlogIndexPage() {
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <a 
-                  href="tel:+966501234568" 
+                  href="tel:+966590132864" 
                   className="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-blue-600 text-white rounded-xl font-black text-sm tracking-widest uppercase transition-all flex items-center justify-center gap-3"
                 >
                   Call Now

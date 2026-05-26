@@ -308,14 +308,14 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row items-center gap-6 w-full max-w-4xl">
                 <a 
-                  href="tel:+966501234567" 
+                  href="tel:+966590132864" 
                   className="w-full sm:flex-1 bg-white text-secondary px-10 py-7 rounded-3xl font-black text-xl uppercase tracking-widest shadow-2xl hover:bg-primary hover:text-white transition-all active:scale-95 flex items-center justify-center gap-5 group"
                 >
                   <Phone size={28} fill="currentColor" className="group-hover:scale-110 transition-transform" />
                   Call: +966 50
                 </a>
                 <a 
-                  href="https://wa.me/966501234567" 
+                  href="https://wa.me/966590132864" 
                    className="w-full sm:flex-1 bg-primary text-white px-10 py-7 rounded-3xl font-black text-xl uppercase tracking-widest shadow-2xl hover:bg-white hover:text-primary transition-all active:scale-95 flex items-center justify-center gap-5 group"
                 >
                   <CalendarCheck2 size={28} className="group-hover:scale-110 transition-transform" />

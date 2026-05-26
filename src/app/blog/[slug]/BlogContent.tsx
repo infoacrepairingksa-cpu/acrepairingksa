@@ -320,14 +320,14 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                   
                   <div className="flex flex-col gap-4">
                     <a 
-                      href="tel:+966501234568" 
+                      href="tel:+966590132864" 
                       className="bg-secondary hover:bg-blue-600 text-white font-black text-sm uppercase tracking-wider py-4 rounded-xl transition-all flex items-center justify-center gap-3 shadow-lg"
                     >
                       <Phone size={16} fill="currentColor" /> Call Support
                     </a>
                     
                     <a 
-                      href="https://wa.me/966501234568"
+                      href="https://wa.me/966590132864"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#25D366] hover:bg-[#1DA851] text-white font-black text-sm uppercase tracking-wider py-4 rounded-xl transition-all flex items-center justify-center gap-3 shadow-lg"
