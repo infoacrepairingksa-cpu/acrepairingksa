@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/BookingModal";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { motion } from "framer-motion";
 import { 
@@ -32,18 +31,15 @@ import Schema, { generateFAQSchema, generateBreadcrumbSchema } from "@/component
 import { LocationData } from "@/data/locations";
 
 export default function LocationContent({ data }: { data: LocationData }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState("");
+  
+  
 
-  useEffect(() => {
-    if (data) {
-      setSelectedService(`${data.name} General Service`);
-    }
-  }, [data]);
 
-  const handleBookNow = (service: string) => {
-    setSelectedService(`${service} in ${data.name}`);
-    setIsModalOpen(true);
+
+  const handleBookNow = (service?: any) => {
+    const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const services = [
@@ -294,7 +290,7 @@ export default function LocationContent({ data }: { data: LocationData }) {
 
       <Footer />
       <FloatingActions />
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} serviceName={selectedService} />
+      
     </main>
   );
 }

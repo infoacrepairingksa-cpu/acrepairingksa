@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
 import { BlogPost, blogPosts } from "@/data/blog-posts";
 import { locations } from "@/data/locations";
@@ -72,8 +71,12 @@ const genericFAQs = [
 ];
 
 export default function BlogContent({ post }: { post: BlogPost }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleBookNow = () => setIsModalOpen(true);
+  
+  const handleBookNow = (service?: any) => {
+    const sName = service && typeof service === 'string' ? service : "AC Repair";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+  };
 
   const generateArticleSchema = () => ({
     "@type": "BlogPosting",
@@ -509,7 +512,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
 
       <Footer />
       <FloatingActions />
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} serviceName="Blog Reader - AC Repair" />
+      
     </main>
   );
 }

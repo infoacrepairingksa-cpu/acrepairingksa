@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
 import { motion } from "framer-motion";
 import { 
@@ -16,11 +15,12 @@ import { locations } from "@/data/locations";
 import Link from "next/link";
 
 export default function LocationsPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const [modalService, setModalService] = useState("General Location Hub");
-  const handleBookNow = (service: string) => {
-    setModalService(service);
-    setIsModalOpen(true);
+  const handleBookNow = (service?: any) => {
+    const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const SectionHeading = ({ sub, title, center = true, light = false }: any) => (
@@ -204,7 +204,7 @@ export default function LocationsPage() {
 
       <Footer />
       <FloatingActions />
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} serviceName={modalService} />
+      
     </main>
   );
 }

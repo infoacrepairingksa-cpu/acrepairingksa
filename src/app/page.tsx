@@ -30,7 +30,6 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import BookingModal from "@/components/BookingModal";
 import { motion } from "framer-motion";
 import Schema, { 
   generateWebSiteSchema, 
@@ -254,12 +253,13 @@ const ProcessSteps = ({ onBookNow }: { onBookNow: (s: string) => void }) => {
 
 
 export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState("");
+  
+  
 
-  const handleBookNow = (serviceName: string = "") => {
-    setSelectedService(serviceName);
-    setIsModalOpen(true);
+  const handleBookNow = (serviceName?: any) => {
+    const sName = serviceName && typeof serviceName === 'string' ? serviceName : "Home Maintenance and AC Repair";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (
@@ -338,11 +338,7 @@ export default function Home() {
         </div>
       </section>
 
-      <BookingModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        serviceName={selectedService}
-      />
+      
 
       <Footer />
       <FloatingActions />

@@ -5,15 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
 import { blogPosts } from "@/data/blog-posts";
 import { BookOpen, Calendar, Clock, ArrowRight, ShieldCheck, Star } from "lucide-react";
 import Schema, { generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function BlogIndexPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleBookNow = () => setIsModalOpen(true);
+  
+  const handleBookNow = (service?: any) => {
+    const sName = service && typeof service === 'string' ? service : "AC Repair";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+  };
 
   const postsArray = Object.values(blogPosts);
 
@@ -133,7 +136,7 @@ export default function BlogIndexPage() {
 
       <Footer />
       <FloatingActions />
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      
     </main>
   );
 }

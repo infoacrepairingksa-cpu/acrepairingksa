@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
@@ -19,8 +18,12 @@ import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSch
 import { locations } from "@/data/locations";
 
 export default function ACRepairPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleBookNow = () => setIsModalOpen(true);
+  
+  const handleBookNow = (service?: any) => {
+    const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+  };
 
   /**
    * 🏆 THEME-STRICT UI COMPONENTS
@@ -396,7 +399,7 @@ export default function ACRepairPage() {
 
       <Footer />
       <FloatingActions />
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} serviceName="AC Repair" />
+      
     </main>
   );
 }

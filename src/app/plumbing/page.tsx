@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
 import { motion } from "framer-motion";
 import { 
@@ -22,8 +21,12 @@ import { locations } from "@/data/locations";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function PlumbingPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleBookNow = () => setIsModalOpen(true);
+  
+  const handleBookNow = (service?: any) => {
+    const sName = service && typeof service === 'string' ? service : "Plumbing";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+  };
 
   const SectionHeading = ({ sub, title, center = true, light = false }: any) => (
     <div className={cn("flex flex-col gap-4 mb-16", center ? "items-center text-center" : "items-start text-left")}>
@@ -369,7 +372,7 @@ export default function PlumbingPage() {
 
       <Footer />
       <FloatingActions />
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} serviceName="Plumbing" />
+      
     </main>
   );
 }

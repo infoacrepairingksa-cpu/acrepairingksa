@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
 import { motion } from "framer-motion";
 import { 
@@ -20,8 +19,12 @@ import { locations } from "@/data/locations";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACCleaningPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleBookNow = () => setIsModalOpen(true);
+  
+  const handleBookNow = (service?: any) => {
+    const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
+    const text = `Hello, I need ${sName} services. Can you help?`;
+    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+  };
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
@@ -340,7 +343,7 @@ export default function ACCleaningPage() {
 
       <Footer />
       <FloatingActions />
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} serviceName="AC Cleaning" />
+      
     </main>
   );
 }
