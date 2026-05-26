@@ -244,9 +244,16 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                       )}
 
                       {section.type === 'heading' && (
-                        <h2 id={`section-${headings.indexOf(section.title)}`} className="text-3xl md:text-4xl mt-12 mb-6 scroll-mt-32">
-                          <FormattedText text={section.title || ''} />
-                        </h2>
+                        <>
+                          <h2 id={`section-${headings.indexOf(section.title)}`} className="text-3xl md:text-4xl mt-12 mb-6 scroll-mt-32">
+                            <FormattedText text={section.title || ''} />
+                          </h2>
+                          {section.content && typeof section.content === 'string' && (
+                            <p className="mb-6 text-lg leading-relaxed font-medium">
+                              <FormattedText text={section.content} />
+                            </p>
+                          )}
+                        </>
                       )}
 
                       {section.type === 'paragraph' && (
