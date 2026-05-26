@@ -28,6 +28,7 @@ import {
   Award
 } from "lucide-react";
 import FloatingActions from "@/components/FloatingActions";
+import Schema, { generateFAQSchema, generateBreadcrumbSchema } from "@/components/Schema";
 import { LocationData } from "@/data/locations";
 
 export default function LocationContent({ data }: { data: LocationData }) {
@@ -56,6 +57,15 @@ export default function LocationContent({ data }: { data: LocationData }) {
 
   return (
     <main className="min-h-screen bg-white">
+      <Schema type="FAQPage" data={generateFAQSchema(data.faqs)} />
+      <Schema 
+        type="BreadcrumbList" 
+        data={generateBreadcrumbSchema([
+          { name: "Home", item: "/" },
+          { name: "Locations", item: "/locations" },
+          { name: data.name, item: `/locations/${data.slug}` }
+        ])} 
+      />
       <Navbar onBookNow={() => handleBookNow(`${data.name} Navbar Inquiry`)} />
 
       {/* Elegant Hero Section */}

@@ -15,7 +15,7 @@ import {
   BadgeCheck, Sparkles, Hammer, CalendarCheck2, Maximize
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
 
 export default function ACRepairPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,6 +42,13 @@ export default function ACRepairPage() {
     </div>
   );
 
+  const faqs = [
+    { q: "How much does AC repair cost in Riyadh?", a: "Costs depend on the complexity. We provide a fair diagnostic check and quote before starting any work." },
+    { q: "Do you provide emergency AC repair?", a: "Yes, we are available 24/7 for emergency breakdowns across all Riyadh neighborhoods." },
+    { q: "Which AC brands do you repair?", a: "We fix all major brands including LG, Samsung, Gree, Carrier, Zamil, and York." },
+    { q: "How long does AC repair take?", a: "Most repairs take 1-2 hours after the initial diagnostic inspection." }
+  ];
+
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
       <Schema 
@@ -51,6 +58,10 @@ export default function ACRepairPage() {
           "Expert AC repairing and diagnostic services in Riyadh. We fix cooling issues, compressor faults, and electrical errors for all AC brands.",
           "/ac-repair"
         )} 
+      />
+      <Schema 
+        type="FAQPage" 
+        data={generateFAQSchema(faqs)} 
       />
       <Schema 
         type="BreadcrumbList" 

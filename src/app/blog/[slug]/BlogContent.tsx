@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
 import { BlogPost, blogPosts } from "@/data/blog-posts";
-import { Calendar, Clock, User, Phone, MessageSquare, ArrowRight, ShieldCheck, Star } from "lucide-react";
+import { Calendar, Clock, User, Phone, MessageSquare, ArrowRight, ShieldCheck, Star, Sparkles } from "lucide-react";
 import Schema, { generateBreadcrumbSchema } from "@/components/Schema";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
@@ -189,6 +189,17 @@ export default function BlogContent({ post }: { post: BlogPost }) {
             
             {/* Main Content (75% equivalent) */}
             <div className="lg:col-span-8 bg-white rounded-[32px] p-6 md:p-10 border border-gray-100 shadow-[0_10px_30px_rgba(0,0,0,0.01)]">
+              
+              {/* AI Snippet / TL;DR Block (AEO Optimization) */}
+              <div className="bg-[#F8FAFC] border-l-4 border-secondary p-6 rounded-r-2xl mb-10 flex flex-col gap-3 shadow-sm">
+                <div className="flex items-center gap-2 text-secondary font-black uppercase tracking-widest text-[11px]">
+                  <Sparkles size={14} /> AI Quick Answer
+                </div>
+                <p className="text-primary font-bold leading-relaxed text-sm md:text-base">
+                  {post.metaDescription}
+                </p>
+              </div>
+
               <div className="flex flex-col gap-8 text-primary/80 text-base md:text-lg leading-relaxed font-medium">
                 {post.sections.map((section, idx) => {
                   switch (section.type) {

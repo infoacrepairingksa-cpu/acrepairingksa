@@ -3,7 +3,7 @@
 import React from "react";
 
 interface SchemaProps {
-  type: "WebSite" | "Service" | "BreadcrumbList" | "LocalBusiness" | "Organization";
+  type: "WebSite" | "Service" | "BreadcrumbList" | "LocalBusiness" | "Organization" | "FAQPage";
   data: any;
 }
 
@@ -122,5 +122,17 @@ export const generateBreadcrumbSchema = (items: { name: string; item: string }[]
     "position": index + 1,
     "name": item.name,
     "item": `https://acrepairingksa.com${item.item}`
+  }))
+});
+
+export const generateFAQSchema = (faqs: { q: string; a: string }[]) => ({
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
   }))
 });
