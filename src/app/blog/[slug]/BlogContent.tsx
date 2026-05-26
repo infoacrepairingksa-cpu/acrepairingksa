@@ -92,6 +92,11 @@ export default function BlogContent({ post }: { post: BlogPost }) {
   const otherPosts = Object.values(blogPosts).filter(p => p.slug !== post.slug).slice(0, 3);
   const headings = post.sections.filter(s => s.type === 'heading').map(s => s.title);
 
+  // Split: intro sections (all content before first heading) vs body sections (from first heading)
+  const firstHeadingIndex = post.sections.findIndex(s => s.type === 'heading');
+  const introSections = firstHeadingIndex > 0 ? post.sections.slice(0, firstHeadingIndex) : post.sections.slice(0, 1);
+  const bodySections = firstHeadingIndex > 0 ? post.sections.slice(firstHeadingIndex) : post.sections.slice(1);
+
   return (
     <main className="min-h-screen bg-slate-50 font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
       <Schema type="LocalBusiness" data={generateArticleSchema()} />
@@ -168,14 +173,24 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                 </div>
               </div>
 
-              {/* Intro Text First (Render the first paragraph from sections) */}
-              {post.sections[0]?.type === 'paragraph' && (
-                 <p className="text-lg leading-relaxed font-medium text-primary/70">
-                    <FormattedText text={post.sections[0].content} />
-                 </p>
-              )}
+              {/* INTRO SECTIONS: All content before the first heading */}
+              {introSections.map((section, i) => (
+                <React.Fragment key={i}>
+                  {section.type === 'paragraph' && (
+                    <p className="text-lg leading-relaxed font-medium text-primary/70">
+                      <FormattedText text={section.content} />
+                    </p>
+                  )}
+                  {section.type === 'alert' && (
+                    <div className="my-4 bg-[#FFF4E5] border-l-4 border-[#FF9800] p-6 rounded-r-2xl flex items-start gap-4 shadow-sm">
+                      <AlertTriangle size={24} className="text-[#FF9800] shrink-0 mt-1" />
+                      <p className="text-[#B26A00] font-bold m-0 leading-relaxed"><FormattedText text={section.content} /></p>
+                    </div>
+                  )}
+                </React.Fragment>
+              ))}
 
-              {/* TABLE OF CONTENTS (Moved after Intro) */}
+              {/* TABLE OF CONTENTS — After intro, before article body */}
               {headings.length > 0 && (
                 <div className="bg-white p-8 rounded-[24px] border border-gray-100 shadow-sm my-6">
                   <h3 className="font-heading font-black text-2xl text-primary mb-4 flex items-center gap-3">
@@ -193,9 +208,9 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                 </div>
               )}
 
-              {/* DYNAMIC CONTENT RENDERING (Skip index 0 if we rendered it above) */}
+              {/* BODY CONTENT — From first heading onward */}
               <article className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:font-black prose-headings:text-primary prose-a:text-secondary prose-p:text-primary/80 prose-strong:text-primary">
-                {post.sections.slice(1).map((section, index) => {
+                {bodySections.map((section, index) => {
                   
                   const showCTA = index > 0 && index % 4 === 0;
                   const showImage = index > 0 && index % 3 === 0 && blogImages[Math.floor(index / 3) % blogImages.length];
