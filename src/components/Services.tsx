@@ -88,12 +88,14 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
         </div>
 
         <div className="flex flex-col gap-3 mt-auto">
-          <button 
-            onClick={() => onBookNow(title)}
+          <a 
+            href={`https://wa.me/966590132864?text=${encodeURIComponent(`Hello, I need ${title} service. Can you help?`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-3 active:scale-95 shadow-lg shadow-[#25D366]/10"
           >
             <WhatsAppIcon size={16} className="text-white" /> {ctaText}
-          </button>
+          </a>
           <Link 
             href={id === "ac-repair" ? "/ac-repair" : id === "ac-cleaning" ? "/ac-cleaning" : id === "ac-installation" ? "/ac-installation" : id === "ac-maintenance" ? "/ac-maintenance" : id === "ac-gas-refill" ? "/ac-gas-refill" : id === "ac-duct-cleaning" ? "/ac-duct-cleaning" : id === "ac-filter-cleaning" ? "/ac-filter-cleaning" : id === "ac-coil-cleaning" ? "/ac-coil-cleaning" : id === "plumbing" ? "/plumbing" : id === "home-maintenance" ? "/home-maintenance" : "#"}
             className="w-full bg-white border border-gray-200 hover:border-secondary hover:text-secondary text-primary/70 py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2"
@@ -281,47 +283,31 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               </div>
             </div>
 
-            {/* Right Form Column */}
-            <div className="w-full lg:w-[450px] bg-white border border-gray-100 p-8 md:p-10 rounded-[40px] shadow-[0_32px_64px_-16px_rgba(31,32,97,0.1)]">
-              <div className="mb-8 text-center">
-                 <h3 className="text-2xl font-black text-primary leading-tight font-heading">Book AC Service in 30 Seconds</h3>
-                 <p className="text-sm font-bold text-[#25D366] mt-2 flex items-center justify-center gap-2">👉 Our technician will contact you within 5 minutes</p>
+            {/* Right WhatsApp CTA Column */}
+            <div className="w-full lg:w-[450px] bg-white border border-gray-100 p-8 md:p-10 rounded-[40px] shadow-[0_32px_64px_-16px_rgba(31,32,97,0.1)] flex flex-col items-center justify-center gap-8 text-center">
+              <div className="w-20 h-20 bg-[#25D366]/10 rounded-3xl flex items-center justify-center">
+                <WhatsAppIcon size={40} className="text-[#25D366]" />
               </div>
-              <form className="flex flex-col gap-4" onSubmit={(e) => { e.preventDefault(); onBookNow("Contact Form Submit"); }}>
-                <div className="flex flex-col gap-2">
-                  <input 
-                    type="text" 
-                    placeholder="Full name" 
-                    className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/10 transition-all text-primary font-medium"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <input 
-                    type="tel" 
-                    placeholder="Phone Number" 
-                    className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/10 transition-all text-primary font-medium"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                   <select className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/10 transition-all text-primary font-medium appearance-none">
-                     <option>Choose Service</option>
-                     <option>AC Repair</option>
-                     <option>AC Cleaning</option>
-                     <option>AC Gas Refill</option>
-                     <option>AC Installation</option>
-                     <option>AC Maintenance</option>
-                     <option>Plumbing</option>
-                     <option>Home Maintenance</option>
-                   </select>
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-5 rounded-xl font-black text-sm uppercase tracking-widest transition-all flex items-center justify-center gap-3 shadow-lg group mt-2"
-                >
-                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                  Call Me Back Fast
-                </button>
-              </form>
+              <div>
+                <h3 className="text-2xl font-black text-primary leading-tight font-heading mb-3">Book in 30 Seconds on WhatsApp</h3>
+                <p className="text-sm font-bold text-primary/60">👉 Technician contacts you within 5 minutes</p>
+              </div>
+              <div className="w-full flex flex-col gap-4">
+                {["AC Repair", "AC Cleaning", "AC Gas Refill", "AC Maintenance", "Plumbing"].map((svc) => (
+                  <a
+                    key={svc}
+                    href={`https://wa.me/966590132864?text=${encodeURIComponent(`Hello, I need ${svc} service in Riyadh. Can you help?`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition-all flex items-center justify-center gap-3 active:scale-95 shadow-lg shadow-[#25D366]/10"
+                  >
+                    <WhatsAppIcon size={16} className="text-white" /> Book {svc}
+                  </a>
+                ))}
+              </div>
+              <a href="tel:+966590132864" className="flex items-center gap-3 text-primary font-black text-sm">
+                <Phone size={18} fill="currentColor" /> +966 59 013 2864
+              </a>
             </div>
           </div>
         </div>
@@ -379,12 +365,14 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
 
           <div className="flex flex-col items-center gap-8">
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary/60 italic">And all nearby areas in Riyadh.</p>
-            <button 
-              onClick={() => onBookNow("Service Area CTA")}
+            <a 
+              href="https://wa.me/966590132864?text=Hello%2C%20I%20need%20AC%20or%20home%20maintenance%20service%20in%20Riyadh.%20Can%20you%20help?"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-12 py-5 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-2xl font-bold text-sm uppercase tracking-widest transition-all shadow-2xl shadow-[#25D366]/30 flex items-center gap-4 group"
             >
               <WhatsAppIcon size={20} className="group-hover:scale-110 transition-transform text-white" /> WhatsApp Us For Your Area
-            </button>
+            </a>
           </div>
         </div>
 
