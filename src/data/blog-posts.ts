@@ -933,4 +933,532 @@ export const blogPosts: Record<string, BlogPost> = {
       }
     ]
   }
+,
+  "ac-gas-refill-cost-riyadh": {
+    slug: "ac-gas-refill-cost-riyadh",
+    title: "AC Gas Refill Cost in Riyadh 2026: R410A & R22 Complete Guide",
+    metaDescription: "Wondering how much AC gas refill costs in Riyadh? Our complete 2026 guide covers R410A & R22 pricing, leak detection, refill duration, and when to book a certified HVAC technician.",
+    publishDate: "June 1, 2026",
+    readTime: "9 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-5691638.webp",
+    category: "AC Gas & Refrigerant",
+    sections: [
+      {
+        type: "paragraph",
+        content: "In Riyadh's extreme summer climate, a properly charged AC system is the difference between comfortable living and unbearable heat. When your split AC starts blowing warm air or struggles to cool below 26°C, the first thing most technicians check is the refrigerant gas level."
+      },
+      {
+        type: "paragraph",
+        content: "AC gas refill — also called refrigerant recharge — is one of the most frequently requested services across Riyadh. Yet many homeowners are unsure about what it costs, how long it takes, and whether they actually need it. This guide answers all those questions."
+      },
+      {
+        type: "alert",
+        content: "⚠️ IMPORTANT: Refrigerant gas cannot simply run out — low gas always means there is a leak in the system. Refilling without fixing the leak first is a temporary fix. Always insist on leak detection before recharge."
+      },
+      {
+        type: "heading",
+        title: "What is AC Gas Refill and Why is it Needed?",
+        content: "Modern split ACs use a sealed refrigerant loop — the gas should never reduce under normal operation. If your system has low refrigerant, it means a leak has developed in the copper pipes, joints, or valves. The leak must be detected and repaired before adding new gas, otherwise you will need another refill within weeks."
+      },
+      {
+        type: "heading",
+        title: "Types of Refrigerant Used in Riyadh Homes",
+        content: "There are two main types of refrigerant gas used in split AC units in Saudi Arabia:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Refrigerant Type", "AC Age", "Environment Impact", "Availability in KSA"],
+          ["R22 (Freon)", "Older units (10+ years)", "High — being phased out globally", "Still available, limited supply"],
+          ["R410A (Puron)", "Modern units (under 10 years)", "Lower than R22", "Widely available"],
+          ["R32", "Latest inverter ACs", "Lowest of all", "Available in new units"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "How Much Does AC Gas Refill Cost in Riyadh?",
+        content: "Costs vary depending on refrigerant type, quantity needed, and whether leak repair is required. As a general guide:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Service", "Estimated Duration", "Notes"],
+          ["Leak Detection & Diagnosis", "30–60 min", "Always required before refill"],
+          ["R22 Gas Refill (1 ton)", "45–90 min", "Older systems, limited supply"],
+          ["R410A Gas Refill (1.5 ton)", "1–2 hrs", "Most common in Riyadh homes"],
+          ["System Vacuum (required)", "30 min", "Must be done before refilling"],
+          ["Full Leak Repair + Refill", "2–4 hrs", "Recommended complete service"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "Signs Your AC Needs a Gas Refill",
+        content: "These are the most reliable indicators that your refrigerant level is critically low:"
+      },
+      {
+        type: "list",
+        content: [
+          "**AC blows warm or lukewarm air** even when set to 18°C",
+          "**Ice forming on copper pipes** near the indoor unit — paradoxically caused by low gas",
+          "**Hissing or bubbling sounds** from the refrigerant lines",
+          "**Unit takes hours to cool a small room** that it used to cool in 15 minutes",
+          "**Electricity bills spiking** as the compressor overworks to compensate"
+        ]
+      },
+      {
+        type: "heading",
+        title: "The Gas Refill Process: Step by Step",
+        content: "A professional AC gas refill in Riyadh follows a strict process to ensure safety and accuracy:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Step 1 — Leak Detection:** Technician uses electronic detectors or UV dye to locate all leaks in the system",
+          "**Step 2 — Leak Repair:** Brazed or sealed properly at the source before any gas is added",
+          "**Step 3 — Vacuum:** The system is pulled into a deep vacuum to remove all air and moisture",
+          "**Step 4 — Weigh-In Method:** Exact quantity of gas is measured by weight and charged into the system",
+          "**Step 5 — Performance Test:** Suction and discharge pressures verified with manifold gauges"
+        ]
+      },
+      {
+        type: "heading",
+        title: "DIY Gas Refill: Why It Is Dangerous",
+        content: "Handling refrigerant gas without certification is illegal in many countries and dangerous everywhere. R410A operates at extremely high pressures (up to 600 PSI). Improper handling can result in freezing burns, explosion risk, and severe compressor damage from overcharging. Always use a certified [AC Gas Refill technician in Riyadh](/ac-gas-refill)."
+      },
+      {
+        type: "heading",
+        title: "How to Prevent Refrigerant Leaks",
+        content: "While not all leaks are preventable, you can significantly extend your system life by:"
+      },
+      {
+        type: "list",
+        content: [
+          "Scheduling [annual AC maintenance](/ac-maintenance) to inspect copper connections",
+          "Avoiding physical damage to outdoor unit pipes during home renovations",
+          "Not running the AC without proper airflow (dirty filters cause overpressure)",
+          "Booking professional [AC coil cleaning](/ac-coil-cleaning) annually"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "If you suspect a refrigerant leak, do not delay — a completely empty system can permanently burn out the compressor within hours of operation. Contact the [AC Repairing KSA team](/ac-gas-refill) for immediate leak detection and refill across all Riyadh districts."
+      }
+    ]
+  },
+
+  "ac-coil-cleaning-guide-riyadh": {
+    slug: "ac-coil-cleaning-guide-riyadh",
+    title: "Complete AC Coil Cleaning Guide for Riyadh Homes (Evaporator & Condenser)",
+    metaDescription: "Dirty AC coils are the #1 cause of reduced cooling and high bills in Riyadh. Learn how to identify dirty coils, when to clean them, and why professional coil cleaning is essential in Riyadh's dusty climate.",
+    publishDate: "June 3, 2026",
+    readTime: "10 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-5691638.webp",
+    category: "AC Maintenance & Cleaning",
+    sections: [
+      {
+        type: "paragraph",
+        content: "In Riyadh's dust-heavy environment, AC coils accumulate a thick layer of sand and debris faster than almost anywhere else in the world. This buildup silently destroys your system's efficiency — increasing electricity consumption by up to 40% and reducing cooling capacity dramatically."
+      },
+      {
+        type: "paragraph",
+        content: "Whether you own a split, window, or central air conditioning system, understanding coil cleaning is essential to keeping it running at peak performance through Saudi Arabia's brutal summer months."
+      },
+      {
+        type: "heading",
+        title: "The Two Types of AC Coils and What They Do",
+        content: "Every air conditioning system has two sets of coils, each performing a critical and opposite function in the cooling cycle:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Coil Type", "Location", "Function", "Cleaning Frequency"],
+          ["Evaporator Coil", "Indoor unit (behind filters)", "Absorbs heat from room air", "Every 6–12 months"],
+          ["Condenser Coil", "Outdoor unit (aluminum fins)", "Releases heat to outside air", "Every 6–12 months"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "How Dirty Coils Destroy Your AC Performance",
+        content: "A clean evaporator coil absorbs heat like a sponge. A dirty coil, caked with dust and mold, absorbs heat like a plastic bag — barely at all. Scientifically, a 0.1mm layer of dust on coil fins is enough to reduce heat transfer efficiency by 21%. In Riyadh, coils can accumulate this level of dust in just 3 months during haboob (sandstorm) season."
+      },
+      {
+        type: "list",
+        content: [
+          "**Reduced cooling capacity** — room takes 2-3x longer to reach set temperature",
+          "**Compressor overheating** — unit trips on thermal overload during peak hours",
+          "**Ice formation** on evaporator coils due to restricted airflow",
+          "**Mold and bacteria growth** — dirty coils are a breeding ground in humid conditions",
+          "**Higher electricity bills** — dirty system consumes up to 40% more power"
+        ]
+      },
+      {
+        type: "heading",
+        title: "Signs Your AC Coils Are Dirty",
+        content: "You don't need to open the unit to know if your coils need cleaning. These symptoms are telltale signs:"
+      },
+      {
+        type: "list",
+        content: [
+          "AC runs continuously without reaching target temperature",
+          "Musty or moldy smell when AC is running",
+          "Visible ice or frost on copper pipes near indoor unit",
+          "Outdoor unit feels extremely hot to the touch",
+          "Water dripping from indoor unit (blocked drain from bio-film on coils)"
+        ]
+      },
+      {
+        type: "heading",
+        title: "Professional vs DIY Coil Cleaning",
+        content: "While you can wash the basic filter yourself, the coils themselves require professional equipment and chemicals:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Task", "DIY Safe?", "Notes"],
+          ["Outer filter wash", "✅ Yes", "Can do weekly with warm water"],
+          ["Evaporator coil foam spray", "⚠️ Partial", "No-rinse foams available but limited"],
+          ["Deep evaporator coil wash", "❌ No", "Requires unit disassembly and high-pressure tools"],
+          ["Condenser coil cleaning", "⚠️ Partial", "Gentle hosing is ok, chemical flush requires pro"],
+          ["Drain pan and pipe clean", "❌ No", "Requires vacuum and bio-treatment"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "What Professional AC Coil Cleaning Includes",
+        content: "When you book a professional [AC coil cleaning service in Riyadh](/ac-coil-cleaning), the technician performs a comprehensive process:"
+      },
+      {
+        type: "list",
+        content: [
+          "High-pressure wash of outdoor condenser coils to remove sand and dust",
+          "Foam-based chemical treatment of indoor evaporator coil fins",
+          "Drain pan cleaning and bio-disinfectant treatment to kill mold",
+          "Air duct inlet cleaning to prevent re-contamination",
+          "Full system performance test after cleaning"
+        ]
+      },
+      {
+        type: "heading",
+        title: "How Often Should You Clean AC Coils in Riyadh?",
+        content: "Due to Riyadh's extreme dust conditions, we recommend professional coil cleaning at least once every 6 to 12 months. During heavy sandstorm seasons (March–May), you may need outdoor condenser cleaning more frequently. The indoor evaporator coil should be professionally cleaned as part of your annual [AC maintenance package](/ac-maintenance)."
+      },
+      {
+        type: "paragraph",
+        content: "Don't wait until your AC fails completely. Book a professional [AC coil cleaning service](/ac-coil-cleaning) with our certified HVAC team and restore your unit to factory-fresh cooling performance."
+      }
+    ]
+  },
+
+  "ac-not-turning-on-riyadh": {
+    slug: "ac-not-turning-on-riyadh",
+    title: "Split AC Not Turning On in Riyadh? Complete Diagnosis & Fix Guide",
+    metaDescription: "Your split AC won't turn on in Riyadh's summer heat? Before calling a technician, follow our step-by-step diagnosis guide covering power, remote, circuit breaker, capacitor, and thermostat issues.",
+    publishDate: "June 5, 2026",
+    readTime: "8 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-5691638.webp",
+    category: "AC Repair & Troubleshooting",
+    sections: [
+      {
+        type: "paragraph",
+        content: "It happens at the worst possible time — you walk into your home at midday in Riyadh's 45°C summer heat, press the remote, and nothing happens. Your split AC simply won't turn on. No beep, no display, nothing."
+      },
+      {
+        type: "paragraph",
+        content: "Before panicking or calling for emergency AC repair, there are several quick checks you can perform yourself that resolve about 30% of 'AC not turning on' cases in minutes. This guide walks you through every possible cause from the simplest to the most serious."
+      },
+      {
+        type: "alert",
+        content: "⚡ SAFETY FIRST: If you see burn marks on the wall socket, smell burning plastic, or notice the circuit breaker trips immediately when you reset it — do NOT attempt any DIY. Call a certified electrician or our [emergency AC repair team](/ac-repair) immediately."
+      },
+      {
+        type: "heading",
+        title: "Quick Checklist: Before Calling a Technician",
+        content: "Run through these checks in order — they take less than 5 minutes and often solve the problem:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Check", "What to Do", "Fixes?"],
+          ["Remote control batteries", "Replace with fresh AA batteries", "~15% of cases"],
+          ["Remote mode setting", "Ensure it's on COOL, not FAN or HEAT", "~10% of cases"],
+          ["Wall socket power", "Test socket with another device", "~8% of cases"],
+          ["Circuit breaker", "Check if AC breaker is tripped, reset once", "~12% of cases"],
+          ["Indoor unit display", "Look for error codes on LED display", "Guides diagnosis"],
+          ["Sleep / Timer mode", "Check if timer accidentally set to OFF", "~5% of cases"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "The Most Common Causes of AC Not Turning On",
+        content: "If the quick checklist above did not solve the problem, the issue is likely one of these technical faults:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Dead Starting Capacitor:** The capacitor powers the compressor motor. When it fails, the outdoor unit hums but doesn't start. This is the #1 electrical fault in Riyadh due to heat stress.",
+          "**Blown Control Board Fuse:** A small glass or ceramic fuse on the indoor unit PCB (control board) blows when there's a power surge. Common during Riyadh summer storms.",
+          "**Faulty PCB (Printed Circuit Board):** The brain of the AC. When it fails, the unit may not respond to any commands. Displays error codes.",
+          "**Thermostat Sensor Failure:** If the room temperature sensor reads incorrectly, the system may think it's already cool and not activate.",
+          "**Compressor Thermal Overload:** The compressor shuts down automatically when overheated. Usually resets after 30 minutes of rest."
+        ]
+      },
+      {
+        type: "heading",
+        title: "Understanding Error Codes on Your AC Display",
+        content: "Most modern split AC brands display error codes when there is a fault. These codes are invaluable for diagnosis:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Common Error Code", "Typical Meaning", "Action"],
+          ["E1 / E2", "Communication error between indoor and outdoor unit", "Check wiring, call technician"],
+          ["E3 / F3", "High pressure protection — condenser blocked or overcharged", "Clean outdoor unit, check gas"],
+          ["E4 / E5", "Low pressure protection — refrigerant leak or undercharged", "Book gas refill service"],
+          ["E6", "Communication fault", "Power cycle the unit, then call technician"],
+          ["H6 / P6", "Fan motor not running", "Fan motor or capacitor replacement needed"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "When It's the Outdoor Unit: Compressor Not Starting",
+        content: "If your indoor unit powers on (display lights up, you hear a beep) but the outdoor unit does NOT start, the fault is almost certainly:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Start capacitor failure** — replace with matching microfarad rating",
+          "**Contactor relay failure** — the relay that sends power to the compressor is stuck open",
+          "**Low voltage to outdoor unit** — check dedicated breaker and wiring",
+          "**Compressor burnout** — worst case, requires compressor replacement or full unit replacement"
+        ]
+      },
+      {
+        type: "heading",
+        title: "Repair vs Replace: Making the Right Decision",
+        content: "If the diagnosis reveals a compressor fault on an older unit, you face a repair vs replace decision:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Situation", "Recommendation"],
+          ["Unit under 5 years, capacitor fault", "Repair — inexpensive and effective"],
+          ["Unit 5–8 years, PCB failure", "Repair if PCB cost is under 40% of new unit price"],
+          ["Unit over 8 years, compressor fault", "Consider replacement — compressor is 60–80% of unit cost"],
+          ["Unit over 10 years, any major fault", "Replace — efficiency gains pay for new unit within 2–3 years"]
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "If your AC won't turn on and you've completed all the checks above without success, it's time to book a professional diagnostic visit. Our certified technicians across Riyadh carry replacement capacitors, PCBs, and contactors for all major brands including Gree, Midea, Carrier, Samsung, and LG. Book an [emergency AC repair](/ac-repair) appointment today."
+      }
+    ]
+  }
+
+,
+  "central-vs-split-ac-riyadh": {
+    slug: "central-vs-split-ac-riyadh",
+    title: "Central AC vs Split AC in Riyadh: Which is Better for Your Home?",
+    metaDescription: "Choosing between central AC and split AC for your Riyadh home? Our expert comparison covers cost, efficiency, installation, and which system suits villas, apartments, and offices in Saudi Arabia.",
+    publishDate: "June 8, 2026",
+    readTime: "11 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-5691638.webp",
+    category: "AC Buying Guide",
+    sections: [
+      {
+        type: "paragraph",
+        content: "When it comes to cooling your home in Riyadh's intense summer heat, you have two primary choices: a split AC system (the wall-mounted units you see in most apartments) or a central AC system (the ducted system common in villas and commercial buildings). Each has major advantages and specific drawbacks depending on your property type, budget, and cooling needs."
+      },
+      {
+        type: "paragraph",
+        content: "This detailed comparison will help you make the right decision for your home or office, factoring in Riyadh's specific climate conditions, electricity costs, and the realities of HVAC maintenance in Saudi Arabia."
+      },
+      {
+        type: "heading",
+        title: "What is a Split AC System?",
+        content: "A split AC consists of two units: a compact indoor air handler mounted on the wall and an outdoor compressor/condenser unit. They are connected by refrigerant lines and electrical wiring. Split ACs are the most common cooling solution in Saudi apartments and smaller villas, and are available in a wide range of capacities from 1 to 3 tons."
+      },
+      {
+        type: "heading",
+        title: "What is a Central AC System?",
+        content: "A central AC system uses one large compressor unit (or multiple units for large buildings) to cool an entire building through a network of ducts installed in the ceiling or walls. Air is distributed to each room via grilles and vents. Central AC is the standard in large Riyadh villas, hotels, hospitals, and commercial spaces."
+      },
+      {
+        type: "heading",
+        title: "Head-to-Head Comparison: Split AC vs Central AC",
+        content: "Here is a detailed side-by-side comparison to help you decide which system is right for your property:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Factor", "Split AC", "Central AC"],
+          ["Installation Cost", "Low — per unit", "High — duct network required"],
+          ["Cooling Coverage", "One room per unit", "Entire building from one system"],
+          ["Energy Efficiency", "Excellent for 1–2 rooms", "More efficient for large spaces"],
+          ["Temperature Control", "Per room control", "Centralized (zone control possible)"],
+          ["Aesthetics", "Visible wall units", "Hidden ducts, cleaner look"],
+          ["Maintenance", "Simple — filter wash", "Complex — duct cleaning needed"],
+          ["Best For", "Apartments, small villas", "Large villas, offices, commercial"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "Energy Efficiency in Riyadh's Climate",
+        content: "In Riyadh, where outdoor temperatures regularly exceed 45°C, your AC system runs for 10–14 hours per day during summer. The energy efficiency difference between split and central systems is significant and directly impacts your monthly SEWA/SEC electricity bill."
+      },
+      {
+        type: "list",
+        content: [
+          "**Modern inverter split ACs** achieve 5-star energy ratings and can be up to 60% more efficient than fixed-speed compressors",
+          "**Central AC systems** lose significant energy through duct leakage — studies show 20–30% cooling loss in poorly maintained duct systems",
+          "**Zone-control central systems** are the most efficient for large villas when only some areas need cooling",
+          "**Multiple split ACs** are often more efficient than central AC for properties under 300 sqm"
+        ]
+      },
+      {
+        type: "heading",
+        title: "Maintenance Requirements: What You Need to Know",
+        content: "Maintenance is a critical factor for long-term ownership costs in Saudi Arabia's dusty environment:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Maintenance Task", "Split AC", "Central AC"],
+          ["Filter Cleaning", "Every 2 weeks (DIY)", "Monthly by technician"],
+          ["Coil Cleaning", "Annually", "Annually + duct inspection"],
+          ["Gas Check", "Every 2–3 years", "Every 2–3 years"],
+          ["Duct Cleaning", "Not applicable", "Every 3–5 years"],
+          ["Annual Service Cost", "Lower", "Higher"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "Which System is Right for Your Property?",
+        content: "Based on the property type, here is our professional recommendation for Riyadh homeowners:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Studio or 1-bedroom apartment:** 1 split AC (1.5 ton inverter) — most cost-effective",
+          "**2-3 bedroom apartment:** 2–3 split ACs, one per living area",
+          "**Small villa (under 300 sqm):** 4–6 split ACs or a small central system",
+          "**Large villa (300+ sqm):** Central AC with zone control is recommended",
+          "**Commercial office:** Central AC with VRF (Variable Refrigerant Flow) system"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Whether you have a split AC or central system, our team provides expert [AC repair](/ac-repair), [AC maintenance](/ac-maintenance), [AC cleaning](/ac-cleaning), and [gas refill](/ac-gas-refill) services across all Riyadh districts. Contact us for a free consultation on which system suits your property."
+      }
+    ]
+  },
+
+  "plumbing-leak-detection-riyadh": {
+    slug: "plumbing-leak-detection-riyadh",
+    title: "How to Detect & Fix Hidden Plumbing Leaks in Riyadh Homes (2026 Guide)",
+    metaDescription: "Hidden plumbing leaks in Riyadh homes cause massive water bills and structural damage. Learn how to detect leaks behind walls, under floors, and in bathrooms — and when to call a professional plumber.",
+    publishDate: "June 10, 2026",
+    readTime: "9 min read",
+    author: "AC Repairing KSA Experts",
+    image: "/optimized/pexels-5691638.webp",
+    category: "Plumbing & Home Maintenance",
+    sections: [
+      {
+        type: "paragraph",
+        content: "A hidden plumbing leak in a Riyadh home can silently waste thousands of liters of water per month, dramatically increase your water bills, and cause severe structural damage to walls, ceilings, and flooring. The challenge is that the most dangerous leaks are the ones you cannot see — hidden inside walls, under concrete slabs, or behind bathroom tiles."
+      },
+      {
+        type: "paragraph",
+        content: "This comprehensive guide helps Riyadh homeowners identify the warning signs of hidden leaks, understand the most common leak locations, and know when to call a professional [plumbing service](/plumbing) for emergency repair."
+      },
+      {
+        type: "alert",
+        content: "🚰 URGENT: If you notice water stains on ceilings, bubbling paint on walls, or sudden spikes in your SEWA water bill exceeding double your normal consumption, you likely have a major hidden leak. Do not delay — water damage worsens exponentially and can lead to mold growth within 48 hours."
+      },
+      {
+        type: "heading",
+        title: "Most Common Hidden Leak Locations in Riyadh Homes",
+        content: "Based on our plumbing service experience across Riyadh, these are the most frequent locations where hidden leaks occur:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Under-slab pipe leaks** — copper or CPVC pipes embedded in concrete floors corrode over time, especially in older Riyadh villas",
+          "**Bathroom wall leaks** — faulty tile grout, deteriorated shower seals, or loose fittings behind the wall",
+          "**Kitchen sink drain leaks** — often hidden under the cabinet, slowly rotting the wooden base",
+          "**Water heater connections** — pressure relief valves and inlet/outlet connections are common failure points",
+          "**Rooftop tank overflow pipe** — a partially open ball valve causes continuous water loss undetected for months"
+        ]
+      },
+      {
+        type: "heading",
+        title: "Warning Signs of a Hidden Plumbing Leak",
+        content: "You don't always need to see water to know you have a leak. Watch for these signs:"
+      },
+      {
+        type: "table",
+        content: [
+          ["Warning Sign", "Likely Cause", "Urgency"],
+          ["Water bill doubled with no usage change", "Under-slab or hidden pipe leak", "🔴 High — call immediately"],
+          ["Damp patch or stain on wall/ceiling", "Pipe leak or failed seal behind surface", "🔴 High"],
+          ["Bubbling or peeling paint on walls", "Water seeping through wall from behind", "🟡 Medium — inspect soon"],
+          ["Musty or mold smell in room", "Chronic moisture from slow hidden leak", "🟡 Medium"],
+          ["Low water pressure suddenly", "Major pipe leak reducing flow", "🔴 High"],
+          ["Sound of running water when all taps off", "Active pipe leak in walls or slab", "🔴 High — call immediately"]
+        ]
+      },
+      {
+        type: "heading",
+        title: "How to Check if You Have a Hidden Leak",
+        content: "This simple test can confirm a hidden leak exists within 30 minutes:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Step 1:** Turn off ALL water-using appliances — taps, dishwasher, washing machine, water cooler",
+          "**Step 2:** Locate your SEWA water meter (usually near the main gate) and note the reading",
+          "**Step 3:** Do NOT use any water for 30–60 minutes",
+          "**Step 4:** Check the meter again — if the reading has changed, you have a hidden leak",
+          "**Step 5:** Call a professional plumber for leak detection — do not attempt to open walls yourself"
+        ]
+      },
+      {
+        type: "heading",
+        title: "Professional Leak Detection Methods Used in Riyadh",
+        content: "Modern professional plumbers use advanced, non-destructive methods to find hidden leaks without demolishing walls:"
+      },
+      {
+        type: "list",
+        content: [
+          "**Acoustic leak detection** — electronic devices listen for the sound of water escaping pipes inside walls",
+          "**Thermal imaging cameras** — infrared cameras detect temperature differences caused by wet areas behind walls",
+          "**Tracer gas detection** — non-toxic gas injected into pipes escapes at leak points and is detected by sensors",
+          "**Video pipe inspection** — miniature cameras inserted into drains to visually locate cracks and blockages"
+        ]
+      },
+      {
+        type: "heading",
+        title: "Preventing Plumbing Leaks in Riyadh's Climate",
+        content: "Riyadh's extreme temperature fluctuations (from 5°C in winter to 48°C in summer) cause pipes to expand and contract, stressing joints and fittings. These preventive measures significantly reduce leak risk:"
+      },
+      {
+        type: "list",
+        content: [
+          "Schedule an annual [home maintenance inspection](/home-maintenance) that includes plumbing checks",
+          "Replace old copper pipes with CPVC or PPR pipes that resist corrosion better",
+          "Check toilet flush mechanisms annually — a running toilet can waste 200+ liters per day",
+          "Inspect under-sink connections every 6 months for mineral deposits and corrosion",
+          "Install a main water shutoff valve that is easily accessible for emergencies"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "If you suspect a hidden leak in your Riyadh home, our certified plumbing team is available for same-day emergency service across all districts including Al Olaya, Al Malaz, Al Yasmin, Hittin, and Al Narjis. Visit our [plumbing service page](/plumbing) to book an inspection today."
+      }
+    ]
+  }
+
 };
