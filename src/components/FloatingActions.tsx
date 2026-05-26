@@ -21,7 +21,7 @@ const FloatingActions = () => {
           </div>
           <div className="flex flex-col">
              <span className="text-[9px] font-black uppercase tracking-widest text-primary/50">Call Now</span>
-             <span className="text-sm font-black text-primary group-hover:text-primary tracking-tight">+966 50 123 4567</span>
+             <span className="text-sm font-black text-primary group-hover:text-primary tracking-tight">+966 59 013 2864</span>
           </div>
         </a>
 

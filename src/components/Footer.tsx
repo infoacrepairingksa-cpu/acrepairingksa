@@ -135,7 +135,7 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <ContactLink 
                 icon={<Phone size={18} fill="currentColor" />} 
-                text="+966 50 123 4568" 
+                text="+966 59 013 2864" 
                 href="tel:+966590132864" 
                 ariaLabel="Call Riyadh Home Fix Technical Support"
               />

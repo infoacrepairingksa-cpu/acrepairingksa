@@ -61,7 +61,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 </div>
                 <div className="flex flex-col text-left">
                   <span className="text-[10px] font-bold text-primary/60 uppercase tracking-widest">Call Now for Instant Service</span>
-                  <span className="text-lg font-black text-primary group-hover:text-secondary transition-colors tracking-tight">+966 50 123 4567</span>
+                  <span className="text-lg font-black text-primary group-hover:text-secondary transition-colors tracking-tight">+966 59 013 2864</span>
                 </div>
               </a>
             </motion.div>

@@ -225,7 +225,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
                 href="tel:+966590132864"
                 className="flex items-center justify-center gap-4 bg-primary text-white py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-lg shadow-primary/20"
               >
-                <Phone size={18} fill="currentColor" /> Call +966 50 123 4567
+                <Phone size={18} fill="currentColor" /> Call +966 59 013 2864
               </a>
               <button
                 onClick={() => {

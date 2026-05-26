@@ -91,7 +91,7 @@ const BookingModal = ({ isOpen, onClose, serviceName = "General Maintenance" }: 
                       <input 
                         required
                         type="tel" 
-                        placeholder="+966 50 XXX XXXX"
+                        placeholder="+966 59 013 2864"
                         className="w-full bg-gray-50 border-2 border-transparent focus:border-secondary transition-all rounded-xl p-4 pl-12 text-sm font-bold text-primary outline-none"
                       />
                     </div>
