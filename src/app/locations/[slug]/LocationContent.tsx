@@ -283,7 +283,7 @@ export default function LocationContent({ data }: { data: LocationData }) {
                 <a href="tel:+966590132864" className="w-full sm:flex-1 bg-white text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
                   <Phone size={20} fill="currentColor" /> Call Now
                 </a>
-                <a href="https://wa.me/966590132864" className="w-full sm:flex-1 bg-[#25D366] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
+                <a href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" className="w-full sm:flex-1 bg-[#25D366] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
                   <WhatsAppIcon size={20} /> WhatsApp
                 </a>
               </div>

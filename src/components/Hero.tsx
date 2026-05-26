@@ -50,7 +50,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 mt-4"
             >
               <a 
-                href="https://wa.me/966590132864"
+                href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?"
                 className="w-full sm:w-auto px-8 md:px-10 py-5 md:py-6 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-[0_20px_40px_-10px_rgba(37,211,102,0.4)] flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-[#128C7E]"
               >
                 <MessageSquare size={20} fill="currentColor" /> Get Technician in 60 Minutes

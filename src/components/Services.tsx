@@ -399,7 +399,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               <span className="text-2xl font-bold text-primary tracking-tight leading-none">Need an emergency fix today?</span>
             </div>
           </div>
-          <a href="https://wa.me/966590132864" className="w-full md:w-auto px-12 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl shadow-[#25D366]/20 flex items-center justify-center gap-4">
+          <a href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" className="w-full md:w-auto px-12 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl shadow-[#25D366]/20 flex items-center justify-center gap-4">
              <WhatsAppIcon size={18} className="text-white" /> Chat on WhatsApp
           </a>
         </div>

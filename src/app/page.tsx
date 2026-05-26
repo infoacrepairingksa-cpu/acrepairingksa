@@ -312,10 +312,10 @@ export default function Home() {
                   className="w-full sm:flex-1 bg-white text-secondary px-10 py-7 rounded-3xl font-black text-xl uppercase tracking-widest shadow-2xl hover:bg-primary hover:text-white transition-all active:scale-95 flex items-center justify-center gap-5 group"
                 >
                   <Phone size={28} fill="currentColor" className="group-hover:scale-110 transition-transform" />
-                  Call: +966 50
+                  Call: +966 590 132 864
                 </a>
                 <a 
-                  href="https://wa.me/966590132864" 
+                  href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" 
                    className="w-full sm:flex-1 bg-primary text-white px-10 py-7 rounded-3xl font-black text-xl uppercase tracking-widest shadow-2xl hover:bg-white hover:text-primary transition-all active:scale-95 flex items-center justify-center gap-5 group"
                 >
                   <CalendarCheck2 size={28} className="group-hover:scale-110 transition-transform" />

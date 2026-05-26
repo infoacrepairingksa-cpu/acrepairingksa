@@ -135,7 +135,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
           <div className="hidden md:flex items-center gap-5">
 
               <button
-                onClick={() => onBookNow ? onBookNow() : window.open('https://wa.me/966590132864', '_blank')}
+                onClick={() => onBookNow ? onBookNow() : window.open('https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?', '_blank')}
                 className="bg-[#25D366] hover:bg-[#1DA851] text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition-all duration-300 shadow-xl shadow-[#25D366]/20 hover:-translate-y-1 active:scale-95 flex items-center gap-3"
               >
               <WhatsAppIcon size={18} className="text-white" />
@@ -230,7 +230,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               <button
                 onClick={() => {
                   if (onBookNow) onBookNow();
-                  else window.open('https://wa.me/966590132864', '_blank');
+                  else window.open('https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?', '_blank');
                   setMobileMenuOpen(false);
                 }}
                 className="flex items-center justify-center gap-4 bg-[#25D366] text-white py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-lg shadow-[#25D366]/20"

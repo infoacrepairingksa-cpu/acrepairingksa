@@ -327,7 +327,7 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                     </a>
                     
                     <a 
-                      href="https://wa.me/966590132864"
+                      href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#25D366] hover:bg-[#1DA851] text-white font-black text-sm uppercase tracking-wider py-4 rounded-xl transition-all flex items-center justify-center gap-3 shadow-lg"
