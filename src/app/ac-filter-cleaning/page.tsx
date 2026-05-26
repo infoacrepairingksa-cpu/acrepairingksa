@@ -15,6 +15,7 @@ import {
   Zap as ZapIcon, CheckCircle, RefreshCcw, Droplet, LayoutGrid
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { locations } from "@/data/locations";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACFilterCleaningPage() {

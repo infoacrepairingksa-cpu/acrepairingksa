@@ -18,6 +18,7 @@ import {
   Droplets as WaterDrops, Siren
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { locations } from "@/data/locations";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function PlumbingPage() {

@@ -14,6 +14,7 @@ import {
   HardHat, Drill, Compass, Thermometer, Droplets, Trash2, Filter, Users, Briefcase, Sparkles
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { locations } from "@/data/locations";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
 
 export default function ACInstallationPage() {
@@ -301,7 +302,7 @@ export default function ACInstallationPage() {
             ))}
           </div>
           <p className="mt-20 text-center text-primary/30 font-black italic tracking-widest uppercase text-[11px]">“We provide professional AC installation services across all major areas of Riyadh.”</p>
-          <div className="mt-20 flex justify-center"><button onClick={handleBookNow} className="px-14 py-7 bg-primary text-white rounded-[28px] font-black uppercase tracking-widest shadow-2xl border-b-4 border-slate-800">Book Service in Your Area</button></div>
+          <div className="mt-20 flex justify-center"><a href="/locations" className="px-12 py-6 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest shadow-xl border-b-4 border-slate-800 hover:bg-secondary transition-all">View All {Object.keys(locations).length} Districts</a></div>
         </div>
       </section>
 

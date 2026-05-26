@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Schema, { generateBreadcrumbSchema } from "@/components/Schema";
+import { locations } from "@/data/locations";
 import Link from "next/link";
 
 export default function LocationsPage() {
@@ -29,23 +30,11 @@ export default function LocationsPage() {
     </div>
   );
 
-  const districts = [
-    { name: "Al Olaya", href: "/locations/al-olaya", zone: "Central Riyadh" },
-    { name: "Al Malaz", href: "/locations/al-malaz", zone: "Central Riyadh" },
-    { name: "Al Yasmin", href: "/locations/al-yasmin", zone: "North Riyadh" },
-    { name: "Al Narjis", href: "/locations/al-narjis", zone: "North Riyadh" },
-    { name: "Al Sahafa", href: "/locations/al-sahafa", zone: "North Riyadh" },
-    { name: "Al Malqa", href: "/locations/al-malqa", zone: "North Riyadh" },
-    { name: "Al Aqiq", href: "/locations/al-aqiq", zone: "North Riyadh" },
-    { name: "Hittin", href: "/locations/hittin", zone: "North Riyadh" },
-    { name: "Al Nakheel", href: "/locations/al-nakheel", zone: "North Riyadh" },
-    { name: "Al Rawdah", href: "/locations/al-rawdah", zone: "East Riyadh" },
-    { name: "Al Sulaymaniyah", href: "/locations/al-sulaymaniyah", zone: "Central Riyadh" },
-    { name: "Al Rabwah", href: "/locations/al-rabwah", zone: "East Riyadh" },
-    { name: "Al Munsiyah", href: "/locations/al-munsiyah", zone: "East Riyadh" },
-    { name: "Al Qadisiyah", href: "/locations/al-qadisiyah", zone: "East Riyadh" },
-    { name: "Al Shifa", href: "/locations/al-shifa", zone: "South Riyadh" },
-  ];
+  const districts = Object.values(locations).map(loc => ({
+    name: loc.name,
+    href: `/locations/${loc.slug}`,
+    zone: loc.zone
+  }));
 
   return (
     <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">

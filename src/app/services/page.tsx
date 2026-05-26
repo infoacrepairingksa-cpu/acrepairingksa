@@ -18,6 +18,7 @@ import {
   Droplets as WaterDrops, Siren, Shield, Cog, Table, ListChecks, CalendarCheck, Gem
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { locations } from "@/data/locations";
 import Schema, { generateBreadcrumbSchema } from "@/components/Schema";
 import Link from "next/link";
 

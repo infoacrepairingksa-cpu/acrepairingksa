@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
+import { locations } from "@/data/locations";
 
 export default function ACRepairPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -245,15 +246,15 @@ export default function ACRepairPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <SectionHeading sub="Local Coverage" title="Expert AC Repair in Your Area" />
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
-              <div key={area} className="p-10 bg-[#FAFAFA] rounded-[32px] border border-gray-100 flex flex-col items-center gap-5 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
+            {Object.values(locations).slice(0, 15).map(loc => (
+              <a href={`/locations/${loc.slug}`} key={loc.slug} className="p-10 bg-[#FAFAFA] rounded-[32px] border border-gray-100 flex flex-col items-center gap-5 group hover:border-secondary hover:bg-secondary/5 transition-all cursor-pointer shadow-sm text-center">
                 <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
-                <span className="text-xs font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{area}</span>
-              </div>
+                <span className="text-xs font-black uppercase tracking-widest text-primary/60 group-hover:text-primary transition-colors">{loc.name}</span>
+              </a>
             ))}
           </div>
-          <p className="mt-16 text-center text-primary/30 font-black italic tracking-widest uppercase text-[10px]">“We provide fast AC repair services across all major Riyadh neighborhoods.”</p>
-          <div className="mt-16 flex justify-center"><button onClick={handleBookNow} className="px-12 py-6 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest shadow-xl border-b-4 border-slate-800">Book Service in Your Area</button></div>
+          <p className="mt-16 text-center text-primary/30 font-black italic tracking-widest uppercase text-[10px]">“We provide fast AC repair services across all {Object.keys(locations).length} major Riyadh neighborhoods.”</p>
+          <div className="mt-16 flex justify-center"><a href="/locations" className="px-12 py-6 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest shadow-xl border-b-4 border-slate-800 hover:bg-secondary transition-all">View All {Object.keys(locations).length} Districts</a></div>
         </div>
       </section>
 
