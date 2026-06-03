@@ -65,9 +65,12 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
             <Logo />
           </Link>
 
-          {/* Desktop Links - Clean Navigation */}
-          <div className="hidden xl:flex items-center gap-8">
-            <Link href="/" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Home</Link>
+          {/* Desktop Links - Optimized for space to prevent wrapping */}
+          <div className="hidden xl:flex items-center gap-3 2xl:gap-5">
+            <Link href="/ac-repair" className="text-xs 2xl:text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all whitespace-nowrap">AC Repair Riyadh</Link>
+            <Link href="/ac-cleaning" className="text-xs 2xl:text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all whitespace-nowrap">AC Cleaning Riyadh</Link>
+            <Link href="/ac-installation" className="text-xs 2xl:text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all whitespace-nowrap">AC Installation Riyadh</Link>
+            <Link href="/ac-maintenance" className="text-xs 2xl:text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all whitespace-nowrap">AC Maintenance Riyadh</Link>
             
             {/* Services Dropdown */}
             <div 
@@ -78,7 +81,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               <Link 
                 href="/services"
                 className={cn(
-                  "flex items-center gap-1.5 text-base font-bold tracking-tight transition-all",
+                  "flex items-center gap-1.5 text-xs 2xl:text-sm font-bold tracking-tight transition-all whitespace-nowrap",
                   servicesOpen ? "text-secondary" : "text-primary hover:text-secondary"
                 )}
               >
@@ -113,7 +116,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               <Link 
                 href="/locations"
                 className={cn(
-                  "flex items-center gap-1.5 text-base font-bold tracking-tight transition-all",
+                  "flex items-center gap-1.5 text-xs 2xl:text-sm font-bold tracking-tight transition-all whitespace-nowrap",
                   locationsOpen ? "text-secondary" : "text-primary hover:text-secondary"
                 )}
               >
@@ -139,8 +142,8 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               </div>
             </div>
 
-            <Link href="/blog" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Blog</Link>
-            <a href="tel:+966590132864" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Contact Us</a>
+            <Link href="/about" className="text-xs 2xl:text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all whitespace-nowrap">About Us</Link>
+            <Link href="/blog" className="text-xs 2xl:text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all whitespace-nowrap">Blog</Link>
           </div>
 
           {/* Action Buttons - Dominant CTA */}
@@ -229,8 +232,8 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               </div>
             </div>
 
+            <Link href="/about" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
             <Link href="/blog" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-            <a href="tel:+966590132864" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
 
             <div className="flex flex-col gap-4 mt-6">
               <a
