@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Phone, ArrowRight, Star, Clock, ShieldCheck, CheckCircle2, Zap, MessageSquare } from "lucide-react";
+import { Phone, ArrowRight, Star, Clock, ShieldCheck, CheckCircle2, Zap, MessageSquare, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
@@ -29,17 +29,22 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                   <Clock size={14} /> 30-Min Response
                 </span>
                 <span className="flex items-center gap-1.5 bg-secondary/10 text-secondary border border-secondary/20 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider">
-                  <ShieldCheck size={14} /> Certified Technicians
+                  <ShieldCheck size={14} /> Licensed Technicians
                 </span>
                 <span className="flex items-center gap-1.5 bg-primary/5 text-primary border border-primary/10 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider">
                   <Zap size={14} /> Same-Day Service
                 </span>
               </div>
-              <h1 className="text-[42px] md:text-[56px] lg:text-[64px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
-                Expert AC Repair, <span className="text-secondary">Plumbing & Home Services</span> in Riyadh
+              <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
+                Professional <span className="text-secondary">AC Repair, AC Cleaning &</span> Home Maintenance Services in Riyadh
               </h1>
-              <p className="text-base md:text-lg text-primary font-medium leading-relaxed max-w-xl opacity-90">
-                Don't suffer in the heat. Our highly-rated HVAC experts are available 24/7 for split and central AC repair. We guarantee a 30-minute arrival with honest, upfront pricing.
+              {/* AI Summary Block */}
+              <p className="text-base md:text-lg text-primary/80 font-medium leading-relaxed max-w-xl">
+                <strong>Professional AC repair, AC cleaning, AC installation, AC maintenance and AC gas refill services across Riyadh.</strong> Available for residential and commercial air conditioning systems with same-day support. We also provide complete home maintenance and plumbing solutions.
+              </p>
+              {/* GEO Signal */}
+              <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mt-2 flex items-center gap-2">
+                <MapPin size={16} className="text-secondary" /> Riyadh, Saudi Arabia — Serving Al Olaya, Al Malqa & All Main Service Areas
               </p>
             </motion.div>
 
@@ -50,19 +55,16 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 mt-4"
             >
               <a 
-                href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?"
-                className="w-full sm:w-auto px-8 md:px-10 py-5 md:py-6 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-[0_20px_40px_-10px_rgba(37,211,102,0.4)] flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-[#128C7E]"
+                href="tel:+966590132864"
+                className="w-full sm:w-auto px-8 md:px-10 py-5 md:py-6 bg-primary hover:bg-secondary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-[0_20px_40px_-10px_rgba(31,32,97,0.4)] flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95"
               >
-                <MessageSquare size={20} fill="currentColor" /> Get Technician in 60 Minutes
+                <Phone size={20} fill="currentColor" /> Call Now
               </a>
-              <a href="tel:+966590132864" className="w-full sm:w-auto flex items-center justify-center gap-4 px-8 py-5 rounded-[20px] bg-white border-2 border-gray-100 hover:border-secondary hover:shadow-xl transition-all group">
-                <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary group-hover:bg-secondary group-hover:text-white transition-all">
-                  <Phone size={20} fill="currentColor" />
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-[10px] font-bold text-primary/60 uppercase tracking-widest">Call Now for Instant Service</span>
-                  <span className="text-lg font-black text-primary group-hover:text-secondary transition-colors tracking-tight">+966 59 013 2864</span>
-                </div>
+              <a 
+                href="https://wa.me/966590132864?text=Hello,%20I%20need%20AC%20services.%20Can%20you%20help?"
+                className="w-full sm:w-auto px-8 md:px-10 py-5 md:py-6 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-[0_20px_40px_-10px_rgba(37,211,102,0.4)] flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95"
+              >
+                <MessageSquare size={20} fill="currentColor" /> WhatsApp Now
               </a>
             </motion.div>
           </div>

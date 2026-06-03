@@ -58,24 +58,52 @@ const FAQItem = ({ question, answer, index }: FAQItemProps) => {
 const FAQ = () => {
   const items = [
     {
-      question: "How fast can AC technician arrive in Riyadh?",
-      answer: "We guarantee a 30-60 minute arrival time for all AC repair calls in Riyadh. Our technician fleet is stationed across all major districts including Malqa, Sahafa, and Olaya to ensure immediate response."
+      question: "Why is my AC not cooling?",
+      answer: "AC not cooling is usually caused by dirty air filters, low refrigerant gas (R410A/R22), a faulty compressor, or blocked condenser coils. Our technicians can diagnose the exact issue within 30 minutes in Riyadh."
+    },
+    {
+      question: "How often should AC be serviced in Riyadh?",
+      answer: "Due to Riyadh's high dust levels, we recommend a professional AC service every 3 to 6 months. For high-usage commercial units, quarterly maintenance ensures optimal performance and lower electricity bills."
+    },
+    {
+      question: "How long does AC repair take?",
+      answer: "Most AC repairs, such as capacitor replacement or leak fixing, are completed within 1 to 2 hours. Complex jobs like compressor replacement may take 3 to 4 hours."
     },
     {
       question: "Do you offer emergency AC repair in Riyadh?",
-      answer: "Yes, we provide 24/7 emergency AC repair services across Riyadh. Whether it's a complete system failure or a gas leak, our technicians are available even late at night and on weekends."
+      answer: "Yes, we provide 24/7 emergency AC repair across all Riyadh districts. We understand that cooling failures in summer are urgent, and guarantee a 30-60 minute arrival."
     },
     {
-      question: "Is same-day AC service available in Riyadh?",
-      answer: "Absolutely. We specialize in same-day AC cleaning, repair, and installation. If you book before 9 PM, we guarantee a technician will visit your home the same day."
+      question: "What is included in AC deep cleaning?",
+      answer: "Our deep AC cleaning includes evaporator coil chemical wash, condenser unit high-pressure cleaning, drain line flushing, filter sanitization, and antibacterial treatment to remove mold and odor."
     },
     {
-      question: "What is included in your AC deep cleaning service?",
-      answer: "Our premium Riyadh AC cleaning includes high-pressure coil flushing, drainage pipe clearing, filter sanitization, and antibacterial chemical spray. This process improves cooling efficiency and restores ice-cold performance instantly."
+      question: "How much does AC gas refill cost?",
+      answer: "AC gas refill costs depend on the type of refrigerant (R410A or R22) and the amount needed. We perform a leak test before refilling to ensure you don't lose gas again."
     },
     {
-      question: "Do you provide a warranty on repairs and spare parts?",
-      answer: "Yes, every technical job we complete in Riyadh comes with a comprehensive service warranty. We only use original manufacturer-approved genuine spare parts to ensure long-term durability and peace of mind."
+      question: "Why is my AC leaking water inside?",
+      answer: "Indoor water leaks are typically caused by a clogged condensate drain line, frozen evaporator coils (due to low gas or dirty filters), or a cracked drain pan. We clear the blockage and flush the system."
+    },
+    {
+      question: "Do you fix central AC systems?",
+      answer: "Yes, our certified HVAC technicians are experts in central AC systems, VRF units, split ACs, and package units for both residential villas and commercial buildings."
+    },
+    {
+      question: "Why is my AC making a loud noise?",
+      answer: "Clicking noises often indicate electrical issues or a failing capacitor. Grinding or squealing sounds usually point to blower motor bearings or fan belt problems. Immediate inspection is recommended."
+    },
+    {
+      question: "Do you provide a warranty on repairs?",
+      answer: "Yes, all our AC repair services come with a 90-day service warranty. We use genuine manufacturer spare parts to guarantee durability."
+    },
+    {
+      question: "Can I clean my AC filter myself?",
+      answer: "Yes, you can clean the basic mesh filter with water every 2 weeks. However, internal evaporator coils and blower fans require professional chemical cleaning to prevent mold."
+    },
+    {
+      question: "Which areas in Riyadh do you serve?",
+      answer: "We cover all major Riyadh neighborhoods including Al Olaya, Al Malaz, Al Yasmin, Al Narjis, Hittin, Al Nakheel, Al Sulaymaniyah, and surrounding districts."
     }
   ];
 

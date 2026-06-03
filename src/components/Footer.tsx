@@ -77,17 +77,18 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links List */}
+          {/* Services Group */}
           <div className="flex flex-col gap-10">
-            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Quick Links</h3>
+            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Our Services</h3>
             <ul className="flex flex-col gap-5">
               {[
-                { name: "Home", href: "/" },
-                { name: "Services", href: "/services" },
-                { name: "About Us", href: "/about" },
-                { name: "Locations", href: "/locations" },
-                { name: "Blog", href: "/blog" },
-                { name: "Contact Us", href: "#contact" },
+                { name: "AC Repair", href: "/ac-repair" },
+                { name: "AC Cleaning", href: "/ac-cleaning" },
+                { name: "AC Installation", href: "/ac-installation" },
+                { name: "AC Maintenance", href: "/ac-maintenance" },
+                { name: "AC Gas Refill", href: "/ac-gas-refill" },
+                { name: "Plumbing Services", href: "/plumbing" },
+                { name: "Home Maintenance", href: "/home-maintenance" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link 
@@ -102,11 +103,18 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services Group */}
+          {/* Locations Group */}
           <div className="flex flex-col gap-10">
-            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Our Services</h3>
+            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Top Locations</h3>
             <ul className="flex flex-col gap-5">
-              {[...acServicesList, ...maintenanceList].slice(0, 10).map((item) => (
+              {[
+                { name: "Al Olaya", href: "/locations/al-olaya" },
+                { name: "Al Malaz", href: "/locations/al-malaz" },
+                { name: "Al Yasmin", href: "/locations/al-yasmin" },
+                { name: "Al Narjis", href: "/locations/al-narjis" },
+                { name: "Hittin", href: "/locations/hittin" },
+                { name: "Al Nakheel", href: "/locations/al-nakheel" },
+              ].map((item) => (
                 <li key={item.name}>
                   <Link 
                     href={item.href}
@@ -119,49 +127,47 @@ const Footer = () => {
               ))}
               <li>
                 <Link 
-                  href="/services"
+                  href="/locations"
                   className="text-secondary hover:text-white hover:translate-x-2 transition-all flex items-center gap-4 text-sm font-black uppercase tracking-[0.2em] group mt-4 pt-4 border-t border-white/5"
                 >
                   <ArrowRight size={14} className="text-secondary group-hover:translate-x-1 transition-all" />
-                  View All Services
+                  View All Areas
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info & Hours */}
           <div className="flex flex-col gap-10">
-            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Contact Info</h3>
+            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Contact & Hours</h3>
             <div className="flex flex-col gap-4">
               <ContactLink 
                 icon={<Phone size={18} fill="currentColor" />} 
                 text="+966 59 013 2864" 
                 href="tel:+966590132864" 
-                ariaLabel="Call Riyadh Home Fix Technical Support"
+                ariaLabel="Call Riyadh Technical Support"
+              />
+              <ContactLink 
+                icon={<MessageSquare size={18} fill="currentColor" />} 
+                text="WhatsApp Us" 
+                href="https://wa.me/966590132864?text=Hello" 
+                ariaLabel="WhatsApp Technical Support"
               />
               <ContactLink 
                 icon={<Mail size={18} />} 
-                text="info@riyadhhomefix.com" 
-                href="mailto:info@riyadhhomefix.com" 
-                ariaLabel="Email Riyadh Home Fix for inquiries"
+                text="info@acrepairingksa.com" 
+                href="mailto:info@acrepairingksa.com" 
+                ariaLabel="Email AC Repairing KSA"
               />
               
-              <ContactLink 
-                icon={<MapPin size={18} />} 
-                text="View All Locations" 
-                href="/locations" 
-                ariaLabel="View all service locations in Riyadh"
-              />
-              <div className="flex items-center gap-4 py-4 px-6 bg-white/5 rounded-2xl border border-white/10 w-fit mt-10">
-                <div className="w-3 h-3 rounded-full bg-secondary animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
-                <span className="text-white font-bold text-sm uppercase tracking-wider leading-none">Riyadh Status: Online Now</span>
+              <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2">
+                <span className="text-white/60 text-xs font-black uppercase tracking-widest">Business Hours</span>
+                <span className="text-white font-bold text-sm tracking-wide">Monday - Sunday</span>
+                <span className="text-secondary font-black text-sm tracking-wide">Open 24/7 (Emergency Service)</span>
               </div>
             </div>
           </div>
-
         </div>
-
-        {/* Footer Bottom */}
         <div className="border-t border-white/5 pt-16 flex flex-col md:flex-row items-center justify-between gap-8 text-white/60 text-xs font-bold uppercase tracking-wider">
           <p>© {currentYear} AC Repairing KSA. Trusted Home Services in Riyadh City.</p>
           <div className="flex items-center gap-10">

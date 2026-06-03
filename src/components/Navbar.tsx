@@ -46,16 +46,31 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-white">
+      {/* Top Bar for Emergency & Contact */}
+      <div className="bg-slate-900 text-white text-xs font-bold tracking-wide py-2 hidden md:block">
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <div className="flex items-center gap-4">
+            <span className="bg-red-600 px-3 py-1 rounded-full text-white uppercase tracking-widest text-[10px] flex items-center gap-1"><ShieldCheck size={12} /> Emergency Service</span>
+            <span className="flex items-center gap-2"><MapPin size={12} className="text-secondary" /> Serving All Riyadh Districts</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <a href="tel:+966590132864" className="flex items-center gap-2 hover:text-secondary transition-colors"><Phone size={12} className="text-secondary" /> +966 59 013 2864</a>
+          </div>
+        </div>
+      </div>
 
       <nav className="bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.03)] py-4 transition-all">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <Link href="/" className="group">
+          <Link href="/" className="group flex-shrink-0">
             <Logo />
           </Link>
 
           {/* Desktop Links - Conversion Oriented */}
-          <div className="hidden lg:flex items-center gap-8">
-            <Link href="/" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Home</Link>
+          <div className="hidden xl:flex items-center gap-6">
+            <Link href="/ac-repair" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Repair Riyadh</Link>
+            <Link href="/ac-cleaning" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Cleaning Riyadh</Link>
+            <Link href="/ac-installation" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Installation Riyadh</Link>
+            <Link href="/ac-maintenance" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Maintenance Riyadh</Link>
             
             {/* Services Dropdown */}
             <div 

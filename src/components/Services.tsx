@@ -113,7 +113,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-repair",
       title: "AC Repair",
-      description: "Fast fix for cooling issues.",
+      description: "Compressor repair, thermostat troubleshooting, refrigerant leak detection and complete cooling system diagnostics.",
       icon: <Snowflake />,
       isPrimary: true,
       badge: "⭐ Popular Service",
@@ -124,7 +124,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-cleaning",
       title: "AC Cleaning",
-      description: "Deep chemical sanitization.",
+      description: "Evaporator coil chemical wash, filter sanitization, drain line flushing, and blower motor maintenance.",
       icon: <Droplets />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Cleaning.webp",
@@ -134,7 +134,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-gas-refill",
       title: "AC Gas Refill",
-      description: "Original refrigerant top-up.",
+      description: "Original R410A & R22 refrigerant top-up, accurate pressure gauge reading, and professional leak sealing.",
       icon: <Zap />,
       imageUrl: "/Ac Services/AC Gas Refill.webp",
       ctaText: "Check Gas Pricing",
@@ -143,7 +143,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-installation",
       title: "AC Installation",
-      description: "Split & duct mounting.",
+      description: "Expert split and central AC mounting, proper copper pipe sizing, electrical load balancing, and secure bracket fitting.",
       icon: <Wind />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Installation.webp",
@@ -153,7 +153,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-maintenance",
       title: "AC Maintenance",
-      description: "Filter & vital checks.",
+      description: "Seasonal system health checks, capacitor testing, thermal efficiency optimization, and proactive fault prevention.",
       icon: <Settings />,
       imageUrl: "/Ac Services/AC Maintenance.webp",
       ctaText: "Plan Maintenance",
@@ -162,7 +162,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-filter-cleaning",
       title: "AC Filter Cleaning",
-      description: "Pure air flow restoration.",
+      description: "Dust and allergen removal, HEPA filter replacement, and indoor air quality (IAQ) improvement.",
       icon: <Wind />,
       imageUrl: "/Ac Services/AC Filter Cleaning.webp",
       ctaText: "Clean Filters",
@@ -171,7 +171,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-duct-cleaning",
       title: "AC Duct Cleaning",
-      description: "Deep ventilation scrubbing.",
+      description: "Deep ventilation system scrubbing, mold remediation, duct sanitization, and airflow balancing.",
       icon: <Wind />,
       imageUrl: "/Ac Services/AC Duct Cleaning.webp",
       ctaText: "WhatsApp for Ducts",
@@ -180,7 +180,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-coil-cleaning",
       title: "AC Coil Cleaning",
-      description: "Max thermal efficiency fix.",
+      description: "Max thermal efficiency fix via condenser and evaporator coil chemical descaling to lower electricity consumption.",
       icon: <Snowflake />,
       imageUrl: "/Ac Services/AC Coil Cleaning.webp",
       ctaText: "Check Coils",
