@@ -1,15 +1,14 @@
-"use client";
-
 import React from "react";
 
 interface SchemaProps {
-  type: "WebSite" | "Service" | "BreadcrumbList" | "LocalBusiness" | "Organization" | "FAQPage";
-  data: any;
+  type: "WebSite" | "Service" | "BreadcrumbList" | "LocalBusiness" | "Organization" | "FAQPage" | "WebPage" | "HVACBusiness";
+  data: Record<string, unknown>;
 }
 
 const Schema = ({ type, data }: SchemaProps) => {
   const schemaData = {
     "@context": "https://schema.org",
+    "@type": type,
     ...data,
   };
 
