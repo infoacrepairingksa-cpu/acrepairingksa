@@ -65,12 +65,9 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
             <Logo />
           </Link>
 
-          {/* Desktop Links - Conversion Oriented */}
-          <div className="hidden xl:flex items-center gap-6">
-            <Link href="/ac-repair" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Repair Riyadh</Link>
-            <Link href="/ac-cleaning" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Cleaning Riyadh</Link>
-            <Link href="/ac-installation" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Installation Riyadh</Link>
-            <Link href="/ac-maintenance" className="text-sm font-bold tracking-tight text-primary hover:text-secondary transition-all">AC Maintenance Riyadh</Link>
+          {/* Desktop Links - Clean Navigation */}
+          <div className="hidden xl:flex items-center gap-8">
+            <Link href="/" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Home</Link>
             
             {/* Services Dropdown */}
             <div 
@@ -142,8 +139,8 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               </div>
             </div>
 
-            <Link href="/about" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">About Us</Link>
             <Link href="/blog" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Blog</Link>
+            <a href="tel:+966590132864" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Contact Us</a>
           </div>
 
           {/* Action Buttons - Dominant CTA */}
@@ -232,8 +229,8 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
               </div>
             </div>
 
-            <Link href="/about" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
             <Link href="/blog" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+            <a href="tel:+966590132864" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
 
             <div className="flex flex-col gap-4 mt-6">
               <a
