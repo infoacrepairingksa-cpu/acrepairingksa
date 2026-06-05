@@ -50,7 +50,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
       <div className="bg-slate-900 text-white text-xs font-bold tracking-wide py-2 hidden md:block">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <span className="bg-red-600 px-3 py-1 rounded-full text-white uppercase tracking-widest text-[10px] flex items-center gap-1"><ShieldCheck size={12} /> Emergency Service</span>
+            <span className="bg-secondary px-3 py-1 rounded-full text-white uppercase tracking-widest text-[10px] flex items-center gap-1"><ShieldCheck size={12} /> Emergency Service</span>
             <span className="flex items-center gap-2"><MapPin size={12} className="text-secondary" /> Serving All Riyadh Districts</span>
           </div>
           <div className="flex items-center gap-4">

@@ -85,6 +85,16 @@ const AIDirectAnswers = () => {
             </div>
           ))}
         </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20have%20questions%20about%20AC%20service%20in%20Riyadh."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Ask Our AC Experts
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -134,32 +144,48 @@ const CommonProblems = () => {
       desc: "Slow loss of cooling capability over several weeks, accompanied by a soft hissing sound near the outdoor copper fittings.",
       cause: "Vibration cracks in copper flare joints, or acidic corrosion on aluminum evaporator fins.",
       solution: "Detect leak location, weld/repair piping joints, pull vacuum, and recharge R410A."
+    },
+    {
+      title: "Foul Odor / Smelly AC",
+      desc: "A musty, damp, or burning smell coming from your vents when the air conditioner runs.",
+      cause: "Microbial mold buildup on wet evaporator coils, clogged drain pan, or electrical burn.",
+      solution: "Perform deep antibacterial coil cleaning and sanitize the blower wheel."
     }
   ];
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-red-50 text-red-700 border border-red-100 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Diagnostic Expertise</span>
+          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Diagnostic Expertise</span>
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Common AC Problems We Fix</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Identify the warning signs. Our certified technical crew carries diagnostic tools to solve these cooling faults on the spot.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {problems.map((p, i) => (
-            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col justify-between hover:bg-white hover:shadow-xl hover:border-red-100 transition-all duration-300">
+            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col justify-between hover:bg-white hover:shadow-xl hover:border-secondary/20 transition-all duration-300">
               <div>
-                <div className="w-10 h-10 rounded-xl bg-red-100/55 text-red-600 flex items-center justify-center mb-4 font-black">
+                <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-4 font-black">
                   ⚠️
                 </div>
                 <h3 className="font-heading font-black text-lg text-primary mb-2">{p.title}</h3>
                 <p className="text-xs text-gray-600 leading-relaxed mb-4">{p.desc}</p>
               </div>
               <div className="border-t border-gray-100 pt-3 mt-2 text-[11px] font-bold">
-                <span className="text-primary block"><strong className="text-red-700 uppercase tracking-widest text-[9px] block">Root Cause:</strong> {p.cause}</span>
+                <span className="text-primary block"><strong className="text-secondary uppercase tracking-widest text-[9px] block">Root Cause:</strong> {p.cause}</span>
                 <span className="text-secondary block mt-1"><strong className="text-primary uppercase tracking-widest text-[9px] block">Solution:</strong> {p.solution}</span>
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20need%20to%20diagnose%20an%20AC%20problem%20in%20Riyadh."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Get AC Diagnostic Support
+          </a>
         </div>
       </div>
     </section>
@@ -175,7 +201,8 @@ const ACComponents = () => {
     { name: "Evaporator Coil", desc: "Indoor component where heat absorption occurs. We fix minor weld leaks, treat rust, and carry out chemical cleans to eliminate mold." },
     { name: "Refrigerant Lines", desc: "Insulated copper pipes carrying chemical coolant. We inspect flare joints, patch pinhole leaks, and secure lines to prevent vibration damage." },
     { name: "Air Filters", desc: "Nylon mesh filtering sand and pet dander. We clean reusable filters and source manufacturer-approved replacement filters for all models." },
-    { name: "Drain Pipes & Pans", desc: "Routes condensation safely outside. We clear slime build-ups, re-angle slanting drain lines, and replace cracked plastic drain pans." }
+    { name: "Drain Pipes & Pans", desc: "Routes condensation safely outside. We clear slime build-ups, re-angle slanting drain lines, and replace cracked plastic drain pans." },
+    { name: "Blower Motor", desc: "The electric motor that drives airflow through your indoor unit. We lubricate motor bearings, replace failed run capacitors, and exchange broken fan blades." }
   ];
   return (
     <section className="py-24 bg-[#F8FAFC]">
@@ -197,6 +224,16 @@ const ACComponents = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20need%20to%20repair%20an%20AC%20component%20in%20Riyadh."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Book Component Repair
+          </a>
         </div>
       </div>
     </section>
@@ -247,6 +284,16 @@ const BrandsGrid = () => {
             </div>
           ))}
         </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20need%20service%20for%20my%20AC%20brand%20in%20Riyadh."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Book Service for Your Brand
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -256,28 +303,42 @@ const BrandsGrid = () => {
 const SignsYourACNeedsRepair = () => {
   const signs = [
     { title: "Venting Lukewarm / Warm Air", text: "Vents blowing warm air instead of cool room-temperature air is a sign that the compressor fails to start or your chemical coolant has leaked out." },
-    { title: "Dripping Water & Internal Leaks", desc: "Puddles of water pooling beneath the indoor split unit or water running down your wallpaper indicates a blocked PVC drain pipe that needs immediate flush." },
+    { title: "Dripping Water & Internal Leaks", text: "Puddles of water pooling beneath the indoor split unit or water running down your wallpaper indicates a blocked PVC drain pipe that needs immediate flush." },
     { title: "Foul Mildew or Burning Smell", text: "A stale smell indicates microbial mold growth on the wet evaporator fins. A burning plastic smell means an electrical contact is overheating." },
-    { title: "Spiking Electricity Bills", desc: "A sudden increase in energy usage usually means the condenser fins are covered in dust, forcing the compressor to draw double current to reject heat." }
+    { title: "Spiking Electricity Bills", text: "A sudden increase in energy usage usually means the condenser fins are covered in dust, forcing the compressor to draw double current to reject heat." },
+    { title: "AC Won't Turn On At All", text: "When the unit shows no response to the remote or panel switch, the issue is typically a blown fuse, failed control board, or tripped circuit breaker that cuts all power." },
+    { title: "Ice Forming on Copper Pipes", text: "Visible ice or frost forming on the indoor copper lines indicates critically low refrigerant pressure or severely clogged filters causing coil sub-freezing temperatures." },
+    { title: "Loud or Unusual Noises", text: "Clicking, squealing, or grinding sounds coming from the indoor or outdoor unit point to mechanical failures such as seized fan bearings or loose compressor mounts." },
+    { title: "AC Cycles On & Off Constantly", text: "Short-cycling (the AC turning on and off every few minutes) indicates the unit is unable to maintain pressure and suggests a gas leak, dirty coil, or failing thermostat sensor." }
   ];
   return (
     <section className="py-24 bg-slate-50">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-red-50 text-red-700 border border-red-100 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Pre-Failure Indicators</span>
+          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Pre-Failure Indicators</span>
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Signs Your AC Needs Repair</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Catch faults early to avoid total compressor burnout. Check your cooling system for these indicators.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {signs.map((s, i) => (
-            <div key={i} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
-              <span className="w-8 h-8 rounded-full bg-red-100 text-red-700 flex items-center justify-center shrink-0 font-black text-sm">!</span>
+            <div key={i} className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex flex-col gap-3 hover:shadow-md hover:border-secondary/20 transition-all duration-300">
+              <span className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0 font-black text-base">⚡</span>
               <div>
-                <h3 className="font-heading font-black text-lg text-primary mb-2">{s.title}</h3>
-                <p className="text-xs md:text-sm text-gray-500 leading-relaxed font-medium">{s.text || s.desc}</p>
+                <h3 className="font-heading font-black text-base text-primary mb-1 leading-tight">{s.title}</h3>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">{s.text}</p>
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20my%20AC%20is%20showing%20signs%20of%20failure.%20Need%20inspection."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Book Free Inspection
+          </a>
         </div>
       </div>
     </section>
@@ -287,11 +348,14 @@ const SignsYourACNeedsRepair = () => {
 // 7. STEP-BY-STEP PROCESS
 const StepByStepProcess = () => {
   const steps = [
+    { title: "Book via WhatsApp", desc: "Send a message describing your AC issue and your Riyadh district. We confirm your appointment and ETA within minutes." },
+    { title: "Technician Dispatched", desc: "A certified technician is dispatched from the nearest standby location with a fully equipped service van." },
     { title: "Comprehensive Inspection", desc: "Our technicians inspect the complete unit, checking compressor amperage, electrical contactors, capacitor microfarads, and coolant pressure levels." },
     { title: "Diagnostic Analysis", desc: "We identify the root cause of the cooling failure—whether it is an electrical short, motor wear, or sand-blocked coils." },
+    { title: "Upfront Price Quotation", desc: "Before any work begins, we provide a clear, no-hidden-fee SAR quote explaining the exact parts needed and labor costs." },
     { title: "Precision Repair", desc: "Using original manufacturer parts, we replace failed capacitors, weld copper pipe cracks, or clean evaporator coils on-site." },
     { title: "Pressure Testing & Vacuuming", desc: "We check all joints for gas leaks, evacuate moisture from copper lines using a vacuum pump, and weigh in high-grade R410A coolant." },
-    { title: "Performance Calibration", desc: "We run the AC to check ambient airflow output, measure temperature delta, clean up the work area, and activate your 90-day warranty." }
+    { title: "Performance Calibration", desc: "We run the AC to verify airflow output and temperature delta, clean up the work area, and activate your 90-day warranty." }
   ];
   return (
     <section className="py-24 bg-white">
@@ -299,21 +363,26 @@ const StepByStepProcess = () => {
         <div className="text-center mb-16">
           <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Service Standards</span>
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">How Our Service Works</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Five technical steps to diagnose, repair, vacuum, and calibrate your split or central system back to original specifications.</p>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Eight clear steps from first WhatsApp message to guaranteed 90-day warranted repair — all on the same day.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {steps.map((s, i) => (
-            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col justify-between relative">
-              <div>
-                <span className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center font-black text-base mb-4">{i + 1}</span>
-                <h3 className="font-heading font-black text-base text-primary mb-2 leading-tight">{s.title}</h3>
-                <p className="text-[11px] text-gray-500 leading-relaxed font-medium">{s.desc}</p>
-              </div>
-              {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute right-[-12px] top-1/2 -translate-y-1/2 z-10 w-6 h-px bg-gray-300" />
-              )}
+            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col gap-3 hover:bg-white hover:shadow-lg hover:border-secondary/20 transition-all duration-300">
+              <span className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center font-black text-base">{i + 1}</span>
+              <h3 className="font-heading font-black text-base text-primary leading-tight">{s.title}</h3>
+              <p className="text-[11px] text-gray-500 leading-relaxed font-medium">{s.desc}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20start%20the%20AC%20repair%20process."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Start Your AC Service
+          </a>
         </div>
       </div>
     </section>
@@ -367,6 +436,16 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20with%20Riyadh's%20trusted%20HVAC%20crew."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Choose Our Certified Crew
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -415,6 +494,16 @@ const RepairVsReplacement = () => {
             </tbody>
           </table>
         </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20need%20advice%20on%20AC%20repair%20vs%20replacement%20in%20Riyadh."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Get Expert Recommendation
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -427,26 +516,39 @@ const CostFactors = () => {
     { title: "Parts & Materials Required", text: "Replacing simple electrical run capacitors or copper fittings is less expensive, whereas buying an original LG or Carrier compressor carries a higher parts cost." },
     { title: "Refrigerant Gas Replenishment", text: "If your AC has lost pressure because of copper cracks, refilling R410A or R22 gas requires welding labor, nitrogen leak testing, vacuum pull, and the gas itself." },
     { title: "Unit Age & Compatibility", text: "Older models running on phased-out R22 gas involve high material costs for sourcing refrigerant compared to modern eco-friendly R410A units." },
-    { title: "Emergency After-Hours Service", text: "Emergency calls in the middle of a summer night or peak heatwave hours involve specific technician dispatch and mobilization charges." }
+    { title: "Emergency After-Hours Service", text: "Emergency calls in the middle of a summer night or peak heatwave hours involve specific technician dispatch and mobilization charges." },
+    { title: "Number of AC Units", text: "Servicing multiple split units in one visit is discounted versus individual service calls. We offer villa-wide package pricing for multi-unit households." },
+    { title: "Travel Distance & Area", text: "Dispatch fees vary slightly based on how far the service location is from our nearest standby technical hub in North, Central, or East Riyadh." },
+    { title: "Warranty Claim or Fresh Repair", text: "Repairs under our 90-day warranty period are covered at no additional parts cost — you only pay for any new components not related to the prior fix." }
   ];
   return (
     <section className="py-24 bg-slate-50">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Pricing Factors</span>
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">What Affects AC Repair Costs?</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Clear, upfront estimates. We analyze these major factors to determine the repair quote for your system.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {factors.map((f, i) => (
-            <div key={i} className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex items-start gap-4">
-              <span className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0 font-bold">💰</span>
+            <div key={i} className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex flex-col gap-3 hover:shadow-md hover:border-secondary/20 transition-all duration-300">
+              <span className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0 font-bold">💰</span>
               <div>
                 <h3 className="font-heading font-black text-base text-primary mb-2">{f.title}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed font-medium">{f.text}</p>
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20a%20price%20quote%20for%20AC%20repair."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Request Free Cost Quote
+          </a>
         </div>
       </div>
     </section>
@@ -526,6 +628,16 @@ const CertifiedTechnicians = () => {
             <p className="text-xs text-gray-500 mt-2 leading-relaxed">Averaging 10 years of servicing AC units under extreme desert summer conditions.</p>
           </div>
         </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20a%20certified%20technician."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Book Vetted Technicians
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -581,6 +693,16 @@ const ProjectGallery = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20a%20similar%20service%20in%20my%20district."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Book Similar Service
+          </a>
         </div>
       </div>
     </section>
@@ -642,6 +764,16 @@ const CustomerReviews = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20with%20your%205-star%20rated%20team."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Schedule 5-Star Rated Service
+          </a>
         </div>
       </div>
     </section>
@@ -717,89 +849,22 @@ const TopicClusterSection = () => {
           </div>
 
         </div>
-      </div>
-    </section>
-  );
-};
-
-// 16. DETAILED ABOUT COMPANY (THIN CONTENT FIX - 1200+ WORDS CORE Topicals)
-const AboutCompanyDetailed = () => {
-  return (
-    <section className="py-24 bg-[#F8FAFC]">
-      <div className="container mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Topical Guide</span>
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Riyadh AC Repair & Cleaning Guide</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Read comprehensive explanations on the repair, cleaning, gas charging, and installation of HVAC systems in Saudi Arabia.</p>
-        </div>
-        <div className="bg-white p-8 md:p-16 rounded-[48px] border border-gray-100 shadow-sm space-y-12 text-xs md:text-sm text-gray-600 leading-relaxed font-medium">
-          
-          <div className="space-y-4">
-            <h3 className="font-heading font-black text-xl md:text-2xl text-primary border-b border-gray-100 pb-3 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-lg bg-primary/5 text-primary flex items-center justify-center font-black text-sm">1</span>
-              What is AC Repair & How Does it Work?
-            </h3>
-            <p>
-              AC repair is the technical diagnostic and restorative process required when an air conditioner ceases to perform its primary thermodynamic function. An air conditioning system operates on a closed-loop refrigeration cycle, where refrigerant gas is compressed, condensed into a liquid, and then expanded to absorb heat from the indoor air. When any part of this closed loop breaks down, professional repair becomes necessary.
-            </p>
-            <p>
-              The most common electrical failure in Riyadh's split AC units involves the starting capacitor. The starting capacitor acts as a temporary battery, providing the high-torque electrical jolt required to kickstart the heavy compressor motor. In extreme summer heat, capacitors undergo heavy thermal stress, leading to oil leaks, bulging, and electrical failure. 
-            </p>
-            <p>
-              Other repair procedures include replacing damaged control boards, repairing contactor switches that regulate current flow, and addressing direct short circuits. A short circuit or grounded compressor will immediately trip the circuit breaker in your distribution board. If your breaker trips twice, it is crucial to leave it off to prevent melting the wiring inside the wall and creating an electrical fire hazard.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="font-heading font-black text-xl md:text-2xl text-primary border-b border-gray-100 pb-3 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-lg bg-primary/5 text-primary flex items-center justify-center font-black text-sm">2</span>
-              What is AC Cleaning & Why is it Critical?
-            </h3>
-            <p>
-              AC cleaning is a deep preventative maintenance procedure designed to remove dust, mold, and airborne contaminants from the internal components of an air conditioning unit. In Saudi Arabia's Central Region, sandstorms deposit fine desert dust into the indoor evaporator unit. This dust combines with moisture from condensation to form a thick, plaster-like mud.
-            </p>
-            <p>
-              If left uncleaned, this dust layer blocks the air filters and wraps around the evaporator coils, insulating them from the warm room air. Since the warmth cannot be absorbed by the refrigerant, the temperature inside the coils drops below freezing (0°C). Moisture on the coils turns into a solid layer of ice, blocking airflow and causing water leaks down your walls when the ice melts.
-            </p>
-            <p>
-              Professional cleaning involves sliding out the mesh filters, using specialized plastic catchment bags, and blasting the coils and blower fan with high-pressure water and antibacterial biocides. This removes the microbial slime causing the foul 'Dirty Sock Syndrome' odor and restores silent, healthy airflow.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="font-heading font-black text-xl md:text-2xl text-primary border-b border-gray-100 pb-3 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-lg bg-primary/5 text-primary flex items-center justify-center font-black text-sm">3</span>
-              When is an AC Gas Refill Required?
-            </h3>
-            <p>
-              An air conditioner runs on a sealed closed loop, meaning it does not consume refrigerant gas over time. If your AC has low gas pressure, it means there is a physical hole or leak in the copper refrigerant lines, flare joints, or evaporator coils. Simply refilling the gas without fixing the leak will result in a loss of pressure within weeks.
-            </p>
-            <p>
-              Warning signs of a refrigerant leak include weak cooling vents, ice forming on copper pipes, hissing sounds near fittings, and high electricity bills. To fix a gas leak permanently, technicians must find the leak location using halogen detectors or nitrogen pressure tests, weld/braze the damaged copper joint, evacuate the system using a vacuum pump, and recharge original R410A or R22 gas to manufacturer specifications.
-            </p>
-            <p>
-              Modern air conditioning units use R410A gas, which runs at higher operating pressures (approx 120 PSI) and is eco-friendly. Older units built over a decade ago use R22 Freon gas, which is being phased out globally. Sourcing original, high-quality refrigerant gas is critical to avoid compressor damage.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="font-heading font-black text-xl md:text-2xl text-primary border-b border-gray-100 pb-3 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-lg bg-primary/5 text-primary flex items-center justify-center font-black text-sm">4</span>
-              How Does AC Installation & Maintenance Prevent Failure?
-            </h3>
-            <p>
-              Correct installation is the foundation of a long-lasting AC system. An incorrect mounting angle prevents condensation from draining out of the indoor unit, causing water to back up and overflow inside the room. Furthermore, if flare joints are not tightened using a torque wrench, vibration from the compressor will loosen them over time, triggering a slow refrigerant leak.
-            </p>
-            <p>
-              Regular bi-annual AC maintenance prevents sudden breakdowns during peak summer heatwaves when the city's power grid is under maximum load. Maintenance visits include checking starting capacitors for signs of thermal expansion, tightening electrical terminals, testing gas pressure, and washing out sand from condenser fins. This prolongs the life of the system and reduces energy costs.
-            </p>
-          </div>
-
+        <div className="mt-12 text-center w-full">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20need%20expert%20AC%20services%20in%20Riyadh."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Request Service Now
+          </a>
         </div>
       </div>
     </section>
   );
 };
+
+
 
 // 17. INTERNAL LINKING BLOCK
 const InternalLinking = () => {
@@ -902,6 +967,16 @@ const BeforeAfterGallery = () => {
             </div>
           ))}
         </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20a%20similar%20AC%20service."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Get Similar Results
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -954,6 +1029,16 @@ const ComparisonSection = () => {
             </tbody>
           </table>
         </div>
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20with%20your%20licensed%20technicians."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
+          >
+            <WhatsAppIcon size={16} /> Book Premium Service
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -962,7 +1047,7 @@ const ComparisonSection = () => {
 // 14. EMERGENCY AC REPAIR URGENCY SECTION
 const EmergencyUrgencySection = () => {
   return (
-    <section className="bg-red-600 text-white py-20 relative overflow-hidden">
+    <section className="bg-primary text-white py-20 relative overflow-hidden">
       {/* Decorative pulse glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-[120px] pointer-events-none animate-pulse" />
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
@@ -1000,7 +1085,7 @@ const EmergencyUrgencySection = () => {
             </div>
             <a 
               href="tel:+966590132864"
-              className="w-full bg-white hover:bg-gray-150 text-red-650 py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95 text-red-600"
+              className="w-full bg-white hover:bg-gray-150 text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95"
             >
               Get Technician Now
             </a>
@@ -1034,7 +1119,7 @@ const CTABanner = () => (
               🚨 Emergency response available 24/7
             </span>
             <span className="text-white/80 text-xs font-black uppercase tracking-widest mt-2">
-              🔥 Today's Remaining Emergency Slots: <span className="bg-red-600 text-white px-2 py-0.5 rounded font-black">4 Slots Left</span>
+              🔥 Today's Remaining Emergency Slots: <span className="bg-secondary text-white px-2 py-0.5 rounded font-black">4 Slots Left</span>
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-heading font-black leading-tight tracking-tight">
@@ -1114,7 +1199,6 @@ export default function Home() {
         <ProjectGallery />
         <CustomerReviews />
         <TopicClusterSection />
-        <AboutCompanyDetailed />
         <FAQ />
         <InternalLinking />
         <CTABanner />

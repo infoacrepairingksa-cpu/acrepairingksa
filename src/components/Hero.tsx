@@ -124,22 +124,6 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 priority
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
-              {/* Google Reviews Badge overlay */}
-              <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-xl flex items-center gap-3 border border-gray-100">
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={12} className="text-amber-400 fill-amber-400" />
-                    ))}
-                  </div>
-                  <span className="text-[10px] font-black text-primary uppercase tracking-widest">4.9 · Google Reviews</span>
-                  <span className="text-[9px] text-gray-400 font-bold">542+ Verified Reviews</span>
-                </div>
-              </div>
-              {/* Badge top right */}
-              <div className="absolute top-4 right-4 bg-secondary text-white text-[10px] font-black uppercase tracking-widest px-3 py-2 rounded-xl shadow-lg">
-                ✓ Licensed Technicians
-              </div>
             </div>
             {/* Small before/after thumbnail below */}
             <div className="mt-4 grid grid-cols-2 gap-3">
