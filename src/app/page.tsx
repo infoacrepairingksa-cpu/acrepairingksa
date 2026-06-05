@@ -892,6 +892,7 @@ export default function Home() {
       <div className="flex flex-col">
         <Hero onBookNow={handleBookNow} />
         <TrustBar />
+        <Services onBookNow={handleBookNow} />
         <AIDirectAnswers />
         <CommonProblems />
         <ACComponents />
