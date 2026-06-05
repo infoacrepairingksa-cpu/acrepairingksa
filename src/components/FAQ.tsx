@@ -104,6 +104,18 @@ const FAQ = () => {
     {
       question: "Which areas in Riyadh do you serve?",
       answer: "We cover all major Riyadh neighborhoods including Al Olaya, Al Malaz, Al Yasmin, Al Narjis, Hittin, Al Nakheel, Al Sulaymaniyah, and surrounding districts."
+    },
+    {
+      question: "What refrigerant gases do you use for refilling?",
+      answer: "We use high-grade, original R410A and R22 refrigerant gases depending on your AC manufacturer specifications. We perform a leak check prior to refilling to prevent recurrent low pressure."
+    },
+    {
+      question: "Can a dirty filter cause the AC breaker to trip?",
+      answer: "Yes, a heavily clogged filter restricts airflow, causing the evaporator coils to freeze. The compressor then has to work under extreme load to pump refrigerant, which spikes the amp draw and trips the circuit breaker."
+    },
+    {
+      question: "How long does it take for an emergency technician to arrive?",
+      answer: "For emergency heating or cooling breakdowns, we offer a rapid dispatch guarantee with an average response time of 30 to 60 minutes across North, South, East, and West Riyadh."
     }
   ];
 

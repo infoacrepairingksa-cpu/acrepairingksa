@@ -67,6 +67,26 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 <MessageSquare size={20} fill="currentColor" /> WhatsApp Now
               </a>
             </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="grid grid-cols-3 gap-4 border-t border-gray-100 pt-8 mt-4"
+            >
+              <div>
+                <div className="text-2xl md:text-3xl font-black text-primary">15,000+</div>
+                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Homes Served</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-black text-primary">90-Day</div>
+                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Repair Warranty</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-black text-primary">30-60 Min</div>
+                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Response Time</div>
+              </div>
+            </motion.div>
           </div>
 
           {/* Right Column: Hero Image */}
