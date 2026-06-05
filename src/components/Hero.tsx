@@ -35,6 +35,16 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                   <Zap size={14} /> Same-Day Service
                 </span>
               </div>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="flex items-center text-amber-500 gap-0.5">
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                  <Star size={16} fill="currentColor" />
+                </span>
+                <span className="text-sm font-bold text-primary">Google Rating <span className="text-secondary">4.9/5</span> (542 Verified Reviews)</span>
+              </div>
               <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
                 AC Repair, AC Cleaning & <span className="text-secondary">Home Maintenance</span> Services in Riyadh
               </h1>
@@ -67,6 +77,14 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 <MessageSquare size={20} fill="currentColor" /> WhatsApp Now
               </a>
             </motion.div>
+
+            <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-primary/70 mt-2">
+              <span className="flex items-center gap-1">🛡️ 90-Day Warranty</span>
+              <span className="text-gray-300">|</span>
+              <span className="flex items-center gap-1">👮‍♂️ Background Checked Crew</span>
+              <span className="text-gray-300">|</span>
+              <span className="flex items-center gap-1">💰 No Hidden Fees</span>
+            </div>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -99,12 +117,40 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
             <div className="absolute inset-0 bg-primary/5 rounded-[48px] blur-3xl -z-10 translate-x-10 translate-y-10" />
             <div className="relative w-full h-[500px] rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
               <Image 
-                src="/Ac Services/Fast & Reliable AC Repair.webp" 
-                alt="Fast & Reliable AC Repair Technician in Riyadh" 
+                src="/uploaded/ac-gas-refill-outdoor.png" 
+                alt="Licensed AC Technician performing gas refill on outdoor unit in Riyadh" 
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 1024px) 100vw, 42vw"
               />
+              {/* Google Reviews Badge overlay */}
+              <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-xl flex items-center gap-3 border border-gray-100">
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={12} className="text-amber-400 fill-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-[10px] font-black text-primary uppercase tracking-widest">4.9 · Google Reviews</span>
+                  <span className="text-[9px] text-gray-400 font-bold">542+ Verified Reviews</span>
+                </div>
+              </div>
+              {/* Badge top right */}
+              <div className="absolute top-4 right-4 bg-secondary text-white text-[10px] font-black uppercase tracking-widest px-3 py-2 rounded-xl shadow-lg">
+                ✓ Licensed Technicians
+              </div>
+            </div>
+            {/* Small before/after thumbnail below */}
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <div className="relative h-24 rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                <Image src="/uploaded/dirty-ac-coils.png" alt="Dirty AC coils before cleaning" fill className="object-cover" sizes="200px" />
+                <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-[8px] font-black uppercase tracking-widest text-center py-1">Before Cleaning</div>
+              </div>
+              <div className="relative h-24 rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                <Image src="/uploaded/ac-cleaning-pressure-wash.png" alt="AC pressure washing after cleaning" fill className="object-cover" sizes="200px" />
+                <div className="absolute bottom-0 left-0 right-0 bg-secondary/80 text-white text-[8px] font-black uppercase tracking-widest text-center py-1">After Cleaning</div>
+              </div>
             </div>
           </motion.div>
 

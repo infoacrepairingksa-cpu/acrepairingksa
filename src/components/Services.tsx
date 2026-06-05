@@ -29,10 +29,12 @@ interface ServiceProps {
   isPrimary?: boolean;
   benefits?: string[];
   imageUrl: string;
+  price: string;
+  process: string;
   onBookNow: (service: string) => void;
 }
 
-const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benefits, badge, ctaText, imageUrl }: ServiceProps & { badge?: string, ctaText: string }) => {
+const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benefits, badge, ctaText, imageUrl, price, process }: ServiceProps & { badge?: string, ctaText: string }) => {
   return (
     <motion.div
       whileHover={{ y: -8 }}
@@ -62,8 +64,20 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
       </Link>
       
       <div className="p-6 flex flex-col flex-1">
+        {/* Pricing indicator */}
+        <div className="mb-3 flex items-center justify-between">
+          <span className="text-[10px] font-black uppercase tracking-widest text-secondary bg-secondary/10 px-2.5 py-1 rounded-md">Price Indicator</span>
+          <span className="text-sm font-black text-primary uppercase">Starting From: <span className="text-secondary font-black text-base">{price}</span></span>
+        </div>
+
         <p className="text-primary/70 text-sm font-medium mb-4 leading-relaxed">{description}</p>
         
+        {/* Process Preview */}
+        <div className="mb-4 p-3 bg-primary/5 rounded-xl border border-primary/5">
+          <span className="text-[9px] font-black uppercase tracking-widest text-primary/60 block mb-1">Process Preview</span>
+          <span className="text-xs font-bold text-primary leading-tight block">{process}</span>
+        </div>
+
         {/* Trust Badges pricing/urgency */}
         <div className="flex flex-col gap-2 mb-6 bg-slate-50 p-3 rounded-xl border border-slate-100">
           <div className="flex items-center gap-2 text-xs font-bold text-primary">
@@ -118,6 +132,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       isPrimary: true,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Repair.webp",
+      price: "SAR 99",
+      process: "Inspect → Diagnose → Component Fix & Calibrate",
       ctaText: "Chat for Repair",
       benefits: ["Restores Cooling", "30-Min Arrival", "90-Day Warranty"]
     },
@@ -128,6 +144,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       icon: <Droplets />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Cleaning.webp",
+      price: "SAR 149",
+      process: "Disassemble → High Pressure Flush → Sanitization",
       ctaText: "Chat for Cleaning",
       benefits: ["Bacteria Free", "Odor Control", "Power Flush"]
     },
@@ -137,6 +155,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Original R410A & R22 refrigerant top-up, accurate pressure gauge reading, and professional leak sealing.",
       icon: <Zap />,
       imageUrl: "/Ac Services/AC Gas Refill.webp",
+      price: "SAR 199",
+      process: "Pressure Leak Test → Vacuum Pull → Gas Charging",
       ctaText: "Check Gas Pricing",
       benefits: ["Pure R410A Gas", "Leak Testing", "Max Chill"]
     },
@@ -147,6 +167,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       icon: <Wind />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Installation.webp",
+      price: "SAR 249",
+      process: "Mount Plate → Pipe Alignment → Electrical & Test Run",
       ctaText: "Chat for Install",
       benefits: ["Copper Kit", "Drainage Info", "Level Fit"]
     },
@@ -156,6 +178,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Seasonal system health checks, capacitor testing, thermal efficiency optimization, and proactive fault prevention.",
       icon: <Settings />,
       imageUrl: "/Ac Services/AC Maintenance.webp",
+      price: "SAR 199",
+      process: "Electrical Audit → Coil Health → Calibrate Controls",
       ctaText: "Plan Maintenance",
       benefits: ["Energy Save", "Free Health Check", "Lube Parts"]
     },
@@ -165,6 +189,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Dust and allergen removal, HEPA filter replacement, and indoor air quality (IAQ) improvement.",
       icon: <Wind />,
       imageUrl: "/Ac Services/AC Filter Cleaning.webp",
+      price: "SAR 99",
+      process: "Remove Filters → Chemical Flush → Sanitize & Fit",
       ctaText: "Clean Filters",
       benefits: ["Dust Removal", "Clean Air", "Better Flow"]
     },
@@ -174,6 +200,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Deep ventilation system scrubbing, mold remediation, duct sanitization, and airflow balancing.",
       icon: <Wind />,
       imageUrl: "/Ac Services/AC Duct Cleaning.webp",
+      price: "SAR 399",
+      process: "Scrub Ducting → Disinfectant Spray → Air Balance Check",
       ctaText: "WhatsApp for Ducts",
       benefits: ["Mold Control", "Odor Removal", "Safe Living"]
     },
@@ -183,6 +211,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Max thermal efficiency fix via condenser and evaporator coil chemical descaling to lower electricity consumption.",
       icon: <Snowflake />,
       imageUrl: "/Ac Services/AC Coil Cleaning.webp",
+      price: "SAR 149",
+      process: "Chemical Jet Wash → Scale Removal → Fin Alignment",
       ctaText: "Check Coils",
       benefits: ["Scale Removal", "Faster Cooling", "Low Bills"]
     }
@@ -195,6 +225,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Leak & pipe specialists ready 24/7.",
       icon: <Droplets />,
       imageUrl: "/Ac Services/Plumbing.webp",
+      price: "SAR 99",
+      process: "Leak Detection → Pipe Repair → Component Swap",
       ctaText: "WhatsApp Plumber",
       benefits: ["Leak Stop", "Bathroom Fix", "Heater Tech"]
     },
@@ -204,6 +236,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       description: "Complete repair & villa support.",
       icon: <Settings />,
       imageUrl: "/Ac Services/Home Maintenance.webp",
+      price: "SAR 149",
+      process: "Full Inspection → Problem Diagnostics → Quick Repairs",
       ctaText: "WhatsApp Team",
       benefits: ["All Repairs", "Certified Team", "One Call"]
     }

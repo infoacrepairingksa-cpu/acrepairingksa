@@ -15,6 +15,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import Link from "next/link";
+import Image from "next/image";
 import Schema, { 
   generateWebSiteSchema, 
   generateBreadcrumbSchema, 
@@ -202,17 +203,17 @@ const ACComponents = () => {
   );
 };
 
-// 5. AC BRANDS WE SERVICE (GRID WITH DESCRIPTIONS)
+// 5. AC BRANDS WE SERVICE (GRID WITH IMAGES & DESCRIPTIONS)
 const BrandsGrid = () => {
   const brands = [
-    { name: "Daikin", desc: "High-efficiency Japanese inverter split and VRV systems. We repair sensors, control boards, and re-charge eco-friendly coolant." },
-    { name: "Carrier", desc: "Robust American cooling technology, common in large villas. We service heavy-duty compressors and replace control contactors." },
-    { name: "LG", desc: "Dual-inverter splits and package units. We troubleshoot smart diagnostic error codes and replace original motor components." },
-    { name: "Samsung", desc: "WindFree and digital inverter split ACs. We specialize in servicing electronic control boards and blower assemblies." },
-    { name: "York", desc: "Reliable commercial and residential central package units. We service multi-stage compressors and condenser fan arrays." },
-    { name: "Gree", desc: "Extremely popular in Riyadh for durable splits. We provide genuine replacement parts, capacitor repairs, and coil cleaning." },
-    { name: "Mitsubishi", desc: "Premium quiet split systems. We offer precision servicing of electronic expansion valves and high-performance blower fans." },
-    { name: "Hitachi", desc: "Sturdy tropical split ACs. We wash out condenser sand blocks and resolve thermal overload problems during summer peaks." }
+    { name: "Samsung", imageUrl: "/uploaded/brand-samsung.png", desc: "WindFree and digital inverter split ACs. We specialize in servicing electronic control boards and blower assemblies." },
+    { name: "LG", imageUrl: "/uploaded/brand-lg.png", desc: "Dual-inverter splits and package units. We troubleshoot smart diagnostic error codes and replace original motor components." },
+    { name: "Gree", imageUrl: "/uploaded/brand-gree.png", desc: "Extremely popular in Riyadh for durable splits. We provide genuine replacement parts, capacitor repairs, and coil cleaning." },
+    { name: "Daikin", imageUrl: "/uploaded/brand-daikin.png", desc: "High-efficiency Japanese inverter split and VRV systems. We repair sensors, control boards, and re-charge eco-friendly coolant." },
+    { name: "Carrier", imageUrl: "/Ac Services/AC Installation.webp", desc: "Robust American cooling technology, common in large villas. We service heavy-duty compressors and replace control contactors." },
+    { name: "York", imageUrl: "/Ac Services/AC Maintenance.webp", desc: "Reliable commercial and residential central package units. We service multi-stage compressors and condenser fan arrays." },
+    { name: "Mitsubishi", imageUrl: "/Ac Services/AC Repair.webp", desc: "Premium quiet split systems. We offer precision servicing of electronic expansion valves and high-performance blower fans." },
+    { name: "Hitachi", imageUrl: "/Ac Services/AC Coil Cleaning.webp", desc: "Sturdy tropical split ACs. We wash out condenser sand blocks and resolve thermal overload problems during summer peaks." }
   ];
   return (
     <section className="py-24 bg-white border-y border-gray-100">
@@ -222,12 +223,27 @@ const BrandsGrid = () => {
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Brands We Service</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Our technical vans are stocked with genuine spare parts for all major international air conditioning manufacturers.</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {brands.map((b, i) => (
-            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-50 hover:bg-white hover:shadow-lg transition-all text-center flex flex-col justify-center items-center">
-              <span className="text-xl font-heading font-black text-primary tracking-tight">{b.name}</span>
-              <p className="text-[10px] text-gray-500 mt-2 font-bold uppercase tracking-widest">Certified Specialist</p>
-              <p className="text-[11px] text-gray-400 mt-1 leading-relaxed max-w-[200px] hidden md:block">{b.desc}</p>
+            <div key={i} className="bg-slate-50 rounded-3xl border border-gray-100 hover:bg-white hover:shadow-xl hover:border-secondary transition-all overflow-hidden flex flex-col h-full">
+              <div className="relative h-36 w-full bg-slate-200">
+                <Image
+                  src={b.imageUrl}
+                  alt={`${b.name} Air Conditioner Service Riyadh`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <span className="text-2xl font-heading font-black text-white tracking-tight">{b.name}</span>
+                </div>
+              </div>
+              <div className="p-5 flex flex-col justify-between flex-1 text-center">
+                <div>
+                  <p className="text-[10px] text-secondary font-black uppercase tracking-widest mb-2">Certified Specialist</p>
+                  <p className="text-xs text-gray-600 leading-relaxed font-medium">{b.desc}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -815,6 +831,194 @@ const InternalLinking = () => {
   );
 };
 
+
+// 12. BEFORE & AFTER GALLERY (AC REPAIR PROJECTS)
+const BeforeAfterGallery = () => {
+  const projects = [
+    {
+      title: "Split AC Deep Cleaning & Sanitization",
+      desc: "This split AC had restricted airflow and was venting a foul mildew smell due to heavy dust accumulation on the internal coils.",
+      beforeImg: "/uploaded/dirty-ac-coils.png",
+      afterImg: "/uploaded/ac-cleaning-pressure-wash.png",
+      beforeLabel: "Clogged Evaporator Coils",
+      afterLabel: "Pressure Washed & Sanitized Coils",
+      area: "Al Malqa, Riyadh",
+      efficiency: "+35% Airflow Increase"
+    },
+    {
+      title: "New Split AC Mounting & Setup",
+      desc: "Complete indoor split unit installation, aligning the metal backplate and mounting the casing level on the wall.",
+      beforeImg: "/uploaded/ac-mounting-backplate.png",
+      afterImg: "/uploaded/brand-samsung.png",
+      beforeLabel: "Precise Plate Mount & Leveling",
+      afterLabel: "Mounted Indoor Unit Testing",
+      area: "Al Yasmin, Riyadh",
+      efficiency: "Perfect Level Alignment"
+    },
+    {
+      title: "Outdoor Unit Compressor Gas Refill",
+      desc: "Diagnosed low pressure, welded a cracked copper pipe joint, and recharged original R410A refrigerant gas.",
+      beforeImg: "/uploaded/ac-gas-refill-outdoor.png",
+      afterImg: "/uploaded/brand-lg.png",
+      beforeLabel: "Technician Leak Testing & Gas Fill",
+      afterLabel: "Completed Outdoor Unit Calibration",
+      area: "Al Olaya, Riyadh",
+      efficiency: "Optimal Pressure Restored"
+    }
+  ];
+
+  return (
+    <section id="gallery" className="py-24 bg-slate-50 border-t border-gray-100">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="text-center mb-16">
+          <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">EEAT Proof of Work</span>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Recent AC Repair & Cleaning Projects</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Real photos of our professional HVAC technicians working on-site in residential villas and commercial offices across Riyadh.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {projects.map((p, i) => (
+            <div key={i} className="bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+              <div className="grid grid-cols-2 gap-2 p-4 bg-slate-100">
+                <div className="relative h-44 rounded-2xl overflow-hidden shadow-inner border border-gray-200">
+                  <Image src={p.beforeImg} alt={p.beforeLabel} fill className="object-cover" sizes="(max-width: 768px) 50vw, 15vw" />
+                  <div className="absolute bottom-2 left-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[9px] font-black uppercase tracking-widest text-center py-1 rounded-md">{p.beforeLabel}</div>
+                </div>
+                <div className="relative h-44 rounded-2xl overflow-hidden shadow-inner border border-gray-200">
+                  <Image src={p.afterImg} alt={p.afterLabel} fill className="object-cover" sizes="(max-width: 768px) 50vw, 15vw" />
+                  <div className="absolute bottom-2 left-2 right-2 bg-secondary/80 backdrop-blur-sm text-white text-[9px] font-black uppercase tracking-widest text-center py-1 rounded-md">{p.afterLabel}</div>
+                </div>
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-black text-secondary uppercase tracking-widest">{p.area}</span>
+                  <h3 className="font-heading font-black text-lg text-primary mt-1 mb-2">{p.title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed font-medium mb-4">{p.desc}</p>
+                </div>
+                <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-black uppercase tracking-wider text-primary">
+                  <span>Efficiency Gain:</span>
+                  <span className="text-secondary">{p.efficiency}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// 13. COMPARISON SECTION (WHY CHOOSE US OVER OTHER COMPANIES)
+const ComparisonSection = () => {
+  const features = [
+    { name: "Response Time Guarantee", us: "30-60 Minutes Dispatch", others: "24-48 Hours Wait" },
+    { name: "Technician Qualifications", us: "Licensed, Certified & Background Checked", others: "Freelance / Untrained Helpers" },
+    { name: "Workmanship Warranty", us: "90-Day Written Service Warranty", others: "No Guarantee After Leaving" },
+    { name: "Pricing Transparency", us: "No Hidden Costs - Upfront SAR Quotes", others: "Surprise Fees After Work" },
+    { name: "Emergency Availability", us: "24/7 Standby Crew in Major Intersections", others: "Off-duty during night & holidays" },
+    { name: "Booking Channels", us: "Instant WhatsApp & Direct Phone Call", others: "Slow Webforms / Email Only" }
+  ];
+
+  return (
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="text-center mb-16">
+          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Direct Comparison</span>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Why Choose Us Over Other AC Companies?</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">See how our professional services compare with general market providers in Riyadh.</p>
+        </div>
+        <div className="overflow-x-auto rounded-[32px] border border-gray-100 shadow-xl shadow-primary/5">
+          <table className="w-full min-w-[700px] border-collapse bg-white text-left text-sm">
+            <thead>
+              <tr className="bg-primary text-white font-heading font-black">
+                <th className="p-6">Service Standard / Feature</th>
+                <th className="p-6 border-l border-white/10 text-center bg-secondary">AC Repairing KSA (Us)</th>
+                <th className="p-6 border-l border-white/10 text-center">Typical Competitor</th>
+              </tr>
+            </thead>
+            <tbody className="font-semibold text-gray-600">
+              {features.map((f, i) => (
+                <tr key={i} className="border-b border-gray-100 hover:bg-slate-50 transition-colors">
+                  <td className="p-6 font-black text-primary">{f.name}</td>
+                  <td className="p-6 border-l border-gray-100 text-center bg-secondary/5 text-secondary font-black">
+                    <span className="inline-flex items-center gap-1.5">
+                      ✅ {f.us}
+                    </span>
+                  </td>
+                  <td className="p-6 border-l border-gray-100 text-center text-red-500 font-bold">
+                    <span className="inline-flex items-center gap-1.5">
+                      ❌ {f.others}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// 14. EMERGENCY AC REPAIR URGENCY SECTION
+const EmergencyUrgencySection = () => {
+  return (
+    <section className="bg-red-600 text-white py-20 relative overflow-hidden">
+      {/* Decorative pulse glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-[120px] pointer-events-none animate-pulse" />
+      <div className="container mx-auto px-4 max-w-5xl relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-8 flex flex-col gap-6">
+            <span className="bg-white/20 text-white border border-white/30 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest inline-block w-fit">
+              🚨 24/7 Immediate Dispatch Across Riyadh
+            </span>
+            <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
+              Emergency AC Repair Riyadh
+            </h2>
+            <p className="text-base md:text-lg text-white/95 font-bold leading-relaxed">
+              Is your AC blowing hot air? Is it leaking water inside your living room, making loud grinding noises, or completely tripped the breaker? 
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-2">
+              {[
+                "AC Not Cooling",
+                "Water Leakage",
+                "AC Making Noise",
+                "Compressor Failure",
+                "Gas Leakage",
+                "Breaker Tripping"
+              ].map((prob) => (
+                <div key={prob} className="flex items-center gap-2 bg-white/10 px-4 py-2.5 rounded-xl border border-white/10 text-sm font-bold">
+                  <span className="text-yellow-400 text-base">⚠️</span> {prob}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="lg:col-span-4 bg-white/10 p-8 rounded-[32px] border border-white/20 backdrop-blur-sm flex flex-col gap-6 text-center">
+            <div>
+              <span className="text-xs font-black uppercase tracking-widest text-white/80">Average Arrival Time</span>
+              <div className="text-4xl font-black text-white mt-1">30–60 Mins</div>
+              <p className="text-xs text-white/70 font-bold mt-1">Standby technicians in Al Olaya, Malaz & North Riyadh</p>
+            </div>
+            <a 
+              href="tel:+966590132864"
+              className="w-full bg-white hover:bg-gray-150 text-red-650 py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95 text-red-600"
+            >
+              Get Technician Now
+            </a>
+            <a 
+              href="https://wa.me/966590132864?text=Hello,%20I%20have%20an%20AC%20emergency%20in%20Riyadh.%20Please%2520send%2520a%2520technician."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center gap-3"
+            >
+              <WhatsAppIcon size={18} className="text-white" /> WhatsApp Urgently
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // 18. CTA BANNER (WITH URGENCY SLOTS & CONVERSION CTA VARIATION)
 const CTABanner = () => (
   <section className="py-24 bg-white flex flex-col items-center relative overflow-hidden">
@@ -897,9 +1101,12 @@ export default function Home() {
         <CommonProblems />
         <ACComponents />
         <BrandsGrid />
+        <BeforeAfterGallery />
         <SignsYourACNeedsRepair />
         <StepByStepProcess />
         <WhyChooseUs />
+        <EmergencyUrgencySection />
+        <ComparisonSection />
         <RepairVsReplacement />
         <CostFactors />
         <LocationCards />
