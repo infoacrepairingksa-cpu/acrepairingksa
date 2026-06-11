@@ -6,7 +6,7 @@
   --color-action: #005BCC; /* Darker blue for hover */
   --color-action-hover: #004B99;
   --font-heading: var(--font-outfit), sans-serif;
-  --font-sans: var(--font-open-sans), sans-serif;
+  --font-sans: var(--font-outfit), sans-serif;
 }
 
 :root {
