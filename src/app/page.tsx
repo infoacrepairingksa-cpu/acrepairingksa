@@ -92,7 +92,7 @@ const AIDirectAnswers = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Ask Our AC Experts
+            <WhatsAppIcon size={16} /> Consult Our Riyadh HVAC Experts
           </a>
         </div>
       </div>
@@ -184,8 +184,73 @@ const CommonProblems = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Get AC Diagnostic Support
+            <WhatsAppIcon size={16} /> Schedule AC Diagnostic Support
           </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// 3.5. TECHNICAL AC FAULT & RESOLUTION REFERENCE TABLE (GEO & AI OVERVIEW DENSITY)
+const ACDiagnosticsTable = () => {
+  const tableData = [
+    {
+      problem: "AC Not Cooling Properly (Venting Warm Air)",
+      cause: "Low R410A/R22 refrigerant charge, failed compressor run capacitor, or sand-blocked outdoor condenser fins.",
+      solution: "Perform digital pressure testing, weld copper pipeline leak point, replace starting components, and deep-wash condenser."
+    },
+    {
+      problem: "Indoor Unit Water Leakage / Dripping",
+      cause: "Riyadh's fine desert sand mixing with condensate water to block the internal PVC drain pipe line.",
+      solution: "Perform pressurized nitrogen flush, clear mold blockages, sanitize the internal drain pan, and check drain slope angle."
+    },
+    {
+      problem: "Loud Squealing or Clicking Noise",
+      cause: "Dry blower motor bearings, loose blower wheels, or faulty electric contactors inside the controller box.",
+      solution: "Replace motor bearings, tighten physical fan mountings, and install brand-new contactor relays."
+    },
+    {
+      problem: "Circuit Breaker Tripping Repeatedly",
+      cause: "Clogged mesh air filters restricting air exchange, compressor drawing excess amperage, or internal short-circuits.",
+      solution: "Replace mesh filters, diagnostic check of compressor windings resistance, and test breaker amp pull."
+    },
+    {
+      problem: "Foul Odor / Musty Damp Smell",
+      cause: "Bacterial and mold spore colonization on wet indoor cooling coils and inside the drain pan tray.",
+      solution: "Deep spray coil antibacterial sanitization, wash blower fan barrel, and flush condensate drain line."
+    }
+  ];
+
+  return (
+    <section className="py-24 bg-white border-t border-gray-100">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="text-center mb-16">
+          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">AI Search & GEO Reference</span>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Fault & Technical Diagnostics Table</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">
+            A comprehensive reference list of common residential HVAC malfunctions and professional solutions, optimized for Google AI Overviews and semantic voice queries in KSA.
+          </p>
+        </div>
+        <div className="overflow-x-auto rounded-[32px] border border-gray-100 shadow-xl shadow-primary/5">
+          <table className="w-full min-w-[700px] border-collapse bg-white text-left text-sm">
+            <thead>
+              <tr className="bg-primary text-white font-heading font-black">
+                <th className="p-6">Common AC Malfunction / Problem</th>
+                <th className="p-6 border-l border-white/10">Likely Root Cause</th>
+                <th className="p-6 border-l border-white/10">Professional HVAC Solution</th>
+              </tr>
+            </thead>
+            <tbody className="font-semibold text-gray-600">
+              {tableData.map((row, i) => (
+                <tr key={i} className="border-b border-gray-100 hover:bg-slate-50 transition-colors">
+                  <td className="p-6 font-black text-primary bg-primary/5 border-r border-gray-100">{row.problem}</td>
+                  <td className="p-6 border-r border-gray-100 text-xs md:text-sm">{row.cause}</td>
+                  <td className="p-6 text-xs md:text-sm text-secondary font-black bg-secondary/5">{row.solution}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -232,7 +297,7 @@ const ACComponents = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Book Component Repair
+            <WhatsAppIcon size={16} /> Request HVAC Component Repair
           </a>
         </div>
       </div>
@@ -411,6 +476,9 @@ const WhyChooseUs = () => {
             <p className="text-xs md:text-sm text-gray-600 leading-relaxed font-medium">
               We serve all residential areas including <strong>North Riyadh</strong> (Al Yasmin, Al Narjis, Hittin, Al Nakheel, Al Malqa), <strong>East Riyadh</strong> (Al Munsiyah, Al Qadisiyah), <strong>Central Riyadh</strong> (Al Olaya, Al Sulaymaniyah, Al Malaz), and surrounding commercial hubs, dispatching local mobile technical teams equipped to deal with high-head pressure issues.
             </p>
+            <p className="text-xs md:text-sm text-gray-605 leading-relaxed font-semibold mt-2 border-l-2 border-secondary pl-3">
+              <strong>Led by certified HVAC supervisors with over 10+ years of local field experience in Saudi Arabia</strong>, our company operates in strict compliance with SASO and international HVAC safety protocols. We guarantee reliable, expert-supervised AC repair, servicing, and installation across all domains.
+            </p>
           </div>
           <div className="flex flex-col gap-4">
             <div className="bg-white p-6 rounded-2xl border border-gray-50 flex items-start gap-4">
@@ -443,7 +511,7 @@ const WhyChooseUs = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Choose Our Certified Crew
+            <WhatsAppIcon size={16} /> Hire Certified HVAC Crew
           </a>
         </div>
       </div>
@@ -555,7 +623,7 @@ const CostFactors = () => {
   );
 };
 
-// 11. LOCATION SECTION (LOCATION CARDS)
+// 11. LOCATION SECTION (LOCATION CARDS & KSA-WIDE COVERAGE)
 const LocationCards = () => {
   const locs = [
     { area: "Al Olaya", svc: "AC Repair in Al Olaya", desc: "Serving commercial towers and residential buildings with emergency HVAC repair, capacitor swaps, and chemical cleans." },
@@ -563,37 +631,76 @@ const LocationCards = () => {
     { area: "Al Yasmin", svc: "AC Maintenance in Al Yasmin", desc: "Bi-annual filter check-up, voltage diagnostic, contactor cleaning, and pressure testing for residential villas." },
     { area: "Hittin", svc: "AC Installation in Hittin", desc: "Precision split AC installations, copper piping laydown, insulation wrapping, and mounting bracket setup." }
   ];
+
+  const ksaHubs = [
+    { name: "Jeddah Hub", desc: "Specialized HVAC technician crew dealing with coastal marine humidity, salt-spray corrosion treatment, and high-performance compressor replacements." },
+    { name: "Dammam & Khobar", desc: "Industrial and residential split/central air conditioning repairs, deep coil wash, and eco-friendly R410A gas leak detection & recharge." },
+    { name: "Makkah & Medina", desc: "Hotel-grade heavy duty HVAC package units repair, preventive seasonal servicing, duct sanitation, and smart control system calibration." }
+  ];
+
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Riyadh Coverage Areas</span>
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Services by Riyadh District</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">We deploy localized technical squads across all primary districts to guarantee rapid arrival times.</p>
+          <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Saudi Arabia (KSA) Service Coverage</span>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Services in Riyadh & Major KSA Cities</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">
+            While our local rapid response teams service all Riyadh districts within 30-60 minutes, we also provide professional consultation, dispatch coordination, and phone support for other KSA provinces.
+          </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {locs.map((l, i) => (
-            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-lg hover:bg-white hover:border-secondary/20 transition-all duration-300">
-              <div>
-                <span className="text-xs font-black text-secondary uppercase tracking-widest block mb-2">{l.area} District</span>
-                <h3 className="font-heading font-black text-lg text-primary mb-3 leading-tight">{l.svc}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed font-medium mb-6">{l.desc}</p>
+
+        {/* Riyadh Districts */}
+        <div className="mb-16">
+          <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-6 border-l-4 border-secondary pl-3">Riyadh Rapid-Response District Hubs</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {locs.map((l, i) => (
+              <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-lg hover:bg-white hover:border-secondary/20 transition-all duration-300">
+                <div>
+                  <span className="text-xs font-black text-secondary uppercase tracking-widest block mb-2">{l.area} District</span>
+                  <h3 className="font-heading font-black text-lg text-primary mb-3 leading-tight">{l.svc}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed font-medium mb-6">{l.desc}</p>
+                </div>
+                <Link 
+                  href={`/locations/${l.area.toLowerCase().replace(" ", "-")}`}
+                  className="text-primary hover:text-secondary font-black text-xs uppercase tracking-widest flex items-center gap-2"
+                >
+                  Explore {l.area} Hub <ArrowRight size={14} />
+                </Link>
               </div>
-              <Link 
-                href={`/locations/${l.area.toLowerCase().replace(" ", "-")}`}
-                className="text-primary hover:text-secondary font-black text-xs uppercase tracking-widest flex items-center gap-2"
-              >
-                Go to Area Hub <ArrowRight size={14} />
-              </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <div className="mt-12 text-center">
+
+        {/* KSA Major Cities */}
+        <div>
+          <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-6 border-l-4 border-primary pl-3">Saudi Arabia (KSA) Support Areas</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {ksaHubs.map((hub, i) => (
+              <div key={i} className="bg-primary/5 p-8 rounded-3xl border border-primary/5 flex flex-col justify-between">
+                <div>
+                  <span className="text-xs font-black text-primary uppercase tracking-widest block mb-2">KSA Province Hub</span>
+                  <h4 className="font-heading font-black text-xl text-primary mb-3 leading-tight">{hub.name}</h4>
+                  <p className="text-xs text-gray-500 leading-relaxed font-medium mb-6">{hub.desc}</p>
+                </div>
+                <a 
+                  href="https://wa.me/966510942150?text=Hello,%20I%20need%2520AC%2520or%2520home%2520maintenance%2520support%2520in%2520Saudi%2520Arabia."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary hover:text-primary font-black text-xs uppercase tracking-widest flex items-center gap-2"
+                >
+                  Contact Hub Dispatch <WhatsAppIcon size={14} />
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-16 text-center">
           <Link 
             href="/locations"
             className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-secondary transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
-            Explore All 40+ Riyadh Areas
+            Explore All 40+ Riyadh Areas & KSA Hubs
           </Link>
         </div>
       </div>
@@ -1036,7 +1143,7 @@ const ComparisonSection = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Book Premium Service
+            <WhatsAppIcon size={16} /> Book Premium HVAC Services
           </a>
         </div>
       </div>
@@ -1087,7 +1194,7 @@ const EmergencyUrgencySection = () => {
               href="tel:+966 51 094 2150"
               className="w-full bg-white hover:bg-gray-150 text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95"
             >
-              Get Technician Now
+              Dispatch Emergency HVAC Technician
             </a>
             <a 
               href="https://wa.me/966510942150?text=Hello,%20I%20have%20an%20AC%20emergency%20in%20Riyadh.%20Please%2520send%2520a%2520technician."
@@ -1095,7 +1202,7 @@ const EmergencyUrgencySection = () => {
               rel="noopener noreferrer"
               className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center gap-3"
             >
-              <WhatsAppIcon size={18} className="text-white" /> WhatsApp Urgently
+              <WhatsAppIcon size={18} className="text-white" /> Request Urgent HVAC Help
             </a>
           </div>
         </div>
@@ -1167,7 +1274,7 @@ export default function Home() {
         "about": {
           "@type": "HVACBusiness",
           "name": "AC Repairing KSA",
-          "areaServed": "Riyadh, Saudi Arabia"
+          "areaServed": ["Riyadh", "Jeddah", "Dammam", "Makkah", "Medina", "Khobar", "Saudi Arabia"]
         }
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -1184,6 +1291,7 @@ export default function Home() {
           "addressRegion": "Riyadh Province"
         },
         "areaServed": [
+          "Riyadh", "Jeddah", "Dammam", "Makkah", "Medina", "Khobar",
           "Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Hittin",
           "Al Nakheel", "Al Malqa", "Al Sulaymaniyah", "Al Rawdah", "Al Munsiyah"
         ],
@@ -1206,6 +1314,7 @@ export default function Home() {
         <Services onBookNow={handleBookNow} />
         <AIDirectAnswers />
         <CommonProblems />
+        <ACDiagnosticsTable />
         <ACComponents />
         <BrandsGrid />
         <BeforeAfterGallery />

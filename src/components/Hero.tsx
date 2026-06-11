@@ -46,11 +46,11 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 <span className="text-sm font-bold text-primary">Google Rating <span className="text-secondary">4.9/5</span> (542 Verified Reviews)</span>
               </div>
               <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
-                Professional AC Repair & HVAC Maintenance Services in <span className="text-secondary">Riyadh, Saudi Arabia</span>
+                Professional AC Repair & <span className="text-secondary">HVAC Services in Riyadh & KSA</span>
               </h1>
               {/* AI Summary / GEO Entity Block */}
               <p className="text-base md:text-lg text-primary/80 font-medium leading-relaxed max-w-xl">
-                <strong>KSA-certified HVAC technicians</strong> for split AC, central AC, and window AC systems in Riyadh. We provide <strong>AC repair, AC cleaning, compressor replacement, refrigerant gas refill (R410A/R22), AC installation, duct cleaning, and emergency 24/7 support</strong> across all Riyadh districts including Al Olaya, Al Malqa, Al Yasmin, Hittin, and Al Malaz. Same-day service guaranteed.
+                <strong>KSA-certified HVAC experts</strong> providing split AC, central AC, and window AC repair in <strong>Riyadh and major cities across Saudi Arabia (KSA)</strong>. Our certified technicians handle <strong>compressor diagnostic, refrigerant gas leak seal & recharge (R410A/R22), deep chemical wash, HVAC installation, and 24/7 emergency dispatch</strong> in Riyadh districts and surrounding regions (Jeddah, Dammam, Khobar, Makkah, Medina).
               </p>
               {/* GEO Signal */}
               <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mt-2 flex items-center gap-2">

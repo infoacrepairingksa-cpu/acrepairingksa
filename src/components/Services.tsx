@@ -114,7 +114,7 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
             href={id === "ac-repair" ? "/ac-repair" : id === "ac-cleaning" ? "/ac-cleaning" : id === "ac-installation" ? "/ac-installation" : id === "ac-maintenance" ? "/ac-maintenance" : id === "ac-gas-refill" ? "/ac-gas-refill" : id === "ac-duct-cleaning" ? "/ac-duct-cleaning" : id === "ac-filter-cleaning" ? "/ac-filter-cleaning" : id === "ac-coil-cleaning" ? "/ac-coil-cleaning" : id === "plumbing" ? "/plumbing" : id === "home-maintenance" ? "/home-maintenance" : "#"}
             className="w-full bg-white border border-gray-200 hover:border-secondary hover:text-secondary text-primary/70 py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2"
           >
-            View Details <ArrowRight size={14} />
+            Explore {title} Services <ArrowRight size={14} />
           </Link>
         </div>
       </div>
