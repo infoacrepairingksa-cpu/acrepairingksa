@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Open_Sans } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -10,13 +10,6 @@ const outfit = Outfit({
   preload: true,
 });
 
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  display: "swap",
-  preload: false,
-});
 
 const BASE_URL = "https://acrepairingksa.com";
 
@@ -89,7 +82,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${outfit.variable} ${openSans.variable} scroll-smooth h-full antialiased font-sans`}
+      className={`${outfit.variable} scroll-smooth h-full antialiased font-sans`}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
