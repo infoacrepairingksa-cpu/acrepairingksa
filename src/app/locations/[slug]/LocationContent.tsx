@@ -39,7 +39,7 @@ export default function LocationContent({ data }: { data: LocationData }) {
   const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const services = [
@@ -88,7 +88,7 @@ export default function LocationContent({ data }: { data: LocationData }) {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 w-full sm:w-auto">
-              <a href="tel:+966590132864" className="w-full sm:w-auto bg-primary text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary transition-all shadow-xl shadow-primary/10 flex items-center justify-center gap-3">
+              <a href="tel:+966 51 094 2150" className="w-full sm:w-auto bg-primary text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary transition-all shadow-xl shadow-primary/10 flex items-center justify-center gap-3">
                 <Phone size={20} fill="currentColor" /> Call Specialist
               </a>
               <button 
@@ -276,10 +276,10 @@ export default function LocationContent({ data }: { data: LocationData }) {
                 Join 1,000+ satisfied residents in {data.name}. We are online 24/7 for all your maintenance needs.
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-6 w-full max-w-xl">
-                <a href="tel:+966590132864" className="w-full sm:flex-1 bg-white text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
+                <a href="tel:+966 51 094 2150" className="w-full sm:flex-1 bg-white text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
                   <Phone size={20} fill="currentColor" /> Call Now
                 </a>
-                <a href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" className="w-full sm:flex-1 bg-[#25D366] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
+                <a href="https://wa.me/966510942150?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" className="w-full sm:flex-1 bg-[#25D366] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
                   <WhatsAppIcon size={20} /> WhatsApp
                 </a>
               </div>

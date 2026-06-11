@@ -87,7 +87,7 @@ const AIDirectAnswers = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20have%20questions%20about%20AC%20service%20in%20Riyadh."
+            href="https://wa.me/966510942150?text=Hello,%20I%20have%20questions%20about%20AC%20service%20in%20Riyadh."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -179,7 +179,7 @@ const CommonProblems = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20need%20to%20diagnose%20an%20AC%20problem%20in%20Riyadh."
+            href="https://wa.me/966510942150?text=Hello,%20I%20need%20to%20diagnose%20an%20AC%20problem%20in%20Riyadh."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -227,7 +227,7 @@ const ACComponents = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20need%20to%20repair%20an%20AC%20component%20in%20Riyadh."
+            href="https://wa.me/966510942150?text=Hello,%20I%20need%20to%20repair%20an%20AC%20component%20in%20Riyadh."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -286,7 +286,7 @@ const BrandsGrid = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20need%20service%20for%20my%20AC%20brand%20in%20Riyadh."
+            href="https://wa.me/966510942150?text=Hello,%20I%20need%20service%20for%20my%20AC%20brand%20in%20Riyadh."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -332,7 +332,7 @@ const SignsYourACNeedsRepair = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20my%20AC%20is%20showing%20signs%20of%20failure.%20Need%20inspection."
+            href="https://wa.me/966510942150?text=Hello,%20my%20AC%20is%20showing%20signs%20of%20failure.%20Need%20inspection."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -376,7 +376,7 @@ const StepByStepProcess = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20start%20the%20AC%20repair%20process."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20start%20the%20AC%20repair%20process."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -416,29 +416,29 @@ const WhyChooseUs = () => {
             <div className="bg-white p-6 rounded-2xl border border-gray-50 flex items-start gap-4">
               <CheckCircle2 className="text-secondary shrink-0 mt-1" />
               <div>
-                <h4 className="font-heading font-black text-base text-primary">Certified Riyadh HVAC Crew</h4>
-                <p className="text-xs text-gray-500 mt-1">Our technicians possess local GCC certifications and deep experience diagnosing split and package units.</p>
+                <h4 className="font-heading font-black text-base text-primary">GCC-Certified HVAC Technicians</h4>
+                <p className="text-xs text-gray-500 mt-1">Our team consists of <strong>KSA-certified HVAC specialists</strong> with formal training in split AC, central AC, VRF, and package unit systems. All technicians are SASO-compliant and background verified for villa and family home access.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-gray-50 flex items-start gap-4">
               <CheckCircle2 className="text-secondary shrink-0 mt-1" />
               <div>
-                <h4 className="font-heading font-black text-base text-primary">30-60 Min Emergency Dispatch</h4>
-                <p className="text-xs text-gray-500 mt-1">We maintain standby technical vans across major crossroads to guarantee rapid dispatch to your home.</p>
+                <h4 className="font-heading font-black text-base text-primary">10+ Years Desert HVAC Experience</h4>
+                <p className="text-xs text-gray-500 mt-1">With over <strong>10 years servicing AC systems under Riyadh's 45°C–50°C summer conditions</strong>, our crew has handled 15,000+ residential and commercial units including Samsung, LG, Daikin, Carrier, and Gree brands.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-gray-50 flex items-start gap-4">
               <CheckCircle2 className="text-secondary shrink-0 mt-1" />
               <div>
-                <h4 className="font-heading font-black text-base text-primary">Original Spare Parts & Gas</h4>
-                <p className="text-xs text-gray-500 mt-1">We only install high-quality copper coils, original run capacitors, and factory-approved R410A refrigerant gas.</p>
+                <h4 className="font-heading font-black text-base text-primary">Original Spare Parts & R410A Gas</h4>
+                <p className="text-xs text-gray-500 mt-1">We stock <strong>manufacturer-approved run capacitors, copper flare fittings, contactor relays, and genuine R410A/R22 refrigerant</strong>. Every repair uses traceable original parts with a 90-day written service warranty.</p>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20with%20Riyadh's%20trusted%20HVAC%20crew."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20with%20Riyadh's%20trusted%20HVAC%20crew."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -496,7 +496,7 @@ const RepairVsReplacement = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20need%20advice%20on%20AC%20repair%20vs%20replacement%20in%20Riyadh."
+            href="https://wa.me/966510942150?text=Hello,%20I%20need%20advice%20on%20AC%20repair%20vs%20replacement%20in%20Riyadh."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -542,7 +542,7 @@ const CostFactors = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20a%20price%20quote%20for%20AC%20repair."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20a%20price%20quote%20for%20AC%20repair."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -630,7 +630,7 @@ const CertifiedTechnicians = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20a%20certified%20technician."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20a%20certified%20technician."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -696,7 +696,7 @@ const ProjectGallery = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20a%20similar%20service%20in%20my%20district."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20a%20similar%20service%20in%20my%20district."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -767,7 +767,7 @@ const CustomerReviews = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20with%20your%205-star%20rated%20team."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20with%20your%205-star%20rated%20team."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -851,7 +851,7 @@ const TopicClusterSection = () => {
         </div>
         <div className="mt-12 text-center w-full">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20need%20expert%20AC%20services%20in%20Riyadh."
+            href="https://wa.me/966510942150?text=Hello,%20I%20need%20expert%20AC%20services%20in%20Riyadh."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -969,7 +969,7 @@ const BeforeAfterGallery = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20a%20similar%20AC%20service."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20a%20similar%20AC%20service."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -1031,7 +1031,7 @@ const ComparisonSection = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966590132864?text=Hello,%20I%20want%20to%20book%20with%20your%20licensed%20technicians."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20with%20your%20licensed%20technicians."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -1084,13 +1084,13 @@ const EmergencyUrgencySection = () => {
               <p className="text-xs text-white/70 font-bold mt-1">Standby technicians in Al Olaya, Malaz & North Riyadh</p>
             </div>
             <a 
-              href="tel:+966590132864"
+              href="tel:+966 51 094 2150"
               className="w-full bg-white hover:bg-gray-150 text-primary py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95"
             >
               Get Technician Now
             </a>
             <a 
-              href="https://wa.me/966590132864?text=Hello,%20I%20have%20an%20AC%20emergency%20in%20Riyadh.%20Please%2520send%2520a%2520technician."
+              href="https://wa.me/966510942150?text=Hello,%20I%20have%20an%20AC%20emergency%20in%20Riyadh.%20Please%2520send%2520a%2520technician."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center gap-3"
@@ -1127,10 +1127,10 @@ const CTABanner = () => (
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center mt-4">
-            <a href="tel:+966590132864" className="w-full sm:w-auto bg-white text-secondary px-8 py-5 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
+            <a href="tel:+966 51 094 2150" className="w-full sm:w-auto bg-white text-secondary px-8 py-5 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
               <Phone size={24} fill="currentColor" /> Call Emergency Support
             </a>
-            <a href="https://wa.me/966590132864?text=Hello,%20I%20need%20to%20book%20a%20same-day%2520AC%20repair%20service." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-[#25D366] text-white px-8 py-5 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
+            <a href="https://wa.me/966510942150?text=Hello,%20I%20need%20to%20book%20a%20same-day%2520AC%20repair%20service." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-[#25D366] text-white px-8 py-5 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl flex items-center justify-center gap-3">
               <WhatsAppIcon size={24} className="text-white" /> Book Same-Day Slot
             </a>
           </div>
@@ -1145,7 +1145,7 @@ export default function Home() {
   const handleBookNow = (serviceName?: any) => {
     const sName = serviceName && typeof serviceName === 'string' ? serviceName : "Home Maintenance and AC Repair";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (
@@ -1156,19 +1156,41 @@ export default function Home() {
       <Schema type="BreadcrumbList" data={generateBreadcrumbSchema([{ name: "Home", item: "/" }])} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "AC Repairing KSA - Professional AC Repair & Maintenance in Riyadh",
+        "@type": ["WebPage", "ItemPage"],
+        "name": "AC Repairing KSA - Professional AC Repair & HVAC Maintenance in Riyadh, Saudi Arabia",
         "url": "https://acrepairingksa.com/",
+        "description": "KSA-certified HVAC technicians for split AC, central AC repair, AC cleaning, compressor replacement, refrigerant gas refill (R410A/R22), and emergency AC repair across all Riyadh districts.",
         "speakable": {
           "@type": "SpeakableSpecification",
           "xpath": ["/html/head/title", "/html/head/meta[@name='description']/@content"]
+        },
+        "about": {
+          "@type": "HVACBusiness",
+          "name": "AC Repairing KSA",
+          "areaServed": "Riyadh, Saudi Arabia"
         }
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": ["Organization", "HVACBusiness", "LocalBusiness"],
         "name": "AC Repairing KSA",
         "url": "https://acrepairingksa.com/",
+        "telephone": "+966 51 094 2150",
+        "email": "info@acrepairingksa.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Riyadh",
+          "addressCountry": "SA",
+          "addressRegion": "Riyadh Province"
+        },
+        "areaServed": [
+          "Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Hittin",
+          "Al Nakheel", "Al Malqa", "Al Sulaymaniyah", "Al Rawdah", "Al Munsiyah"
+        ],
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "22:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:00", "closes": "22:00" }
+        ],
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",

@@ -22,7 +22,7 @@ export default function ACRepairPage() {
   const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   /**
@@ -30,7 +30,7 @@ export default function ACRepairPage() {
    */
   const ButtonGroup = ({ className, customZapText = "Book Repair Now" }: any) => (
     <div className={cn("flex flex-col sm:flex-row items-center gap-4 md:gap-6 w-full sm:w-auto", className)}>
-      <a href="tel:+966590132864" className="w-full sm:flex-1 px-8 md:px-10 py-5 md:py-6 bg-secondary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-xl flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-blue-700">
+      <a href="tel:+966 51 094 2150" className="w-full sm:flex-1 px-8 md:px-10 py-5 md:py-6 bg-secondary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-xl flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-blue-700">
         <Phone size={20} fill="currentColor" /> Call Now
       </a>
       <button onClick={handleBookNow} className="w-full sm:flex-1 px-8 md:px-10 py-5 md:py-6 bg-primary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-xl flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95 border-b-4 border-slate-800">
@@ -295,7 +295,7 @@ export default function ACRepairPage() {
           <h2 className="text-[44px] md:text-[68px] font-heading font-black leading-tight tracking-tighter text-white">Emergency <br /><span className="text-secondary">AC Repair 24/7</span></h2>
           <p className="text-xl md:text-2xl font-medium opacity-80 max-w-3xl leading-relaxed">Summer breakdowns don't wait. Our emergency response team is stationed across Riyadh to fix your AC instantly, even on weekends and holidays.</p>
           <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl">
-            <a href="tel:+966590132864" className="flex-1 px-12 py-7 bg-white text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 shadow-2xl hover:bg-secondary hover:text-white transition-all border-b-4 border-slate-200">
+            <a href="tel:+966 51 094 2150" className="flex-1 px-12 py-7 bg-white text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 shadow-2xl hover:bg-secondary hover:text-white transition-all border-b-4 border-slate-200">
                <Phone size={24} fill="currentColor" /> Call Emergency Team
             </a>
             <button onClick={handleBookNow} className="flex-1 px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 shadow-2xl hover:bg-white hover:text-secondary transition-all border-b-4 border-blue-700">
@@ -387,7 +387,7 @@ export default function ACRepairPage() {
           </div>
           <p className="text-xl md:text-2xl font-medium opacity-80 max-w-3xl leading-relaxed relative z-10">Book professional AC repair technicians today for quick, affordable & reliable cooling solutions. Technician at your door in 30 mins!</p>
           <div className="flex flex-col sm:flex-row gap-6 w-full max-w-3xl relative z-10">
-             <a href="tel:+966590132864" className="flex-1 px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all">
+             <a href="tel:+966 51 094 2150" className="flex-1 px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all">
                 <Phone size={24} fill="currentColor" /> Call Now
              </a>
              <button onClick={handleBookNow} className="flex-1 px-12 py-7 bg-white text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all">

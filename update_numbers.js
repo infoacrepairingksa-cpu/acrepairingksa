@@ -8,8 +8,8 @@ function updateFile(filePath) {
   
   const originalContent = content;
   
-  content = content.replace(/966501234567/g, '966590132864');
-  content = content.replace(/966501234568/g, '966590132864');
+  content = content.replace(/966501234567/g, '966510942150');
+  content = content.replace(/966501234568/g, '966510942150');
   
   if (content !== originalContent) {
     console.log("Updated numbers in:", filePath);

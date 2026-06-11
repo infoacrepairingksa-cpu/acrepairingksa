@@ -24,7 +24,7 @@ export default function HomeMaintenancePage() {
   const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const SectionHeading = ({ sub, title, center = true, light = false }: any) => (
@@ -79,7 +79,7 @@ export default function HomeMaintenancePage() {
                 <button onClick={handleBookNow} className="w-full sm:w-auto px-10 py-6 bg-secondary text-white rounded-2xl font-black text-base tracking-widest transition-all shadow-xl hover:bg-primary active:scale-95 flex items-center justify-center gap-4">
                   <Shield size={20} /> Book Maintenance
                 </button>
-                <a href="tel:+966590132864" className="w-full sm:w-auto px-10 py-6 bg-white text-primary border-2 border-gray-100 rounded-2xl font-black text-base tracking-widest transition-all shadow-lg hover:border-secondary hover:text-secondary active:scale-95 flex items-center justify-center gap-4">
+                <a href="tel:+966 51 094 2150" className="w-full sm:w-auto px-10 py-6 bg-white text-primary border-2 border-gray-100 rounded-2xl font-black text-base tracking-widest transition-all shadow-lg hover:border-secondary hover:text-secondary active:scale-95 flex items-center justify-center gap-4">
                   <Search size={20} /> Free Inspection
                 </a>
               </div>
@@ -202,7 +202,7 @@ export default function HomeMaintenancePage() {
               <p className="text-lg md:text-xl font-medium text-white/60 max-w-2xl leading-relaxed">Electrical failure, burst pipes, or AC breakdown? Our emergency response team is ready across Riyadh 24/7.</p>
               <div className="flex flex-col sm:flex-row gap-6 w-full max-w-xl relative z-10 mt-4">
                  <button onClick={handleBookNow} className="flex-1 px-10 py-6 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-white hover:text-secondary transition-all border-b-4 border-blue-700">Request Emergency Service</button>
-                 <a href="tel:+966590132864" className="flex-1 px-10 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-secondary hover:text-white transition-all border-b-4 border-slate-100">Call Now</a>
+                 <a href="tel:+966 51 094 2150" className="flex-1 px-10 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-secondary hover:text-white transition-all border-b-4 border-slate-100">Call Now</a>
               </div>
            </div>
         </div>
@@ -350,7 +350,7 @@ export default function HomeMaintenancePage() {
           <p className="text-lg md:text-xl font-medium text-white/60 max-w-2xl leading-relaxed relative z-10">Book experienced home maintenance experts today for professional repair, inspection & property maintenance solutions.</p>
           <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl relative z-10">
              <button onClick={handleBookNow} className="flex-1 px-12 py-6 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-blue-700 shadow-xl hover:bg-white hover:text-secondary transition-all"><Shield size={24} /> Book Service</button>
-             <a href="tel:+966590132864" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-slate-100 shadow-xl hover:bg-secondary hover:text-white transition-all"><Phone size={24} fill="currentColor" /> Call Expert Now</a>
+             <a href="tel:+966 51 094 2150" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-slate-100 shadow-xl hover:bg-secondary hover:text-white transition-all"><Phone size={24} fill="currentColor" /> Call Expert Now</a>
           </div>
         </div>
       </section>

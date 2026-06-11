@@ -54,7 +54,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
             <span className="flex items-center gap-2"><MapPin size={12} className="text-secondary" /> Serving All Riyadh Districts</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:+966590132864" className="flex items-center gap-2 hover:text-secondary transition-colors"><Phone size={12} className="text-secondary" /> +966 59 013 2864</a>
+            <a href="tel:+966 51 094 2150" className="flex items-center gap-2 hover:text-secondary transition-colors"><Phone size={12} className="text-secondary" /> +966 51 094 2150</a>
           </div>
         </div>
       </div>
@@ -141,14 +141,14 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
 
             <Link href="/about" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">About Us</Link>
             <Link href="/blog" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Blog</Link>
-            <a href="tel:+966590132864" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Contact Us</a>
+            <a href="tel:+966 51 094 2150" className="text-base font-bold tracking-tight text-primary hover:text-secondary transition-all">Contact Us</a>
           </div>
 
           {/* Action Buttons - Dominant CTA */}
           <div className="hidden md:flex items-center gap-5">
 
               <button
-                onClick={() => onBookNow ? onBookNow() : window.open('https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?', '_blank')}
+                onClick={() => onBookNow ? onBookNow() : window.open('https://wa.me/966510942150?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?', '_blank')}
                 className="bg-[#25D366] hover:bg-[#1DA851] text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition-all duration-300 shadow-xl shadow-[#25D366]/20 hover:-translate-y-1 active:scale-95 flex items-center gap-3"
               >
               <WhatsAppIcon size={18} className="text-white" />
@@ -232,19 +232,19 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
 
              <Link href="/about" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
             <Link href="/blog" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-            <a href="tel:+966590132864" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
+            <a href="tel:+966 51 094 2150" className="text-sm font-black uppercase tracking-widest text-primary p-4" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
 
             <div className="flex flex-col gap-4 mt-6">
               <a
-                href="tel:+966590132864"
+                href="tel:+966 51 094 2150"
                 className="flex items-center justify-center gap-4 bg-primary text-white py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-lg shadow-primary/20"
               >
-                <Phone size={18} fill="currentColor" /> Call +966 59 013 2864
+                <Phone size={18} fill="currentColor" /> Call +966 51 094 2150
               </a>
               <button
                 onClick={() => {
                   if (onBookNow) onBookNow();
-                  else window.open('https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?', '_blank');
+                  else window.open('https://wa.me/966510942150?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?', '_blank');
                   setMobileMenuOpen(false);
                 }}
                 className="flex items-center justify-center gap-4 bg-[#25D366] text-white py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-lg shadow-[#25D366]/20"

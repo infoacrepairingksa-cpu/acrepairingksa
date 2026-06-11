@@ -57,7 +57,7 @@ function refactorBookingModal(dir) {
             content = content.replace(handle1, `const handleBookNow = (service?: string) => {
     const sName = service && typeof service === 'string' ? service : "${serviceName}";
     const text = \`Hello, I need \${sName} services. Can you help?\`;
-    window.open(\`https://wa.me/966590132864?text=\${encodeURIComponent(text)}\`, '_blank');
+    window.open(\`https://wa.me/966510942150?text=\${encodeURIComponent(text)}\`, '_blank');
   };`);
             modified = true;
         }
@@ -68,7 +68,7 @@ function refactorBookingModal(dir) {
             content = content.replace(handle2, `const handleBookNow = (service$1) => {
     const sName = service && typeof service === 'string' ? service : "${serviceName}";
     const text = \`Hello, I need \${sName} services. Can you help?\`;
-    window.open(\`https://wa.me/966590132864?text=\${encodeURIComponent(text)}\`, '_blank');
+    window.open(\`https://wa.me/966510942150?text=\${encodeURIComponent(text)}\`, '_blank');
   };`);
             modified = true;
         }
@@ -79,7 +79,7 @@ function refactorBookingModal(dir) {
             content = content.replace(handle3, `const handleBookNow = (serviceName: string = "") => {
     const sName = serviceName || "Home Maintenance and AC Repair";
     const text = \`Hello, I need \${sName} services. Can you help?\`;
-    window.open(\`https://wa.me/966590132864?text=\${encodeURIComponent(text)}\`, '_blank');
+    window.open(\`https://wa.me/966510942150?text=\${encodeURIComponent(text)}\`, '_blank');
   };`);
             modified = true;
         }

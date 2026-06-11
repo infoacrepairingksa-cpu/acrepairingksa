@@ -45,7 +45,7 @@ export async function generateMetadata({
   const locationName = toTitleCase(location);
 
   const title = `${serviceName} in ${locationName}, Riyadh | AC Repairing KSA`;
-  const description = `Professional ${svcData?.description || serviceName} in ${locationName}, Riyadh. ${locData?.description?.slice(0, 100) || ""} Same-day service. Call +966 59 013 2864.`;
+  const description = `Professional ${svcData?.description || serviceName} in ${locationName}, Riyadh. ${locData?.description?.slice(0, 100) || ""} Same-day service. Call +966 51 094 2150.`;
 
   return {
     title,

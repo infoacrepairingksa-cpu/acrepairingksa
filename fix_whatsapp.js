@@ -18,7 +18,7 @@ function updateWhatsAppLinks(filePath) {
   const defaultText = "?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?";
   
   // Make sure we don't append ?text multiple times
-  content = content.replace(/https:\/\/wa\.me\/966590132864(?!\?text)/g, `https://wa.me/966590132864${defaultText}`);
+  content = content.replace(/https:\/\/wa\.me\/966510942150(?!\?text)/g, `https://wa.me/966510942150${defaultText}`);
   
   if (content !== original) {
     console.log("Updated WhatsApp text in:", filePath);

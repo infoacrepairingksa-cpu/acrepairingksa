@@ -397,13 +397,13 @@ export default function BlogContent({ post }: { post: BlogPost }) {
                 </p>
                 <div className="flex flex-col gap-4 relative z-10">
                   <a 
-                    href="tel:+966590132864" 
+                    href="tel:+966 51 094 2150" 
                     className="w-full bg-white text-primary px-6 py-4 rounded-xl font-black text-sm uppercase tracking-widest text-center hover:bg-secondary hover:text-white transition-all shadow-lg flex items-center justify-center gap-3"
                   >
                     <Phone size={18} fill="currentColor" /> Call +966 590 132 864
                   </a>
                   <a 
-                    href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" 
+                    href="https://wa.me/966510942150?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" 
                     className="w-full bg-[#25D366] text-white px-6 py-4 rounded-xl font-black text-sm uppercase tracking-widest text-center hover:bg-[#1DA851] transition-all shadow-lg flex items-center justify-center gap-3"
                   >
                     <MessageSquare size={18} fill="currentColor" /> WhatsApp Us

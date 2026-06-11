@@ -143,14 +143,14 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <ContactLink 
                 icon={<Phone size={18} fill="currentColor" />} 
-                text="+966 59 013 2864" 
-                href="tel:+966590132864" 
+                text="+966 51 094 2150" 
+                href="tel:+966 51 094 2150" 
                 ariaLabel="Call Riyadh Technical Support"
               />
               <ContactLink 
                 icon={<MessageSquare size={18} fill="currentColor" />} 
                 text="WhatsApp Us" 
-                href="https://wa.me/966590132864?text=Hello" 
+                href="https://wa.me/966510942150?text=Hello" 
                 ariaLabel="WhatsApp Technical Support"
               />
               <ContactLink 
@@ -159,23 +159,52 @@ const Footer = () => {
                 href="mailto:info@acrepairingksa.com" 
                 ariaLabel="Email AC Repairing KSA"
               />
-              
+              {/* Physical Address — Local SEO Trust Signal */}
+              <div className="flex items-start gap-4 py-2">
+                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+                  <MapPin size={18} />
+                </div>
+                <address className="not-italic text-sm font-bold text-white/80 leading-relaxed">
+                  <span className="block text-white">AC Repairing KSA</span>
+                  <span className="block">Riyadh, Saudi Arabia (KSA)</span>
+                  <span className="block text-white/50 text-xs mt-1">Serving All Riyadh Districts</span>
+                </address>
+              </div>
+
               <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2">
                 <span className="text-white/60 text-xs font-black uppercase tracking-widest">Business Hours</span>
-                <span className="text-white font-bold text-sm tracking-wide">Monday - Sunday</span>
-                <span className="text-secondary font-black text-sm tracking-wide">Open 24/7 (Emergency Service)</span>
+                <div className="flex flex-col gap-1 text-sm font-bold">
+                  <span className="text-white">Saturday – Thursday: <span className="text-secondary">8:00 AM – 10:00 PM</span></span>
+                  <span className="text-white">Friday: <span className="text-secondary">2:00 PM – 10:00 PM</span></span>
+                  <span className="text-secondary font-black mt-1">🚨 24/7 Emergency Service Available</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Google Maps Embed — Local SEO Signal */}
+        <div className="mb-16 rounded-3xl overflow-hidden border border-white/10 h-56">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463412.31272916!2d46.54232857999999!3d24.688287899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1717000000000!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="AC Repairing KSA — Riyadh Service Area Map"
+          />
+        </div>
+
         <div className="border-t border-white/5 pt-16 flex flex-col md:flex-row items-center justify-between gap-8 text-white/60 text-xs font-bold uppercase tracking-wider">
-          <p>© {currentYear} AC Repairing KSA. Trusted Home Services in Riyadh City.</p>
+          <p>© {currentYear} AC Repairing KSA. Trusted HVAC & Home Services in Riyadh, Saudi Arabia.</p>
           <div className="flex items-center gap-10">
             <Link href="/" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/" className="hover:text-white transition-colors">Technical Terms</Link>
           </div>
           <div className="flex items-center gap-4 text-secondary font-bold tracking-wider">
-            <span>Riyadh's #1 Certified Maintenance Fleet</span>
+            <span>Riyadh's #1 Certified HVAC Fleet</span>
             <CheckCircle2 size={16} />
           </div>
         </div>

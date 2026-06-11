@@ -46,11 +46,11 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 <span className="text-sm font-bold text-primary">Google Rating <span className="text-secondary">4.9/5</span> (542 Verified Reviews)</span>
               </div>
               <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
-                AC Repair, AC Cleaning & <span className="text-secondary">Home Maintenance</span> Services in Riyadh
+                Professional AC Repair & HVAC Maintenance Services in <span className="text-secondary">Riyadh, Saudi Arabia</span>
               </h1>
-              {/* AI Summary Block */}
+              {/* AI Summary / GEO Entity Block */}
               <p className="text-base md:text-lg text-primary/80 font-medium leading-relaxed max-w-xl">
-                <strong>Professional AC repair, AC cleaning, AC installation, AC maintenance and AC gas refill services across Riyadh.</strong> Available for residential and commercial air conditioning systems with same-day support. We also provide complete home maintenance and plumbing solutions.
+                <strong>KSA-certified HVAC technicians</strong> for split AC, central AC, and window AC systems in Riyadh. We provide <strong>AC repair, AC cleaning, compressor replacement, refrigerant gas refill (R410A/R22), AC installation, duct cleaning, and emergency 24/7 support</strong> across all Riyadh districts including Al Olaya, Al Malqa, Al Yasmin, Hittin, and Al Malaz. Same-day service guaranteed.
               </p>
               {/* GEO Signal */}
               <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mt-2 flex items-center gap-2">
@@ -65,13 +65,13 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 mt-4"
             >
               <a 
-                href="tel:+966590132864"
+                href="tel:+966 51 094 2150"
                 className="w-full sm:w-auto px-8 md:px-10 py-5 md:py-6 bg-primary hover:bg-secondary text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-[0_20px_40px_-10px_rgba(31,32,97,0.4)] flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95"
               >
                 <Phone size={20} fill="currentColor" /> Call Now
               </a>
               <a 
-                href="https://wa.me/966590132864?text=Hello,%20I%20need%20AC%20services.%20Can%20you%20help?"
+                href="https://wa.me/966510942150?text=Hello,%20I%20need%20AC%20services.%20Can%20you%20help?"
                 className="w-full sm:w-auto px-8 md:px-10 py-5 md:py-6 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-[20px] font-black text-sm md:text-base tracking-widest transition-all shadow-[0_20px_40px_-10px_rgba(37,211,102,0.4)] flex items-center justify-center gap-4 hover:-translate-y-1 active:scale-95"
               >
                 <MessageSquare size={20} fill="currentColor" /> WhatsApp Now

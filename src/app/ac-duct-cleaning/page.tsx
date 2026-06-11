@@ -21,7 +21,7 @@ export default function ACDuctCleaningPage() {
   const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const SectionHeading = ({ sub, title, center = true, light = false }: any) => (
@@ -76,7 +76,7 @@ export default function ACDuctCleaningPage() {
                 <button onClick={handleBookNow} className="w-full sm:w-auto px-12 py-7 bg-secondary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-2xl hover:-translate-y-2 border-b-4 border-blue-700 active:scale-95 flex items-center justify-center gap-5">
                   <Wind size={24} /> Book Duct Cleaning
                 </button>
-                <a href="tel:+966590132864" className="w-full sm:w-auto px-12 py-7 bg-primary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-xl hover:-translate-y-2 border-b-4 border-slate-800 active:scale-95 flex items-center justify-center gap-5">
+                <a href="tel:+966 51 094 2150" className="w-full sm:w-auto px-12 py-7 bg-primary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-xl hover:-translate-y-2 border-b-4 border-slate-800 active:scale-95 flex items-center justify-center gap-5">
                   <Phone size={24} /> Call Expert
                 </a>
               </div>
@@ -413,7 +413,7 @@ export default function ACDuctCleaningPage() {
           <p className="text-xl md:text-2xl font-medium text-white/70 max-w-3xl leading-relaxed relative z-10">Book expert AC duct cleaning services today for cleaner indoor air, better airflow & healthier living spaces for your family.</p>
           <div className="flex flex-col sm:flex-row gap-8 w-full max-w-3xl relative z-10">
              <button onClick={handleBookNow} className="flex-1 px-14 py-8 bg-secondary text-white rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all"><Sparkles size={32} /> Book Cleaning</button>
-             <a href="tel:+966590132864" className="flex-1 px-14 py-8 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all"><Phone size={32} fill="currentColor" /> Call HVAC Experts</a>
+             <a href="tel:+966 51 094 2150" className="flex-1 px-14 py-8 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all"><Phone size={32} fill="currentColor" /> Call HVAC Experts</a>
           </div>
         </div>
       </section>

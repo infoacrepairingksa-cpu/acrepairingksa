@@ -20,7 +20,7 @@ export default function AboutPage() {
   const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "Expert";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const SectionHeading = ({ sub, title, center = true, light = false }: any) => (
@@ -201,7 +201,7 @@ export default function AboutPage() {
           <p className="text-lg md:text-xl font-medium text-white/60 max-w-2xl leading-relaxed relative z-10">Join 5,000+ happy residents in Riyadh who trust us for their AC, plumbing, and home care needs.</p>
           <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl relative z-10">
              <button onClick={handleBookNow} className="flex-1 px-12 py-6 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-blue-700 shadow-xl hover:bg-white hover:text-secondary transition-all active:scale-95"><ShieldCheck size={24} /> Book Now</button>
-             <a href="tel:+966590132864" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-slate-100 shadow-xl hover:bg-secondary hover:text-white transition-all active:scale-95"><Phone size={24} fill="currentColor" /> Call Expert</a>
+             <a href="tel:+966 51 094 2150" className="flex-1 px-12 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 border-b-4 border-slate-100 shadow-xl hover:bg-secondary hover:text-white transition-all active:scale-95"><Phone size={24} fill="currentColor" /> Call Expert</a>
           </div>
         </div>
       </section>

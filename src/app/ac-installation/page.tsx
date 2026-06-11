@@ -21,7 +21,7 @@ export default function ACInstallationPage() {
   const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const SectionHeading = ({ sub, title, center = true, light = false }: any) => (
@@ -322,7 +322,7 @@ export default function ACInstallationPage() {
               <div className="flex-1 w-full max-w-md relative z-10">
                  <div className="bg-white p-12 rounded-[64px] shadow-2xl flex flex-col gap-8 text-center">
                     <span className="text-primary font-black text-xl tracking-tight leading-none uppercase tracking-[0.2em]">Priority Request</span>
-                    <a href="tel:+966590132864" className="w-full px-12 py-7 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-slate-800 shadow-xl hover:bg-secondary transition-all">
+                    <a href="tel:+966 51 094 2150" className="w-full px-12 py-7 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-slate-800 shadow-xl hover:bg-secondary transition-all">
                        <Phone size={24} fill="currentColor" /> Call Emergency Team
                     </a>
                     <button onClick={handleBookNow} className="w-full px-12 py-7 bg-white border-2 border-gray-100 text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 shadow-sm hover:border-secondary transition-all">
@@ -397,7 +397,7 @@ export default function ACInstallationPage() {
                  <button onClick={handleBookNow} className="flex-1 px-14 py-8 bg-secondary text-white rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all">
                     <Check size={32} /> Book Now
                  </button>
-                 <a href="tel:+966590132864" className="flex-1 px-14 py-8 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all">
+                 <a href="tel:+966 51 094 2150" className="flex-1 px-14 py-8 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all">
                     <Phone size={32} fill="currentColor" /> Call AC Experts
                  </a>
               </div>

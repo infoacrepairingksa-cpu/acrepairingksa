@@ -33,5 +33,5 @@ const searchRegexList = [
   /(\+966\s*50\s*[0-9]{3}\s*[0-9]{4})/g
 ];
 
-findAndReplaceInDir(path.join(__dirname, 'src'), searchRegexList, '+966 59 013 2864');
+findAndReplaceInDir(path.join(__dirname, 'src'), searchRegexList, '+966 51 094 2150');
 console.log('Done replacing visual phone numbers.');

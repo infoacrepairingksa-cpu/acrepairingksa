@@ -78,7 +78,7 @@ export default function ServiceLocationPage({
   service, location, serviceName, locationName, svcData, locData
 }: Props) {
   const waText = `Hello, I need ${serviceName} service in ${locationName}, Riyadh. Can you help?`;
-  const waLink = `https://wa.me/966590132864?text=${encodeURIComponent(waText)}`;
+  const waLink = `https://wa.me/966510942150?text=${encodeURIComponent(waText)}`;
   const nearby = NEARBY[location] || [];
   const related = RELATED_SERVICES[service] || [];
 
@@ -116,7 +116,7 @@ export default function ServiceLocationPage({
             "@type": "HVACBusiness",
             "name": `AC Repairing KSA – ${serviceName} in ${locationName}`,
             "url": `https://acrepairingksa.com/${service}/${location}`,
-            "telephone": "+966590132864",
+            "telephone": "+966 51 094 2150",
             "areaServed": { "@type": "Place", "name": `${locationName}, Riyadh, Saudi Arabia` },
             "priceRange": "$$",
             "openingHours": "Mo-Su 00:00-23:59",
@@ -198,10 +198,10 @@ export default function ServiceLocationPage({
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+966590132864"
+                href="tel:+966 51 094 2150"
                 className="inline-flex items-center justify-center gap-3 bg-white text-primary px-8 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-xl"
               >
-                <Phone size={20} fill="currentColor" /> Call Now: +966 59 013 2864
+                <Phone size={20} fill="currentColor" /> Call Now: +966 51 094 2150
               </a>
               <a
                 href={waLink}
@@ -287,8 +287,8 @@ export default function ServiceLocationPage({
           </h2>
           <p className="text-white/70 mb-8 font-medium">Our team is stationed in {locationName} — 30-minute arrival guaranteed</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+966590132864" className="inline-flex items-center justify-center gap-3 bg-white text-primary px-8 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all">
-              <Phone size={20} fill="currentColor" /> +966 59 013 2864
+            <a href="tel:+966 51 094 2150" className="inline-flex items-center justify-center gap-3 bg-white text-primary px-8 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all">
+              <Phone size={20} fill="currentColor" /> +966 51 094 2150
             </a>
             <a href={waLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all">
               <WhatsAppIcon size={20} className="text-white" /> WhatsApp {serviceName}
@@ -425,7 +425,7 @@ export default function ServiceLocationPage({
             Certified technicians. 30-minute arrival. 90-day warranty. Available 24/7 across {locationName}, Riyadh.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+966590132864" className="inline-flex items-center justify-center gap-3 bg-white text-primary px-10 py-6 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-2xl">
+            <a href="tel:+966 51 094 2150" className="inline-flex items-center justify-center gap-3 bg-white text-primary px-10 py-6 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-2xl">
               <Phone size={22} fill="currentColor" /> Call Now
             </a>
             <a href={waLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-10 py-6 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-2xl">

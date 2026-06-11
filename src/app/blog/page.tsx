@@ -15,7 +15,7 @@ export default function BlogIndexPage() {
   const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "AC Repair";
     const text = `Hello, I need ${sName} services. Can you help?`;
-    window.open(`https://wa.me/966590132864?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const postsArray = Object.values(blogPosts);
@@ -117,7 +117,7 @@ export default function BlogIndexPage() {
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <a 
-                  href="tel:+966590132864" 
+                  href="tel:+966 51 094 2150" 
                   className="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-blue-600 text-white rounded-xl font-black text-sm tracking-widest uppercase transition-all flex items-center justify-center gap-3"
                 >
                   Call Now

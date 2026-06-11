@@ -103,7 +103,7 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
 
         <div className="flex flex-col gap-3 mt-auto">
           <a 
-            href={`https://wa.me/966590132864?text=${encodeURIComponent(`Hello, I need ${title} service. Can you help?`)}`}
+            href={`https://wa.me/966510942150?text=${encodeURIComponent(`Hello, I need ${title} service. Can you help?`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-3 active:scale-95 shadow-lg shadow-[#25D366]/10"
@@ -308,7 +308,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
 
               <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
                 <a 
-                  href="tel:+966590132864" 
+                  href="tel:+966 51 094 2150" 
                   className="w-full sm:w-auto bg-secondary text-white px-12 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-secondary/90 transition-all shadow-xl shadow-secondary/20 flex items-center justify-center gap-4 group"
                 >
                   <Phone size={20} fill="currentColor" className="group-hover:rotate-12 transition-transform" /> 
@@ -330,7 +330,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 {["AC Repair", "AC Cleaning", "AC Gas Refill", "AC Maintenance", "Plumbing"].map((svc) => (
                   <a
                     key={svc}
-                    href={`https://wa.me/966590132864?text=${encodeURIComponent(`Hello, I need ${svc} service in Riyadh. Can you help?`)}`}
+                    href={`https://wa.me/966510942150?text=${encodeURIComponent(`Hello, I need ${svc} service in Riyadh. Can you help?`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition-all flex items-center justify-center gap-3 active:scale-95 shadow-lg shadow-[#25D366]/10"
@@ -339,8 +339,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                   </a>
                 ))}
               </div>
-              <a href="tel:+966590132864" className="flex items-center gap-3 text-primary font-black text-sm">
-                <Phone size={18} fill="currentColor" /> +966 59 013 2864
+              <a href="tel:+966 51 094 2150" className="flex items-center gap-3 text-primary font-black text-sm">
+                <Phone size={18} fill="currentColor" /> +966 51 094 2150
               </a>
             </div>
           </div>
@@ -400,7 +400,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
           <div className="flex flex-col items-center gap-8">
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary/60 italic">And all nearby areas in Riyadh.</p>
             <a 
-              href="https://wa.me/966590132864?text=Hello%2C%20I%20need%20AC%20or%20home%20maintenance%20service%20in%20Riyadh.%20Can%20you%20help?"
+              href="https://wa.me/966510942150?text=Hello%2C%20I%20need%20AC%20or%20home%20maintenance%20service%20in%20Riyadh.%20Can%20you%20help?"
               target="_blank"
               rel="noopener noreferrer"
               className="px-12 py-5 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-2xl font-bold text-sm uppercase tracking-widest transition-all shadow-2xl shadow-[#25D366]/30 flex items-center gap-4 group"
@@ -421,7 +421,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               <span className="text-2xl font-bold text-primary tracking-tight leading-none">Need an emergency fix today?</span>
             </div>
           </div>
-          <a href="https://wa.me/966590132864?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" className="w-full md:w-auto px-12 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl shadow-[#25D366]/20 flex items-center justify-center gap-4">
+          <a href="https://wa.me/966510942150?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?" className="w-full md:w-auto px-12 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-[#1DA851] transition-all shadow-xl shadow-[#25D366]/20 flex items-center justify-center gap-4">
              <WhatsAppIcon size={18} className="text-white" /> Chat on WhatsApp
           </a>
         </div>

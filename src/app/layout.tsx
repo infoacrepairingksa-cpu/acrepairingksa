@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | AC Repairing KSA – Riyadh",
   },
   description:
-    "Expert AC repair, cleaning, installation & plumbing in Riyadh. 30-minute response, 5,000+ repairs completed, 24/7 emergency service across all Riyadh districts. Call +966 59 013 2864.",
+    "Expert AC repair, cleaning, installation & plumbing in Riyadh. 30-minute response, 5,000+ repairs completed, 24/7 emergency service across all Riyadh districts. Call +966 51 094 2150.",
   alternates: {
     canonical: "/",
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AC Repair Riyadh | 24/7 Emergency AC & Home Maintenance",
     description:
-      "Expert AC repair, cleaning & plumbing in Riyadh. 30-min response. Call +966 59 013 2864.",
+      "Expert AC repair, cleaning & plumbing in Riyadh. 30-min response. Call +966 51 094 2150.",
     images: ["/og-image.webp"],
     creator: "@acrepairingksa",
   },
