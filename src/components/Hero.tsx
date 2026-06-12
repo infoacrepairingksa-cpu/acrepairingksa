@@ -46,7 +46,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 <span className="text-sm font-bold text-primary">Google Rating <span className="text-secondary">4.9/5</span> (542 Verified Reviews)</span>
               </div>
               <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
-                Professional AC Repair & <span className="text-secondary">HVAC Services in Riyadh & KSA</span>
+                Riyadh HVAC Specialists: <span className="text-secondary">AC Repair & Cleaning</span>
               </h1>
               {/* AI Summary / GEO Entity Block */}
               <p className="text-base md:text-lg text-primary/80 font-medium leading-relaxed max-w-xl">

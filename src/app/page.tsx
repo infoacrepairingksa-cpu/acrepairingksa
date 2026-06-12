@@ -401,7 +401,7 @@ const StepByStepProcess = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">How Our Service Works</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Our 4-Step AC Repair Process in Riyadh</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Eight clear steps from first WhatsApp message to guaranteed 90-day warranted repair — all on the same day.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -554,7 +554,7 @@ const LocationCards = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Services in Riyadh & Major KSA Cities</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Repair & Maintenance Across Riyadh</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">
             While our local rapid response teams service all Riyadh districts within 30-60 minutes, we also provide professional consultation, dispatch coordination, and phone support for other KSA provinces.
           </p>
@@ -760,7 +760,7 @@ const CustomerReviews = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Trusted by Riyadh Homeowners</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">What Customers Say About Our AC Repair in Riyadh</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Read honest testimonials detailing specific services, districts, and problems solved by our technicians.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -1081,7 +1081,7 @@ const CTABanner = () => (
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-heading font-black leading-tight tracking-tight">
-            Need AC Repair or Deep Cleaning? <br /> Restoring Cooling in 30 Mins.
+            Need AC Repair in Riyadh? <br /> Tech in 30 Minutes
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center mt-4">

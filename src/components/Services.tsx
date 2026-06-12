@@ -173,39 +173,6 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       process: "Electrical Audit → Coil Health → Calibrate Controls",
       ctaText: "Plan Maintenance",
       benefits: ["Energy Save", "Free Health Check", "Lube Parts"]
-    },
-    {
-      id: "ac-filter-cleaning",
-      title: "AC Filter Cleaning",
-      description: "Dust and allergen removal, HEPA filter replacement, and indoor air quality (IAQ) improvement.",
-      icon: <Wind />,
-      imageUrl: "/Ac Services/AC Filter Cleaning.webp",
-      price: "SAR 99",
-      process: "Remove Filters → Chemical Flush → Sanitize & Fit",
-      ctaText: "Clean Filters",
-      benefits: ["Dust Removal", "Clean Air", "Better Flow"]
-    },
-    {
-      id: "ac-duct-cleaning",
-      title: "AC Duct Cleaning",
-      description: "Deep ventilation system scrubbing, mold remediation, duct sanitization, and airflow balancing.",
-      icon: <Wind />,
-      imageUrl: "/Ac Services/AC Duct Cleaning.webp",
-      price: "SAR 399",
-      process: "Scrub Ducting → Disinfectant Spray → Air Balance Check",
-      ctaText: "WhatsApp for Ducts",
-      benefits: ["Mold Control", "Odor Removal", "Safe Living"]
-    },
-    {
-      id: "ac-coil-cleaning",
-      title: "AC Coil Cleaning",
-      description: "Max thermal efficiency fix via condenser and evaporator coil chemical descaling to lower electricity consumption.",
-      icon: <Snowflake />,
-      imageUrl: "/Ac Services/AC Coil Cleaning.webp",
-      price: "SAR 149",
-      process: "Chemical Jet Wash → Scale Removal → Fin Alignment",
-      ctaText: "Check Coils",
-      benefits: ["Scale Removal", "Faster Cooling", "Low Bills"]
     }
   ];
 
@@ -244,7 +211,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-20 gap-6">
 
             <h2 className="text-[36px] font-heading font-black text-primary leading-tight tracking-tighter">
-              Our Comprehensive <span className="text-secondary">Services</span> in Riyadh
+              Our AC & Home Services in Riyadh – <span className="text-secondary">Repair, Cleaning, Maintenance</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -257,9 +224,8 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
         {/* Additional Home Services Section - Enhanced Design for 2 Cards */}
         <div className="mb-32">
           <div className="max-w-4xl mx-auto mb-16 text-center flex flex-col items-center gap-4">
-            <span className="bg-primary/5 text-primary/80 font-bold tracking-widest uppercase text-sm px-6 py-2 rounded-full inline-block">Popular Add-ons</span>
             <h2 className="text-3xl font-heading font-black text-primary leading-tight tracking-tighter">
-              Specialized <span className="text-secondary">Services</span>
+              Additional Home Services in Riyadh <span className="text-secondary">(Plumbing & Maintenance)</span>
             </h2>
           </div>
 
