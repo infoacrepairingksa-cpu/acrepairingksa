@@ -282,20 +282,20 @@ const ACComponents = () => {
 // 5. AC BRANDS WE SERVICE (GRID WITH IMAGES & DESCRIPTIONS)
 const BrandsGrid = () => {
   const brands = [
-    { name: "Daikin", imageUrl: "/uploaded/brand-daikin.png", desc: "High-efficiency Japanese inverter split and VRV systems. We repair sensors, control boards, and re-charge eco-friendly coolant." },
-    { name: "Carrier", imageUrl: "/uploaded/brand-carrier.png", desc: "Robust American cooling technology, common in large villas. We service heavy-duty compressors and replace control contactors." },
-    { name: "LG", imageUrl: "/uploaded/brand-lg.png", desc: "Dual-inverter splits and package units. We troubleshoot smart diagnostic error codes and replace original motor components." },
-    { name: "Samsung", imageUrl: "/uploaded/brand-samsung.png", desc: "WindFree and digital inverter split ACs. We specialize in servicing electronic control boards and blower assemblies." },
-    { name: "York", imageUrl: "/uploaded/brand-york.png", desc: "Reliable commercial and residential central package units. We service multi-stage compressors and condenser fan arrays." },
-    { name: "Gree", imageUrl: "/uploaded/brand-gree.png", desc: "Extremely popular in Riyadh for durable splits. We provide genuine replacement parts, capacitor repairs, and coil cleaning." },
-    { name: "Mitsubishi", imageUrl: "/uploaded/brand-mitsubishi.png", desc: "Premium quiet split systems. We offer precision servicing of electronic expansion valves and high-performance blower fans." },
-    { name: "Hitachi", imageUrl: "/uploaded/brand-hitachi.png", desc: "Sturdy tropical split ACs. We wash out condenser sand blocks and resolve thermal overload problems during summer peaks." }
+    { name: "Carrier", imageUrl: "/AC Companies/Carrier ac.png", desc: "Robust American cooling technology, common in large villas. We service heavy-duty compressors and replace control contactors." },
+    { name: "Daikin", imageUrl: "/AC Companies/Daikin AC.jpg", desc: "High-efficiency Japanese inverter split and VRV systems. We repair sensors, control boards, and re-charge eco-friendly coolant." },
+    { name: "Gree", imageUrl: "/AC Companies/Gree AC.webp", desc: "Extremely popular in Riyadh for durable splits. We provide genuine replacement parts, capacitor repairs, and coil cleaning." },
+    { name: "Hitachi", imageUrl: "/AC Companies/Hitachi AC.png", desc: "Sturdy tropical split ACs. We wash out condenser sand blocks and resolve thermal overload problems during summer peaks." },
+    { name: "LG", imageUrl: "/AC Companies/LG AC.webp", desc: "Dual-inverter splits and package units. We troubleshoot smart diagnostic error codes and replace original motor components." },
+    { name: "Mitsubishi", imageUrl: "/AC Companies/Mitsubishi AC.webp", desc: "Premium quiet split systems. We offer precision servicing of electronic expansion valves and high-performance blower fans." },
+    { name: "Samsung", imageUrl: "/AC Companies/Samsung AC.jpg", desc: "WindFree and digital inverter split ACs. We specialize in servicing electronic control boards and blower assemblies." },
+    { name: "York", imageUrl: "/AC Companies/YORK AC.webp", desc: "Reliable commercial and residential central package units. We service multi-stage compressors and condenser fan arrays." }
   ];
   return (
     <section className="py-24 bg-white border-y border-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Multi-Brand Competence</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Brands We Service</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Our technical vans are stocked with genuine spare parts for all major international air conditioning manufacturers.</p>
         </div>
