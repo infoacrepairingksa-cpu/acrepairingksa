@@ -24,19 +24,6 @@ const FloatingActions = () => {
              <span className="text-sm font-black text-primary group-hover:text-primary tracking-tight">+966 51 094 2150</span>
           </div>
         </a>
-
-        <a
-          href="https://wa.me/966510942150?text=Hello,%20I%20need%20home%20maintenance%20and%20AC%20repair%20services.%20Can%20you%20help?"
-          className="flex items-center gap-4 bg-[#25D366] text-white p-4 pr-6 rounded-full shadow-[0_10px_40px_rgba(37,211,102,0.4)] hover:scale-105 hover:bg-[#1DA851] transition-all group"
-        >
-          <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-            <MessageSquare size={20} fill="currentColor" />
-          </div>
-          <div className="flex flex-col">
-             <span className="text-[9px] font-black uppercase tracking-widest text-white/80">Instant Reply</span>
-             <span className="text-sm font-black tracking-tight">WhatsApp Us</span>
-          </div>
-        </a>
       </div>
 
       {/* Mobile Sticky Bar (Bottom) - Conversion Focused */}
