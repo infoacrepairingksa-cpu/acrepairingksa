@@ -211,12 +211,14 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-20 gap-6">
 
             <h2 className="text-[36px] font-heading font-black text-primary leading-tight tracking-tighter">
-              Complete AC Solutions for <span className="text-secondary">Homes & Businesses</span>
+              Our Professional AC Services in Riyadh
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {acServices.map((service) => (
-              <ServiceCard key={service.id} {...service} onBookNow={onBookNow} />
+              <div key={service.id} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
+                <ServiceCard {...service} onBookNow={onBookNow} />
+              </div>
             ))}
           </div>
         </div>
@@ -296,9 +298,6 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                   </a>
                 ))}
               </div>
-              <a href="tel:+966 51 094 2150" className="flex items-center gap-3 text-primary font-black text-sm">
-                <Phone size={18} fill="currentColor" /> +966 51 094 2150
-              </a>
             </div>
           </div>
         </div>

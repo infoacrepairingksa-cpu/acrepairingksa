@@ -927,12 +927,12 @@ const BeforeAfterGallery = () => {
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20a%20similar%20AC%20service."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20hire%20your%20expert%20AC%20technicians."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Request Same-Day Service
+            <WhatsAppIcon size={16} /> Hire the Best AC Techs
           </a>
         </div>
       </div>
