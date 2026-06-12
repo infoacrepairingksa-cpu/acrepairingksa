@@ -242,7 +242,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
         {/* AC Services Section */}
         <div className="mb-32">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-20 gap-6">
-            <span className="bg-secondary/10 text-secondary font-bold tracking-widest uppercase text-sm px-6 py-2 rounded-full inline-block">AC & Home Precision</span>
+
             <h2 className="text-[36px] font-heading font-black text-primary leading-tight tracking-tighter">
               Our Comprehensive <span className="text-secondary">Services</span> in Riyadh
             </h2>

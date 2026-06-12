@@ -354,7 +354,7 @@ const SignsYourACNeedsRepair = () => {
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Pre-Failure Indicators</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Signs Your AC Needs Repair</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Catch faults early to avoid total compressor burnout. Check your cooling system for these indicators.</p>
         </div>
@@ -400,7 +400,7 @@ const StepByStepProcess = () => {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Service Standards</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">How Our Service Works</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Eight clear steps from first WhatsApp message to guaranteed 90-day warranted repair — all on the same day.</p>
         </div>
@@ -428,70 +428,7 @@ const StepByStepProcess = () => {
   );
 };
 
-// 8. WHY CHOOSE US (RIYADH CLIMATE CONTEXT & LANDMARK MENTIONS)
-const WhyChooseUs = () => {
-  return (
-    <section className="py-24 bg-[#F8FAFC]">
-      <div className="container mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Climate Adaptation</span>
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Why Choose Our AC Services?</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Adapting residential and commercial cooling units to perform under Riyadh's harsh desert environment.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm flex flex-col gap-6">
-            <h3 className="font-heading font-black text-2xl text-primary leading-tight">Why Riyadh Homes Need Regular AC Maintenance</h3>
-            <p className="text-xs md:text-sm text-gray-600 leading-relaxed font-medium">
-              Riyadh's summers are dry and dusty, with temperatures hitting 45°C to 50°C. Frequent sandstorms sweep through residential and commercial districts, depositing fine dust onto outdoor condenser coils.
-            </p>
-            <p className="text-xs md:text-sm text-gray-600 leading-relaxed font-medium">
-              This dust acts as a thermal blanket, trapping heat inside your AC system. Over time, it forces the compressor to draw higher electricity current, causing starting capacitors to bulge and blow. Without regular chemical wash and filter sanitization, cooling systems quickly fail during hot peak hours.
-            </p>
-            <p className="text-xs md:text-sm text-gray-600 leading-relaxed font-medium">
-              We serve all residential areas including <strong>North Riyadh</strong> (Al Yasmin, Al Narjis, Hittin, Al Nakheel, Al Malqa), <strong>East Riyadh</strong> (Al Munsiyah, Al Qadisiyah), <strong>Central Riyadh</strong> (Al Olaya, Al Sulaymaniyah, Al Malaz), and surrounding commercial hubs, dispatching local mobile technical teams equipped to deal with high-head pressure issues.
-            </p>
-            <p className="text-xs md:text-sm text-gray-605 leading-relaxed font-semibold mt-2 border-l-2 border-secondary pl-3">
-              <strong>Led by certified HVAC supervisors with over 10+ years of local field experience in Saudi Arabia</strong>, our company operates in strict compliance with SASO and international HVAC safety protocols. We guarantee reliable, expert-supervised AC repair, servicing, and installation across all domains.
-            </p>
-          </div>
-          <div className="flex flex-col gap-4">
-            <div className="bg-white p-6 rounded-2xl border border-gray-50 flex items-start gap-4">
-              <CheckCircle2 className="text-secondary shrink-0 mt-1" />
-              <div>
-                <h4 className="font-heading font-black text-base text-primary">GCC-Certified HVAC Technicians</h4>
-                <p className="text-xs text-gray-500 mt-1">Our team consists of <strong>KSA-certified HVAC specialists</strong> with formal training in split AC, central AC, VRF, and package unit systems. All technicians are SASO-compliant and background verified for villa and family home access.</p>
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-50 flex items-start gap-4">
-              <CheckCircle2 className="text-secondary shrink-0 mt-1" />
-              <div>
-                <h4 className="font-heading font-black text-base text-primary">10+ Years Desert HVAC Experience</h4>
-                <p className="text-xs text-gray-500 mt-1">With over <strong>10 years servicing AC systems under Riyadh's 45°C–50°C summer conditions</strong>, our crew has handled 15,000+ residential and commercial units including Samsung, LG, Daikin, Carrier, and Gree brands.</p>
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-50 flex items-start gap-4">
-              <CheckCircle2 className="text-secondary shrink-0 mt-1" />
-              <div>
-                <h4 className="font-heading font-black text-base text-primary">Original Spare Parts & R410A Gas</h4>
-                <p className="text-xs text-gray-500 mt-1">We stock <strong>manufacturer-approved run capacitors, copper flare fittings, contactor relays, and genuine R410A/R22 refrigerant</strong>. Every repair uses traceable original parts with a 90-day written service warranty.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-12 text-center">
-          <a 
-            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20with%20Riyadh's%20trusted%20HVAC%20crew."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
-          >
-            <WhatsAppIcon size={16} /> Hire Certified HVAC Crew
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
+
 
 // 9. REPAIR VS REPLACEMENT
 const RepairVsReplacement = () => {
@@ -499,7 +436,7 @@ const RepairVsReplacement = () => {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Decision Matrix</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Repair vs AC Replacement</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Compare cost and system life considerations to choose between repairing your existing AC or installing a new unit.</p>
         </div>
@@ -567,7 +504,7 @@ const CostFactors = () => {
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Pricing Factors</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">What Affects AC Repair Costs?</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Clear, upfront estimates. We analyze these major factors to determine the repair quote for your system.</p>
         </div>
@@ -616,7 +553,7 @@ const LocationCards = () => {
     <section className="py-24 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Saudi Arabia (KSA) Service Coverage</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Services in Riyadh & Major KSA Cities</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">
             While our local rapid response teams service all Riyadh districts within 30-60 minutes, we also provide professional consultation, dispatch coordination, and phone support for other KSA provinces.
@@ -753,7 +690,7 @@ const ProjectGallery = () => {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Field Showcases</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Real Projects & Diagnoses</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Browse case summaries from real service calls made by our technicians across Riyadh neighborhoods.</p>
         </div>
@@ -891,7 +828,7 @@ const TopicClusterSection = () => {
           
           {/* Topic Cluster Structure (Topical Authority Visualization) */}
           <div className="lg:col-span-5 flex flex-col gap-6">
-            <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block self-start">Topical Architecture</span>
+
             <h3 className="font-heading font-black text-2xl text-primary leading-tight">AC Service Topic Clusters</h3>
             <p className="text-xs md:text-sm text-gray-500 leading-relaxed font-medium">
               We approach HVAC solutions through a structured semantic framework, covering every subsystem of home and commercial cooling.
@@ -912,7 +849,7 @@ const TopicClusterSection = () => {
 
           {/* Knowledge Hub (Blog Links) */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block self-start">Knowledge Hub</span>
+
             <h3 className="font-heading font-black text-2xl text-primary leading-tight">Educational Troubleshooting Guides</h3>
             <p className="text-xs md:text-sm text-gray-500 leading-relaxed font-medium">
               Browse our technical library to understand specific air conditioning faults, diagnostics, and optimization tips.
@@ -1063,67 +1000,7 @@ const BeforeAfterGallery = () => {
   );
 };
 
-// 13. COMPARISON SECTION (WHY CHOOSE US OVER OTHER COMPANIES)
-const ComparisonSection = () => {
-  const features = [
-    { name: "Response Time Guarantee", us: "30-60 Minutes Dispatch", others: "24-48 Hours Wait" },
-    { name: "Technician Qualifications", us: "Licensed, Certified & Background Checked", others: "Freelance / Untrained Helpers" },
-    { name: "Workmanship Warranty", us: "90-Day Written Service Warranty", others: "No Guarantee After Leaving" },
-    { name: "Pricing Transparency", us: "No Hidden Costs - Upfront SAR Quotes", others: "Surprise Fees After Work" },
-    { name: "Emergency Availability", us: "24/7 Standby Crew in Major Intersections", others: "Off-duty during night & holidays" },
-    { name: "Booking Channels", us: "Instant WhatsApp & Direct Phone Call", others: "Slow Webforms / Email Only" }
-  ];
 
-  return (
-    <section className="py-24 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Direct Comparison</span>
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Why Choose Us Over Other AC Companies?</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">See how our professional services compare with general market providers in Riyadh.</p>
-        </div>
-        <div className="overflow-x-auto rounded-[32px] border border-gray-100 shadow-xl shadow-primary/5">
-          <table className="w-full min-w-[700px] border-collapse bg-white text-left text-sm">
-            <thead>
-              <tr className="bg-primary text-white font-heading font-black">
-                <th className="p-6">Service Standard / Feature</th>
-                <th className="p-6 border-l border-white/10 text-center bg-secondary">AC Repairing KSA (Us)</th>
-                <th className="p-6 border-l border-white/10 text-center">Typical Competitor</th>
-              </tr>
-            </thead>
-            <tbody className="font-semibold text-gray-600">
-              {features.map((f, i) => (
-                <tr key={i} className="border-b border-gray-100 hover:bg-slate-50 transition-colors">
-                  <td className="p-6 font-black text-primary">{f.name}</td>
-                  <td className="p-6 border-l border-gray-100 text-center bg-secondary/5 text-secondary font-black">
-                    <span className="inline-flex items-center gap-1.5">
-                      ✅ {f.us}
-                    </span>
-                  </td>
-                  <td className="p-6 border-l border-gray-100 text-center text-red-500 font-bold">
-                    <span className="inline-flex items-center gap-1.5">
-                      ❌ {f.others}
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="mt-12 text-center">
-          <a 
-            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20with%20your%20licensed%20technicians."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
-          >
-            <WhatsAppIcon size={16} /> Book Premium HVAC Services
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 // 14. EMERGENCY AC REPAIR URGENCY SECTION
 const EmergencyUrgencySection = () => {
@@ -1293,9 +1170,9 @@ export default function Home() {
         <BeforeAfterGallery />
         <SignsYourACNeedsRepair />
         <StepByStepProcess />
-        <WhyChooseUs />
+
         <EmergencyUrgencySection />
-        <ComparisonSection />
+
         <RepairVsReplacement />
         <CostFactors />
         <LocationCards />
