@@ -77,14 +77,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               </a>
             </motion.div>
 
-            <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-primary/70 mt-2">
-              <span className="flex items-center gap-1.5"><ShieldCheck size={16} className="text-secondary"/> Same Day Service</span>
-              <span className="text-gray-300">|</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-secondary"/> Warranty Backed Repairs</span>
-              <span className="text-gray-300">|</span>
-              <span className="flex items-center gap-1.5"><Star size={16} className="text-secondary"/> Experienced Technicians</span>
-            </div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
