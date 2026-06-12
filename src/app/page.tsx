@@ -6,7 +6,7 @@ import {
   CalendarCheck2, Award, Phone, Settings, AlertTriangle,
   Snowflake, Droplets, PenTool, BatteryCharging, Factory, 
   FileQuestion, Info, ArrowRight, Activity, Wrench, Thermometer,
-  Grid, ClipboardCheck, Sparkles, MessageSquare, Gauge
+  Grid, ClipboardCheck, Sparkles, MessageSquare, Gauge, Search
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -387,29 +387,34 @@ const SignsYourACNeedsRepair = () => {
 // 7. STEP-BY-STEP PROCESS
 const StepByStepProcess = () => {
   const steps = [
-    { title: "Book via WhatsApp", desc: "Send a message describing your AC issue and your Riyadh district. We confirm your appointment and ETA within minutes." },
-    { title: "Technician Dispatched", desc: "A certified technician is dispatched from the nearest standby location with a fully equipped service van." },
-    { title: "Comprehensive Inspection", desc: "Our technicians inspect the complete unit, checking compressor amperage, electrical contactors, capacitor microfarads, and coolant pressure levels." },
-    { title: "Diagnostic Analysis", desc: "We identify the root cause of the cooling failure—whether it is an electrical short, motor wear, or sand-blocked coils." },
-    { title: "Upfront Price Quotation", desc: "Before any work begins, we provide a clear, no-hidden-fee SAR quote explaining the exact parts needed and labor costs." },
-    { title: "Precision Repair", desc: "Using original manufacturer parts, we replace failed capacitors, weld copper pipe cracks, or clean evaporator coils on-site." },
-    { title: "Pressure Testing & Vacuuming", desc: "We check all joints for gas leaks, evacuate moisture from copper lines using a vacuum pump, and weigh in high-grade R410A coolant." },
-    { title: "Performance Calibration", desc: "We run the AC to verify airflow output and temperature delta, clean up the work area, and activate your 90-day warranty." }
+    { title: "Contact Us", icon: <Phone size={24} />, desc: "Send us a WhatsApp message or call. Describe your AC issue and get an immediate response." },
+    { title: "Schedule Visit", icon: <Clock size={24} />, desc: "We assign the nearest available technician and confirm an ETA, often within 30 minutes." },
+    { title: "Inspection", icon: <Search size={24} />, desc: "Our expert arrives, performs a deep diagnostic, and provides a clear, upfront repair quote." },
+    { title: "Repair / Service", icon: <Wrench size={24} />, desc: "We fix the issue using genuine parts, whether it's gas refilling, parts replacement, or deep cleaning." },
+    { title: "Testing & Handover", icon: <CheckCircle2 size={24} />, desc: "We run the AC to guarantee optimal cooling, clean the area, and activate your 90-day warranty." }
   ];
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Our 4-Step AC Repair Process in Riyadh</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Eight clear steps from first WhatsApp message to guaranteed 90-day warranted repair — all on the same day.</p>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Our 5-Step AC Repair Timeline</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">A clean and transparent process to get your AC running perfectly, fast.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+          {/* Decorative connecting line for desktop */}
+          <div className="hidden md:block absolute top-12 left-10 right-10 h-0.5 bg-gray-100 -z-10" />
+          
           {steps.map((s, i) => (
-            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col gap-3 hover:bg-white hover:shadow-lg hover:border-secondary/20 transition-all duration-300">
-              <span className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center font-black text-base">{i + 1}</span>
-              <h3 className="font-heading font-black text-base text-primary leading-tight">{s.title}</h3>
-              <p className="text-[11px] text-gray-500 leading-relaxed font-medium">{s.desc}</p>
+            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col items-center text-center gap-4 hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/20">
+                {s.icon}
+              </div>
+              <div>
+                <span className="text-[10px] font-black text-secondary uppercase tracking-widest block mb-1">Step 0{i + 1}</span>
+                <h3 className="font-heading font-black text-base text-primary leading-tight mb-2">{s.title}</h3>
+                <p className="text-[11px] text-gray-500 leading-relaxed font-medium">{s.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -536,17 +541,11 @@ const CostFactors = () => {
 
 // 11. LOCATION SECTION (LOCATION CARDS & KSA-WIDE COVERAGE)
 const LocationCards = () => {
-  const locs = [
-    { area: "Al Olaya", svc: "AC Repair in Al Olaya", desc: "Serving commercial towers and residential buildings with emergency HVAC repair, capacitor swaps, and chemical cleans." },
-    { area: "Al Malaz", svc: "AC Cleaning in Al Malaz", desc: "High-pressure chemical wash of split evaporator units, dirt removal, and condensate drain line flushing." },
-    { area: "Al Yasmin", svc: "AC Maintenance in Al Yasmin", desc: "Bi-annual filter check-up, voltage diagnostic, contactor cleaning, and pressure testing for residential villas." },
-    { area: "Hittin", svc: "AC Installation in Hittin", desc: "Precision split AC installations, copper piping laydown, insulation wrapping, and mounting bracket setup." }
-  ];
-
-  const ksaHubs = [
-    { name: "Jeddah Hub", desc: "Specialized HVAC technician crew dealing with coastal marine humidity, salt-spray corrosion treatment, and high-performance compressor replacements." },
-    { name: "Dammam & Khobar", desc: "Industrial and residential split/central air conditioning repairs, deep coil wash, and eco-friendly R410A gas leak detection & recharge." },
-    { name: "Makkah & Medina", desc: "Hotel-grade heavy duty HVAC package units repair, preventive seasonal servicing, duct sanitation, and smart control system calibration." }
+  const ksaLocations = [
+    { area: "Riyadh", svc: "Full HVAC Services", response: "30-Min Emergency Dispatch", desc: "Our main headquarters serving all commercial towers and residential villas across Al Olaya, Malqa, and Hittin with instant repair units." },
+    { area: "Jeddah", svc: "AC Repair & Maintenance", response: "Same-Day Priority Service", desc: "Specialized technicians equipped to handle coastal marine humidity, corrosion treatments, and high-performance compressor diagnostics." },
+    { area: "Dammam", svc: "Industrial & Split AC Repair", response: "Under 60-Min Response", desc: "Fast-acting crews handling eco-friendly R410A gas leak detection, deep coil washing, and heavy-duty industrial air conditioning systems." },
+    { area: "Mecca & Medina", svc: "Package Unit Servicing", response: "24/7 Hotel Support", desc: "Expert HVAC package unit repairs, preventive seasonal maintenance, and smart control system calibration for continuous guest comfort." }
   ];
 
   return (
@@ -554,56 +553,33 @@ const LocationCards = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Repair & Maintenance Across Riyadh</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Fast AC Services Across Saudi Arabia</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">
-            While our local rapid response teams service all Riyadh districts within 30-60 minutes, we also provide professional consultation, dispatch coordination, and phone support for other KSA provinces.
+            Our certified fleets are strategically stationed across the Kingdom to ensure you never wait long for professional cooling support.
           </p>
         </div>
 
-        {/* Riyadh Districts */}
-        <div className="mb-16">
-          <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-6 border-l-4 border-secondary pl-3">Riyadh Rapid-Response District Hubs</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {locs.map((l, i) => (
-              <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-lg hover:bg-white hover:border-secondary/20 transition-all duration-300">
-                <div>
-                  <span className="text-xs font-black text-secondary uppercase tracking-widest block mb-2">{l.area} District</span>
-                  <h3 className="font-heading font-black text-lg text-primary mb-3 leading-tight">{l.svc}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed font-medium mb-6">{l.desc}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {ksaLocations.map((l, i) => (
+            <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-xl hover:bg-white hover:border-secondary/20 transition-all duration-300">
+              <div>
+                <div className="flex justify-between items-start mb-3">
+                  <span className="text-xs font-black text-secondary uppercase tracking-widest block">{l.area}</span>
+                  <span className="bg-[#25D366]/10 text-[#1DA851] text-[9px] px-2 py-1 rounded font-black uppercase tracking-wider">{l.response}</span>
                 </div>
-                <Link 
-                  href={`/locations/${l.area.toLowerCase().replace(" ", "-")}`}
-                  className="text-primary hover:text-secondary font-black text-xs uppercase tracking-widest flex items-center gap-2"
-                >
-                  Explore {l.area} Hub <ArrowRight size={14} />
-                </Link>
+                <h3 className="font-heading font-black text-lg text-primary mb-2 leading-tight">{l.svc}</h3>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium mb-6">{l.desc}</p>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* KSA Major Cities */}
-        <div>
-          <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-6 border-l-4 border-primary pl-3">Saudi Arabia (KSA) Support Areas</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {ksaHubs.map((hub, i) => (
-              <div key={i} className="bg-primary/5 p-8 rounded-3xl border border-primary/5 flex flex-col justify-between">
-                <div>
-                  <span className="text-xs font-black text-primary uppercase tracking-widest block mb-2">KSA Province Hub</span>
-                  <h4 className="font-heading font-black text-xl text-primary mb-3 leading-tight">{hub.name}</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed font-medium mb-6">{hub.desc}</p>
-                </div>
-                <a 
-                  href="https://wa.me/966510942150?text=Hello,%20I%20need%2520AC%2520or%2520home%2520maintenance%2520support%2520in%2520Saudi%2520Arabia."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-secondary hover:text-primary font-black text-xs uppercase tracking-widest flex items-center gap-2"
-                >
-                  Contact Hub Dispatch <WhatsAppIcon size={14} />
-                </a>
-              </div>
-            ))}
-          </div>
+              <a 
+                href={`https://wa.me/966510942150?text=Hello,%20I%20need%20AC%20services%20in%20${l.area}.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-secondary font-black text-xs uppercase tracking-widest flex items-center gap-2 mt-auto"
+              >
+                Contact {l.area} Team <ArrowRight size={14} />
+              </a>
+            </div>
+          ))}
         </div>
 
         <div className="mt-16 text-center">
@@ -611,7 +587,7 @@ const LocationCards = () => {
             href="/locations"
             className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-secondary transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
-            Explore All 40+ Riyadh Areas & KSA Hubs
+            Explore All KSA Service Areas
           </Link>
         </div>
       </div>
@@ -625,35 +601,47 @@ const CertifiedTechnicians = () => {
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 max-w-4xl text-center">
 
-        <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight mb-6">Our Certified Technician Fleet</h2>
-        <div className="bg-white p-8 md:p-12 rounded-[40px] border border-gray-100 shadow-sm text-left grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex flex-col items-center text-center p-4 border-b md:border-b-0 md:border-r border-gray-100">
-            <span className="text-4xl mb-4">👨‍🔧</span>
-            <h3 className="font-heading font-black text-lg text-primary">Certified HVAC Crew</h3>
-            <p className="text-xs text-gray-400 mt-2 font-bold uppercase tracking-widest">Training & Expertise</p>
-            <p className="text-xs text-gray-500 mt-2 leading-relaxed">Certified for split, central, and package systems with regular brand-specific training.</p>
-          </div>
-          <div className="flex flex-col items-center text-center p-4 border-b md:border-b-0 md:border-r border-gray-100">
-            <span className="text-4xl mb-4">👮‍♂️</span>
-            <h3 className="font-heading font-black text-lg text-primary">Background Checked</h3>
-            <p className="text-xs text-gray-400 mt-2 font-bold uppercase tracking-widest">Safety & Trust</p>
-            <p className="text-xs text-gray-500 mt-2 leading-relaxed">Fully vetted team members, drug screened, and background verified for family villa access.</p>
+        <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight mb-6">Why KSA Residents Trust Our AC Experts</h2>
+        <div className="bg-white p-8 md:p-12 rounded-[40px] border border-gray-100 shadow-sm text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center text-center p-4">
+            <span className="text-4xl mb-4">🚀</span>
+            <h3 className="font-heading font-black text-lg text-primary">Fast Response</h3>
+            <p className="text-xs text-gray-500 mt-2 leading-relaxed">Emergency AC failures don't wait. We dispatch mobile technical units within minutes across major KSA cities.</p>
           </div>
           <div className="flex flex-col items-center text-center p-4">
-            <span className="text-4xl mb-4">🏆</span>
-            <h3 className="font-heading font-black text-lg text-primary">10+ Years Experience</h3>
-            <p className="text-xs text-gray-400 mt-2 font-bold uppercase tracking-widest">Riyadh GCC Spec</p>
-            <p className="text-xs text-gray-500 mt-2 leading-relaxed">Averaging 10 years of servicing AC units under extreme desert summer conditions.</p>
+            <span className="text-4xl mb-4">👨‍🔧</span>
+            <h3 className="font-heading font-black text-lg text-primary">Skilled Technicians</h3>
+            <p className="text-xs text-gray-500 mt-2 leading-relaxed">Fully certified and background-checked professionals with deep expertise in modern inverter and VRF technologies.</p>
+          </div>
+          <div className="flex flex-col items-center text-center p-4">
+            <span className="text-4xl mb-4">⚙️</span>
+            <h3 className="font-heading font-black text-lg text-primary">Genuine Parts</h3>
+            <p className="text-xs text-gray-500 mt-2 leading-relaxed">We source and install only original OEM components to guarantee lasting cooling performance and prevent repeat breakdowns.</p>
+          </div>
+          <div className="flex flex-col items-center text-center p-4">
+            <span className="text-4xl mb-4">🧾</span>
+            <h3 className="font-heading font-black text-lg text-primary">Transparent Service</h3>
+            <p className="text-xs text-gray-500 mt-2 leading-relaxed">No hidden fees or unexpected charges. You get a clear, upfront diagnostic report and price quote before we start any work.</p>
+          </div>
+          <div className="flex flex-col items-center text-center p-4">
+            <span className="text-4xl mb-4">🏢</span>
+            <h3 className="font-heading font-black text-lg text-primary">Residential & Commercial</h3>
+            <p className="text-xs text-gray-500 mt-2 leading-relaxed">From single bedroom split units to heavy-duty rooftop package systems, our teams handle all operational scales.</p>
+          </div>
+          <div className="flex flex-col items-center text-center p-4">
+            <span className="text-4xl mb-4">🛡️</span>
+            <h3 className="font-heading font-black text-lg text-primary">Warranty Support</h3>
+            <p className="text-xs text-gray-500 mt-2 leading-relaxed">Every repair and installation is backed by our rock-solid 90-day service warranty for your complete peace of mind.</p>
           </div>
         </div>
         <div className="mt-12 text-center">
           <a 
-            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20a%20certified%20technician."
+            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20get%20expert%20help."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Book Vetted Technicians
+            <WhatsAppIcon size={16} /> Get Expert Help Now
           </a>
         </div>
       </div>
@@ -661,96 +649,35 @@ const CertifiedTechnicians = () => {
   );
 };
 
-// 13. REAL PROJECT GALLERY (EEAT)
-const ProjectGallery = () => {
-  const projects = [
-    {
-      title: "Split AC Gas Refill & Flare Weld",
-      area: "Al Malqa, Riyadh",
-      service: "AC Gas Refill Service",
-      solved: "Repaired cracked copper flare joints, evacuated air with vacuum pump down to 500 microns, recharged 1.4kg R410A gas, restored cooling output to 18°C.",
-      stat: "Restored 18°C Cooling"
-    },
-    {
-      title: "Clogged Condensate Drain Flush",
-      area: "Al Olaya, Riyadh",
-      service: "AC Deep Cleaning Service",
-      solved: "Hydro-cleaned evaporator coils using catching bag. Flushed main PVC drain line with nitrogen to remove sand-mud gel causing indoor water dripping.",
-      stat: "Leak Stopped 100%"
-    },
-    {
-      title: "Compressor Replacement & Run Capacitor",
-      area: "Al Malaz, Riyadh",
-      service: "AC Repair Service",
-      solved: "Replaced burnt compressor in LG outdoor unit with original replacement parts. Installed new 45uF capacitor and verified balanced electrical current pull.",
-      stat: "LG Original Spares"
-    }
-  ];
-  return (
-    <section className="py-24 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Real Projects & Diagnoses</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Browse case summaries from real service calls made by our technicians across Riyadh neighborhoods.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projects.map((p, i) => (
-            <div key={i} className="bg-slate-50 p-8 rounded-[32px] border border-gray-100 flex flex-col justify-between hover:shadow-lg transition-shadow">
-              <div>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-[10px] font-black bg-primary/5 text-primary border border-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">{p.service}</span>
-                  <span className="text-[10px] font-black text-secondary uppercase tracking-widest">{p.area}</span>
-                </div>
-                <h3 className="font-heading font-black text-lg text-primary mb-3 leading-tight">{p.title}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed font-medium mb-6"><strong className="text-primary uppercase tracking-widest text-[9px] block mb-1">Diagnosis & Solution:</strong> {p.solved}</p>
-              </div>
-              <div className="border-t border-gray-100 pt-4 flex items-center justify-between mt-auto">
-                <span className="text-[10px] font-black text-gray-400 uppercase tracking-wider">Project Status</span>
-                <span className="text-xs font-black text-[#1DA851] bg-[#25D366]/10 px-3 py-1 rounded-full">{p.stat}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="mt-12 text-center">
-          <a 
-            href="https://wa.me/966510942150?text=Hello,%20I%20want%20to%20book%20a%20similar%20service%20in%20my%20district."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
-          >
-            <WhatsAppIcon size={16} /> Book Similar Service
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 // 14. CUSTOMER REVIEWS (EEAT WITH SERVICE USED, AREA, PROBLEM SOLVED)
 const CustomerReviews = () => {
   const reviews = [
     {
       name: "Ahmed Al-Sudairy",
+      initials: "AA",
       area: "Al Malqa, Riyadh",
       service: "Emergency AC Repair",
-      problem: "Split AC blowing warm air during afternoon peak.",
+      outcome: "Restored 18°C Cooling",
       text: "Outstanding service. The technician arrived in 30 minutes for my AC repair in Malqa. Fixed the gas leak, replaced the capacitor, and now the cooling is better than ever.",
       rating: 5
     },
     {
       name: "Sarah Williams",
+      initials: "SW",
       area: "Diplomatic Quarter, Riyadh",
       service: "AC Deep Chemical Cleaning",
-      problem: "Musty odor and low airflow output from indoor unit.",
+      outcome: "Removed Mold & Odors",
       text: "The best AC cleaning service in Riyadh. They were very clean, used high-pressure water, and my AC unit is silent now. Very professional team.",
       rating: 5
     },
     {
       name: "Khalid Mansour",
+      initials: "KM",
       area: "Al Olaya, Riyadh",
       service: "Capacitor & Contactor Replacement",
-      problem: "Breaker tripped immediately when AC was turned on.",
+      outcome: "Fixed Electrical Tripping",
       text: "Same-day service as promised. My AC stopped working at 2 PM, and by 4 PM it was fixed. The price was transparent and fair.",
       rating: 5
     }
@@ -765,20 +692,33 @@ const CustomerReviews = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((r, i) => (
-            <div key={i} className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm flex flex-col justify-between">
+            <div key={i} className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-lg shadow-gray-200/40 flex flex-col justify-between hover:-translate-y-1 transition-transform">
               <div>
-                <div className="flex gap-1 mb-4">
-                  {[...Array(r.rating)].map((_, i) => <Star key={i} size={16} fill="#F59E0B" stroke="#F59E0B" />)}
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-secondary text-white font-black flex items-center justify-center text-lg shadow-md shadow-secondary/30">
+                      {r.initials}
+                    </div>
+                    <div>
+                      <span className="font-black text-primary text-sm block">{r.name}</span>
+                      <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest block">{r.area}</span>
+                    </div>
+                  </div>
+                  <div className="flex gap-0.5">
+                    {[...Array(r.rating)].map((_, i) => <Star key={i} size={14} fill="#F59E0B" stroke="#F59E0B" />)}
+                  </div>
                 </div>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed italic mb-6">"{r.text}"</p>
+                
+                <div className="bg-primary/5 rounded-xl p-3 mb-6 flex items-center gap-3">
+                  <CheckCircle2 size={18} className="text-[#1DA851] shrink-0" />
+                  <span className="text-xs font-black text-primary uppercase tracking-wider">{r.outcome}</span>
+                </div>
+                
+                <p className="text-sm text-gray-600 leading-relaxed font-medium">"{r.text}"</p>
               </div>
-              <div className="border-t border-gray-50 pt-4 mt-auto">
-                <span className="font-black text-primary text-sm block">{r.name}</span>
-                <span className="text-[10px] font-black text-secondary uppercase tracking-widest block mt-1">{r.area}</span>
-                <span className="text-[10px] text-gray-400 mt-2 block font-medium">
-                  <strong className="text-primary uppercase tracking-widest text-[9px] block">Service:</strong> {r.service} <br />
-                  <strong className="text-primary uppercase tracking-widest text-[9px] block">Problem:</strong> {r.problem}
-                </span>
+              <div className="border-t border-gray-100 pt-4 mt-6">
+                <span className="text-[10px] font-black text-secondary uppercase tracking-widest block">Service Delivered:</span>
+                <span className="text-xs font-bold text-primary">{r.service}</span>
               </div>
             </div>
           ))}
@@ -790,7 +730,7 @@ const CustomerReviews = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Schedule 5-Star Rated Service
+            <WhatsAppIcon size={16} /> Contact Our Technicians
           </a>
         </div>
       </div>
@@ -992,7 +932,7 @@ const BeforeAfterGallery = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
           >
-            <WhatsAppIcon size={16} /> Get Similar Results
+            <WhatsAppIcon size={16} /> Request Same-Day Service
           </a>
         </div>
       </div>
@@ -1162,26 +1102,13 @@ export default function Home() {
       <div className="flex flex-col">
         <Hero onBookNow={handleBookNow} />
         <Services onBookNow={handleBookNow} />
-        <AIDirectAnswers />
-        <CommonProblems />
-        <ACDiagnosticsTable />
-        <ACComponents />
-        <BrandsGrid />
-        <BeforeAfterGallery />
-        <SignsYourACNeedsRepair />
-        <StepByStepProcess />
-
-        <EmergencyUrgencySection />
-
-        <RepairVsReplacement />
-        <CostFactors />
-        <LocationCards />
         <CertifiedTechnicians />
-        <ProjectGallery />
+        <BeforeAfterGallery />
+        <StepByStepProcess />
+        <BrandsGrid />
+        <LocationCards />
         <CustomerReviews />
-        <TopicClusterSection />
         <FAQ />
-        <InternalLinking />
         <CTABanner />
       </div>
 

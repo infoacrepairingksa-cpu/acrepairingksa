@@ -118,60 +118,60 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-repair",
       title: "AC Repair",
-      description: "Compressor repair, thermostat troubleshooting, refrigerant leak detection and complete cooling system diagnostics.",
+      description: "Fast fixes for sudden AC breakdowns. We diagnose compressor failures, electrical shorts, and sudden stops to restore cooling immediately.",
       icon: <Snowflake />,
       isPrimary: true,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Repair.webp",
       price: "SAR 99",
       process: "Inspect → Diagnose → Component Fix & Calibrate",
-      ctaText: "Chat for Repair",
+      ctaText: "Book AC Service Today",
       benefits: ["Restores Cooling", "30-Min Arrival", "90-Day Warranty"]
     },
     {
       id: "ac-cleaning",
       title: "AC Cleaning",
-      description: "Evaporator coil chemical wash, filter sanitization, drain line flushing, and blower motor maintenance.",
+      description: "Improve indoor air quality and eliminate mold. We deep wash evaporator coils and flush drain lines to remove dust, allergens, and odors.",
       icon: <Droplets />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Cleaning.webp",
       price: "SAR 149",
       process: "Disassemble → High Pressure Flush → Sanitization",
-      ctaText: "Chat for Cleaning",
+      ctaText: "Request Same-Day Service",
       benefits: ["Bacteria Free", "Odor Control", "Power Flush"]
     },
     {
       id: "ac-gas-refill",
       title: "AC Gas Refill",
-      description: "Original R410A & R22 refrigerant top-up, accurate pressure gauge reading, and professional leak sealing.",
+      description: "Boost your cooling efficiency. We leak-test copper joints and recharge optimal R410A/R22 gas levels for maximum thermal performance.",
       icon: <Zap />,
       imageUrl: "/Ac Services/AC Gas Refill.webp",
       price: "SAR 199",
       process: "Pressure Leak Test → Vacuum Pull → Gas Charging",
-      ctaText: "Check Gas Pricing",
+      ctaText: "Get Expert Help Now",
       benefits: ["Pure R410A Gas", "Leak Testing", "Max Chill"]
     },
     {
       id: "ac-installation",
       title: "AC Installation",
-      description: "Expert split and central AC mounting, proper copper pipe sizing, electrical load balancing, and secure bracket fitting.",
+      description: "Perfect setup for long-term reliability. We ensure precise bracket mounting, electrical load balancing, and copper pipe alignment.",
       icon: <Wind />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Installation.webp",
       price: "SAR 249",
       process: "Mount Plate → Pipe Alignment → Electrical & Test Run",
-      ctaText: "Chat for Install",
+      ctaText: "Contact Our Technicians",
       benefits: ["Copper Kit", "Drainage Info", "Level Fit"]
     },
     {
       id: "ac-maintenance",
       title: "AC Maintenance",
-      description: "Seasonal system health checks, capacitor testing, thermal efficiency optimization, and proactive fault prevention.",
+      description: "Prevent sudden summer breakdowns. We conduct thorough seasonal inspections, lubricate motors, and test components for peak efficiency.",
       icon: <Settings />,
       imageUrl: "/Ac Services/AC Maintenance.webp",
       price: "SAR 199",
       process: "Electrical Audit → Coil Health → Calibrate Controls",
-      ctaText: "Plan Maintenance",
+      ctaText: "Book AC Service Today",
       benefits: ["Energy Save", "Free Health Check", "Lube Parts"]
     }
   ];
@@ -211,7 +211,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-20 gap-6">
 
             <h2 className="text-[36px] font-heading font-black text-primary leading-tight tracking-tighter">
-              Our AC & Home Services in Riyadh – <span className="text-secondary">Repair, Cleaning, Maintenance</span>
+              Complete AC Solutions for <span className="text-secondary">Homes & Businesses</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

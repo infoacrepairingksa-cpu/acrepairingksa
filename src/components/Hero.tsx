@@ -48,13 +48,12 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
               <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
                 Riyadh HVAC Specialists: <span className="text-secondary">AC Repair & Cleaning</span>
               </h1>
-              {/* AI Summary / GEO Entity Block */}
               <p className="text-base md:text-lg text-primary/80 font-medium leading-relaxed max-w-xl">
-                <strong>KSA-certified HVAC experts</strong> providing split AC, central AC, and window AC repair in <strong>Riyadh and major cities across Saudi Arabia (KSA)</strong>. Our certified technicians handle <strong>compressor diagnostic, refrigerant gas leak seal & recharge (R410A/R22), deep chemical wash, HVAC installation, and 24/7 emergency dispatch</strong> in Riyadh districts and surrounding regions (Jeddah, Dammam, Khobar, Makkah, Medina).
+                Don't let a broken AC ruin your day. We provide <strong>fast, reliable, and guaranteed AC repair and maintenance</strong> for homes and businesses across Saudi Arabia. Whether it's a sudden breakdown, poor cooling, or regular maintenance, our certified technicians are ready to restore your comfort.
               </p>
               {/* GEO Signal */}
               <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mt-2 flex items-center gap-2">
-                <MapPin size={16} className="text-secondary" /> Riyadh, Saudi Arabia — Serving Al Olaya, Al Malqa & All Main Service Areas
+                <MapPin size={16} className="text-secondary" /> Serving Riyadh, Jeddah, Dammam & All Major KSA Cities
               </p>
             </motion.div>
 
@@ -79,30 +78,42 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
             </motion.div>
 
             <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-primary/70 mt-2">
-              <span className="flex items-center gap-1">🛡️ 90-Day Warranty</span>
+              <span className="flex items-center gap-1.5"><ShieldCheck size={16} className="text-secondary"/> Same Day Service</span>
               <span className="text-gray-300">|</span>
-              <span className="flex items-center gap-1">👮‍♂️ Background Checked Crew</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 size={16} className="text-secondary"/> Warranty Backed Repairs</span>
               <span className="text-gray-300">|</span>
-              <span className="flex items-center gap-1">💰 No Hidden Fees</span>
+              <span className="flex items-center gap-1.5"><Star size={16} className="text-secondary"/> Experienced Technicians</span>
             </div>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="grid grid-cols-3 gap-4 border-t border-gray-100 pt-8 mt-4"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-gray-100 pt-8 mt-4"
             >
-              <div>
-                <div className="text-2xl md:text-3xl font-black text-primary">15,000+</div>
-                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Homes Served</div>
+              <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-3">
+                  <Star size={20} fill="currentColor" />
+                </div>
+                <div className="text-2xl font-black text-primary">15,000+</div>
+                <div className="text-[10px] font-black text-gray-500 uppercase tracking-widest mt-1">Successful AC Services</div>
+                <div className="text-[10px] text-gray-400 mt-2">Homes & offices cooled</div>
               </div>
-              <div>
-                <div className="text-2xl md:text-3xl font-black text-primary">90-Day</div>
-                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Repair Warranty</div>
+              <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-3">
+                  <ShieldCheck size={20} />
+                </div>
+                <div className="text-2xl font-black text-primary">90-Day</div>
+                <div className="text-[10px] font-black text-gray-500 uppercase tracking-widest mt-1">Service Warranty</div>
+                <div className="text-[10px] text-gray-400 mt-2">Guaranteed peace of mind</div>
               </div>
-              <div>
-                <div className="text-2xl md:text-3xl font-black text-primary">24/7</div>
-                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Emergency Support</div>
+              <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-3">
+                  <Clock size={20} />
+                </div>
+                <div className="text-2xl font-black text-primary">30 Min</div>
+                <div className="text-[10px] font-black text-gray-500 uppercase tracking-widest mt-1">Avg. Response Time</div>
+                <div className="text-[10px] text-gray-400 mt-2">Fastest emergency dispatch</div>
               </div>
             </motion.div>
           </div>
