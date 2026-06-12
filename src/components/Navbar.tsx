@@ -46,18 +46,7 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-white">
-      {/* Top Bar for Emergency & Contact */}
-      <div className="bg-slate-900 text-white text-xs font-bold tracking-wide py-2 hidden md:block">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <span className="bg-secondary px-3 py-1 rounded-full text-white uppercase tracking-widest text-[10px] flex items-center gap-1"><ShieldCheck size={12} /> Emergency Service</span>
-            <span className="flex items-center gap-2"><MapPin size={12} className="text-secondary" /> Serving All Riyadh Districts</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <a href="tel:+966 51 094 2150" className="flex items-center gap-2 hover:text-secondary transition-colors"><Phone size={12} className="text-secondary" /> +966 51 094 2150</a>
-          </div>
-        </div>
-      </div>
+
 
       <nav className="bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-[0_4px_30px_rgba(0,0,0,0.03)] py-4 transition-all">
         <div className="container mx-auto px-4 flex items-center justify-between">

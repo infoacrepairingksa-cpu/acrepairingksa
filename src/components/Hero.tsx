@@ -101,8 +101,8 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Repair Warranty</div>
               </div>
               <div>
-                <div className="text-2xl md:text-3xl font-black text-primary">30-60 Min</div>
-                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Response Time</div>
+                <div className="text-2xl md:text-3xl font-black text-primary">24/7</div>
+                <div className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-widest mt-1">Emergency Support</div>
               </div>
             </motion.div>
           </div>

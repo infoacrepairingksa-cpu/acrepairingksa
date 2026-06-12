@@ -63,13 +63,10 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
         </div>
       </Link>
       
-      <div className="p-6 flex flex-col flex-1">
-        {/* Pricing indicator */}
-        <div className="mb-3 flex items-center justify-between">
-          <span className="text-[10px] font-black uppercase tracking-widest text-secondary bg-secondary/10 px-2.5 py-1 rounded-md">Price Indicator</span>
-          <span className="text-sm font-black text-primary uppercase">Starting From: <span className="text-secondary font-black text-base">{price}</span></span>
-        </div>
-
+      <Link 
+        href={id === "ac-repair" ? "/ac-repair" : id === "ac-cleaning" ? "/ac-cleaning" : id === "ac-installation" ? "/ac-installation" : id === "ac-maintenance" ? "/ac-maintenance" : id === "ac-gas-refill" ? "/ac-gas-refill" : id === "ac-duct-cleaning" ? "/ac-duct-cleaning" : id === "ac-filter-cleaning" ? "/ac-filter-cleaning" : id === "ac-coil-cleaning" ? "/ac-coil-cleaning" : id === "plumbing" ? "/plumbing" : id === "home-maintenance" ? "/home-maintenance" : "#"} 
+        className="p-6 flex flex-col flex-1 hover:bg-slate-50/30 transition-colors"
+      >
         <p className="text-primary/70 text-sm font-medium mb-4 leading-relaxed">{description}</p>
         
         {/* Process Preview */}
@@ -110,14 +107,8 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
           >
             <WhatsAppIcon size={16} className="text-white" /> {ctaText}
           </a>
-          <Link 
-            href={id === "ac-repair" ? "/ac-repair" : id === "ac-cleaning" ? "/ac-cleaning" : id === "ac-installation" ? "/ac-installation" : id === "ac-maintenance" ? "/ac-maintenance" : id === "ac-gas-refill" ? "/ac-gas-refill" : id === "ac-duct-cleaning" ? "/ac-duct-cleaning" : id === "ac-filter-cleaning" ? "/ac-filter-cleaning" : id === "ac-coil-cleaning" ? "/ac-coil-cleaning" : id === "plumbing" ? "/plumbing" : id === "home-maintenance" ? "/home-maintenance" : "#"}
-            className="w-full bg-white border border-gray-200 hover:border-secondary hover:text-secondary text-primary/70 py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2"
-          >
-            Explore {title} Services <ArrowRight size={14} />
-          </Link>
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 };

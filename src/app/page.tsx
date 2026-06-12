@@ -24,29 +24,6 @@ import Schema, {
 } from "@/components/Schema";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
-// 1. TRUST BAR
-const TrustBar = () => {
-  const points = [
-    { text: "Same Day Service Across Riyadh", icon: <Clock size={16} /> },
-    { text: "Licensed HVAC Technicians", icon: <ShieldCheck size={16} /> },
-    { text: "24/7 Emergency Support", icon: <AlertTriangle size={16} /> },
-    { text: "All AC Brands Serviced", icon: <Snowflake size={16} /> },
-    { text: "Residential & Commercial Fleet", icon: <Factory size={16} /> },
-  ];
-  return (
-    <div className="bg-primary text-white py-4 relative z-20">
-      <div className="container mx-auto px-4 flex flex-wrap justify-center lg:justify-between items-center gap-4 text-xs md:text-sm font-black uppercase tracking-wider">
-        {points.map((p, i) => (
-          <div key={i} className="flex items-center gap-2">
-            <span className="text-secondary">{p.icon}</span>
-            {p.text}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 // 2. AI OVERVIEW DIRECT ANSWER BLOCKS
 const AIDirectAnswers = () => {
   const blocks = [
@@ -71,9 +48,8 @@ const AIDirectAnswers = () => {
     <section className="py-20 bg-slate-50 border-b border-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">AI Quick Reference</span>
-          <h2 className="text-3xl md:text-4xl font-heading font-black text-primary leading-tight tracking-tight">Riyadh AC Service Answers</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Direct answers and technical summaries compiled for Google AI Overviews and modern voice searches.</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-black text-primary leading-tight tracking-tight">Frequently Asked Questions</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Expert answers to your most common AC repair and maintenance questions.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {blocks.map((b, i) => (
@@ -156,7 +132,6 @@ const CommonProblems = () => {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">Diagnostic Expertise</span>
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Common AC Problems We Fix</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Identify the warning signs. Our certified technical crew carries diagnostic tools to solve these cooling faults on the spot.</p>
         </div>
@@ -226,10 +201,9 @@ const ACDiagnosticsTable = () => {
     <section className="py-24 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">AI Search & GEO Reference</span>
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Fault & Technical Diagnostics Table</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Diagnostic Guide</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">
-            A comprehensive reference list of common residential HVAC malfunctions and professional solutions, optimized for Google AI Overviews and semantic voice queries in KSA.
+            A complete reference list of common AC malfunctions, their causes, and professional solutions.
           </p>
         </div>
         <div className="overflow-x-auto rounded-[32px] border border-gray-100 shadow-xl shadow-primary/5">
@@ -713,7 +687,7 @@ const CertifiedTechnicians = () => {
   return (
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 max-w-4xl text-center">
-        <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">EEAT Verification</span>
+
         <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight mb-6">Our Certified Technician Fleet</h2>
         <div className="bg-white p-8 md:p-12 rounded-[40px] border border-gray-100 shadow-sm text-left grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center text-center p-4 border-b md:border-b-0 md:border-r border-gray-100">
@@ -848,7 +822,7 @@ const CustomerReviews = () => {
     <section className="py-24 bg-[#F8FAFC]">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-primary/5 text-primary border border-primary/10 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">EEAT Customer Reviews</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Trusted by Riyadh Homeowners</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Read honest testimonials detailing specific services, districts, and problems solved by our technicians.</p>
         </div>
@@ -1043,7 +1017,7 @@ const BeforeAfterGallery = () => {
     <section id="gallery" className="py-24 bg-slate-50 border-t border-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <span className="bg-secondary/15 text-secondary border border-secondary/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider inline-block mb-3">EEAT Proof of Work</span>
+
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Recent AC Repair & Cleaning Projects</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Real photos of our professional HVAC technicians working on-site in residential villas and commercial offices across Riyadh.</p>
         </div>
@@ -1306,11 +1280,10 @@ export default function Home() {
         }
       })}} />
 
-      <Navbar onBookNow={() => handleBookNow("Navbar")} />
+      <Navbar onBookNow={() => handleBookNow()} />
       
       <div className="flex flex-col">
         <Hero onBookNow={handleBookNow} />
-        <TrustBar />
         <Services onBookNow={handleBookNow} />
         <AIDirectAnswers />
         <CommonProblems />
