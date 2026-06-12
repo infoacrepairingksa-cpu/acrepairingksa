@@ -26,13 +26,13 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
             >
               <div className="flex items-center flex-wrap gap-2 md:gap-3">
                 <span className="flex items-center gap-1.5 bg-[#25D366]/10 text-[#1DA851] border border-[#25D366]/20 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider">
-                  <Clock size={14} /> 30-Min Response
+                  <Star size={14} /> Rated #1 in Riyadh
                 </span>
                 <span className="flex items-center gap-1.5 bg-secondary/10 text-secondary border border-secondary/20 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider">
-                  <ShieldCheck size={14} /> Licensed Technicians
+                  <CheckCircle2 size={14} /> Genuine OEM Parts
                 </span>
                 <span className="flex items-center gap-1.5 bg-primary/5 text-primary border border-primary/10 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider">
-                  <Zap size={14} /> Same-Day Service
+                  <Zap size={14} /> No Hidden Fees
                 </span>
               </div>
               <div className="flex items-center gap-2 mt-2">
