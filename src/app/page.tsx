@@ -823,7 +823,7 @@ const TopicClusterSection = () => {
         </div>
         <div className="mt-12 text-center w-full">
           <a 
-            href="https://wa.me/966510942150?text=Hello,%20I%20need%20expert%20AC%20services%20in%20Riyadh."
+            href="https://wa.me/966510942150?text=Hello,%20I%20need%20expert%20AC%20services%20in%20Saudi%20Arabia."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-secondary hover:bg-action text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-secondary/20 hover:-translate-y-0.5 active:scale-95"
@@ -841,10 +841,10 @@ const TopicClusterSection = () => {
 // 17. INTERNAL LINKING BLOCK
 const InternalLinking = () => {
   const links = [
-    { name: "AC Repair Riyadh", href: "/ac-repair" },
-    { name: "AC Cleaning Riyadh", href: "/ac-cleaning" },
-    { name: "AC Installation Riyadh", href: "/ac-installation" },
-    { name: "AC Maintenance Riyadh", href: "/ac-maintenance" },
+    { name: "AC Repair", href: "/ac-repair" },
+    { name: "AC Cleaning", href: "/ac-cleaning" },
+    { name: "AC Installation", href: "/ac-installation" },
+    { name: "AC Maintenance", href: "/ac-maintenance" },
     { name: "AC Gas Refill", href: "/ac-gas-refill" },
     { name: "AC Duct Cleaning", href: "/ac-duct-cleaning" },
     { name: "AC Coil Cleaning", href: "/ac-coil-cleaning" },
@@ -855,7 +855,7 @@ const InternalLinking = () => {
   return (
     <section className="py-16 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 max-w-4xl text-center">
-        <h2 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-6">Popular Riyadh Services</h2>
+        <h2 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-6">Popular KSA Services</h2>
         <div className="flex flex-wrap justify-center gap-3">
           {links.map((l, i) => (
             <Link key={i} href={l.href} className="bg-slate-50 hover:bg-primary hover:text-white transition-colors text-primary px-5 py-2.5 rounded-full font-bold text-xs border border-gray-100">
@@ -879,7 +879,7 @@ const BeforeAfterGallery = () => {
       afterImg: "/uploaded/ac-cleaning-pressure-wash.png",
       beforeLabel: "Clogged Evaporator Coils",
       afterLabel: "Pressure Washed & Sanitized Coils",
-      area: "Al Malqa, Riyadh",
+      area: "Al Olaya, Riyadh",
       efficiency: "+35% Airflow Increase"
     },
     {
@@ -889,7 +889,7 @@ const BeforeAfterGallery = () => {
       afterImg: "/uploaded/brand-samsung.png",
       beforeLabel: "Precise Plate Mount & Leveling",
       afterLabel: "Mounted Indoor Unit Testing",
-      area: "Al Yasmin, Riyadh",
+      area: "Al Hamra, Jeddah",
       efficiency: "Perfect Level Alignment"
     },
     {
@@ -899,7 +899,7 @@ const BeforeAfterGallery = () => {
       afterImg: "/uploaded/brand-lg.png",
       beforeLabel: "Technician Leak Testing & Gas Fill",
       afterLabel: "Completed Outdoor Unit Calibration",
-      area: "Al Olaya, Riyadh",
+      area: "Al Shati, Dammam",
       efficiency: "Optimal Pressure Restored"
     }
   ];
@@ -910,7 +910,7 @@ const BeforeAfterGallery = () => {
         <div className="text-center mb-16">
 
           <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Recent AC Repair & Cleaning Projects</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Real photos of our professional HVAC technicians working on-site in residential villas and commercial offices across Riyadh.</p>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Real photos of our professional HVAC technicians working on-site in residential villas and commercial offices across Saudi Arabia.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((p, i) => (
@@ -966,10 +966,10 @@ const EmergencyUrgencySection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-8 flex flex-col gap-6">
             <span className="bg-white/20 text-white border border-white/30 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest inline-block w-fit">
-              🚨 24/7 Immediate Dispatch Across Riyadh
+              🚨 24/7 Immediate Dispatch Across KSA
             </span>
             <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
-              Emergency AC Repair Riyadh
+              Emergency AC Repair KSA
             </h2>
             <p className="text-base md:text-lg text-white/95 font-bold leading-relaxed">
               Is your AC blowing hot air? Is it leaking water inside your living room, making loud grinding noises, or completely tripped the breaker? 
@@ -993,7 +993,7 @@ const EmergencyUrgencySection = () => {
             <div>
               <span className="text-xs font-black uppercase tracking-widest text-white/80">Average Arrival Time</span>
               <div className="text-4xl font-black text-white mt-1">30–60 Mins</div>
-              <p className="text-xs text-white/70 font-bold mt-1">Standby technicians in Al Olaya, Malaz & North Riyadh</p>
+              <p className="text-xs text-white/70 font-bold mt-1">Standby technicians in all major cities</p>
             </div>
             <a 
               href="tel:+966 51 094 2150"
@@ -1002,7 +1002,7 @@ const EmergencyUrgencySection = () => {
               Dispatch Emergency HVAC Technician
             </a>
             <a 
-              href="https://wa.me/966510942150?text=Hello,%20I%20have%20an%20AC%20emergency%20in%20Riyadh.%20Please%2520send%2520a%2520technician."
+              href="https://wa.me/966510942150?text=Hello,%20I%20have%20an%20AC%20emergency.%20Please%2520send%2520a%2520technician."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center gap-3"
@@ -1035,7 +1035,7 @@ const CTABanner = () => (
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-heading font-black leading-tight tracking-tight">
-            Need AC Repair in Riyadh? <br /> Tech in 30 Minutes
+            Need AC Repair in KSA? <br /> Tech in 30 Minutes
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center mt-4">
