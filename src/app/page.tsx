@@ -37,7 +37,7 @@ const AIDirectAnswers = () => {
     },
     {
       q: "How Often Should AC Be Serviced?",
-      a: "In Riyadh's extremely dusty desert climate, residential split and central AC systems must be professionally serviced twice a year—ideally in spring before summer starts and in autumn. Additionally, mesh air filters should be washed by homeowners every 2 weeks to prevent frozen coils, restricted airflow, and high energy consumption."
+      a: "In Saudi Arabia's extremely dusty and hot desert climate, residential split and central AC systems must be professionally serviced twice a year—ideally in spring before summer starts and in autumn. Additionally, mesh air filters should be washed by homeowners every 2 weeks to prevent frozen coils, restricted airflow, and high energy consumption."
     },
     {
       q: "Why Is My AC Not Cooling?",
@@ -307,7 +307,7 @@ const BrandsGrid = () => {
               <div className="relative h-36 w-full bg-slate-200">
                 <Image
                   src={b.imageUrl}
-                  alt={`${b.name} Air Conditioner Service Riyadh`}
+                  alt={`${b.name} Air Conditioner Service Saudi Arabia`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 25vw"
@@ -704,8 +704,8 @@ const CustomerReviews = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">What Customers Say About Our AC Repair in Riyadh</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Read honest testimonials detailing specific services, districts, and problems solved by our technicians.</p>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">What Customers Across Saudi Arabia Say About Our Services</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Read honest testimonials detailing specific services, districts, and problems solved by our technicians across KSA.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((r, i) => (
@@ -1055,6 +1055,19 @@ const CTABanner = () => (
   </section>
 );
 
+const TopicalAuthorityContent = () => (
+  <section className="py-24 bg-slate-50 border-t border-gray-100">
+    <div className="container mx-auto px-4 max-w-4xl text-center">
+      <h2 className="text-3xl md:text-4xl font-heading font-black text-primary tracking-tight mb-8">Professional AC Repair Services Across Saudi Arabia</h2>
+      <div className="text-gray-600 leading-relaxed space-y-6 text-sm md:text-base font-medium">
+        <p>Our certified HVAC technicians provide expert AC repair, AC cleaning, AC installation, AC maintenance, AC gas refill, duct cleaning and comprehensive home maintenance services throughout Saudi Arabia. We proudly serve Riyadh, Jeddah, Dammam, Al Khobar, Makkah, Madinah, Taif, Jubail, Yanbu and surrounding regions with a fleet of specialized vans ready to deploy.</p>
+        <p>In a demanding climate like Saudi Arabia, ensuring your cooling systems operate efficiently is critical. From central ducted systems to wall-mounted split ACs and commercial package units, our technicians are trained to handle complex diagnostics, sensor recalibrations, and preventive maintenance that extends the lifespan of your cooling units.</p>
+        <p>We believe in transparent pricing and rapid response times. When you face an emergency breakdown, whether it involves a burnt-out compressor or a severe refrigerant gas leak, you need immediate technical assistance. By standardizing our repair protocols across all major KSA cities, we guarantee the same high-quality service, genuine OEM parts, and professional EEAT-backed standards, regardless of your location within the Kingdom.</p>
+      </div>
+    </div>
+  </section>
+);
+
 
 export default function Home() {
   const handleBookNow = (serviceName?: any) => {
@@ -1118,12 +1131,12 @@ export default function Home() {
         <Hero onBookNow={handleBookNow} />
         <Services onBookNow={handleBookNow} />
         <CertifiedTechnicians />
-        <BeforeAfterGallery />
-        <StepByStepProcess />
-        <BrandsGrid />
         <LocationCards />
+        <BrandsGrid />
+        <SignsYourACNeedsRepair />
         <CustomerReviews />
         <FAQ />
+        <TopicalAuthorityContent />
         <CTABanner />
       </div>
 

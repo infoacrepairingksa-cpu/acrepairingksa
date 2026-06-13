@@ -26,7 +26,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
             >
               <div className="flex items-center flex-wrap gap-2 md:gap-3">
                 <span className="flex items-center gap-1.5 bg-[#25D366]/10 text-[#1DA851] border border-[#25D366]/20 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider">
-                  <Star size={14} /> Rated #1 in Riyadh
+                  <Star size={14} /> Rated #1 in KSA
                 </span>
                 <span className="flex items-center gap-1.5 bg-secondary/10 text-secondary border border-secondary/20 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider">
                   <CheckCircle2 size={14} /> Genuine OEM Parts
@@ -46,14 +46,14 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 <span className="text-sm font-bold text-primary">Google Rating <span className="text-secondary">4.9/5</span> (542 Verified Reviews)</span>
               </div>
               <h1 className="text-[40px] md:text-[52px] lg:text-[60px] font-heading font-black text-primary leading-[1.05] tracking-tight mt-2">
-                Saudi Arabia's Premier <span className="text-secondary">AC Repair & HVAC Services</span>
+                AC Repair, AC Cleaning & Home Maintenance Services Across <span className="text-secondary">Saudi Arabia (KSA)</span>
               </h1>
               <p className="text-base md:text-lg text-primary/80 font-medium leading-relaxed max-w-xl">
                 Don't let a broken AC ruin your day. We provide <strong>fast, reliable, and guaranteed AC repair, cleaning, and maintenance</strong> for homes and businesses across the entire KSA. Whether it's a sudden breakdown, poor cooling, or regular maintenance, our certified technicians are ready to restore your comfort.
               </p>
               {/* GEO Signal */}
-              <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mt-2 flex items-center gap-2">
-                <MapPin size={16} className="text-secondary" /> Serving Riyadh, Jeddah, Dammam & All Major KSA Cities
+              <p className="text-sm font-bold text-gray-500 uppercase tracking-widest mt-2 flex flex-wrap items-center gap-2">
+                <MapPin size={16} className="text-secondary shrink-0" /> Serving Riyadh, Jeddah, Dammam, Al Khobar, Makkah, Madinah, Taif, Jubail & Major Cities Across Saudi Arabia
               </p>
             </motion.div>
 

@@ -103,17 +103,24 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Locations Group */}
+          {/* Popular Service Areas - KSA Cities */}
           <div className="flex flex-col gap-10">
-            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Top Locations</h3>
+            <h3 className="font-heading font-black text-xl text-white uppercase tracking-[0.2em] border-b border-white/10 pb-4">Popular Service Areas</h3>
             <ul className="flex flex-col gap-5">
               {[
-                { name: "Al Olaya", href: "/locations/al-olaya" },
-                { name: "Al Malaz", href: "/locations/al-malaz" },
-                { name: "Al Yasmin", href: "/locations/al-yasmin" },
-                { name: "Al Narjis", href: "/locations/al-narjis" },
-                { name: "Hittin", href: "/locations/hittin" },
-                { name: "Al Nakheel", href: "/locations/al-nakheel" },
+                { name: "Riyadh", href: "/locations/riyadh" },
+                { name: "Jeddah", href: "/locations/jeddah" },
+                { name: "Dammam", href: "/locations/dammam" },
+                { name: "Al Khobar", href: "/locations/al-khobar" },
+                { name: "Makkah", href: "/locations/makkah" },
+                { name: "Madinah", href: "/locations/madinah" },
+                { name: "Taif", href: "/locations/taif" },
+                { name: "Jubail", href: "/locations/jubail" },
+                { name: "Yanbu", href: "/locations/yanbu" },
+                { name: "Abha", href: "/locations/abha" },
+                { name: "Najran", href: "/locations/najran" },
+                { name: "Tabuk", href: "/locations/tabuk" },
+                { name: "Jazan", href: "/locations/jazan" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link 
@@ -125,15 +132,6 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link 
-                  href="/locations"
-                  className="text-secondary hover:text-white hover:translate-x-2 transition-all flex items-center gap-4 text-sm font-black uppercase tracking-[0.2em] group mt-4 pt-4 border-t border-white/5"
-                >
-                  <ArrowRight size={14} className="text-secondary group-hover:translate-x-1 transition-all" />
-                  View All Areas
-                </Link>
-              </li>
             </ul>
           </div>
 

@@ -118,7 +118,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-repair",
       title: "AC Repair",
-      description: "Fast fixes for sudden AC breakdowns. We diagnose compressor failures, electrical shorts, and sudden stops to restore cooling immediately.",
+      description: "Fast fixes for sudden AC breakdowns. We diagnose compressor failures, electrical shorts, and sudden stops to restore cooling immediately. Professional AC repair services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Snowflake />,
       isPrimary: true,
       badge: "⭐ Popular Service",
@@ -131,7 +131,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-cleaning",
       title: "AC Cleaning",
-      description: "Improve indoor air quality and eliminate mold. We deep wash evaporator coils and flush drain lines to remove dust, allergens, and odors.",
+      description: "Improve indoor air quality and eliminate mold. We deep wash evaporator coils and flush drain lines to remove dust, allergens, and odors. Professional AC cleaning services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Droplets />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Cleaning.webp",
@@ -143,7 +143,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-gas-refill",
       title: "AC Gas Refill",
-      description: "Boost your cooling efficiency. We leak-test copper joints and recharge optimal R410A/R22 gas levels for maximum thermal performance.",
+      description: "Boost your cooling efficiency. We leak-test copper joints and recharge optimal R410A/R22 gas levels for maximum thermal performance. Professional AC gas refill services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Zap />,
       imageUrl: "/Ac Services/AC Gas Refill.webp",
       price: "SAR 199",
@@ -154,7 +154,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-installation",
       title: "AC Installation",
-      description: "Perfect setup for long-term reliability. We ensure precise bracket mounting, electrical load balancing, and copper pipe alignment.",
+      description: "Perfect setup for long-term reliability. We ensure precise bracket mounting, electrical load balancing, and copper pipe alignment. Professional AC installation services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Wind />,
       badge: "⭐ Popular Service",
       imageUrl: "/Ac Services/AC Installation.webp",
@@ -166,7 +166,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-maintenance",
       title: "AC Maintenance",
-      description: "Prevent sudden summer breakdowns. We conduct thorough seasonal inspections, lubricate motors, and test components for peak efficiency.",
+      description: "Prevent sudden summer breakdowns. We conduct thorough seasonal inspections, lubricate motors, and test components for peak efficiency. Professional AC maintenance services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Settings />,
       imageUrl: "/Ac Services/AC Maintenance.webp",
       price: "SAR 199",
@@ -177,7 +177,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-duct-cleaning",
       title: "AC Duct Cleaning",
-      description: "Improve indoor air quality by removing dust, debris, and allergens from your central AC ducts.",
+      description: "Improve indoor air quality by removing dust, debris, and allergens from your central AC ducts. Professional AC duct cleaning services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Wind />,
       imageUrl: "/Ac Services/AC Cleaning.webp",
       price: "SAR 399",
@@ -188,7 +188,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-filter-cleaning",
       title: "AC Filter Cleaning",
-      description: "Ensure smooth airflow and lower electricity bills with our professional AC filter washing and replacement.",
+      description: "Ensure smooth airflow and lower electricity bills with our professional AC filter washing and replacement. Professional AC filter cleaning services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Snowflake />,
       imageUrl: "/Ac Services/AC Cleaning.webp",
       price: "SAR 99",
@@ -199,7 +199,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "ac-coil-cleaning",
       title: "AC Coil Cleaning",
-      description: "Restore your AC's cooling capacity with our specialized chemical coil cleaning for both indoor and outdoor units.",
+      description: "Restore your AC's cooling capacity with our specialized chemical coil cleaning for both indoor and outdoor units. Professional AC coil cleaning services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
       icon: <Droplets />,
       imageUrl: "/Ac Services/AC Cleaning.webp",
       price: "SAR 149",

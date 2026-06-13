@@ -58,44 +58,40 @@ const FAQItem = ({ question, answer, index }: FAQItemProps) => {
 const FAQ = () => {
   const items = [
     {
-      question: "How fast can you repair my AC in Saudi Arabia?",
-      answer: "We offer 30-minute emergency dispatch in major cities like Riyadh, Jeddah, Dammam, and Al Khobar. Our local teams are stationed to ensure rapid response times."
+      question: "How much does AC repair cost in Saudi Arabia?",
+      answer: "The cost depends on the specific issue, such as a capacitor replacement, gas refill, or compressor repair. We offer transparent pricing with an upfront diagnostic quote before any work begins."
     },
     {
-      question: "Do you provide a warranty on AC repairs?",
-      answer: "Yes, all our HVAC repairs and installations come with a solid 90-day guarantee on parts and labor. We stand behind the quality of our work."
+      question: "Do you offer same-day AC repair?",
+      answer: "Yes, we prioritize emergency cooling failures. Our technicians are stationed across major cities to provide rapid, same-day HVAC repair services to restore your comfort quickly."
     },
     {
-      question: "How often should I service my AC in KSA?",
-      answer: "Due to the high heat and dust across the Kingdom, we recommend deep cleaning and maintenance every 4 to 6 months to prevent unexpected breakdowns and high electricity bills."
+      question: "Which AC brands do you repair?",
+      answer: "We repair and service all major international brands, including Daikin, Carrier, LG, Samsung, Midea, Gree, Hitachi, Panasonic, TCL, and York."
     },
     {
-      question: "Why is my AC running but not cooling?",
-      answer: "This is commonly caused by low refrigerant gas, dirty condenser coils, blocked air filters, or a failing compressor. A diagnostic check can identify the exact cause."
+      question: "Do you provide AC gas refill services?",
+      answer: "Yes, we provide professional refrigerant gas refilling (R410A and R22). We always perform a thorough leak test first to ensure your system retains the new gas."
     },
     {
-      question: "Do you service central AC units or just split ACs?",
-      answer: "Our teams are fully equipped to handle all cooling systems: Wall-mounted Splits, Window ACs, Central ducted systems, VRF, and commercial Package units."
+      question: "How often should AC units be cleaned?",
+      answer: "In the dusty and hot climate of Saudi Arabia, we highly recommend deep chemical cleaning of the evaporator and condenser coils every 4 to 6 months to maintain optimal airflow and efficiency."
     },
     {
-      question: "How much does an AC gas refill cost?",
-      answer: "Prices vary based on unit size and gas type (R410A vs R22). We provide transparent, upfront quotes before starting, and always perform a leak test prior to refilling."
+      question: "Do you serve Jeddah and Dammam?",
+      answer: "Yes, our service network covers all of Saudi Arabia. We have dedicated technician fleets in Riyadh, Jeddah, Dammam, Al Khobar, Makkah, Madinah, and other major regions."
     },
     {
-      question: "Why is my indoor AC unit leaking water?",
-      answer: "A clogged drain line, a cracked drip pan, or a frozen evaporator coil (usually due to low gas) typically causes indoor water leakage. We quickly clear the blockage."
+      question: "Do you provide emergency AC repair?",
+      answer: "Absolutely. We offer 24/7 emergency dispatch for sudden breakdowns, complete power trips, or severe water leakage issues across KSA."
     },
     {
-      question: "Are your technicians certified?",
-      answer: "Absolutely. Every technician undergoes rigorous training, background checks, and certification processes before entering your home or business."
+      question: "Do you offer home maintenance services?",
+      answer: "Yes, alongside our core AC services, we provide comprehensive plumbing and home maintenance solutions to keep your entire property in perfect condition."
     },
     {
-      question: "Do you use genuine replacement parts?",
-      answer: "Yes, we source original OEM parts for Daikin, LG, Carrier, Gree, Samsung, and all major international brands to ensure optimal performance and longevity."
-    },
-    {
-      question: "Do you offer commercial HVAC maintenance contracts?",
-      answer: "Yes, we provide 24/7 facility management and preventive maintenance contracts for offices, hotels, hospitals, and retail stores across Saudi Arabia."
+      question: "How can I book an AC technician?",
+      answer: "Booking is incredibly easy. Simply click the WhatsApp button on our website, send us a quick message detailing your issue, and we will dispatch a technician to your location within minutes."
     }
   ];
 
