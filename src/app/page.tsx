@@ -542,10 +542,24 @@ const CostFactors = () => {
 // 11. LOCATION SECTION (LOCATION CARDS & KSA-WIDE COVERAGE)
 const LocationCards = () => {
   const ksaLocations = [
-    { area: "Riyadh", svc: "Full HVAC Services", response: "30-Min Emergency Dispatch", desc: "Our main headquarters serving all commercial towers and residential villas across Al Olaya, Malqa, and Hittin with instant repair units." },
-    { area: "Jeddah", svc: "AC Repair & Maintenance", response: "Same-Day Priority Service", desc: "Specialized technicians equipped to handle coastal marine humidity, corrosion treatments, and high-performance compressor diagnostics." },
-    { area: "Dammam", svc: "Industrial & Split AC Repair", response: "Under 60-Min Response", desc: "Fast-acting crews handling eco-friendly R410A gas leak detection, deep coil washing, and heavy-duty industrial air conditioning systems." },
-    { area: "Mecca & Medina", svc: "Package Unit Servicing", response: "24/7 Hotel Support", desc: "Expert HVAC package unit repairs, preventive seasonal maintenance, and smart control system calibration for continuous guest comfort." }
+    { area: "Riyadh", svc: "Full HVAC Services", response: "30-Min Emergency Dispatch", desc: "Our main headquarters serving commercial towers and residential villas with instant repair units." },
+    { area: "Jeddah", svc: "AC Repair & Maintenance", response: "Same-Day Priority Service", desc: "Specialized technicians equipped to handle coastal marine humidity and high-performance compressor diagnostics." },
+    { area: "Dammam", svc: "Industrial & Split AC Repair", response: "Under 60-Min Response", desc: "Fast-acting crews handling R410A gas leak detection and heavy-duty industrial air conditioning systems." },
+    { area: "Al Khobar", svc: "Premium AC Solutions", response: "Fast Local Dispatch", desc: "Expert cooling services tailored for modern apartments and business centers in the Eastern Province." },
+    { area: "Makkah", svc: "24/7 Hotel Support", response: "Priority Emergency", desc: "Reliable HVAC package unit repairs and preventive seasonal maintenance for continuous guest comfort." },
+    { area: "Madinah", svc: "Package Unit Servicing", response: "Same-Day Service", desc: "Smart control system calibration and deep cleaning services for residential and commercial cooling." },
+    { area: "Taif", svc: "Split AC Repair", response: "Rapid Response", desc: "Mountain-climate optimized thermostat tuning and compressor repairs for steady indoor temperatures." },
+    { area: "Jubail", svc: "Industrial Cooling", response: "Heavy-Duty Support", desc: "Specialized in large-scale commercial AC installations and chemical coil cleaning for industrial sectors." },
+    { area: "Yanbu", svc: "Coastal AC Maintenance", response: "Anti-Corrosion Care", desc: "Expert technicians handling rust prevention and marine-grade AC servicing along the Red Sea coast." },
+    { area: "Abha", svc: "Heating & Cooling", response: "Seasonal Support", desc: "Dual-system HVAC experts providing fast repairs and filter changes for high-altitude weather conditions." },
+    { area: "Khamis Mushait", svc: "AC Deep Cleaning", response: "Next-Day Booking", desc: "Comprehensive pressure washing and mold removal to ensure healthy indoor air quality." },
+    { area: "Hail", svc: "Compressor Replacement", response: "Guaranteed Fix", desc: "Sourcing and installing genuine OEM parts to fix sudden AC breakdowns efficiently." },
+    { area: "Tabuk", svc: "AC Installation", response: "Precision Setup", desc: "Professional mounting, copper pipe alignment, and electrical load balancing for new AC units." },
+    { area: "Najran", svc: "Gas Refill Services", response: "Leak Detection", desc: "Accurate refrigerant charging (R410A/R22) with advanced electronic leak detection technology." },
+    { area: "Al Ahsa", svc: "Preventive Maintenance", response: "Scheduled Care", desc: "Thorough seasonal inspections and motor lubrication to prevent summer AC failures." },
+    { area: "Buraidah", svc: "Duct Cleaning", response: "Air Quality Control", desc: "Deep extraction of dust and allergens from central AC ducts to improve cooling efficiency." },
+    { area: "Unayzah", svc: "Thermostat Calibration", response: "Smart AC Repair", desc: "Fixing electrical faults, PCB board issues, and calibrating smart thermostats for energy savings." },
+    { area: "Jazan", svc: "Humid Climate AC Repair", response: "Same-Day Fix", desc: "Resolving water leakage issues and frozen coils caused by high humidity environments." }
   ];
 
   return (
@@ -1055,9 +1069,9 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": ["WebPage", "ItemPage"],
-        "name": "AC Repairing KSA - Professional AC Repair & HVAC Maintenance in Riyadh, Saudi Arabia",
+        "name": "AC Repairing KSA - Professional AC Repair & HVAC Maintenance Across Saudi Arabia",
         "url": "https://acrepairingksa.com/",
-        "description": "KSA-certified HVAC technicians for split AC, central AC repair, AC cleaning, compressor replacement, refrigerant gas refill (R410A/R22), and emergency AC repair across all Riyadh districts.",
+        "description": "KSA-certified HVAC technicians for split AC, central AC repair, AC cleaning, compressor replacement, refrigerant gas refill (R410A/R22), and emergency AC repair across all major cities in Saudi Arabia.",
         "speakable": {
           "@type": "SpeakableSpecification",
           "xpath": ["/html/head/title", "/html/head/meta[@name='description']/@content"]
@@ -1065,7 +1079,7 @@ export default function Home() {
         "about": {
           "@type": "HVACBusiness",
           "name": "AC Repairing KSA",
-          "areaServed": ["Riyadh", "Jeddah", "Dammam", "Makkah", "Medina", "Khobar", "Saudi Arabia"]
+          "areaServed": ["Riyadh", "Jeddah", "Dammam", "Al Khobar", "Makkah", "Madinah", "Taif", "Jubail", "Yanbu", "Abha", "Khamis Mushait", "Hail", "Tabuk", "Najran", "Al Ahsa", "Buraidah", "Unayzah", "Jazan", "Saudi Arabia"]
         }
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -1082,9 +1096,7 @@ export default function Home() {
           "addressRegion": "Riyadh Province"
         },
         "areaServed": [
-          "Riyadh", "Jeddah", "Dammam", "Makkah", "Medina", "Khobar",
-          "Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Hittin",
-          "Al Nakheel", "Al Malqa", "Al Sulaymaniyah", "Al Rawdah", "Al Munsiyah"
+          "Riyadh", "Jeddah", "Dammam", "Al Khobar", "Makkah", "Madinah", "Taif", "Jubail", "Yanbu", "Abha", "Khamis Mushait", "Hail", "Tabuk", "Najran", "Al Ahsa", "Buraidah", "Unayzah", "Jazan", "Saudi Arabia"
         ],
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "22:00" },

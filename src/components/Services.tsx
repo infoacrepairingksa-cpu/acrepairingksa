@@ -173,6 +173,39 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       process: "Electrical Audit → Coil Health → Calibrate Controls",
       ctaText: "Book AC Service Today",
       benefits: ["Energy Save", "Free Health Check", "Lube Parts"]
+    },
+    {
+      id: "ac-duct-cleaning",
+      title: "AC Duct Cleaning",
+      description: "Improve indoor air quality by removing dust, debris, and allergens from your central AC ducts.",
+      icon: <Wind />,
+      imageUrl: "/Ac Services/AC Cleaning.webp",
+      price: "SAR 399",
+      process: "Vent Inspection → Deep Extraction → Sanitization",
+      ctaText: "Book Duct Cleaning",
+      benefits: ["Clean Air", "Better Airflow", "Allergy Relief"]
+    },
+    {
+      id: "ac-filter-cleaning",
+      title: "AC Filter Cleaning",
+      description: "Ensure smooth airflow and lower electricity bills with our professional AC filter washing and replacement.",
+      icon: <Snowflake />,
+      imageUrl: "/Ac Services/AC Cleaning.webp",
+      price: "SAR 99",
+      process: "Filter Removal → Chemical Wash → Reinstallation",
+      ctaText: "Clean My Filters",
+      benefits: ["Lower Bills", "Fresh Air", "No Ice Buildup"]
+    },
+    {
+      id: "ac-coil-cleaning",
+      title: "AC Coil Cleaning",
+      description: "Restore your AC's cooling capacity with our specialized chemical coil cleaning for both indoor and outdoor units.",
+      icon: <Droplets />,
+      imageUrl: "/Ac Services/AC Cleaning.webp",
+      price: "SAR 149",
+      process: "Access Coils → Apply Foaming Agent → High Pressure Wash",
+      ctaText: "Restore Cooling Power",
+      benefits: ["Stop Leaks", "Max Efficiency", "Extend Lifespan"]
     }
   ];
 
