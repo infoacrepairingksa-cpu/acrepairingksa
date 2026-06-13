@@ -282,13 +282,15 @@ const ACComponents = () => {
 // 5. AC BRANDS WE SERVICE (GRID WITH IMAGES & DESCRIPTIONS)
 const BrandsGrid = () => {
   const brands = [
-    { name: "Carrier", imageUrl: "/AC Companies/Carrier ac.png", desc: "Robust American cooling technology, common in large villas. We service heavy-duty compressors and replace control contactors." },
     { name: "Daikin", imageUrl: "/AC Companies/Daikin AC.jpg", desc: "High-efficiency Japanese inverter split and VRV systems. We repair sensors, control boards, and re-charge eco-friendly coolant." },
-    { name: "Gree", imageUrl: "/AC Companies/Gree AC.webp", desc: "Extremely popular in Riyadh for durable splits. We provide genuine replacement parts, capacitor repairs, and coil cleaning." },
-    { name: "Hitachi", imageUrl: "/AC Companies/Hitachi AC.png", desc: "Sturdy tropical split ACs. We wash out condenser sand blocks and resolve thermal overload problems during summer peaks." },
+    { name: "Carrier", imageUrl: "/AC Companies/Carrier ac.png", desc: "Robust American cooling technology, common in large villas. We service heavy-duty compressors and replace control contactors." },
     { name: "LG", imageUrl: "/AC Companies/LG AC.webp", desc: "Dual-inverter splits and package units. We troubleshoot smart diagnostic error codes and replace original motor components." },
-    { name: "Mitsubishi", imageUrl: "/AC Companies/Mitsubishi AC.webp", desc: "Premium quiet split systems. We offer precision servicing of electronic expansion valves and high-performance blower fans." },
     { name: "Samsung", imageUrl: "/AC Companies/Samsung AC.jpg", desc: "WindFree and digital inverter split ACs. We specialize in servicing electronic control boards and blower assemblies." },
+    { name: "Midea", imageUrl: "/AC Companies/Mitsubishi AC.webp", desc: "Reliable and cost-effective cooling systems. We provide genuine parts for fast condenser and evaporator repairs." },
+    { name: "Gree", imageUrl: "/AC Companies/Gree AC.webp", desc: "Extremely popular across KSA for durable splits. We provide genuine replacement parts, capacitor repairs, and coil cleaning." },
+    { name: "Hitachi", imageUrl: "/AC Companies/Hitachi AC.png", desc: "Sturdy tropical split ACs. We wash out condenser sand blocks and resolve thermal overload problems during summer peaks." },
+    { name: "Panasonic", imageUrl: "/AC Companies/LG AC.webp", desc: "Advanced air purification and cooling splits. We service blower motors, fix drainage leaks, and calibrate thermostats." },
+    { name: "TCL", imageUrl: "/AC Companies/Samsung AC.jpg", desc: "Smart inverter technologies for homes. We handle remote control synchronization, PCB diagnostics, and gas recharging." },
     { name: "York", imageUrl: "/AC Companies/YORK AC.webp", desc: "Reliable commercial and residential central package units. We service multi-stage compressors and condenser fan arrays." }
   ];
   return (
@@ -338,25 +340,26 @@ const BrandsGrid = () => {
   );
 };
 
-// 6. SIGNS YOUR AC NEEDS REPAIR (STRUCTURED LISTS)
+// 6. AC PROBLEMS WE FIX (DIAGNOSTIC HUB)
 const SignsYourACNeedsRepair = () => {
   const signs = [
-    { title: "Venting Lukewarm / Warm Air", text: "Vents blowing warm air instead of cool room-temperature air is a sign that the compressor fails to start or your chemical coolant has leaked out." },
-    { title: "Dripping Water & Internal Leaks", text: "Puddles of water pooling beneath the indoor split unit or water running down your wallpaper indicates a blocked PVC drain pipe that needs immediate flush." },
-    { title: "Foul Mildew or Burning Smell", text: "A stale smell indicates microbial mold growth on the wet evaporator fins. A burning plastic smell means an electrical contact is overheating." },
-    { title: "Spiking Electricity Bills", text: "A sudden increase in energy usage usually means the condenser fins are covered in dust, forcing the compressor to draw double current to reject heat." },
-    { title: "AC Won't Turn On At All", text: "When the unit shows no response to the remote or panel switch, the issue is typically a blown fuse, failed control board, or tripped circuit breaker that cuts all power." },
-    { title: "Ice Forming on Copper Pipes", text: "Visible ice or frost forming on the indoor copper lines indicates critically low refrigerant pressure or severely clogged filters causing coil sub-freezing temperatures." },
-    { title: "Loud or Unusual Noises", text: "Clicking, squealing, or grinding sounds coming from the indoor or outdoor unit point to mechanical failures such as seized fan bearings or loose compressor mounts." },
-    { title: "AC Cycles On & Off Constantly", text: "Short-cycling (the AC turning on and off every few minutes) indicates the unit is unable to maintain pressure and suggests a gas leak, dirty coil, or failing thermostat sensor." }
+    { title: "AC Not Cooling", text: "Resolving blocked airflow, dirty coils, or low refrigerant levels to restore ice-cold temperatures." },
+    { title: "Water Leakage", text: "Clearing clogged drain pipes and fixing frozen evaporator coils causing indoor dripping." },
+    { title: "Gas Leakage", text: "Welding cracked copper pipes and recharging optimal Freon gas (R410A/R22) to factory specs." },
+    { title: "Bad Smell", text: "Eliminating mildew and bacteria buildup through deep chemical washes of the internal unit." },
+    { title: "Compressor Issues", text: "Fixing tripping breakers, overheating, or dead outdoor compressors to get your AC running." },
+    { title: "Thermostat Issues", text: "Recalibrating sensors or replacing faulty digital controls for accurate room temperature." },
+    { title: "Electrical Faults", text: "Replacing burnt capacitors, contactors, or damaged wiring that prevent the AC from starting." },
+    { title: "Frozen Coils", text: "Diagnosing airflow restrictions or gas shortages causing thick ice buildup on copper lines." },
+    { title: "Noisy AC", text: "Fixing rattling fan motors, worn-out bearings, or loose mounting brackets for silent operation." }
   ];
   return (
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
 
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Signs Your AC Needs Repair</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Catch faults early to avoid total compressor burnout. Check your cooling system for these indicators.</p>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Problems We Fix</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Whatever the issue, our certified technicians can diagnose and repair your cooling system.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {signs.map((s, i) => (

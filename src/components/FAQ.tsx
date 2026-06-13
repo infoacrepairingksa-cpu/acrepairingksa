@@ -58,64 +58,44 @@ const FAQItem = ({ question, answer, index }: FAQItemProps) => {
 const FAQ = () => {
   const items = [
     {
-      question: "Why is my AC not cooling?",
-      answer: "AC not cooling is usually caused by dirty air filters, low refrigerant gas (R410A/R22), a faulty compressor, or blocked condenser coils. Our technicians can diagnose the exact issue within 30 minutes in Riyadh."
+      question: "How fast can you repair my AC in Saudi Arabia?",
+      answer: "We offer 30-minute emergency dispatch in major cities like Riyadh, Jeddah, Dammam, and Al Khobar. Our local teams are stationed to ensure rapid response times."
     },
     {
-      question: "How often should AC be serviced in Riyadh?",
-      answer: "Due to Riyadh's high dust levels, we recommend a professional AC service every 3 to 6 months. For high-usage commercial units, quarterly maintenance ensures optimal performance and lower electricity bills."
+      question: "Do you provide a warranty on AC repairs?",
+      answer: "Yes, all our HVAC repairs and installations come with a solid 90-day guarantee on parts and labor. We stand behind the quality of our work."
     },
     {
-      question: "How long does AC repair take?",
-      answer: "Most AC repairs, such as capacitor replacement or leak fixing, are completed within 1 to 2 hours. Complex jobs like compressor replacement may take 3 to 4 hours."
+      question: "How often should I service my AC in KSA?",
+      answer: "Due to the high heat and dust across the Kingdom, we recommend deep cleaning and maintenance every 4 to 6 months to prevent unexpected breakdowns and high electricity bills."
     },
     {
-      question: "Do you offer emergency AC repair in Riyadh?",
-      answer: "Yes, we provide 24/7 emergency AC repair across all Riyadh districts. We understand that cooling failures in summer are urgent, and guarantee a 30-60 minute arrival."
+      question: "Why is my AC running but not cooling?",
+      answer: "This is commonly caused by low refrigerant gas, dirty condenser coils, blocked air filters, or a failing compressor. A diagnostic check can identify the exact cause."
     },
     {
-      question: "What is included in AC deep cleaning?",
-      answer: "Our deep AC cleaning includes evaporator coil chemical wash, condenser unit high-pressure cleaning, drain line flushing, filter sanitization, and antibacterial treatment to remove mold and odor."
+      question: "Do you service central AC units or just split ACs?",
+      answer: "Our teams are fully equipped to handle all cooling systems: Wall-mounted Splits, Window ACs, Central ducted systems, VRF, and commercial Package units."
     },
     {
-      question: "How much does AC gas refill cost?",
-      answer: "AC gas refill costs depend on the type of refrigerant (R410A or R22) and the amount needed. We perform a leak test before refilling to ensure you don't lose gas again."
+      question: "How much does an AC gas refill cost?",
+      answer: "Prices vary based on unit size and gas type (R410A vs R22). We provide transparent, upfront quotes before starting, and always perform a leak test prior to refilling."
     },
     {
-      question: "Why is my AC leaking water inside?",
-      answer: "Indoor water leaks are typically caused by a clogged condensate drain line, frozen evaporator coils (due to low gas or dirty filters), or a cracked drain pan. We clear the blockage and flush the system."
+      question: "Why is my indoor AC unit leaking water?",
+      answer: "A clogged drain line, a cracked drip pan, or a frozen evaporator coil (usually due to low gas) typically causes indoor water leakage. We quickly clear the blockage."
     },
     {
-      question: "Do you fix central AC systems?",
-      answer: "Yes, our certified HVAC technicians are experts in central AC systems, VRF units, split ACs, and package units for both residential villas and commercial buildings."
+      question: "Are your technicians certified?",
+      answer: "Absolutely. Every technician undergoes rigorous training, background checks, and certification processes before entering your home or business."
     },
     {
-      question: "Why is my AC making a loud noise?",
-      answer: "Clicking noises often indicate electrical issues or a failing capacitor. Grinding or squealing sounds usually point to blower motor bearings or fan belt problems. Immediate inspection is recommended."
+      question: "Do you use genuine replacement parts?",
+      answer: "Yes, we source original OEM parts for Daikin, LG, Carrier, Gree, Samsung, and all major international brands to ensure optimal performance and longevity."
     },
     {
-      question: "Do you provide a warranty on repairs?",
-      answer: "Yes, all our AC repair services come with a 90-day service warranty. We use genuine manufacturer spare parts to guarantee durability."
-    },
-    {
-      question: "Can I clean my AC filter myself?",
-      answer: "Yes, you can clean the basic mesh filter with water every 2 weeks. However, internal evaporator coils and blower fans require professional chemical cleaning to prevent mold."
-    },
-    {
-      question: "Which areas in Riyadh do you serve?",
-      answer: "We cover all major Riyadh neighborhoods including Al Olaya, Al Malaz, Al Yasmin, Al Narjis, Hittin, Al Nakheel, Al Sulaymaniyah, and surrounding districts."
-    },
-    {
-      question: "What refrigerant gases do you use for refilling?",
-      answer: "We use high-grade, original R410A and R22 refrigerant gases depending on your AC manufacturer specifications. We perform a leak check prior to refilling to prevent recurrent low pressure."
-    },
-    {
-      question: "Can a dirty filter cause the AC breaker to trip?",
-      answer: "Yes, a heavily clogged filter restricts airflow, causing the evaporator coils to freeze. The compressor then has to work under extreme load to pump refrigerant, which spikes the amp draw and trips the circuit breaker."
-    },
-    {
-      question: "How long does it take for an emergency technician to arrive?",
-      answer: "For emergency heating or cooling breakdowns, we offer a rapid dispatch guarantee with an average response time of 30 to 60 minutes across North, South, East, and West Riyadh."
+      question: "Do you offer commercial HVAC maintenance contracts?",
+      answer: "Yes, we provide 24/7 facility management and preventive maintenance contracts for offices, hotels, hospitals, and retail stores across Saudi Arabia."
     }
   ];
 
