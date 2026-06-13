@@ -52,9 +52,9 @@ const Footer = () => {
         {/* Top Trust Strip */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 pb-20 mb-20 border-b border-white/10">
           {[
-            { icon: <ShieldCheck size={26} />, title: "Certified Techs", sub: "In Riyadh" },
+            { icon: <ShieldCheck size={26} />, title: "Certified Techs", sub: "In KSA" },
             { icon: <Clock size={26} />, title: "24/7 Available", sub: "Emergency Support" },
-            { icon: <MapPin size={26} />, title: "Riyadh Fleet", sub: "Across All Areas" },
+            { icon: <MapPin size={26} />, title: "KSA Fleet", sub: "Across Major Cities" },
             { icon: <CheckCircle2 size={26} />, title: "Service Warranty", sub: "90-Day Guarantee" }
           ].map((item, idx) => (
             <div key={idx} className="flex items-center gap-4 group">
@@ -73,7 +73,7 @@ const Footer = () => {
               <Logo light />
             </Link>
             <p className="text-white font-medium leading-relaxed text-sm pr-8 opacity-90">
-              Professional AC repair, plumbing, and home maintenance services across all areas of Riyadh. Our technicians reach you within 30–60 minutes for fast and reliable service.
+              Professional AC repair, plumbing, and home maintenance services across all major cities of Saudi Arabia. Our technicians reach you within 30–60 minutes for fast and reliable service.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ const Footer = () => {
                 icon={<Phone size={18} fill="currentColor" />} 
                 text="+966 51 094 2150" 
                 href="tel:+966 51 094 2150" 
-                ariaLabel="Call Riyadh Technical Support"
+                ariaLabel="Call KSA Technical Support"
               />
               <ContactLink 
                 icon={<MessageSquare size={18} fill="currentColor" />} 
@@ -166,8 +166,8 @@ const Footer = () => {
                 </div>
                 <address className="not-italic text-sm font-bold text-white/80 leading-relaxed">
                   <span className="block text-white">AC Repairing KSA</span>
-                  <span className="block">Riyadh, Saudi Arabia (KSA)</span>
-                  <span className="block text-white/50 text-xs mt-1">Serving All Riyadh Districts</span>
+                  <span className="block">Saudi Arabia (KSA)</span>
+                  <span className="block text-white/50 text-xs mt-1">Serving All Major KSA Cities</span>
                 </address>
               </div>
 
@@ -193,18 +193,18 @@ const Footer = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="AC Repairing KSA — Riyadh Service Area Map"
+            title="AC Repairing KSA — Service Area Map"
           />
         </div>
 
         <div className="border-t border-white/5 pt-16 flex flex-col md:flex-row items-center justify-between gap-8 text-white/60 text-xs font-bold uppercase tracking-wider">
-          <p>© {currentYear} AC Repairing KSA. Trusted HVAC & Home Services in Riyadh, Saudi Arabia.</p>
+          <p>© {currentYear} AC Repairing KSA. Trusted HVAC & Home Services in Saudi Arabia.</p>
           <div className="flex items-center gap-10">
             <Link href="/" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/" className="hover:text-white transition-colors">Technical Terms</Link>
           </div>
           <div className="flex items-center gap-4 text-secondary font-bold tracking-wider">
-            <span>Riyadh's #1 Certified HVAC Fleet</span>
+            <span>KSA's #1 Certified HVAC Fleet</span>
             <CheckCircle2 size={16} />
           </div>
         </div>

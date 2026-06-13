@@ -65,7 +65,7 @@ export const generateLocalBusinessSchema = () => ({
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "King Fahd Road",
-    "addressLocality": "Riyadh",
+    "addressLocality": "Saudi Arabia",
     "postalCode": "12212",
     "addressCountry": "SA"
   },
@@ -107,8 +107,8 @@ export const generateServiceSchema = (name: string, description: string, url: st
     "@id": "https://acrepairingksa.com/#localbusiness"
   },
   "areaServed": {
-    "@type": "State",
-    "name": "Riyadh",
+    "@type": "Country",
+    "name": "Saudi Arabia",
     "addressCountry": "SA"
   },
   "url": `https://acrepairingksa.com${url}`

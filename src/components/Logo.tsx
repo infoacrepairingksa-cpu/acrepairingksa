@@ -83,7 +83,7 @@ export const Logo = ({ className = "", light = false }: { className?: string, li
           KSA
         </span>
         <span className={`text-[10px] font-bold uppercase tracking-[0.25em] ${light ? "text-white/50" : "text-[#1F2061]/40"} mt-2`}>
-          Serving Riyadh & Beyond
+          Serving Saudi Arabia
         </span>
       </div>
     </div>

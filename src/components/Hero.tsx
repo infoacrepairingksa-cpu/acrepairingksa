@@ -122,7 +122,7 @@ const Hero = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
             <div className="relative w-full h-[500px] rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
               <Image 
                 src="/uploaded/ac-gas-refill-outdoor.png" 
-                alt="Licensed AC Technician performing gas refill on outdoor unit in Riyadh" 
+                alt="Licensed AC Technician performing gas refill on outdoor unit in Saudi Arabia" 
                 fill
                 className="object-cover"
                 priority

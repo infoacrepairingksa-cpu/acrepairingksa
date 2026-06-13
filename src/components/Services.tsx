@@ -244,7 +244,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-20 gap-6">
 
             <h2 className="text-[36px] font-heading font-black text-primary leading-tight tracking-tighter">
-              Our Professional AC Services in Riyadh
+              Our Professional AC Services in Saudi Arabia
             </h2>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
@@ -260,7 +260,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
         <div className="mb-32">
           <div className="max-w-4xl mx-auto mb-16 text-center flex flex-col items-center gap-4">
             <h2 className="text-3xl font-heading font-black text-primary leading-tight tracking-tighter">
-              Additional Home Services in Riyadh <span className="text-secondary">(Plumbing & Maintenance)</span>
+              Additional Home Services in KSA <span className="text-secondary">(Plumbing & Maintenance)</span>
             </h2>
           </div>
 
@@ -278,12 +278,12 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
             {/* Left Content Column */}
             <div className="flex-1 flex flex-col gap-8 text-center lg:text-left">
               <h2 className="text-[32px] md:text-[42px] font-heading font-black text-primary leading-[1.1] tracking-tighter">
-                Complete AC, Plumbing & <br /> <span className="text-secondary">Home Maintenance</span> Solutions in Riyadh
+                Complete AC, Plumbing & <br /> <span className="text-secondary">Home Maintenance</span> Solutions in Saudi Arabia
               </h2>
               
               <div className="flex flex-col gap-6">
                 <p className="text-lg text-primary/70 font-medium leading-relaxed">
-                  Beyond individual services, we deliver complete home solutions across Riyadh—combining 
+                  Beyond individual services, we deliver complete home solutions across the Kingdom—combining 
                   expert AC services, professional plumbing, and reliable home maintenance under one roof.
                 </p>
                 
@@ -294,7 +294,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 
                 <p className="text-lg text-primary font-bold leading-relaxed">
                    We focus on convenience, speed, and quality—making us the go-to choice for homeowners 
-                   and businesses looking for hassle-free maintenance services in Riyadh.
+                   and businesses looking for hassle-free maintenance services in KSA.
                 </p>
               </div>
 
@@ -322,7 +322,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
                 {["AC Repair", "AC Cleaning", "AC Gas Refill", "AC Maintenance", "Plumbing"].map((svc) => (
                   <a
                     key={svc}
-                    href={`https://wa.me/966510942150?text=${encodeURIComponent(`Hello, I need ${svc} service in Riyadh. Can you help?`)}`}
+                    href={`https://wa.me/966510942150?text=${encodeURIComponent(`Hello, I need ${svc} service. Can you help?`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition-all flex items-center justify-center gap-3 active:scale-95 shadow-lg shadow-[#25D366]/10"
@@ -335,69 +335,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
           </div>
         </div>
 
-        {/* Service Areas Section */}
-        <div id="locations" className="pt-32 border-t border-gray-100 relative">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-1 bg-secondary/20" />
-          
-          <div className="max-w-4xl mx-auto mb-20 text-center flex flex-col items-center gap-6">
-            <span className="bg-primary/5 text-primary/80 font-bold tracking-widest uppercase text-sm px-6 py-2 rounded-full inline-block">Riyadh Wide Coverage</span>
-            <h2 className="text-[36px] font-heading font-black text-primary leading-tight tracking-tighter">
-              AC Repair Services in <span className="text-secondary text-[36px]">Riyadh City</span>
-            </h2>
-            <p className="text-lg text-primary font-bold leading-relaxed max-w-2xl">
-              We serve all major areas of Riyadh with fast response
-            </p>
-            <p className="text-lg text-primary/70 font-medium leading-relaxed max-w-2xl">
-              We provide fast, reliable, and professional AC repair, cleaning, and maintenance services 
-              all over Riyadh with guaranteed same-day availability for your emergency needs.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-4 lg:gap-6 max-w-7xl mx-auto mb-16 px-4">
-            {[
-              { name: "Al Olaya", path: "/locations/al-olaya" },
-              { name: "Al Malaz", path: "/locations/al-malaz" },
-              { name: "Al Yasmin", path: "/locations/al-yasmin" },
-              { name: "Al Narjis", path: "/locations/al-narjis" },
-              { name: "Al Sahafa", path: "/locations/al-sahafa" },
-              { name: "Al Malqa", path: "/locations/al-malqa" },
-              { name: "Al Aqiq", path: "/locations/al-aqiq" },
-              { name: "Hittin", path: "/locations/hittin" },
-              { name: "Al Nakheel", path: "/locations/al-nakheel" },
-              { name: "Al Rawdah", path: "/locations/al-rawdah" },
-              { name: "Al Sulaymaniyah", path: "/locations/al-sulaymaniyah" },
-              { name: "Al Rabwah", path: "/locations/al-rabwah" },
-              { name: "Al Munsiyah", path: "/locations/al-munsiyah" },
-              { name: "Al Qadisiyah", path: "/locations/al-qadisiyah" },
-              { name: "Al Shifa", path: "/locations/al-shifa" }
-            ].map((area) => (
-              <Link 
-                href={area.path} 
-                key={area.name} 
-                className="group p-5 bg-white border border-gray-100 rounded-2xl flex items-center gap-4 transition-all hover:border-secondary hover:shadow-xl hover:shadow-primary/5 cursor-pointer active:scale-95 text-left"
-              >
-                <div className="w-10 h-10 shrink-0 rounded-xl bg-primary/5 flex items-center justify-center text-primary group-hover:bg-secondary group-hover:text-white transition-all shadow-sm">
-                   <MapPin size={18} />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[13px] font-black uppercase tracking-wider text-primary leading-tight group-hover:text-secondary">{area.name}</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="flex flex-col items-center gap-8">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary/60 italic">And all nearby areas in Riyadh.</p>
-            <a 
-              href="https://wa.me/966510942150?text=Hello%2C%20I%20need%20AC%20or%20home%20maintenance%20service%20in%20Riyadh.%20Can%20you%20help?"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-12 py-5 bg-[#25D366] hover:bg-[#1DA851] text-white rounded-2xl font-bold text-sm uppercase tracking-widest transition-all shadow-2xl shadow-[#25D366]/30 flex items-center gap-4 group"
-            >
-              <WhatsAppIcon size={20} className="group-hover:scale-110 transition-transform text-white" /> WhatsApp Us For Your Area
-            </a>
-          </div>
-        </div>
 
         {/* Bottom Contact Strip */}
         <div className="mt-24 p-8 border border-dashed border-primary/20 rounded-[40px] flex flex-col md:flex-row items-center justify-between gap-8 bg-primary/5">

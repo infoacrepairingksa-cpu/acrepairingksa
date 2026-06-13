@@ -47,7 +47,7 @@ const FloatingActions = () => {
         <div className="mt-3 flex flex-col items-center gap-2">
            <div className="bg-white/95 backdrop-blur-md px-5 py-2 rounded-full shadow-2xl border border-gray-100 flex items-center gap-3">
              <div className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse shadow-[0_0_8px_rgba(37,211,102,0.6)]" />
-             <span className="text-[9px] font-black uppercase tracking-widest text-primary">Emergency Teams Stationed in Riyadh</span>
+             <span className="text-[9px] font-black uppercase tracking-widest text-primary">Emergency Teams Stationed in Saudi Arabia</span>
            </div>
            <div className="bg-secondary px-4 py-1.5 rounded-full shadow-lg flex items-center gap-2">
              <Clock size={12} className="text-white" />
