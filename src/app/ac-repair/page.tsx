@@ -47,10 +47,10 @@ export default function ACRepairPage() {
   );
 
   const faqs = [
-    { q: "How much does AC repair cost in Riyadh?", a: "Costs depend on the complexity. We provide a fair diagnostic check and quote before starting any work." },
-    { q: "Do you provide emergency AC repair?", a: "Yes, we are available 24/7 for emergency breakdowns across all Riyadh neighborhoods." },
-    { q: "Which AC brands do you repair?", a: "We fix all major brands including LG, Samsung, Gree, Carrier, Zamil, and York." },
-    { q: "How long does AC repair take?", a: "Most repairs take 1-2 hours after the initial diagnostic inspection." }
+    { q: "How much does AC repair cost in Saudi Arabia?", a: "Costs depend on the issue. We provide a transparent diagnostic quote before starting any work — no hidden charges." },
+    { q: "Do you provide emergency AC repair across KSA?", a: "Yes, we are available 24/7 for emergency breakdowns across Riyadh, Jeddah, Dammam, and all major cities." },
+    { q: "Which AC brands do you repair?", a: "We fix all major brands including LG, Samsung, Gree, Carrier, Daikin, Midea, Hitachi, and York." },
+    { q: "How long does AC repair take?", a: "Most repairs take 1-2 hours. Complex compressor jobs may take up to 4 hours." }
   ];
 
   return (
@@ -58,8 +58,8 @@ export default function ACRepairPage() {
       <Schema 
         type="Service" 
         data={generateServiceSchema(
-          "AC Repair Service Riyadh",
-          "Expert AC repairing and diagnostic services in Riyadh. We fix cooling issues, compressor faults, and electrical errors for all AC brands.",
+          "AC Repair Service Saudi Arabia",
+          "Expert HVAC repair and diagnostic services across Saudi Arabia. We fix cooling issues, compressor faults, and electrical errors for all AC brands in Riyadh, Jeddah, Dammam, and major KSA cities.",
           "/ac-repair"
         )} 
       />
@@ -90,10 +90,10 @@ export default function ACRepairPage() {
                  ))}
               </div>
               <h1 className="text-[48px] md:text-[64px] lg:text-[76px] font-heading font-black text-primary leading-[1] tracking-tight">
-                Expert <span className="text-secondary">AC Repair Services</span> in Riyadh
+                Expert <span className="text-secondary">AC Repair Services</span> Across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/70 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic">
-                “Professional AC technicians for split, central, window & duct AC systems across Riyadh.”
+                “Professional HVAC technicians for split, central, window & duct AC systems across Riyadh, Jeddah, Dammam and all major KSA cities.”
               </p>
               <div className="flex flex-col gap-8 items-center lg:items-start">
                 <ButtonGroup customZapText="Book AC Repair" />
@@ -112,7 +112,7 @@ export default function ACRepairPage() {
               <div className="relative rounded-[64px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-[12px] border-white group h-[650px]">
                 <Image 
                   src="/optimized/pexels-5691657.webp" 
-                  alt="AC Technician Riyadh" 
+                  alt="AC Technician Saudi Arabia" 
                   fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-1000" 
                   priority
@@ -133,9 +133,9 @@ export default function ACRepairPage() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="relative flex flex-col gap-8">
-              <SectionHeading sub="Elite Maintenance" title="Fast Repair Solutions for Riyadh's Summer Heat" center={false} />
+              <SectionHeading sub="Elite Maintenance" title="Fast AC Repair Solutions Across KSA" center={false} />
               <p className="text-xl text-primary/60 font-medium leading-relaxed">
-                Riyadh's intense heat doesn't wait, and neither do we. Our experienced technicians provide fast, professional AC repair for both residential and commercial cooling systems. We specialize in split, central, and duct systems, ensuring your comfort is restored within minutes of arrival.
+                Saudi Arabia's extreme heat doesn't wait, and neither do we. Our HVAC-certified technicians provide fast, professional AC repair for residential and commercial cooling systems across the Kingdom. We specialize in split, central, and duct systems, ensuring your comfort is restored within minutes of arrival.
               </p>
               <button onClick={handleBookNow} className="w-fit px-10 py-5 bg-primary text-white rounded-[20px] font-black uppercase tracking-widest text-sm shadow-xl hover:bg-secondary transition-all">Get Instant Booking</button>
             </div>
@@ -216,11 +216,11 @@ export default function ACRepairPage() {
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="flex flex-col gap-12">
-              <SectionHeading sub="The Trust Factor" title="Why We are Riyadh's #1 Maintenance Choice" center={false} light={true} />
+              <SectionHeading sub="The Trust Factor" title="Why We are KSA's #1 HVAC Maintenance Choice" center={false} light={true} />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {[
                   { t: "Certified AC Technicians", i: <BadgeCheck /> },
-                  { t: "Fast Response Across Riyadh", i: <Clock /> },
+                  { t: "Fast Response Across KSA", i: <Clock /> },
                   { t: "Genuine Spare Parts", i: <Settings /> },
                   { t: "Transparent Pricing", i: <ThumbsUp /> },
                   { t: "Advanced Diagnostics", i: <Search /> },
@@ -247,17 +247,38 @@ export default function ACRepairPage() {
       {/* 6. AREAS WE SERVE (SEO Excellence) */}
       <section className="py-40 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <SectionHeading sub="Local Coverage" title="Expert AC Repair in Your Area" />
+          <SectionHeading sub="KSA Coverage" title="AC Repair Across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {Object.values(locations).slice(0, 15).map(loc => (
+            {[
+              { name: "Al Olaya, Riyadh", slug: "al-olaya" },
+              { name: "Al Malaz, Riyadh", slug: "al-malaz" },
+              { name: "Al Yasmin, Riyadh", slug: "al-yasmin" },
+              { name: "Al Narjis, Riyadh", slug: "al-narjis" },
+              { name: "Hittin, Riyadh", slug: "hittin" },
+              { name: "Al Nakheel, Riyadh", slug: "al-nakheel" },
+              { name: "Al Sulaymaniyah, Riyadh", slug: "al-sulaymaniyah" },
+              { name: "Al Malqa, Riyadh", slug: "al-malqa" },
+              { name: "Al Rawdah, Riyadh", slug: "al-rawdah" },
+              { name: "Jeddah", slug: "jeddah" },
+              { name: "Dammam", slug: "dammam" },
+              { name: "Al Khobar", slug: "al-khobar" },
+              { name: "Makkah", slug: "makkah" },
+              { name: "Madinah", slug: "madinah" },
+              { name: "Taif", slug: "taif" },
+              { name: "Jubail", slug: "jubail" },
+              { name: "Yanbu", slug: "yanbu" },
+              { name: "Abha", slug: "abha" },
+              { name: "Tabuk", slug: "tabuk" },
+              { name: "Jazan", slug: "jazan" },
+            ].map(loc => (
               <a href={`/locations/${loc.slug}`} key={loc.slug} className="p-10 bg-[#FAFAFA] rounded-[32px] border border-gray-100 flex flex-col items-center gap-5 group hover:border-secondary hover:bg-secondary/5 transition-all cursor-pointer shadow-sm text-center">
                 <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
                 <span className="text-xs font-black uppercase tracking-widest text-primary/60 group-hover:text-primary transition-colors">{loc.name}</span>
               </a>
             ))}
           </div>
-          <p className="mt-16 text-center text-primary/30 font-black italic tracking-widest uppercase text-[10px]">“We provide fast AC repair services across all {Object.keys(locations).length} major Riyadh neighborhoods.”</p>
-          <div className="mt-16 flex justify-center"><a href="/locations" className="px-12 py-6 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest shadow-xl border-b-4 border-slate-800 hover:bg-secondary transition-all">View All {Object.keys(locations).length} Districts</a></div>
+          <p className="mt-16 text-center text-primary/30 font-black italic tracking-widest uppercase text-[10px]">“Fast AC repair across all Riyadh districts and major Saudi Arabia cities.”</p>
+          <div className="mt-16 flex justify-center"><a href="/locations" className="px-12 py-6 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest shadow-xl border-b-4 border-slate-800 hover:bg-secondary transition-all">View All Service Areas</a></div>
         </div>
       </section>
 
@@ -293,7 +314,7 @@ export default function ACRepairPage() {
         <div className="container mx-auto px-4 max-w-5xl text-center flex flex-col items-center gap-12 relative z-10">
           <span className="bg-secondary text-white px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-[0.3em] shadow-xl">Urgent Support</span>
           <h2 className="text-[44px] md:text-[68px] font-heading font-black leading-tight tracking-tighter text-white">Emergency <br /><span className="text-secondary">AC Repair 24/7</span></h2>
-          <p className="text-xl md:text-2xl font-medium opacity-80 max-w-3xl leading-relaxed">Summer breakdowns don't wait. Our emergency response team is stationed across Riyadh to fix your AC instantly, even on weekends and holidays.</p>
+          <p className="text-xl md:text-2xl font-medium opacity-80 max-w-3xl leading-relaxed">Summer breakdowns don't wait. Our emergency response team is stationed across Saudi Arabia to fix your AC instantly, even on weekends and holidays.</p>
           <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl">
             <a href="tel:+966 51 094 2150" className="flex-1 px-12 py-7 bg-white text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 shadow-2xl hover:bg-secondary hover:text-white transition-all border-b-4 border-slate-200">
                <Phone size={24} fill="currentColor" /> Call Emergency Team
@@ -333,12 +354,12 @@ export default function ACRepairPage() {
       {/* 10. REVIEWS (Authentic Layout) */}
       <section className="py-40 bg-[#F8FAFC]">
         <div className="container mx-auto px-4 max-w-7xl">
-          <SectionHeading sub="Customer Love" title="What Riyadh Neighbors Say" />
+          <SectionHeading sub="Customer Love" title="What Customers Across Saudi Arabia Say" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
-              { name: "Khalid", text: "Fastest response I've seen in Riyadh. Fixed my split AC in 30 minutes. Professional technician and very clean work!" },
-              { name: "Sara Al-Fahad", text: "Highly professional service. They explained the issue clearly and fixed it immediately. Fair price for Riyadh." },
-              { name: "Ahmed Zaid", text: "Best maintenance company in Riyadh. Punctual, expert technicians, and original parts. Highly recommended." }
+              { name: "Khalid Al-Rashidi", area: "Al Olaya, Riyadh", text: "Fastest response I've seen. Fixed my split AC in 30 minutes. Professional technician and very clean work!" },
+              { name: "Sara Al-Fahad", area: "Al Hamra, Jeddah", text: "Highly professional service. They explained the issue clearly and fixed it immediately. Great KSA-wide coverage!" },
+              { name: "Ahmed Zaid", area: "Al Shati, Dammam", text: "Best HVAC company in Saudi Arabia. Punctual, expert technicians, and original parts. Highly recommended." }
             ].map((r, idx) => (
               <div key={idx} className="p-16 bg-white rounded-[56px] border border-gray-50 flex flex-col gap-10 shadow-sm hover:shadow-2xl transition-all">
                 <div className="flex gap-1.5">{[1,2,3,4,5].map(i => <Star key={i} size={18} fill="#0073E6" stroke="#0073E6" />)}</div>
@@ -347,7 +368,7 @@ export default function ACRepairPage() {
                    <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center font-black text-xl shadow-lg">{r.name[0]}</div>
                    <div className="flex flex-col">
                       <span className="font-heading font-black text-primary text-lg">{r.name}</span>
-                      <span className="text-[10px] font-black text-secondary uppercase tracking-widest">Verified Customer</span>
+                      <span className="text-[10px] font-black text-secondary uppercase tracking-widest">{r.area}</span>
                    </div>
                 </div>
               </div>
@@ -363,10 +384,10 @@ export default function ACRepairPage() {
           <SectionHeading sub="FAQ Guide" title="Common AC Repair Questions" />
           <div className="flex flex-col gap-6">
             {[
-              { q: "How much does AC repair cost in Riyadh?", a: "Costs depend on the complexity. We provide a fair diagnostic check and quote before starting any work." },
-              { q: "Do you provide emergency AC repair?", a: "Yes, we are available 24/7 for emergency breakdowns across all Riyadh neighborhoods." },
-              { q: "Which AC brands do you repair?", a: "We fix all major brands including LG, Samsung, Gree, Carrier, Zamil, and York." },
-              { q: "How long does AC repair take?", a: "Most repairs take 1-2 hours after the initial diagnostic inspection." }
+              { q: "How much does AC repair cost in Saudi Arabia?", a: "Costs depend on the issue. We provide a transparent diagnostic quote before starting any work — no hidden charges." },
+              { q: "Do you provide emergency AC repair across KSA?", a: "Yes, we are available 24/7 for emergency breakdowns across Riyadh, Jeddah, Dammam, and all major cities." },
+              { q: "Which AC brands do you repair?", a: "We fix all major brands including LG, Samsung, Gree, Carrier, Daikin, Midea, Hitachi, and York." },
+              { q: "How long does AC repair take?", a: "Most repairs take 1-2 hours. Complex compressor jobs may take up to 4 hours." }
             ].map((f, idx) => (
               <div key={idx} className="p-12 bg-[#FAFAFA] rounded-[40px] border border-gray-50 hover:border-secondary transition-all shadow-sm">
                 <h3 className="text-2xl font-heading font-black text-primary mb-5 leading-tight">{f.q}</h3>
@@ -382,7 +403,7 @@ export default function ACRepairPage() {
         <div className="container mx-auto px-4 max-w-6xl w-full bg-primary p-12 md:p-24 rounded-[72px] text-white text-center flex flex-col items-center gap-14 relative overflow-hidden shadow-[0_60px_120px_-20px_rgba(15,23,42,0.4)]">
           <div className="absolute top-[-10%] right-[-5%] p-24 opacity-5 rotate-12 pointer-events-none scale-150"><Snowflake size={500} /></div>
           <div className="relative z-10 flex flex-col items-center gap-6">
-             <span className="bg-secondary text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest shadow-xl">Riyadh's Choice</span>
+             <span className="bg-secondary text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest shadow-xl">KSA's Trusted Choice</span>
              <h2 className="text-[44px] md:text-[68px] font-heading font-black leading-tight tracking-tighter">Need Fast <span className="text-secondary">AC Repair Today?</span></h2>
           </div>
           <p className="text-xl md:text-2xl font-medium opacity-80 max-w-3xl leading-relaxed relative z-10">Book professional AC repair technicians today for quick, affordable & reliable cooling solutions. Technician at your door in 30 mins!</p>
