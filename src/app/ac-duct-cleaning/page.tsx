@@ -37,7 +37,7 @@ export default function ACDuctCleaningPage() {
         type="Service" 
         data={generateServiceSchema(
           "AC Duct Cleaning Riyadh",
-          "Professional AC duct cleaning and sanitization services in Riyadh. We provide medical-grade dust extraction and air duct sanitization for healthy indoor air.",
+          "Professional AC duct cleaning and sanitization services across Saudi Arabia. We provide medical-grade dust extraction and air duct sanitization for healthy indoor air.",
           "/ac-duct-cleaning"
         )} 
       />
@@ -66,7 +66,7 @@ export default function ACDuctCleaningPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-secondary">Advanced Sanitization</span>
               </div>
               <h1 className="text-[58px] md:text-[82px] lg:text-[96px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Professional AC <span className="text-secondary italic text-stroke">Duct Cleaning</span> in Riyadh
+                Professional AC <span className="text-secondary italic text-stroke">Duct Cleaning</span> across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic border-l-4 border-secondary/20 pl-8">
                 “Total dust extraction and medical-grade sanitization. Because what's inside your ducts matters more than you think.”
@@ -120,7 +120,7 @@ export default function ACDuctCleaningPage() {
             <div className="flex flex-col gap-12">
                <SectionHeading sub="The Hidden Reality" title="Riyadh's Dust Is Inside Your Airflow" center={false} />
                <p className="text-xl text-primary/60 font-medium leading-relaxed italic border-l-4 border-secondary/20 pl-8">
-                  Your AC ducts are the "lungs" of your home. In Riyadh's extreme environment, they quickly fill with sand, allergens, and bacteria. We don't just clean—we sanitize to medical standards.
+                  Your AC ducts are the "lungs" of your home. across Saudi Arabia's extreme environment, they quickly fill with sand, allergens, and bacteria. We don't just clean—we sanitize to medical standards.
                </p>
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   {[
@@ -321,7 +321,7 @@ export default function ACDuctCleaningPage() {
       {/* 8. AREAS WE SERVE */}
       <section className="py-40 bg-[#FAFAFA]">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <SectionHeading sub="Local Reach" title="Duct Services Across Riyadh" />
+          <SectionHeading sub="Local Reach" title="Duct Services across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
               <div key={area} className="p-12 bg-white rounded-[48px] border border-gray-50 flex flex-col items-center gap-6 group hover:border-secondary transition-all cursor-pointer shadow-sm">
@@ -388,7 +388,7 @@ export default function ACDuctCleaningPage() {
           <SectionHeading sub="Purity Guide" title="Duct Cleaning FAQs" />
           <div className="flex flex-col gap-8 text-left">
             {[
-              { q: "How often should AC ducts be cleaned?", a: "In Riyadh's dusty environment, we recommend deep duct cleaning every 1-2 years." },
+              { q: "How often should AC ducts be cleaned?", a: "across Saudi Arabia's dusty environment, we recommend deep duct cleaning every 1-2 years." },
               { q: "What are the benefits of duct cleaning?", a: "Cleaner indoor air, better airflow, reduced allergens, and higher energy efficiency." },
               { q: "Do you clean central AC ducts?", a: "Yes, we handle all types of central HVAC and split AC duct systems." },
               { q: "Do you provide duct sanitization?", a: "Yes, we use medical-grade fogging to kill bacteria and mold inside your ducts." }

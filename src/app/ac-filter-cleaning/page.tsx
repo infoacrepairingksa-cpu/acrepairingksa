@@ -38,7 +38,7 @@ export default function ACFilterCleaningPage() {
         type="Service" 
         data={generateServiceSchema(
           "AC Filter Cleaning Riyadh",
-          "Professional AC filter cleaning and air health services in Riyadh. We provide deep-wash and sanitization for all AC filters to restore maximum airflow and air purity.",
+          "Professional AC filter cleaning and air health services across Saudi Arabia. We provide deep-wash and sanitization for all AC filters to restore maximum airflow and air purity.",
           "/ac-filter-cleaning"
         )} 
       />
@@ -67,7 +67,7 @@ export default function ACFilterCleaningPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-secondary">The Purity Standard</span>
               </div>
               <h1 className="text-[62px] md:text-[88px] lg:text-[104px] font-heading font-black text-primary leading-[0.85] tracking-tighter">
-                AC <span className="text-secondary italic text-stroke">Filter Cleaning</span> & Air Health in Riyadh
+                AC <span className="text-secondary italic text-stroke">Filter Cleaning</span> & Air Health across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic border-l-4 border-secondary/20 pl-8">
                 “Total filter deep-wash and sanitization. Restore 100% of your AC's airflow and stop breathing Riyadh's dust today.”
@@ -125,7 +125,7 @@ export default function ACFilterCleaningPage() {
             <div className="flex flex-col gap-12">
                <SectionHeading sub="The Silent Cooling Killer" title="Your Filters Are Choking Your AC" center={false} />
                <p className="text-xl text-primary/60 font-medium leading-relaxed italic border-l-4 border-secondary/20 pl-8">
-                  In Riyadh's dusty summer, AC filters can get 100% blocked in just 4 weeks. This forces your compressor to work overtime, leading to high bills and poor cooling. We deep-wash every micron of dust away.
+                  across Saudi Arabia's dusty summer, AC filters can get 100% blocked in just 4 weeks. This forces your compressor to work overtime, leading to high bills and poor cooling. We deep-wash every micron of dust away.
                </p>
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   {[
@@ -214,7 +214,7 @@ export default function ACFilterCleaningPage() {
                 <span className="bg-secondary text-white px-8 py-3 rounded-full w-fit font-black text-[10px] uppercase tracking-widest shadow-xl italic animate-pulse">Efficiency Crisis</span>
                 <div className="relative z-10 flex flex-col gap-6">
                    <h3 className="text-[48px] md:text-[68px] font-heading font-black leading-[0.9] tracking-tighter max-w-2xl">Weak Airflow & <br /> Spike In Energy Bills</h3>
-                   <p className="text-white/50 text-xl font-medium max-w-xl leading-relaxed">If you don't feel the freeze even at max fan speed, your filters are likely blocked by a solid wall of Riyadh dust. This is the #1 cause of AC failures.</p>
+                   <p className="text-white/50 text-xl font-medium max-w-xl leading-relaxed">If you don't feel the freeze even at max fan speed, your filters are likely blocked by a solid wall of Saudi Arabia dust. This is the #1 cause of AC failures.</p>
                 </div>
                 <button onClick={handleBookNow} className="w-fit px-12 py-7 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest text-sm shadow-2xl hover:bg-secondary hover:text-white transition-all">Fix It Before It Fails</button>
              </div>
@@ -301,7 +301,7 @@ export default function ACFilterCleaningPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="flex flex-col gap-10">
-               <SectionHeading sub="Elite Choice" title="Riyadh's Choice For Pure Airflow" center={false} />
+               <SectionHeading sub="Elite Choice" title="KSA's Trusted Choice For Pure Airflow" center={false} />
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   {[
                     { t: "Experienced AC Techs", i: <Users /> },
@@ -329,7 +329,7 @@ export default function ACFilterCleaningPage() {
       {/* 8. AREAS WE SERVE */}
       <section className="py-40 bg-[#FAFAFA]">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <SectionHeading sub="Local Reach" title="Filter Services Across Riyadh" />
+          <SectionHeading sub="Local Reach" title="Filter Services across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
               <div key={area} className="p-12 bg-white rounded-[48px] border border-gray-50 flex flex-col items-center gap-6 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
@@ -396,7 +396,7 @@ export default function ACFilterCleaningPage() {
           <SectionHeading sub="Filter Guide" title="Filter Cleaning FAQs" />
           <div className="flex flex-col gap-8 text-left">
             {[
-              { q: "How often should AC filters be cleaned?", a: "In Riyadh, we recommend cleaning filters every 2-4 weeks during peak summer to maintain cooling." },
+              { q: "How often should AC filters be cleaned?", a: "across Saudi Arabia, we recommend cleaning filters every 2-4 weeks during peak summer to maintain cooling." },
               { q: "What are the benefits of filter cleaning?", a: "Instant airflow improvement, lower electricity bills, and much cleaner indoor air." },
               { q: "Do you clean central AC filters?", a: "Yes, we handle filters for all types of split, window, and central HVAC systems." },
               { q: "How long does filter cleaning take?", a: "A standard filter wash and re-installation takes about 20-30 minutes per unit." }

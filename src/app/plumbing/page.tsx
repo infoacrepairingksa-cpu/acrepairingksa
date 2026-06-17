@@ -41,7 +41,7 @@ export default function PlumbingPage() {
         type="Service" 
         data={generateServiceSchema(
           "Emergency Plumbing Service Riyadh",
-          "Professional emergency plumbing services in Riyadh. We fix water leaks, pipe bursts, and provide full sanitary installation and maintenance.",
+          "Professional emergency plumbing services across Saudi Arabia. We fix water leaks, pipe bursts, and provide full sanitary installation and maintenance.",
           "/plumbing"
         )} 
       />
@@ -66,10 +66,10 @@ export default function PlumbingPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-secondary">Riyadh's Trusted Flow</span>
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                24/7 Emergency <span className="text-secondary">Plumbing Services</span> in Riyadh
+                24/7 Emergency <span className="text-secondary">Plumbing Services</span> across Saudi Arabia
               </h1>
               <p className="text-lg md:text-xl text-primary/60 font-medium max-w-lg leading-relaxed">
-                Expert plumbers for leak repairs, pipe installation, and complete water system maintenance in Riyadh.
+                Expert plumbers for leak repairs, pipe installation, and complete water system maintenance across Saudi Arabia.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-5 mt-2">
@@ -119,7 +119,7 @@ export default function PlumbingPage() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="flex flex-col gap-8">
-               <SectionHeading sub="Prevention & Care" title="Expert Plumbing For Riyadh Homes" center={false} />
+               <SectionHeading sub="Prevention & Care" title="Expert Plumbing for Saudi Arabia Homes" center={false} />
                <p className="text-lg text-primary/50 font-medium leading-relaxed italic border-l-4 border-secondary pl-6">
                   Water leaks can destroy your building's structure in days. Our professional plumbers provide fast, reliable repair and installation services to keep your home safe and dry.
                </p>
@@ -270,7 +270,7 @@ export default function PlumbingPage() {
       {/* 8. AREAS WE SERVE */}
       <section className="py-32 bg-[#FAFAFA]">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <SectionHeading sub="Local Reach" title="Plumbing Services Across Riyadh" />
+          <SectionHeading sub="Local Reach" title="Plumbing Services across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
               <div key={area} className="p-8 bg-white rounded-[24px] border border-gray-50 flex flex-col items-center gap-4 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
@@ -316,7 +316,7 @@ export default function PlumbingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: "Abdullah", text: "I had a burst pipe emergency at night. Their plumber arrived in 30 minutes and fixed it perfectly. Highly professional!" },
-              { name: "Faisal", text: "Best plumbing service in Riyadh. They fixed a hidden leak that other companies couldn't find. Very honest and affordable." },
+              { name: "Faisal", text: "Best plumbing service across Saudi Arabia. They fixed a hidden leak that other companies couldn't find. Very honest and affordable." },
               { name: "Reema", text: "They renovated my entire bathroom plumbing. The workmanship is excellent and they left everything very clean. 5-star!" }
             ].map((r, idx) => (
               <div key={idx} className="p-12 bg-white rounded-[40px] border border-gray-50 flex flex-col gap-10 shadow-sm hover:shadow-xl transition-all text-left">
@@ -341,10 +341,10 @@ export default function PlumbingPage() {
           <SectionHeading sub="Common Questions" title="Plumbing FAQs" />
           <div className="flex flex-col gap-6 text-left">
             {[
-              { q: "Do you provide emergency plumbing services?", a: "Yes, we provide 24/7 emergency support for burst pipes, blockages, and major leaks in Riyadh." },
-              { q: "How quickly can a plumber arrive?", a: "We aim to reach any location in Riyadh within 30 to 60 minutes for emergency calls." },
+              { q: "Do you provide emergency plumbing services?", a: "Yes, we provide 24/7 emergency support for burst pipes, blockages, and major leaks across Saudi Arabia." },
+              { q: "How quickly can a plumber arrive?", a: "We aim to reach any location across Saudi Arabia within 30 to 60 minutes for emergency calls." },
               { q: "Do you repair hidden water leaks?", a: "Yes, we use advanced diagnostic tools to find and fix hidden leaks without damaging walls." },
-              { q: "Do you provide commercial plumbing services?", a: "Absolutely. We handle plumbing maintenance for offices, restaurants, and malls across Riyadh." }
+              { q: "Do you provide commercial plumbing services?", a: "Absolutely. We handle plumbing maintenance for offices, restaurants, and malls across Saudi Arabia." }
             ].map((f, idx) => (
               <div key={idx} className="p-10 bg-[#F8FAFC] rounded-[32px] border border-gray-100 hover:border-secondary transition-all shadow-sm cursor-pointer group">
                 <h3 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h3>

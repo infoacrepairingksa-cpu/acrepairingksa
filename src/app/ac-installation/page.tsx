@@ -55,7 +55,7 @@ export default function ACInstallationPage() {
                  ))}
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Professional AC <span className="text-secondary">Installation Services</span> in Riyadh
+                Professional AC <span className="text-secondary">Installation Services</span> across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic border-l-4 border-secondary/20 pl-8">
                 “Expert installation for split, central & commercial AC systems with safe setup and maximum cooling performance.”
@@ -317,7 +317,7 @@ export default function ACInstallationPage() {
               <div className="flex-1 flex flex-col gap-8 text-center lg:text-left relative z-10">
                  <span className="bg-white/20 text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-[0.4em] shadow-xl w-fit mx-auto lg:mx-0 italic">Urgent Setup Priority</span>
                  <h2 className="text-[44px] md:text-[68px] font-heading font-black text-white leading-tight tracking-tighter">Emergency <br /><span className="text-primary italic">Same-Day</span> Installation</h2>
-                 <p className="text-xl text-white/80 font-medium leading-relaxed max-w-xl">New AC delivered but no installer? We provide emergency setup across Riyadh during peak summer weeks. Technicians on standby 24/7.</p>
+                 <p className="text-xl text-white/80 font-medium leading-relaxed max-w-xl">New AC delivered but no installer? We provide emergency setup across Saudi Arabia during peak summer weeks. Technicians on standby 24/7.</p>
               </div>
               <div className="flex-1 w-full max-w-md relative z-10">
                  <div className="bg-white p-12 rounded-[64px] shadow-2xl flex flex-col gap-8 text-center">
@@ -340,7 +340,7 @@ export default function ACInstallationPage() {
           <SectionHeading sub="Success Stories" title="Riyadh Residents Love Our Setup" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { name: "Omar Al-Rashed", text: "They installed 4 split ACs in my new villa. Perfectly aligned, hidden pipes, and worked beautifully. Best team in Riyadh." },
+              { name: "Omar Al-Rashed", text: "They installed 4 split ACs in my new villa. Perfectly aligned, hidden pipes, and worked beautifully. Best team across Saudi Arabia." },
               { name: "Junaid", text: "Fastest response I've seen. Same-day installation during August heat. Very professional and clean team." },
               { name: "Latifa", text: "The technicians were very knowledgeable. They recommended the perfect AC size for my living room. Great service." }
             ].map((r, idx) => (
@@ -368,7 +368,7 @@ export default function ACInstallationPage() {
             {[
               { q: "How long does AC installation take?", a: "A standard split AC installation takes about 2-3 hours including testing." },
               { q: "Do you install central and split AC systems?", a: "Yes, we handle everything from single split units to complex central HVAC systems." },
-              { q: "Do you provide same-day installation?", a: "Absolutely. We have emergency crews stationed across Riyadh for same-day setup." },
+              { q: "Do you provide same-day installation?", a: "Absolutely. We have emergency crews stationed across Saudi Arabia for same-day setup." },
               { q: "What AC brands do you install?", a: "We install all major brands including Samsung, LG, Gree, Carrier, Zamil, and Daikin." }
             ].map((f, idx) => (
               <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[48px] border border-gray-100 hover:border-secondary transition-all shadow-sm">

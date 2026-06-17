@@ -40,7 +40,7 @@ export default function HomeMaintenancePage() {
         type="Service" 
         data={generateServiceSchema(
           "Complete Home Maintenance Riyadh",
-          "One-stop home maintenance and repair services in Riyadh. We provide expert fixes for AC, plumbing, electrical, and general property maintenance for villas and apartments.",
+          "One-stop home maintenance and repair services across Saudi Arabia. We provide expert fixes for AC, plumbing, electrical, and general property maintenance for villas and apartments.",
           "/home-maintenance"
         )} 
       />
@@ -69,10 +69,10 @@ export default function HomeMaintenancePage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-secondary">Complete Property Care</span>
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Complete <span className="text-secondary">Home Maintenance</span> Services in Riyadh
+                Complete <span className="text-secondary">Home Maintenance</span> Services across Saudi Arabia
               </h1>
               <p className="text-lg md:text-xl text-primary/60 font-medium max-w-lg leading-relaxed">
-                Reliable home repair and maintenance solutions for apartments, villas, and commercial properties across Riyadh.
+                Reliable home repair and maintenance solutions for apartments, villas, and commercial properties across Saudi Arabia.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-5 mt-2">
@@ -199,7 +199,7 @@ export default function HomeMaintenancePage() {
            <div className="relative bg-primary rounded-[48px] p-12 md:p-20 overflow-hidden flex flex-col items-center text-center gap-8 shadow-2xl border border-white/5">
               <span className="bg-secondary text-white px-7 py-2.5 rounded-full font-black text-[10px] uppercase tracking-[0.3em] italic shadow-xl">Critical Care</span>
               <h2 className="text-[36px] md:text-[52px] font-heading font-black text-white leading-tight tracking-tight max-w-3xl">24/7 Emergency <br /><span className="text-secondary">Home Repair Support</span></h2>
-              <p className="text-lg md:text-xl font-medium text-white/60 max-w-2xl leading-relaxed">Electrical failure, burst pipes, or AC breakdown? Our emergency response team is ready across Riyadh 24/7.</p>
+              <p className="text-lg md:text-xl font-medium text-white/60 max-w-2xl leading-relaxed">Electrical failure, burst pipes, or AC breakdown? Our emergency response team is ready across Saudi Arabia 24/7.</p>
               <div className="flex flex-col sm:flex-row gap-6 w-full max-w-xl relative z-10 mt-4">
                  <button onClick={handleBookNow} className="flex-1 px-10 py-6 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-white hover:text-secondary transition-all border-b-4 border-blue-700">Request Emergency Service</button>
                  <a href="tel:+966 51 094 2150" className="flex-1 px-10 py-6 bg-white text-primary rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-4 shadow-xl hover:bg-secondary hover:text-white transition-all border-b-4 border-slate-100">Call Now</a>
@@ -239,7 +239,7 @@ export default function HomeMaintenancePage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="flex flex-col gap-8">
-               <SectionHeading sub="Elite Choice" title="Riyadh's Choice For Complete Care" center={false} />
+               <SectionHeading sub="Elite Choice" title="KSA's Trusted Choice For Complete Care" center={false} />
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
                   {[
                     "Experienced Maintenance Team", "Fast Riyadh Coverage", "Advanced Tools & Tech", "Affordable Price Plans", 
@@ -260,7 +260,7 @@ export default function HomeMaintenancePage() {
       {/* 8. AREAS WE SERVE */}
       <section className="py-32 bg-[#FAFAFA]">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <SectionHeading sub="Local Reach" title="Maintenance Services Across Riyadh" />
+          <SectionHeading sub="Local Reach" title="Maintenance Services across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
               <div key={area} className="p-8 bg-white rounded-[24px] border border-gray-50 flex flex-col items-center gap-4 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
@@ -326,10 +326,10 @@ export default function HomeMaintenancePage() {
           <SectionHeading sub="The Help Desk" title="Maintenance FAQs" />
           <div className="flex flex-col gap-6 text-left">
             {[
-              { q: "Do you provide emergency home maintenance?", a: "Yes, we provide 24/7 emergency support for electrical, plumbing, and AC failures across Riyadh." },
+              { q: "Do you provide emergency home maintenance?", a: "Yes, we provide 24/7 emergency support for electrical, plumbing, and AC failures across Saudi Arabia." },
               { q: "What home maintenance services do you offer?", a: "We provide complete AC care, plumbing repairs, electrical work, leak detection, and general property upkeep." },
               { q: "Do you provide apartment & villa maintenance?", a: "Absolutely. We provide tailored maintenance solutions for both residential homes and commercial offices." },
-              { q: "How quickly can technicians arrive?", a: "For emergencies, we aim to be at your doorstep within 30 to 60 minutes anywhere in Riyadh." }
+              { q: "How quickly can technicians arrive?", a: "For emergencies, we aim to be at your doorstep within 30 to 60 minutes anywhere across Saudi Arabia." }
             ].map((f, idx) => (
               <div key={idx} className="p-10 bg-[#F8FAFC] rounded-[32px] border border-gray-100 hover:border-secondary transition-all shadow-sm cursor-pointer group">
                 <h3 className="text-xl font-heading font-black text-primary mb-4 leading-tight tracking-tight group-hover:text-secondary">{f.q}</h3>

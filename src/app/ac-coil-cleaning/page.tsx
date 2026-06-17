@@ -39,7 +39,7 @@ export default function ACCoilCleaningPage() {
         type="Service" 
         data={generateServiceSchema(
           "Expert AC Coil Cleaning Riyadh",
-          "Professional AC evaporator and condenser coil cleaning services in Riyadh. We provide deep chemical wash and fin combing to restore 100% cooling capacity.",
+          "Professional AC evaporator and condenser coil cleaning services across Saudi Arabia. We provide deep chemical wash and fin combing to restore 100% cooling capacity.",
           "/ac-coil-cleaning"
         )} 
       />
@@ -66,10 +66,10 @@ export default function ACCoilCleaningPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.5em] text-secondary">The Heart of Cooling</span>
               </div>
               <h1 className="text-[60px] md:text-[84px] lg:text-[96px] font-heading font-black text-primary leading-[1] tracking-tighter">
-                Expert AC <span className="text-secondary italic">Coil Cleaning</span> & Combing in Riyadh
+                Expert AC <span className="text-secondary italic">Coil Cleaning</span> & Combing across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed">
-                Restore 100% cooling capacity and slash your energy bills with professional evaporator & condenser coil deep-cleaning in Riyadh.
+                Restore 100% cooling capacity and slash your energy bills with professional evaporator & condenser coil deep-cleaning across Saudi Arabia.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
@@ -302,7 +302,7 @@ export default function ACCoilCleaningPage() {
       {/* 8. AREAS WE SERVE */}
       <section className="py-40 bg-[#FAFAFA]">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <SectionHeading sub="Local Reach" title="Coil Services Across Riyadh" />
+          <SectionHeading sub="Local Reach" title="Coil Services across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
               <div key={area} className="p-10 bg-white rounded-[32px] border border-gray-50 flex flex-col items-center gap-6 group hover:border-secondary transition-all cursor-pointer shadow-sm">
@@ -369,10 +369,10 @@ export default function ACCoilCleaningPage() {
           <SectionHeading sub="Thermal Guide" title="Coil Cleaning FAQs" />
           <div className="flex flex-col gap-8 text-left">
             {[
-              { q: "How often should AC coils be cleaned?", a: "We recommend cleaning evaporator and condenser coils at least once a year in Riyadh, or twice if you live near dusty areas." },
+              { q: "How often should AC coils be cleaned?", a: "We recommend cleaning evaporator and condenser coils at least once a year across Saudi Arabia, or twice if you live near dusty areas." },
               { q: "What are the benefits of coil cleaning?", a: "Improved cooling, better energy efficiency, lower bills, and a longer lifespan for your AC compressor." },
               { q: "Do you clean evaporator & condenser coils?", a: "Yes, we provide deep-cleaning for both the indoor (evaporator) and outdoor (condenser) coils." },
-              { q: "Is coil cleaning necessary in Riyadh?", a: "Absolutely. Riyadh's fine sand acts as an insulator on coils, causing systems to overheat and fail prematurely." }
+              { q: "Is coil cleaning necessary across Saudi Arabia?", a: "Absolutely. Riyadh's fine sand acts as an insulator on coils, causing systems to overheat and fail prematurely." }
             ].map((f, idx) => (
               <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[40px] border border-gray-100 hover:border-secondary transition-all shadow-sm">
                 <h3 className="text-2xl font-heading font-black text-primary mb-6 leading-tight tracking-tight">{f.q}</h3>

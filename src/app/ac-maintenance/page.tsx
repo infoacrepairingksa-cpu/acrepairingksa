@@ -61,7 +61,7 @@ export default function ACMaintenancePage() {
                  ))}
               </div>
               <h1 className="text-[48px] md:text-[68px] lg:text-[80px] font-heading font-black text-primary leading-[1] tracking-tight">
-                Professional AC <span className="text-secondary text-stroke">Maintenance</span> Services in Riyadh
+                Professional AC <span className="text-secondary text-stroke">Maintenance</span> Services across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/70 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic">
                 “Keep your AC running efficiently with expert maintenance solutions for homes, offices & commercial properties.”
@@ -123,7 +123,7 @@ export default function ACMaintenancePage() {
                  {[
                    { t: "30% Energy Reduction", d: "A clean system transfers heat effectively, reducing load.", i: <Zap /> },
                    { t: "100% Breathable Air", d: "We remove bacteria & mold from your internal units.", i: <Wind /> },
-                   { t: "Zero Breakdown Stress", d: "Emergency-proof your home for the Riyadh summer.", i: <ShieldCheck /> },
+                   { t: "Zero Breakdown Stress", d: "Emergency-proof your home for the KSA summer.", i: <ShieldCheck /> },
                    { t: "Extended Lifespan", d: "Prevent parts from wearing out before their time.", i: <Clock /> }
                  ].map((v, idx) => (
                    <div key={idx} className="group flex items-start gap-8 p-8 rounded-[32px] hover:bg-secondary/5 transition-all">
@@ -291,7 +291,7 @@ export default function ACMaintenancePage() {
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   {[
                     { t: "Experienced AC Technicians", i: <Users /> },
-                    { t: "Fast Service Across Riyadh", i: <MapPin /> },
+                    { t: "Fast Service across Saudi Arabia", i: <MapPin /> },
                     { t: "Advanced Diagnostic Tools", i: <Search /> },
                     { t: "Affordable Solutions", i: <ThumbsUp /> },
                     { t: "Commercial Expertise", i: <Building2 /> },
@@ -315,7 +315,7 @@ export default function ACMaintenancePage() {
       {/* 8. AREAS WE SERVE */}
       <section className="py-40 bg-[#F8FAFC]">
         <div className="container mx-auto px-4 max-w-7xl">
-          <SectionHeading sub="Local Reach" title="Reliable Maintenance Across Riyadh" />
+          <SectionHeading sub="Local Reach" title="Reliable Maintenance across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
               <div key={area} className="p-12 bg-white rounded-[40px] border border-gray-50 flex flex-col items-center gap-6 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center text-primary/40 group-hover:text-primary">
@@ -335,7 +335,7 @@ export default function ACMaintenancePage() {
               <div className="relative z-10 flex flex-col items-center gap-8">
                  <span className="bg-secondary text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-[0.4em] shadow-xl italic">Premium Membership</span>
                  <h2 className="text-[44px] md:text-[68px] font-heading font-black leading-tight tracking-tighter">Annual <br /><span className="text-secondary">Maintenance</span> Contracts</h2>
-                 <p className="text-xl md:text-2xl font-medium text-white/70 max-w-2xl leading-relaxed">Join our AMC plan for priority support, scheduled inspections, and zero breakdown stress throughout the Riyadh summer.</p>
+                 <p className="text-xl md:text-2xl font-medium text-white/70 max-w-2xl leading-relaxed">Join our AMC plan for priority support, scheduled inspections, and zero breakdown stress throughout the KSA summer.</p>
               </div>
               <button onClick={handleBookNow} className="w-full max-w-md px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-blue-700 shadow-2xl relative z-10 hover:bg-white hover:text-secondary transition-all">
                  <ShieldPlus size={24} /> Request AMC Plan
@@ -376,7 +376,7 @@ export default function ACMaintenancePage() {
           <SectionHeading sub="Reliability Guide" title="Maintenance FAQs" />
           <div className="flex flex-col gap-8 text-left">
             {[
-              { q: "How often should AC maintenance be done?", a: "In Riyadh's climate, we recommend a full tune-up every 6 months to prevent summer failures." },
+              { q: "How often should AC maintenance be done?", a: "across Saudi Arabia's climate, we recommend a full tune-up every 6 months to prevent summer failures." },
               { q: "What is included in AC maintenance?", a: "We include performance audits, gas pressure checks, electrical testing, and full cleaning." },
               { q: "Do you provide preventive maintenance?", a: "Yes, our entire focus is on preventing issues before they require expensive repairs." },
               { q: "How long does AC maintenance take?", a: "A comprehensive tune-up for a split unit takes about 1-1.5 hours." }

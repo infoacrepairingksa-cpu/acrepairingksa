@@ -32,7 +32,7 @@ export default function ACCleaningPage() {
         type="Service" 
         data={generateServiceSchema(
           "Deep AC Cleaning Riyadh",
-          "Professional AC cleaning and sanitization services in Riyadh. We use high-pressure water and antibacterial chemical spray to restore ice-cold cooling.",
+          "Professional AC cleaning and sanitization services across Saudi Arabia. We use high-pressure water and antibacterial chemical spray to restore ice-cold cooling.",
           "/ac-cleaning"
         )} 
       />
@@ -64,10 +64,10 @@ export default function ACCleaningPage() {
             >
               <div className="inline-flex items-center gap-3 bg-secondary/10 text-secondary px-6 py-2.5 rounded-full w-fit">
                 <Sparkles size={16} />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em]">Riyadh's #1 Hygiene Experts</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.2em]">KSA's #1 Hygiene Experts</span>
               </div>
               <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[0.95] tracking-tight">
-                Deep AC <span className="text-secondary text-stroke">Cleaning</span> & Sanitization in Riyadh
+                Deep AC <span className="text-secondary text-stroke">Cleaning</span> & Sanitization across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic">
                 “Professional AC cleaning that removes 99.9% of Riyadh's dust and bacteria. Restore your cooling today.”
@@ -142,7 +142,7 @@ export default function ACCleaningPage() {
                <div className="lg:col-span-8">
                   <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px] mb-6 block">Riyadh Dust Report</span>
                   <h2 className="text-[42px] md:text-[56px] font-heading font-black text-primary leading-tight tracking-tighter">
-                    Why Regular Cleaning is a <br /><span className="text-secondary italic">Must in Riyadh</span>
+                    Why Regular Cleaning is a <br /><span className="text-secondary italic">Must across Saudi Arabia</span>
                   </h2>
                </div>
                <div className="lg:col-span-4">
@@ -213,7 +213,7 @@ export default function ACCleaningPage() {
                <div className="flex flex-col gap-6">
                  {[
                    { s: "01", t: "Booking Confirmation", d: "Instant WhatsApp & Call verification." },
-                   { s: "02", t: "Technician Arrival", i: "30-Min promise across Riyadh." },
+                   { s: "02", t: "Technician Arrival", i: "30-Min promise across Saudi Arabia." },
                    { s: "03", t: "Unit Inspection", d: "Checking performance before cleaning." },
                    { s: "04", t: "Pressure Wash", d: "High-pressure jet washing for deep dirt." },
                    { s: "05", t: "Sanitization", d: "Medical-grade anti-bacterial coating." },
@@ -235,7 +235,7 @@ export default function ACCleaningPage() {
                   <Sparkles size={80} className="text-secondary animate-pulse" />
                   <h3 className="text-3xl font-heading font-black leading-tight tracking-tight">Ready to Restore <br /> Your Air Quality?</h3>
                   <button onClick={handleBookNow} className="px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest shadow-2xl hover:bg-white hover:text-secondary transition-all border-b-4 border-blue-700">Schedule Service Now</button>
-                  <p className="text-white/40 font-bold text-xs uppercase tracking-widest">Available 24/7 Across Riyadh</p>
+                  <p className="text-white/40 font-bold text-xs uppercase tracking-widest">Available 24/7 across Saudi Arabia</p>
                </div>
             </div>
           </div>
@@ -250,7 +250,7 @@ export default function ACCleaningPage() {
                 <div className="absolute top-0 right-0 p-12 opacity-5 -rotate-12 group-hover:rotate-0 transition-transform duration-700"><Home size={200} /></div>
                 <span className="bg-secondary/10 text-secondary px-6 py-2 rounded-full w-fit text-[10px] font-black uppercase tracking-widest">For Homes</span>
                 <h3 className="text-[36px] md:text-[48px] font-heading font-black text-primary leading-[1.1] tracking-tighter">Villa & Apartment <br /> Deep Cleaning</h3>
-                <p className="text-primary/50 text-lg font-medium leading-relaxed max-w-sm">We cover all Riyadh neighborhoods including Al Malqa, Hittin, and Al Nakheel with 30-min response.</p>
+                <p className="text-primary/50 text-lg font-medium leading-relaxed max-w-sm">We cover all major KSA cities including Al Malqa, Hittin, and Al Nakheel with 30-min response.</p>
                 <button onClick={handleBookNow} className="w-fit flex items-center gap-4 text-primary font-black uppercase tracking-widest text-sm group-hover:text-secondary transition-all">Book Home Cleaning <ArrowRight size={20} /></button>
              </div>
 
@@ -258,7 +258,7 @@ export default function ACCleaningPage() {
                 <div className="absolute top-0 right-0 p-12 opacity-5 rotate-12 group-hover:rotate-0 transition-transform duration-700"><Building2 size={200} /></div>
                 <span className="bg-white/10 text-secondary px-6 py-2 rounded-full w-fit text-[10px] font-black uppercase tracking-widest">For Business</span>
                 <h3 className="text-[36px] md:text-[48px] font-heading font-black text-white leading-[1.1] tracking-tighter">Commercial HVAC <br /> Maintenance</h3>
-                <p className="text-white/50 text-lg font-medium leading-relaxed max-w-sm">Specialized cleaning for offices, restaurants, and retail stores across Riyadh's business districts.</p>
+                <p className="text-white/50 text-lg font-medium leading-relaxed max-w-sm">Specialized cleaning for offices, restaurants, and retail stores across Saudi Arabia's business districts.</p>
                 <button onClick={handleBookNow} className="w-fit flex items-center gap-4 text-white font-black uppercase tracking-widest text-sm group-hover:text-secondary transition-all">Get B2B Quote <ArrowRight size={20} /></button>
              </div>
           </div>
@@ -270,7 +270,7 @@ export default function ACCleaningPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col items-center text-center gap-6 mb-24">
              <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full">Local Coverage</span>
-             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Every District In Riyadh</h2>
+             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Every District across Saudi Arabia</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
@@ -290,7 +290,7 @@ export default function ACCleaningPage() {
              <div className="lg:col-span-1 flex flex-col gap-10">
                 <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px]">Real Feedback</span>
                 <h2 className="text-[42px] font-heading font-black text-primary leading-tight tracking-tighter">What Our <br /> Clients Think</h2>
-                <p className="text-lg text-primary/50 font-medium leading-relaxed">Join 5000+ happy residents in Riyadh who breathe fresh air every day.</p>
+                <p className="text-lg text-primary/50 font-medium leading-relaxed">Join 5000+ happy residents across Saudi Arabia who breathe fresh air every day.</p>
                 <div className="flex flex-col gap-4">
                    <div className="flex items-center gap-2"><Star fill="#0073E6" className="text-secondary" /> <span className="font-black text-3xl">4.9/5</span></div>
                    <span className="text-xs font-black uppercase tracking-widest text-primary/40">Average Google Rating</span>
@@ -299,7 +299,7 @@ export default function ACCleaningPage() {
              <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
                   { name: "Yousef", text: "Dust was a big issue for my kids. After their deep cleaning, the air feels completely different. Highly professional." },
-                  { name: "Mona Al-Suwaidi", text: "Fastest response I've had in Riyadh. The team arrived on time and cleaned everything perfectly. No mess left." },
+                  { name: "Mona Al-Suwaidi", text: "Fastest response I've had across Saudi Arabia. The team arrived on time and cleaned everything perfectly. No mess left." },
                   { name: "Fahad", text: "My electricity bill dropped by 200 SAR after they cleaned my central AC coils. It's an investment!" },
                   { name: "Sara", text: "Excellent sanitization service. They use high-pressure pumps that really get the dirt out. Very polite team." }
                 ].map((r, i) => (

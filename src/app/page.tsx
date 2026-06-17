@@ -343,31 +343,30 @@ const BrandsGrid = () => {
 // 6. AC PROBLEMS WE FIX (DIAGNOSTIC HUB)
 const SignsYourACNeedsRepair = () => {
   const signs = [
-    { title: "AC Not Cooling", text: "Resolving blocked airflow, dirty coils, or low refrigerant levels to restore ice-cold temperatures." },
-    { title: "Water Leakage", text: "Clearing clogged drain pipes and fixing frozen evaporator coils causing indoor dripping." },
-    { title: "Gas Leakage", text: "Welding cracked copper pipes and recharging optimal Freon gas (R410A/R22) to factory specs." },
-    { title: "Bad Smell", text: "Eliminating mildew and bacteria buildup through deep chemical washes of the internal unit." },
-    { title: "Compressor Issues", text: "Fixing tripping breakers, overheating, or dead outdoor compressors to get your AC running." },
-    { title: "Thermostat Issues", text: "Recalibrating sensors or replacing faulty digital controls for accurate room temperature." },
-    { title: "Electrical Faults", text: "Replacing burnt capacitors, contactors, or damaged wiring that prevent the AC from starting." },
-    { title: "Frozen Coils", text: "Diagnosing airflow restrictions or gas shortages causing thick ice buildup on copper lines." },
-    { title: "Noisy AC", text: "Fixing rattling fan motors, worn-out bearings, or loose mounting brackets for silent operation." }
+    { title: "AC Not Cooling", text: "Our technicians diagnose refrigerant leaks, dirty condenser coils, and airflow restrictions that cause poor or zero cooling output." },
+    { title: "Water Leakage", text: "We clear clogged condensate drain lines and repair frozen evaporator coils that cause water to drip from your indoor unit." },
+    { title: "Gas Leakage", text: "We weld cracked copper pipes and recharge R410A or R22 refrigerant to factory pressure specs to restore full cooling capacity." },
+    { title: "Bad Smell", text: "Deep chemical coil wash eliminates mildew, mold spores, and bacterial buildup causing foul odors from your AC vents." },
+    { title: "Compressor Issues", text: "We fix overheating, tripping breakers, and dead outdoor compressors using genuine OEM parts for long-lasting results." },
+    { title: "Thermostat Issues", text: "Sensor recalibration and digital controller replacement restores accurate room temperature sensing and energy-efficient operation." },
+    { title: "Electrical Faults", text: "Burnt capacitors, failed contactors, and damaged wiring are professionally replaced to safely restart your cooling system." },
+    { title: "Frozen Coils", text: "We diagnose low refrigerant or restricted airflow causing ice buildup on copper evaporator lines, restoring normal airflow fast." },
+    { title: "Noisy AC", text: "Rattling fan motors, worn bearings, and loose brackets are tightened or replaced to restore silent, vibration-free operation." }
   ];
   return (
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">AC Problems We Fix</h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Whatever the issue, our certified technicians can diagnose and repair your cooling system.</p>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Common AC Problems We Fix</h2>
+          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">Whatever the issue, our certified HVAC technicians can diagnose and repair any cooling system problem across Saudi Arabia.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {signs.map((s, i) => (
             <div key={i} className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex flex-col gap-3 hover:shadow-md hover:border-secondary/20 transition-all duration-300">
               <span className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0 font-black text-base">⚡</span>
               <div>
-                <h3 className="font-heading font-black text-base text-primary mb-1 leading-tight">{s.title}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed font-medium">{s.text}</p>
+                <h3 className="font-heading font-black text-base text-primary mb-2 leading-tight">{s.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed font-medium">{s.text}</p>
               </div>
             </div>
           ))}
@@ -568,11 +567,17 @@ const LocationCards = () => {
   return (
     <section className="py-24 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16">
-
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Fast AC Services Across Saudi Arabia</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-primary tracking-tight">Areas We Serve Across Saudi Arabia</h2>
           <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-2">
             Our certified fleets are strategically stationed across the Kingdom to ensure you never wait long for professional cooling support.
+          </p>
+        </div>
+
+        {/* 150-200 word intro paragraph for topical authority */}
+        <div className="bg-slate-50 rounded-3xl p-8 md:p-10 mb-12 border border-gray-100">
+          <p className="text-sm md:text-base text-gray-600 leading-relaxed font-medium">
+            We proudly provide AC repair, AC cleaning, AC installation, AC maintenance, AC gas refill, duct cleaning, plumbing, and home maintenance services across Saudi Arabia including <strong>Riyadh, Jeddah, Dammam, Al Khobar, Makkah, Madinah, Taif, Jubail, Yanbu, Abha, Khamis Mushait, Hail, Tabuk, Najran, Al Ahsa, Buraidah, Unayzah</strong> and <strong>Jazan</strong>. Our rapid-response technician fleets are positioned in each region to minimize your waiting time and maximize service quality. Whether you are a homeowner in Riyadh experiencing a sudden compressor failure during peak summer heat, a hotel manager in Makkah needing urgent package unit repairs, or a business owner in Jeddah requiring a scheduled HVAC maintenance contract, our Kingdom-wide infrastructure ensures you receive the same high standard of certified HVAC expertise at your door. Each city team is equipped with genuine OEM spare parts, advanced diagnostic equipment, and full refrigerant gas stocks (R410A and R22) to resolve any cooling emergency on the very first visit.
           </p>
         </div>
 
@@ -1057,12 +1062,16 @@ const CTABanner = () => (
 
 const TopicalAuthorityContent = () => (
   <section className="py-24 bg-slate-50 border-t border-gray-100">
-    <div className="container mx-auto px-4 max-w-4xl text-center">
-      <h2 className="text-3xl md:text-4xl font-heading font-black text-primary tracking-tight mb-8">Professional AC Repair Services Across Saudi Arabia</h2>
+    <div className="container mx-auto px-4 max-w-4xl">
+      <h2 className="text-3xl md:text-4xl font-heading font-black text-primary tracking-tight mb-8 text-center">Professional AC Repair &amp; HVAC Services Across Saudi Arabia</h2>
       <div className="text-gray-600 leading-relaxed space-y-6 text-sm md:text-base font-medium">
-        <p>Our certified HVAC technicians provide expert AC repair, AC cleaning, AC installation, AC maintenance, AC gas refill, duct cleaning and comprehensive home maintenance services throughout Saudi Arabia. We proudly serve Riyadh, Jeddah, Dammam, Al Khobar, Makkah, Madinah, Taif, Jubail, Yanbu and surrounding regions with a fleet of specialized vans ready to deploy.</p>
-        <p>In a demanding climate like Saudi Arabia, ensuring your cooling systems operate efficiently is critical. From central ducted systems to wall-mounted split ACs and commercial package units, our technicians are trained to handle complex diagnostics, sensor recalibrations, and preventive maintenance that extends the lifespan of your cooling units.</p>
-        <p>We believe in transparent pricing and rapid response times. When you face an emergency breakdown, whether it involves a burnt-out compressor or a severe refrigerant gas leak, you need immediate technical assistance. By standardizing our repair protocols across all major KSA cities, we guarantee the same high-quality service, genuine OEM parts, and professional EEAT-backed standards, regardless of your location within the Kingdom.</p>
+        <p>Our certified HVAC technicians provide expert <strong>AC repair, AC cleaning, AC installation, AC maintenance, AC gas refill, duct cleaning</strong> and comprehensive home maintenance services throughout Saudi Arabia. We proudly serve <strong>Riyadh, Jeddah, Dammam, Al Khobar, Makkah, Madinah, Taif, Jubail, Yanbu, Abha, Khamis Mushait, Hail, Tabuk, Najran, Al Ahsa, Buraidah</strong> and surrounding regions with specialized technician fleets ready to deploy on short notice.</p>
+        <p>In a demanding climate like Saudi Arabia, ensuring your cooling systems operate efficiently is critical to daily comfort and business continuity. Temperatures regularly exceeding 45°C during the summer months place enormous strain on split AC compressors, central package units, and VRF cooling systems. Neglected maintenance accelerates component failure, increases electricity consumption, and shortens the operational lifespan of your investment.</p>
+        <p>Our AC repair specialists are trained to handle complex fault diagnostics, including <strong>refrigerant gas leak detection</strong> using electronic sniffer equipment, <strong>inverter PCB board repairs</strong>, <strong>capacitor and contactor replacement</strong>, <strong>compressor overhaul</strong>, and <strong>thermostat sensor recalibration</strong>. We carry original OEM spare parts for all leading brands including Daikin, LG, Samsung, Carrier, Gree, Hitachi, Midea, Panasonic, TCL, and York — eliminating delays caused by parts sourcing.</p>
+        <p>For AC cleaning services, our deep chemical wash process removes accumulated dust, mold spores, and bacterial colonies from evaporator coils, air filters, and drain trays. Regular cleaning — ideally every 4 to 6 months in the sandy desert climate of the Arabian Peninsula — restores optimal airflow, lowers electricity bills by up to 30%, and improves indoor air quality for your family or guests.</p>
+        <p>Our AC installation teams ensure bracket mounting is level and structurally secure, copper refrigerant pipes are properly insulated and pressure-tested, electrical load balancing is verified against your MCB rating, and the condensate drain line slopes correctly to prevent future water leakage problems. A correct installation is the foundation of years of trouble-free cooling.</p>
+        <p>We believe in <strong>transparent pricing and rapid response times</strong>. When you face an emergency breakdown — whether a burnt-out compressor, a severe refrigerant gas leak, or a complete electrical failure of your AC unit — immediate technical assistance is critical. By standardizing repair protocols and stocking essential components across all our regional hubs, we guarantee the same high-quality service experience regardless of your location within the Kingdom of Saudi Arabia.</p>
+        <p>Our plumbing and home maintenance division complements our HVAC services by offering <strong>burst pipe repair, blocked drain clearing, water heater installation, leak detection using thermal imaging cameras, electrical fault rectification, painting, and general handyman solutions</strong> — making us the single point of contact for all your property maintenance needs across Saudi Arabia.</p>
       </div>
     </div>
   </section>
@@ -1130,8 +1139,8 @@ export default function Home() {
       <div className="flex flex-col">
         <Hero onBookNow={handleBookNow} />
         <Services onBookNow={handleBookNow} />
-        <CertifiedTechnicians />
         <LocationCards />
+        <CertifiedTechnicians />
         <BrandsGrid />
         <SignsYourACNeedsRepair />
         <CustomerReviews />

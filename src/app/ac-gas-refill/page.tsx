@@ -38,7 +38,7 @@ export default function ACGasRefillPage() {
         type="Service" 
         data={generateServiceSchema(
           "AC Gas Refill Riyadh",
-          "Expert AC gas refill and refrigerant recharge services in Riyadh. We provide R410A and R22 gas refill with professional leak inspection.",
+          "Expert AC gas refill and refrigerant recharge services across Saudi Arabia. We provide R410A and R22 gas refill with professional leak inspection.",
           "/ac-gas-refill"
         )} 
       />
@@ -67,10 +67,10 @@ export default function ACGasRefillPage() {
                  <span className="text-[10px] font-black uppercase tracking-[0.4em] text-secondary">Sub-Zero Restoration</span>
               </div>
               <h1 className="text-[56px] md:text-[76px] lg:text-[92px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Expert AC <span className="text-secondary italic text-stroke">Gas Refill</span> & Leak Repair in Riyadh
+                Expert AC <span className="text-secondary italic text-stroke">Gas Refill</span> & Leak Repair across Saudi Arabia
               </h1>
               <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic border-l-4 border-secondary/20 pl-8">
-                “Professional AC gas refill for Riyadh's extreme summers. Instant frost restoration in 30 minutes.”
+                “Professional AC gas refill for Saudi Arabia's extreme summers. Instant frost restoration in 30 minutes.”
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
@@ -134,7 +134,7 @@ export default function ACGasRefillPage() {
                </div>
                <div className="lg:col-span-4">
                   <p className="text-lg text-primary/50 font-medium leading-relaxed border-l-4 border-secondary pl-8">
-                    In Riyadh, a 15% drop in refrigerant levels doubles your energy bill and stops the cooling. We restore the "Sub-Zero" performance of your AC instantly.
+                    across Saudi Arabia, a 15% drop in refrigerant levels doubles your energy bill and stops the cooling. We restore the "Sub-Zero" performance of your AC instantly.
                   </p>
                </div>
             </div>
@@ -306,7 +306,7 @@ export default function ACGasRefillPage() {
       {/* 7. AREAS WE SERVE */}
       <section className="py-40 bg-[#FAFAFA]">
         <div className="container mx-auto px-4 max-w-7xl text-center">
-          <SectionHeading sub="Local Reach" title="Refill Services Across Riyadh" />
+          <SectionHeading sub="Local Reach" title="Refill Services across Saudi Arabia" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
               <div key={area} className="p-12 bg-white rounded-[48px] border border-gray-50 flex flex-col items-center gap-6 group hover:border-secondary transition-all cursor-pointer shadow-sm">
@@ -326,7 +326,7 @@ export default function ACGasRefillPage() {
               <div className="flex-1 flex flex-col gap-8 text-center lg:text-left relative z-10">
                  <span className="bg-white/20 text-white px-8 py-3 rounded-full font-black text-[10px] uppercase tracking-[0.4em] shadow-xl w-fit mx-auto lg:mx-0">Summer Cooling Rescue</span>
                  <h2 className="text-[44px] md:text-[68px] font-heading font-black leading-tight tracking-tighter italic">Emergency <br /><span className="text-primary text-stroke">Same-Day</span> Refill</h2>
-                 <p className="text-xl text-white/80 font-medium leading-relaxed max-w-xl italic">AC blowing hot air? We provide emergency cooling restoration during peak summer weeks across Riyadh City.</p>
+                 <p className="text-xl text-white/80 font-medium leading-relaxed max-w-xl italic">AC blowing hot air? We provide emergency cooling restoration during peak summer weeks across Saudi Arabia City.</p>
               </div>
               <div className="flex-1 w-full max-w-md relative z-10">
                  <div className="bg-white p-12 rounded-[64px] shadow-2xl flex flex-col gap-8 text-center">
