@@ -140,14 +140,14 @@ export default function ACCleaningPage() {
           <div className="flex flex-col gap-20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
                <div className="lg:col-span-8">
-                  <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px] mb-6 block">Riyadh Dust Report</span>
+                  <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px] mb-6 block">Saudi Arabia Climate Report</span>
                   <h2 className="text-[42px] md:text-[56px] font-heading font-black text-primary leading-tight tracking-tighter">
                     Why Regular Cleaning is a <br /><span className="text-secondary italic">Must across Saudi Arabia</span>
                   </h2>
                </div>
                <div className="lg:col-span-4">
                   <p className="text-lg text-primary/60 font-medium leading-relaxed border-l-4 border-secondary pl-8">
-                    Riyadh's desert climate causes rapid sand buildup inside your AC. This doesn't just block air—it creates a breeding ground for bacteria and mold.
+                    Saudi Arabia's desert climate causes rapid sand buildup inside your AC. This doesn't just block air—it creates a breeding ground for bacteria and mold.
                   </p>
                </div>
             </div>
@@ -270,13 +270,39 @@ export default function ACCleaningPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col items-center text-center gap-6 mb-24">
              <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full">Local Coverage</span>
-             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Every District across Saudi Arabia</h2>
+             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">AC Services Across Saudi Arabia</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
+            {[
+              { name: "Al Olaya, Riyadh", slug: "al-olaya" },
+              { name: "Al Malaz, Riyadh", slug: "al-malaz" },
+              { name: "Al Yasmin, Riyadh", slug: "al-yasmin" },
+              { name: "Al Narjis, Riyadh", slug: "al-narjis" },
+              { name: "Hittin, Riyadh", slug: "hittin" },
+              { name: "Al Nakheel, Riyadh", slug: "al-nakheel" },
+              { name: "Al Sulaymaniyah, Riyadh", slug: "al-sulaymaniyah" },
+              { name: "Al Malqa, Riyadh", slug: "al-malqa" },
+              { name: "Al Rawdah, Riyadh", slug: "al-rawdah" },
+              { name: "Jeddah", slug: "jeddah" },
+              { name: "Dammam", slug: "dammam" },
+              { name: "Al Khobar", slug: "al-khobar" },
+              { name: "Makkah", slug: "makkah" },
+              { name: "Madinah", slug: "madinah" },
+              { name: "Taif", slug: "taif" },
+              { name: "Jubail", slug: "jubail" },
+              { name: "Yanbu", slug: "yanbu" },
+              { name: "Abha", slug: "abha" },
+              { name: "Tabuk", slug: "tabuk" },
+              { name: "Jazan", slug: "jazan" },
+            ].map(loc => (
+              <a href={`/locations/${loc.slug}`} key={loc.slug} className="p-10 bg-white rounded-[40px] border border-gray-50 flex flex-col items-center gap-5 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
+                <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
+                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
+              </a>
+            ))} (
               <div key={area} className="p-10 bg-white rounded-[40px] border border-gray-50 flex flex-col items-center gap-5 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
                 <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{area}</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
               </div>
             ))}
           </div>

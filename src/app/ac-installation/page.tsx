@@ -297,7 +297,33 @@ export default function ACInstallationPage() {
              <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Every Corner Of Riyadh</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {["Al Olaya", "Al Malaz", "Al Yasmin", "Al Narjis", "Al Sahafa", "Al Malqa", "Al Aqiq", "Hittin", "Al Nakheel", "Al Rawdah", "Al Sulaymaniyah", "Al Rabwah", "Al Munsiyah", "Al Qadisiyah", "Al Shifa"].map(area => (
+            {[
+              { name: "Al Olaya, Riyadh", slug: "al-olaya" },
+              { name: "Al Malaz, Riyadh", slug: "al-malaz" },
+              { name: "Al Yasmin, Riyadh", slug: "al-yasmin" },
+              { name: "Al Narjis, Riyadh", slug: "al-narjis" },
+              { name: "Hittin, Riyadh", slug: "hittin" },
+              { name: "Al Nakheel, Riyadh", slug: "al-nakheel" },
+              { name: "Al Sulaymaniyah, Riyadh", slug: "al-sulaymaniyah" },
+              { name: "Al Malqa, Riyadh", slug: "al-malqa" },
+              { name: "Al Rawdah, Riyadh", slug: "al-rawdah" },
+              { name: "Jeddah", slug: "jeddah" },
+              { name: "Dammam", slug: "dammam" },
+              { name: "Al Khobar", slug: "al-khobar" },
+              { name: "Makkah", slug: "makkah" },
+              { name: "Madinah", slug: "madinah" },
+              { name: "Taif", slug: "taif" },
+              { name: "Jubail", slug: "jubail" },
+              { name: "Yanbu", slug: "yanbu" },
+              { name: "Abha", slug: "abha" },
+              { name: "Tabuk", slug: "tabuk" },
+              { name: "Jazan", slug: "jazan" },
+            ].map(loc => (
+              <a href={`/locations/${loc.slug}`} key={loc.slug} className="p-10 bg-white rounded-[40px] border border-gray-50 flex flex-col items-center gap-5 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
+                <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
+                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
+              </a>
+            ))} (
               <div key={area} className="p-12 bg-white rounded-[48px] border border-gray-50 flex flex-col items-center gap-6 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
                 <MapPin size={32} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
                 <span className="text-xs font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{area}</span>

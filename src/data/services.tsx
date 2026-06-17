@@ -55,7 +55,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     slug: "ac-repair",
     designArchetype: "high-impact",
     title: "Expert AC Repair Services in Riyadh",
-    subtitle: "Fast & Reliable AC Repair by Certified Technicians Across Riyadh.",
+    subtitle: "Fast & Reliable AC Repair by Certified Technicians across Saudi Arabia.",
     shortDesc: "Don't let the Riyadh heat get to you. Our emergency AC repair team is available 24/7 to fix cooling issues, leaks, and electrical faults instantly.",
     longDesc: "Professional AC repair services for split AC, central AC, and duct systems in Riyadh. We understand that a broken AC in 45°C weather is an emergency. Our technicians are equipped with advanced diagnostic tools to find the root cause of cooling failures and fix them on the first visit.",
     heroImage: "/optimized/pexels-4421160.webp",
@@ -80,8 +80,8 @@ export const servicesData: Record<string, ServiceDetail> = {
       "Performance and cooling optimization"
     ],
     whyChooseUs: [
-      { title: "Certified Team", desc: "Expert HVAC engineers with years of Riyadh experience.", icon: <ShieldCheck /> },
-      { title: "30-Min Arrival", desc: "Mobile fleet stationed in North, East & West Riyadh.", icon: <Clock /> },
+      { title: "Certified Team", desc: "Expert HVAC engineers with years of KSA experience.", icon: <ShieldCheck /> },
+      { title: "30-Min Arrival", desc: "Mobile fleet stationed across major KSA cities.", icon: <Clock /> },
       { title: "Fixed Rates", desc: "Honest pricing with no hidden charges or surprises.", icon: <Zap /> },
       { title: "Original Parts", desc: "We only use genuine manufacturer-approved spare parts.", icon: <Settings /> }
     ],
@@ -99,15 +99,15 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     faqs: [
       { question: "How much time does AC repair take?", answer: "Most repairs are completed within 45-90 minutes depending on the part replacement needed." },
-      { question: "Do you offer emergency AC service in Riyadh?", answer: "Yes, we operate 24/7. Our emergency team can reach you within 30-60 minutes across Riyadh." },
+      { question: "Do you offer emergency AC service in Riyadh?", answer: "Yes, we operate 24/7. Our emergency team can reach you within 30-60 minutes across Saudi Arabia." },
       { question: "Do you repair all AC brands?", answer: "We repair all major brands including LG, Samsung, Gree, York, Carrier, Zamil, and more." }
     ],
     testimonials: [
       { name: "Ahmed Al-Fahad", area: "Al Malqa", text: "Fixed my split AC gas leak in 30 minutes. Very professional and clean work.", rating: 5 },
-      { name: "Sarah Khan", area: "Al Yasmin", text: "Best service in Riyadh. They arrived exactly on time and fixed the loud noise issue.", rating: 5 }
+      { name: "Sarah Khan", area: "Al Yasmin", text: "Excellent service across Saudi Arabia. They arrived exactly on time and fixed the loud noise issue.", rating: 5 }
     ],
-    metaTitle: "AC Repair Services in Riyadh | Same-Day Emergency Fix",
-    metaDesc: "Professional AC repair services in Riyadh. Certified technicians for split, central & window AC. Same-day service with 24/7 support. Book now!",
+    metaTitle: "AC Repair Services in Saudi Arabia | Same-Day Emergency Fix",
+    metaDesc: "Professional AC repair services in Saudi Arabia. Certified technicians for split, central & window AC. Same-day service with 24/7 support. Book now!",
     brands: ["LG", "Samsung", "Gree", "Carrier", "Daikin", "Panasonic", "Midea", "Haier", "York", "Zamil", "Sharp", "Toshiba", "Fujitsu", "Trane"],
     serviceTypes: [
       { title: "Split AC Repair", desc: "Expert diagnosis and repair for all split AC brands." },
@@ -167,7 +167,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { title: "Sanitization", desc: "Applying anti-bacterial spray for fresh air.", icon: <CheckCircle2 /> }
     ],
     faqs: [
-      { question: "How often should I clean my AC in Riyadh?", answer: "Due to the Riyadh sandstorms and dust, we recommend professional cleaning every 3 to 6 months." },
+      { question: "How often should I clean my AC in Saudi Arabia?", answer: "Due to the Saudi Arabia sandstorms and dust, we recommend professional cleaning every 3 to 6 months." },
       { question: "Will cleaning reduce my electricity bill?", answer: "Yes, clean coils allow the compressor to work efficiently, saving up to 20-30% on power." },
       { question: "Do you use chemicals for cleaning?", answer: "We use specialized, non-corrosive AC cleaning agents that are safe for aluminum fins and human health." }
     ],
@@ -175,8 +175,8 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Mohammed R.", area: "Al Olaya", text: "My AC feels like it's brand new. The ice-cold air is back!", rating: 5 },
       { name: "Lina M.", area: "Al Narjis", text: "Very impressed with the waterproof bag technique. No mess at all.", rating: 5 }
     ],
-    metaTitle: "AC Cleaning Services Riyadh | Pro Jet-Wash & Sanitization",
-    metaDesc: "Get professional AC cleaning in Riyadh. High-pressure jet wash, bacterial sanitization, and dust removal for split & central AC. Better cooling guaranteed!"
+    metaTitle: "AC Cleaning Services Saudi Arabia | Pro Jet-Wash & Sanitization",
+    metaDesc: "Get professional AC cleaning in Saudi Arabia. High-pressure jet wash, bacterial sanitization, and dust removal for split & central AC. Better cooling guaranteed!"
   },
   "ac-installation": {
     slug: "ac-installation",
@@ -210,7 +210,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { title: "Neat Finish", desc: "No messy wires or crooked units. Perfect alignment.", icon: <PenTool /> },
       { title: "Zero Leak Tech", desc: "Professional pipe flaring to prevent gas leaks.", icon: <Droplet /> },
       { title: "Fast Setup", desc: "Most split AC installs finished in 2 hours.", icon: <Clock /> },
-      { title: "Certified Techs", desc: "Authorized installers for all major Riyadh brands.", icon: <ShieldCheck /> }
+      { title: "Certified Techs", desc: "Authorized installers for all major KSA brands.", icon: <ShieldCheck /> }
     ],
     stats: [
       { label: "Installs Done", value: "4,200+" },
@@ -233,7 +233,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Khalid A.", area: "Al Malaz", text: "Professional installation for my new villa. The pipes are hidden perfectly.", rating: 5 },
       { name: "Fatima S.", area: "Al Rawdah", text: "They arrived on time and finished the install very quickly. Highly recommend.", rating: 5 }
     ],
-    metaTitle: "AC Installation Riyadh | Professional Split & Window AC Setup",
+    metaTitle: "AC Installation Saudi Arabia | Professional Split & Window AC Setup",
     metaDesc: "Need a new AC installed in Riyadh? We offer professional split & window AC installation with premium copper kits and 1-year service warranty."
   },
   "ac-maintenance": {
@@ -284,15 +284,15 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     faqs: [
       { question: "What is included in AC maintenance?", answer: "It includes filter cleaning, gas level check, electrical inspection, and full system health reporting." },
-      { question: "How many times a year is maintenance needed?", answer: "In Riyadh, we highly recommend a full tune-up twice a year (Before Summer & Before Winter)." },
+      { question: "How many times a year is maintenance needed?", answer: "In Saudi Arabia, we highly recommend a full tune-up twice a year (Before Summer & Before Winter)." },
       { question: "Do you offer maintenance for villas?", answer: "Yes, we specialize in comprehensive villa AMC plans covering all AC units in the property." }
     ],
     testimonials: [
       { name: "Zaid H.", area: "Al Nakheel", text: "Their AMC plan is great. I don't have to worry about my AC failing anymore.", rating: 5 },
       { name: "Reem Al-Otaibi", area: "Al Sahafa", text: "Very thorough maintenance. My electric bill actually went down this month.", rating: 5 }
     ],
-    metaTitle: "AC Maintenance Riyadh | Annual Contracts & Seasonal Tune-ups",
-    metaDesc: "Keep your AC running smoothly with professional maintenance in Riyadh. AMC plans for villas and offices. Certified technicians & 24/7 support."
+    metaTitle: "AC Maintenance Saudi Arabia | Annual Contracts & Seasonal Tune-ups",
+    metaDesc: "Keep your AC running smoothly with professional maintenance in Saudi Arabia. AMC plans for villas and offices. Certified technicians & 24/7 support."
   },
   "ac-gas-refill": {
     slug: "ac-gas-refill",
@@ -326,7 +326,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { title: "Pure Gas Only", desc: "We use only high-purity, branded refrigerants.", icon: <Activity /> },
       { title: "Leak Detection", desc: "We fix the leak first so you don't waste money.", icon: <Search /> },
       { title: "Safe Tools", desc: "Industrial-grade gauges and vacuum pumps.", icon: <Settings /> },
-      { title: "Urgent Support", desc: "Same-day gas refill across all Riyadh areas.", icon: <Clock /> }
+      { title: "Urgent Support", desc: "Same-day gas refill across all KSA areas.", icon: <Clock /> }
     ],
     stats: [
       { label: "Leaks Fixed", value: "3,200+" },
@@ -349,8 +349,8 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Saleh", area: "Al Munsiyah", text: "Fixed my gas leak and refilled it perfectly. Cooling is amazing now.", rating: 5 },
       { name: "Fatima", area: "Al Shifa", text: "Reasonable price and very professional equipment. They fixed the leak properly.", rating: 5 }
     ],
-    metaTitle: "AC Gas Refill Riyadh | Leak Fix & Freon Recharge Services",
-    metaDesc: "Professional AC gas refill in Riyadh. We fix leaks, vacuum the system, and refill with original R410A gas. Same-day service with 24/7 support."
+    metaTitle: "AC Gas Refill Saudi Arabia | Leak Fix & Freon Recharge Services",
+    metaDesc: "Professional AC gas refill in Saudi Arabia. We fix leaks, vacuum the system, and refill with original R410A gas. Same-day service with 24/7 support."
   },
   "ac-duct-cleaning": {
     slug: "ac-duct-cleaning",
@@ -399,7 +399,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { title: "Fogging", desc: "Sanitizing the system with pro chemicals.", icon: <Sparkles /> }
     ],
     faqs: [
-      { question: "Is duct cleaning needed for new houses in Riyadh?", answer: "Yes, construction dust is the #1 cause of clogged ducts in new Riyadh villas." },
+      { question: "Is duct cleaning needed for new properties in Saudi Arabia?", answer: "Yes, construction dust is the #1 cause of clogged ducts in new KSA properties." },
       { question: "How long does duct cleaning take?", answer: "For a standard 4-bedroom villa, it takes about 4 to 6 hours for a complete deep clean." },
       { question: "Does it help with the smell?", answer: "Absolutely. Our anti-bacterial fogging kills mold which is the main source of vent odors." }
     ],
@@ -407,8 +407,8 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Majed B.", area: "Hittin", text: "The amount of sand they took out of my ducts was shocking. Air is so fresh now.", rating: 5 },
       { name: "Noura Al-Dosari", area: "Al Aqiq", text: "Professional team and very high-tech equipment. Highly recommend for villas.", rating: 5 }
     ],
-    metaTitle: "AC Duct Cleaning Riyadh | Professional Vent Sanitization",
-    metaDesc: "Deep AC duct cleaning in Riyadh. Robotic brush technology, anti-bacterial fogging, and dust removal for central AC. Improve your indoor air quality today!"
+    metaTitle: "AC Duct Cleaning Saudi Arabia | Professional Vent Sanitization",
+    metaDesc: "Deep AC duct cleaning in Saudi Arabia. Robotic brush technology, anti-bacterial fogging, and dust removal for central AC. Improve your indoor air quality today!"
   },
   "plumbing-fix": {
     slug: "plumbing-fix",
@@ -439,7 +439,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       "Water pump and tank maintenance"
     ],
     whyChooseUs: [
-      { title: "Emergency Team", desc: "Plumbers stationed across Riyadh 24/7.", icon: <Clock /> },
+      { title: "Emergency Team", desc: "Plumbers stationed across Saudi Arabia 24/7.", icon: <Clock /> },
       { title: "Non-Invasive", desc: "Finding leaks without breaking tiles.", icon: <Search /> },
       { title: "Quality PPR", desc: "We use only high-grade durable fittings.", icon: <ShieldCheck /> },
       { title: "Clean Work", desc: "No mess left behind after the repair.", icon: <CheckCircle2 /> }
@@ -465,8 +465,8 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Ibrahim", area: "Al Rabwah", text: "The plumber arrived in 20 minutes for a pipe burst. Saved my living room!", rating: 5 },
       { name: "Hana S.", area: "Al Qadisiyah", text: "Fixed our water heater quickly. Very polite and professional staff.", rating: 5 }
     ],
-    metaTitle: "Plumbing Services Riyadh | 24/7 Emergency Leak Repair",
-    metaDesc: "Professional plumbers in Riyadh available 24/7. Leak detection, drain unblocking, and water heater repair. Same-day emergency support across Riyadh."
+    metaTitle: "Plumbing Services Saudi Arabia | 24/7 Emergency Leak Repair",
+    metaDesc: "Professional plumbers in Riyadh available 24/7. Leak detection, drain unblocking, and water heater repair. Same-day emergency support across Saudi Arabia."
   },
   "home-maintenance": {
     slug: "home-maintenance",
@@ -523,8 +523,8 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Abdullah K.", area: "Al Munsiyah", text: "Excellent for villa owners. They fixed everything from the AC to the gate light.", rating: 5 },
       { name: "Sara", area: "Al Sahafa", text: "Professional and very respectful of our privacy. The best team I've hired.", rating: 5 }
     ],
-    metaTitle: "Home Maintenance Riyadh | Electrical, Plumbing & Handyman",
-    metaDesc: "Complete home maintenance services in Riyadh. Certified technicians for AC, plumbing, and electrical repairs. One-stop solution for your Riyadh villa."
+    metaTitle: "Home Maintenance Saudi Arabia | Electrical, Plumbing & Handyman",
+    metaDesc: "Complete home maintenance services in Saudi Arabia. Certified technicians for AC, plumbing, and electrical repairs. One-stop solution for your Riyadh villa."
   },
   "ac-filter-cleaning": {
     slug: "ac-filter-cleaning",
@@ -532,7 +532,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     title: "AC Filter Cleaning & Air Health Riyadh",
     subtitle: "Boost Cooling and Filter Out Dust for a Healthier Riyadh Home.",
     shortDesc: "Clogged filters are the #1 reason for AC breakdowns. We provide deep chemical sanitization for filters to ensure pure air and high-efficiency cooling.",
-    longDesc: "Professional AC filter cleaning services in Riyadh. Riyadh's sand can clog filters in just 2 weeks. Our service includes chemical sanitization to kill bacteria that grows on dirty filters.",
+    longDesc: "Professional AC filter cleaning services in Saudi Arabia. Riyadh's sand can clog filters in just 2 weeks. Our service includes chemical sanitization to kill bacteria that grows on dirty filters.",
     heroImage: "/optimized/pexels-5691624.webp",
     icon: <Wind />,
     problems: {
@@ -582,7 +582,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Lina", area: "Al Yasmin", text: "Great service for my apartment. Very clean and professional.", rating: 5 }
     ],
     metaTitle: "AC Filter Cleaning Riyadh | Boost Airflow & Sanitization",
-    metaDesc: "Professional AC filter cleaning in Riyadh. Improve airflow and air health with deep chemical sanitization. Same-day service across Riyadh districts."
+    metaDesc: "Professional AC filter cleaning in Saudi Arabia. Improve airflow and air health with deep chemical sanitization. Same-day service across Riyadh districts."
   },
   "ac-coil-cleaning": {
     slug: "ac-coil-cleaning",
@@ -590,7 +590,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     title: "AC Coil Cleaning & Combing Riyadh",
     subtitle: "Restore Thermal Efficiency with Deep Chemical Coil Wash.",
     shortDesc: "Dirty coils reduce cooling by 60%. We provide professional chemical wash and fin straightening to restore your AC to factory performance.",
-    longDesc: "Specialized AC coil cleaning in Riyadh. When your coils are blocked by sand and grime, your compressor overheats. We use safe chemicals to dissolve the buildup and 'comb' the fins for perfect thermal exchange.",
+    longDesc: "Specialized AC coil cleaning in Saudi Arabia. When your coils are blocked by sand and grime, your compressor overheats. We use safe chemicals to dissolve the buildup and 'comb' the fins for perfect thermal exchange.",
     heroImage: "/optimized/pexels-5691657.webp",
     icon: <ThermometerSnowflake />,
     problems: {
@@ -640,6 +640,6 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Fares", area: "Al Nakheel", text: "High quality service. The coil combing made a huge difference in airflow.", rating: 5 }
     ],
     metaTitle: "AC Coil Cleaning Riyadh | Condenser Wash & Fin Straightening",
-    metaDesc: "Professional AC coil cleaning in Riyadh. Chemical wash, fin combing, and deep sanitization for maximum cooling efficiency and lower electricity bills."
+    metaDesc: "Professional AC coil cleaning in Saudi Arabia. Chemical wash, fin combing, and deep sanitization for maximum cooling efficiency and lower electricity bills."
   }
 };
