@@ -10,8 +10,6 @@ const services = [
   "ac-maintenance",
   "ac-gas-refill",
   "ac-duct-cleaning",
-  "ac-filter-cleaning",
-  "ac-coil-cleaning",
   "plumbing",
   "home-maintenance",
 ];
@@ -105,7 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const serviceLocationPages: MetadataRoute.Sitemap = [];
   const primaryServices = [
     "ac-repair", "ac-cleaning", "ac-installation", "ac-maintenance",
-    "ac-gas-refill", "ac-duct-cleaning", "ac-filter-cleaning", "ac-coil-cleaning", "plumbing",
+    "ac-gas-refill", "ac-duct-cleaning", "plumbing",
   ];
   const primaryLocations = [
     "al-olaya", "al-malaz", "al-yasmin", "al-narjis", "al-sahafa",
