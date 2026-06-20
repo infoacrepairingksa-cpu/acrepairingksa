@@ -114,7 +114,7 @@ const ServiceCard = ({ id, title, description, icon, isPrimary, onBookNow, benef
 };
 
 const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
-  const acServices = [
+  const allServices = [
     {
       id: "ac-repair",
       title: "AC Repair",
@@ -141,17 +141,6 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       benefits: ["Bacteria Free", "Odor Control", "Power Flush"]
     },
     {
-      id: "ac-gas-refill",
-      title: "AC Gas Refill",
-      description: "Boost your cooling efficiency. We leak-test copper joints and recharge optimal R410A/R22 gas levels for maximum thermal performance. Professional AC gas refill services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
-      icon: <Zap />,
-      imageUrl: "/Ac Services/AC Gas Refill.webp",
-      price: "SAR 199",
-      process: "Pressure Leak Test → Vacuum Pull → Gas Charging",
-      ctaText: "Get Expert Help Now",
-      benefits: ["Pure R410A Gas", "Leak Testing", "Max Chill"]
-    },
-    {
       id: "ac-installation",
       title: "AC Installation",
       description: "Perfect setup for long-term reliability. We ensure precise bracket mounting, electrical load balancing, and copper pipe alignment. Professional AC installation services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
@@ -175,6 +164,17 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       benefits: ["Energy Save", "Free Health Check", "Lube Parts"]
     },
     {
+      id: "ac-gas-refill",
+      title: "AC Gas Refill",
+      description: "Boost your cooling efficiency. We leak-test copper joints and recharge optimal R410A/R22 gas levels for maximum thermal performance. Professional AC gas refill services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
+      icon: <Zap />,
+      imageUrl: "/Ac Services/AC Gas Refill.webp",
+      price: "SAR 199",
+      process: "Pressure Leak Test → Vacuum Pull → Gas Charging",
+      ctaText: "Get Expert Help Now",
+      benefits: ["Pure R410A Gas", "Leak Testing", "Max Chill"]
+    },
+    {
       id: "ac-duct-cleaning",
       title: "AC Duct Cleaning",
       description: "Improve indoor air quality by removing dust, debris, and allergens from your central AC ducts. Professional AC duct cleaning services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
@@ -186,34 +186,9 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
       benefits: ["Clean Air", "Better Airflow", "Allergy Relief"]
     },
     {
-      id: "ac-filter-cleaning",
-      title: "AC Filter Cleaning",
-      description: "Ensure smooth airflow and lower electricity bills with our professional AC filter washing and replacement. Professional AC filter cleaning services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
-      icon: <Snowflake />,
-      imageUrl: "/Ac Services/AC Cleaning.webp",
-      price: "SAR 99",
-      process: "Filter Removal → Chemical Wash → Reinstallation",
-      ctaText: "Clean My Filters",
-      benefits: ["Lower Bills", "Fresh Air", "No Ice Buildup"]
-    },
-    {
-      id: "ac-coil-cleaning",
-      title: "AC Coil Cleaning",
-      description: "Restore your AC's cooling capacity with our specialized chemical coil cleaning for both indoor and outdoor units. Professional AC coil cleaning services in Riyadh, Jeddah, Dammam and across Saudi Arabia.",
-      icon: <Droplets />,
-      imageUrl: "/Ac Services/AC Cleaning.webp",
-      price: "SAR 149",
-      process: "Access Coils → Apply Foaming Agent → High Pressure Wash",
-      ctaText: "Restore Cooling Power",
-      benefits: ["Stop Leaks", "Max Efficiency", "Extend Lifespan"]
-    }
-  ];
-
-  const additionalServices = [
-    {
-      id: "plumbing-fix",
+      id: "plumbing",
       title: "Plumbing",
-      description: "Leak & pipe specialists ready 24/7.",
+      description: "Leak & pipe specialists ready 24/7. We fix broken pipes, blocked drains, and water heaters instantly across Saudi Arabia.",
       icon: <Droplets />,
       imageUrl: "/Ac Services/Plumbing.webp",
       price: "SAR 99",
@@ -224,7 +199,7 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
     {
       id: "home-maintenance",
       title: "Home Maintenance",
-      description: "Complete repair & villa support.",
+      description: "Complete repair & villa support. We provide electrical, painting, and general maintenance for residential properties.",
       icon: <Settings />,
       imageUrl: "/Ac Services/Home Maintenance.webp",
       price: "SAR 149",
@@ -239,37 +214,20 @@ const Services = ({ onBookNow }: { onBookNow: (service: string) => void }) => {
   return (
     <section id="services" className="py-32 bg-white">
       <div className="container mx-auto px-4">
-        {/* AC Services Section */}
         <div className="mb-32">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-20 gap-6">
 
             <h2 className="text-[36px] font-heading font-black text-primary leading-tight tracking-tighter">
-              Our Professional AC Services in Saudi Arabia
+              Our Professional AC & Home Services in Saudi Arabia
             </h2>
           </div>
-          <div className="flex flex-wrap justify-center gap-8">
-            {acServices.map((service) => (
-              <div key={service.id} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
-                <ServiceCard {...service} onBookNow={onBookNow} />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Additional Home Services Section - Enhanced Design for 2 Cards */}
-        <div className="mb-32">
-          <div className="max-w-4xl mx-auto mb-16 text-center flex flex-col items-center gap-4">
-            <h2 className="text-3xl font-heading font-black text-primary leading-tight tracking-tighter">
-              Additional Home Services in KSA <span className="text-secondary">(Plumbing & Maintenance)</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
-            {additionalServices.map((service) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {allServices.map((service) => (
               <ServiceCard key={service.id} {...service} onBookNow={onBookNow} />
             ))}
           </div>
         </div>
+
         {/* Unified Solutions Overview Section */}
         <div className="mb-32 py-24 px-8 md:px-16 bg-white border border-gray-100 rounded-[64px] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden relative group">
           <div className="absolute top-0 right-0 w-full h-full bg-primary/[0.01] pointer-events-none" />
