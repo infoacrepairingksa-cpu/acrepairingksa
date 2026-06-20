@@ -12,7 +12,7 @@ import {
   Wind, HeartPulse, BatteryCharging, Sparkles, ThermometerSun, ShieldAlert,
   ArrowRightCircle, CheckCircle2, Factory, Home, Droplet, ArrowDown,
   Settings, PenTool, Lightbulb, TrendingDown, Clock, Shield, Plus, Minus,
-  ClipboardList, CheckSquare, Zap as ZapIcon
+  ClipboardList, CheckSquare, Zap as ZapIcon, CalendarCheck
 } from "lucide-react";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
 
