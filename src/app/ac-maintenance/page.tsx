@@ -14,6 +14,7 @@ import {
   Settings, PenTool, Lightbulb, TrendingDown, Clock, Shield, Plus, Minus,
   ClipboardList, CheckSquare, Zap as ZapIcon, CalendarCheck
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
 
 export default function ACMaintenancePage() {
