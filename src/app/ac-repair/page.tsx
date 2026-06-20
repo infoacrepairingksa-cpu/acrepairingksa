@@ -74,9 +74,6 @@ export default function ACRepairPage() {
                 Professional AC Repair, Emergency HVAC Services, AC Maintenance and Cooling Solutions Across Saudi Arabia.
               </p>
               <div className="flex flex-wrap gap-4 mt-4">
-                <button onClick={() => handleBookNow("AC Repair")} className="px-8 py-4 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-secondary border border-transparent hover:border-secondary transition-all flex items-center gap-3">
-                  <Wrench size={20} /> Book Service
-                </button>
                 <button onClick={() => handleBookNow("WhatsApp Consult")} className="px-8 py-4 bg-[#25D366] text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-[#25D366] border border-transparent hover:border-[#25D366] transition-all flex items-center gap-3">
                   <MessageSquare size={20} /> WhatsApp Now
                 </button>
@@ -140,8 +137,7 @@ export default function ACRepairPage() {
               { t: "Electrical Faults", img: "/optimized/pexels-5691638.webp", prob: "System losing power completely.", sym: "Burning smell, frequent main breaker trips.", cau: "Burnt contactor, damaged wiring, power surge.", rep: "Replace damaged electrical components safely." },
               { t: "Weak Airflow", img: "/optimized/pexels-5445425.webp", prob: "Barely any air coming out of vents.", sym: "Room takes hours to cool, weak breeze.", cau: "Clogged air filter, failing blower motor.", rep: "Deep clean filters, replace blower fan." },
               { t: "Frozen Coils", img: "/optimized/pexels-5691630.webp", prob: "Ice building up inside the unit.", sym: "Low airflow, water dripping indoors.", cau: "Low refrigerant gas, severely restricted airflow.", rep: "Thaw ice, fix gas leak, clean system." },
-              { t: "Bad Smell", img: "/optimized/pexels-443383.webp", prob: "Foul or sour odor from AC vents.", sym: "Musty, sour smell when AC runs.", cau: "Mold and bacteria on evaporator coil.", rep: "Deep chemical wash and sanitization." },
-              { t: "Noisy AC", img: "/optimized/pexels-1065084.webp", prob: "Loud sounds from indoor/outdoor unit.", sym: "Rattling, squealing, buzzing or banging.", cau: "Loose fan blade, worn motor bearings.", rep: "Tighten mounts, replace fan bearings." }
+              { t: "Bad Smell", img: "/optimized/pexels-443383.webp", prob: "Foul or sour odor from AC vents.", sym: "Musty, sour smell when AC runs.", cau: "Mold and bacteria on evaporator coil.", rep: "Deep chemical wash and sanitization." }
             ].map((p, i) => (
               <div key={i} className="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-2xl transition-all">
                 <div className="relative h-56 w-full">
@@ -312,6 +308,11 @@ export default function ACRepairPage() {
               </div>
             ))}
           </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Repair Process Inquiry")} className="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-secondary border border-transparent hover:border-secondary transition-all">
+              <MessageSquare size={20} /> Talk to an Expert
+            </button>
+          </div>
         </div>
       </section>
 
@@ -333,6 +334,11 @@ export default function ACRepairPage() {
               </Link>
             ))}
           </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Book Regional Service")} className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all border border-transparent">
+              <MapPin size={20} /> Find Technician Near You
+            </button>
+          </div>
         </div>
       </section>
 
@@ -351,6 +357,11 @@ export default function ACRepairPage() {
                 <ShieldCheck size={20} className="text-secondary" /> {reason}
               </div>
             ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Schedule Repair Service")} className="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-secondary border border-transparent hover:border-secondary transition-all">
+              <CheckCircle2 size={20} /> Schedule Your Repair
+            </button>
           </div>
         </div>
       </section>
