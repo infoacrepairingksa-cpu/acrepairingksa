@@ -17,21 +17,7 @@ import { Logo } from "@/components/Logo";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const acServicesList = [
-    { name: "AC Repair", href: "/ac-repair" },
-    { name: "AC Installation", href: "/ac-installation" },
-    { name: "AC Maintenance", href: "/ac-maintenance" },
-    { name: "AC Cleaning", href: "/ac-cleaning" },
-    { name: "AC Gas Refill", href: "/ac-gas-refill" },
-    { name: "AC Duct Cleaning", href: "/ac-duct-cleaning" },
-    { name: "AC Filter Cleaning", href: "/ac-filter-cleaning" },
-    { name: "AC Coil Cleaning", href: "/ac-coil-cleaning" },
-  ];
 
-  const maintenanceList = [
-    { name: "Plumbing Services", href: "/plumbing" },
-    { name: "Home Maintenance", href: "/home-maintenance" },
-  ];
 
   const ContactLink = ({ icon, text, href, ariaLabel }: { icon: React.ReactNode, text: string, href: string, ariaLabel: string }) => (
     <a 
@@ -87,7 +73,8 @@ const Footer = () => {
                 { name: "AC Installation", href: "/ac-installation" },
                 { name: "AC Maintenance", href: "/ac-maintenance" },
                 { name: "AC Gas Refill", href: "/ac-gas-refill" },
-                { name: "Plumbing Services", href: "/plumbing" },
+                { name: "AC Duct Cleaning", href: "/ac-duct-cleaning" },
+                { name: "Plumbing", href: "/plumbing" },
                 { name: "Home Maintenance", href: "/home-maintenance" },
               ].map((item) => (
                 <li key={item.name}>

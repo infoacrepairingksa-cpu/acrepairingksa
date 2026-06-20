@@ -38,8 +38,6 @@ const Navbar = ({ onBookNow }: { onBookNow?: () => void }) => {
     { name: "AC Maintenance", href: "/ac-maintenance" },
     { name: "AC Gas Refill", href: "/ac-gas-refill" },
     { name: "AC Duct Cleaning", href: "/ac-duct-cleaning" },
-    { name: "AC Filter Cleaning", href: "/ac-filter-cleaning" },
-    { name: "AC Coil Cleaning", href: "/ac-coil-cleaning" },
     { name: "Plumbing", href: "/plumbing" },
     { name: "Home Maintenance", href: "/home-maintenance" },
   ];
