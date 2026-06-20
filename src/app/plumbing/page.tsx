@@ -298,11 +298,6 @@ export default function PlumbingPage() {
                 <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
               </a>
-            ))} (
-              <div key={area} className="p-8 bg-white rounded-[24px] border border-gray-50 flex flex-col items-center gap-4 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
-                <MapPin size={24} className="text-secondary group-hover:scale-125 transition-transform" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary">{area}</span>
-              </div>
             ))}
           </div>
         </div>

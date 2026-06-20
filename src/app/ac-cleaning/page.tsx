@@ -299,11 +299,6 @@ export default function ACCleaningPage() {
                 <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
               </a>
-            ))} (
-              <div key={area} className="p-10 bg-white rounded-[40px] border border-gray-50 flex flex-col items-center gap-5 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
-                <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
-              </div>
             ))}
           </div>
         </div>

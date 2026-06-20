@@ -330,11 +330,6 @@ export default function ACCoilCleaningPage() {
                 <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
               </a>
-            ))} (
-              <div key={area} className="p-10 bg-white rounded-[32px] border border-gray-50 flex flex-col items-center gap-6 group hover:border-secondary transition-all cursor-pointer shadow-sm">
-                <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform" />
-                <span className="text-[11px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary">{area}</span>
-              </div>
             ))}
           </div>
         </div>
