@@ -1,434 +1,468 @@
 "use client";
-
-import React, { useState } from "react";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import { motion } from "framer-motion";
 import { 
-  Phone, ShieldCheck, Clock, Zap, CheckCircle2, ArrowRight, Star, MapPin, 
-  Wrench, Hammer, Ruler, Settings, LayoutGrid, Building2, Home, Wind, 
-  Snowflake, Gauge, Activity, Search, ThumbsUp, Smartphone, AlertTriangle,
-  ZapOff, Package, Layers, Maximize, Check, CalendarCheck2, ShieldAlert,
-  HardHat, Drill, Compass, Thermometer, Droplets, Trash2, Filter, Users, Briefcase, Sparkles
+  Phone, ShieldCheck, Zap, ArrowRight, Star, MapPin, Wrench, AlertTriangle, 
+  Check, MessageSquare, ThumbsUp, Search, Activity, Gauge, Droplets, Leaf, 
+  Wind, HeartPulse, BatteryCharging, Sparkles, ThermometerSun, ShieldAlert,
+  ArrowRightCircle, CheckCircle2, Factory, Home, Droplet, ArrowDown,
+  Settings, PenTool, Lightbulb, TrendingDown, Clock, Shield
 } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { locations } from "@/data/locations";
-import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
 
 export default function ACInstallationPage() {
-  
   const handleBookNow = (service?: any) => {
-    const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
+    const sName = service && typeof service === 'string' ? service : "AC Installation";
     const text = `Hello, I need ${sName} services. Can you help?`;
     window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
-  const SectionHeading = ({ sub, title, center = true, light = false }: any) => (
-    <div className={cn("flex flex-col gap-4 mb-20", center ? "items-center text-center" : "items-start text-left")}>
-      <span className={cn("font-black tracking-[0.3em] uppercase text-[10px] px-5 py-2 rounded-full w-fit", light ? "bg-white/10 text-secondary" : "bg-secondary/10 text-secondary")}>{sub}</span>
-      <h2 className={cn("text-[32px] md:text-[46px] font-heading font-black leading-tight tracking-tighter max-w-3xl", light ? "text-white" : "text-primary")}>{title}</h2>
-    </div>
-  );
+  const faqs = [
+    { q: "How much does AC installation cost in Saudi Arabia?", a: "The cost varies depending on the type of unit (Split, Central, Window, Cassette) and the complexity of the piping and electrical work. We provide highly competitive, transparent quotes before any work begins." },
+    { q: "How long does installation take?", a: "A standard Split AC installation takes about 2 to 3 hours. Central and Ducted AC systems for villas or commercial spaces require a multi-day timeline for ductwork and commissioning." },
+    { q: "Which AC is best for homes?", a: "For most Saudi apartments and villas, Inverter Split ACs are highly recommended due to their whisper-quiet operation and immense electricity savings. Central AC is ideal for large, newly built villas." },
+    { q: "How many BTUs do I need?", a: "It depends on room size, ceiling height, and sun exposure. Roughly, a 4x4 meter room needs 12,000 to 18,000 BTUs (1 to 1.5 Tons). We perform precise Cooling Load Calculations before recommending a size." },
+    { q: "Should I choose an inverter AC?", a: "Absolutely. Inverter ACs adjust their compressor speed based on the room temperature, consuming up to 40% less electricity compared to traditional non-inverter models." },
+    { q: "Can you install central AC in an existing home?", a: "Yes, but it requires significant modification for ductwork and dropped ceilings. If you want central cooling without massive renovations, VRF/VRV systems are an excellent alternative." },
+    { q: "Do you provide a warranty?", a: "Yes! We offer a solid warranty on our installation workmanship (piping, drainage, wiring). This is in addition to the manufacturer's warranty on the AC compressor and parts." },
+    { q: "What is SEER rating?", a: "SEER stands for Seasonal Energy Efficiency Ratio. A higher SEER rating means the air conditioner is more energy-efficient and will cost less to run during the long Saudi summers." },
+    { q: "Do you install smart thermostats?", a: "Yes, we integrate modern smart thermostats (like Nest, Ecobee) that allow you to control your AC via smartphone, leading to enhanced comfort and optimized energy consumption." },
+    { q: "Why is proper drainage important?", a: "Improper drainage slopes cause water to flow backward and leak inside your home. We use laser leveling to ensure a perfect gradient for seamless condensation removal." },
+    { q: "What brands do you install?", a: "We install all major brands available in KSA, including Daikin, Carrier, LG, Samsung, York, Gree, Midea, and Mitsubishi." },
+    { q: "Is copper pipe insulation necessary?", a: "Yes, high-grade insulation prevents condensation buildup and ensures the refrigerant stays cold as it travels from the outdoor compressor to the indoor unit, maximizing cooling." },
+    { q: "Can you replace my old Window AC with a Split AC?", a: "Yes, we specialize in retrofitting. We safely remove the old window unit, seal the wall opening, and install a modern, energy-efficient Split AC." },
+    { q: "Do you install ACs for commercial offices?", a: "Yes, we handle large-scale commercial installations including VRF systems, Cassette units, and Package units for offices, malls, hospitals, and restaurants across KSA." },
+    { q: "Why should I hire a certified HVAC technician?", a: "Improper installation voids your manufacturer warranty, leaks refrigerant gas, and causes electrical fires. Certified technicians ensure safe, efficient, and warranty-compliant installations." }
+  ];
 
   return (
-    <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+    <main className="min-h-screen bg-white font-sans overflow-x-hidden">
+      <Schema 
+        type="Service" 
+        data={generateServiceSchema(
+          "Professional AC Installation Services Across Saudi Arabia",
+          "Expert Split, Central, and Commercial AC Installation across KSA with guaranteed energy efficiency.",
+          "/ac-installation"
+        )} 
+      />
+      <Schema type="FAQPage" data={generateFAQSchema(faqs)} />
+      <Schema type="BreadcrumbList" data={generateBreadcrumbSchema([ { name: "Home", item: "/" }, { name: "AC Installation", item: "/ac-installation" } ])} />
+      
       <Navbar onBookNow={handleBookNow} />
 
-      {/* 1. ENGINEERING HERO (Structural & Bold) */}
-      <section className="relative min-h-screen flex items-center pt-32 pb-20 bg-[#F8FAFC] overflow-hidden">
-        {/* Technical Blueprint Patterns */}
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-           <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(90deg,rgba(0,115,230,1)_1px,transparent_1px),linear-gradient(rgba(0,115,230,1)_1px,transparent_1px)] [background-size:100px_100px]" />
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 40 }} 
-              animate={{ opacity: 1, y: 0 }}
-              className="lg:col-span-7 flex flex-col gap-10 text-center lg:text-left"
-            >
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                 {["Certified Technicians", "Same Day Setup", "Quality Guaranteed"].map(t => (
-                   <span key={t} className="bg-white text-primary border-l-4 border-secondary px-6 py-2.5 rounded-r-xl text-[10px] font-black tracking-widest uppercase shadow-sm flex items-center gap-2">{t}</span>
-                 ))}
-              </div>
-              <h1 className="text-[52px] md:text-[72px] lg:text-[86px] font-heading font-black text-primary leading-[0.9] tracking-tighter">
-                Professional AC <span className="text-secondary">Installation Services</span> across Saudi Arabia
-              </h1>
-              <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic border-l-4 border-secondary/20 pl-8">
-                “Expert installation for split, central & commercial AC systems with safe setup and maximum cooling performance.”
-              </p>
-              
-              <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
-                <button onClick={handleBookNow} className="w-full sm:w-auto px-12 py-6 bg-secondary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-2xl hover:scale-105 border-b-4 border-blue-700 active:scale-95 flex items-center justify-center gap-4">
-                  <Package size={20} /> Book Installation
-                </button>
-                <button onClick={handleBookNow} className="w-full sm:w-auto px-12 py-6 bg-primary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-xl hover:scale-105 border-b-4 border-slate-800 active:scale-95 flex items-center justify-center gap-4">
-                  <Search size={20} /> Free Consultation
-                </button>
-              </div>
-
-              <div className="flex items-center justify-center lg:justify-start gap-12 pt-8">
-                 <div className="flex flex-col">
-                    <span className="text-4xl font-black text-primary leading-none tracking-tighter">10+ Years</span>
-                    <span className="text-[10px] font-black text-primary/30 uppercase tracking-[0.2em] mt-2">Local Expertise</span>
-                 </div>
-                 <div className="w-px h-12 bg-gray-200" />
-                 <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-white shadow-lg shadow-secondary/20"><ShieldCheck size={24} /></div>
-                    <span className="text-xs font-black text-primary/50 uppercase tracking-widest">Authorized <br /> Service Provider</span>
-                 </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, x: 50 }} 
-              animate={{ opacity: 1, x: 0 }}
-              className="lg:col-span-5 relative"
-            >
-              <div className="relative rounded-[72px] overflow-hidden shadow-[0_60px_120px_-20px_rgba(15,23,42,0.2)] border-[14px] border-white group">
-                <img src="/optimized/pexels-5691631.webp" alt="AC Installation Riyadh" className="w-full h-[700px] object-cover group-hover:scale-110 transition-transform duration-1000" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-80" />
-                
-                <div className="absolute top-10 left-10 bg-white/10 backdrop-blur-md p-6 rounded-[32px] border border-white/20">
-                   <div className="flex flex-col gap-1">
-                      <span className="text-white font-black text-3xl leading-none">Level Fit</span>
-                      <span className="text-white/60 text-[10px] font-bold uppercase tracking-[0.2em]">Laser Precision</span>
-                   </div>
-                </div>
-              </div>
-              
-              {/* Engineering Blueprint Accent */}
-              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary rounded-[48px] shadow-2xl flex flex-col items-center justify-center text-white border-8 border-[#F8FAFC]">
-                 <Ruler size={48} className="mb-2" />
-                 <span className="text-[10px] font-black uppercase tracking-widest">Precision Tools</span>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. INTRO SECTION (Solutions Focus) */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="relative group">
-               <div className="absolute -inset-4 bg-secondary/10 rounded-[64px] group-hover:inset-0 transition-all duration-500" />
-               <img src="/optimized/pexels-5691638.webp" alt="AC Unit Setup" className="relative w-full h-[600px] object-cover rounded-[56px] shadow-2xl" />
+      {/* 1. HERO SECTION (Unique Floating Stats) */}
+      <section className="relative pt-32 pb-20 bg-slate-50 border-b border-gray-200 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+        <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="lg:col-span-6 flex flex-col gap-6">
+            <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-5 py-2 rounded-lg text-sm font-black uppercase tracking-widest w-fit border border-secondary/20">
+              <ShieldCheck size={18} /> Certified HVAC Experts
             </div>
-            <div className="flex flex-col gap-10">
-              <div className="flex flex-col gap-6">
-                <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full w-fit">The Riyadh Standard</span>
-                <h2 className="text-[42px] md:text-[56px] font-heading font-black text-primary leading-tight tracking-tighter">Proper Setup For <br /><span className="text-secondary italic">Extreme Heat</span></h2>
-                <p className="text-xl text-primary/60 font-medium leading-relaxed italic">
-                  Riyadh's heat reaches 50°C+. A poor installation leads to high bills and early breakdowns. We ensure your AC is mounted, leveled, and connected for maximum energy efficiency and cooling performance.
-                </p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                 {[
-                   { t: "Residential Support", d: "Villas & Luxury Apartments", i: <Home /> },
-                   { t: "Commercial Setup", d: "Offices & Retail Solutions", i: <Building2 /> }
-                 ].map((x, i) => (
-                   <div key={i} className="flex items-center gap-6 p-8 bg-[#F8FAFC] rounded-[32px] border border-gray-100">
-                      <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-sm">{x.i}</div>
-                      <div className="flex flex-col">
-                         <span className="font-heading font-black text-primary leading-none">{x.t}</span>
-                         <span className="text-[10px] font-bold text-primary/30 uppercase tracking-widest mt-2">{x.d}</span>
-                      </div>
-                   </div>
-                 ))}
-              </div>
-              <button onClick={handleBookNow} className="w-fit px-12 py-6 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest text-sm shadow-xl border-b-4 border-slate-800 hover:bg-secondary transition-all">Schedule Installation</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. TYPES OF AC SYSTEMS (Technical Grid) */}
-      <section className="py-40 bg-[#FAFAFA]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-col items-center text-center gap-6 mb-24">
-             <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full">Installation Catalog</span>
-             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Complete System <br /> Integration</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {[
-              { t: "Split AC Installation", d: "Precise wall-mounting with concealed copper kits.", i: <LayoutGrid /> },
-              { t: "Central AC Setup", d: "Heavy-duty lifting & commercial commissioning.", i: <Building2 /> },
-              { t: "Window AC Mounting", d: "Perfect framing & sealing for window units.", i: <Home /> },
-              { t: "Cassette AC Fix", d: "Structural ceiling-mount solutions for open spaces.", i: <Maximize /> },
-              { t: "Ducted AC Systems", d: "Full ductwork planning & airflow balancing.", i: <Wind /> },
-              { t: "Commercial HVAC", d: "Large scale rooftop & VRF system installations.", i: <Briefcase /> }
-            ].map((s, idx) => (
-              <div key={idx} className="group relative p-12 bg-white rounded-[64px] border border-gray-100 flex flex-col gap-10 transition-all duration-500 hover:border-secondary hover:-translate-y-4 shadow-sm hover:shadow-2xl">
-                <div className="w-20 h-20 bg-secondary/5 rounded-[32px] flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-500">{s.i}</div>
-                <div className="flex flex-col gap-4">
-                   <h3 className="text-2xl font-heading font-black text-primary tracking-tight leading-tight">{s.t}</h3>
-                   <p className="text-primary/40 font-medium text-sm leading-relaxed">{s.d}</p>
-                </div>
-                <button onClick={handleBookNow} className="w-fit text-secondary font-black uppercase tracking-widest text-[10px] flex items-center gap-3 border-b border-secondary/20 pb-1">Install My AC <ArrowRight size={14} /></button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 4. WHY PROPER INSTALLATION MATTERS (Icon Mastery) */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-           <div className="flex flex-col items-center text-center gap-6 mb-24">
-             <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px]">The Efficiency Factor</span>
-             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Why Expert Setup <br /> Matters Most</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { t: "Better Cooling Efficiency", i: <Snowflake />, d: "Maximum chill from day one." },
-              { t: "Lower Electricity Bills", i: <Zap />, d: "Zero energy leaks or waste." },
-              { t: "Longer AC Lifespan", i: <CalendarCheck2 />, d: "Built to last 10+ years." },
-              { t: "Improved Airflow", i: <Wind />, d: "No blockage or weak spots." },
-              { t: "Safe Connections", i: <ZapOff />, d: "Professional electrical setup." },
-              { t: "Reduced Future Repairs", i: <ShieldAlert />, d: "Avoid early wear and tear." },
-              { t: "Quiet Operation", i: <Activity />, d: "Vibration-free mounting." },
-              { t: "Maximum Performance", i: <Gauge />, d: "Operating at 100% capacity." }
-            ].map((m, idx) => (
-              <div key={idx} className="p-10 bg-[#F8FAFC] rounded-[40px] flex flex-col items-center text-center gap-6 group hover:bg-white border border-transparent hover:border-secondary transition-all shadow-sm hover:shadow-xl">
-                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-inner group-hover:bg-secondary group-hover:text-white transition-all">{m.i}</div>
-                 <div className="flex flex-col gap-2">
-                    <h3 className="text-lg font-heading font-black text-primary leading-tight">{m.t}</h3>
-                    <p className="text-[10px] font-black text-primary/30 uppercase tracking-widest">{m.d}</p>
-                 </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-20 flex justify-center"><button onClick={handleBookNow} className="px-12 py-6 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest shadow-2xl border-b-4 border-blue-700 hover:scale-105 transition-all">Book Expert Installation</button></div>
-        </div>
-      </section>
-
-      {/* 5. INSTALLATION PROCESS (Blueprint Timeline) */}
-      <section className="py-40 bg-primary text-white relative">
-        <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
-           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(rgba(0,115,230,1)_1px,transparent_1px)] [background-size:30px_30px]" />
-        </div>
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-             <div className="flex flex-col gap-10">
-                <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px]">The Structural Protocol</span>
-                <h2 className="text-[46px] md:text-[64px] font-heading font-black text-white leading-[1.1] tracking-tighter">Our 6-Step <br /><span className="text-secondary">Engineering</span> Process</h2>
-                <div className="flex flex-col gap-8">
-                   {[
-                     { t: "Site Inspection", d: "Evaluating structural strength and airflow paths." },
-                     { t: "Size Recommendation", d: "Precise BTU calculation for your room size." },
-                     { t: "Installation Planning", d: "Designing copper and electrical routing." },
-                     { t: "Indoor & Outdoor Setup", d: "Structural mounting with laser leveling." },
-                     { t: "Electrical & Gas Connections", d: "Pressure testing and leak checking." },
-                     { t: "Final Cooling Check", d: "Guaranteeing 16°C discharge temperature." }
-                   ].map((p, idx) => (
-                     <div key={idx} className="flex items-center gap-8 group">
-                        <span className="text-3xl font-heading font-black text-secondary/40 group-hover:text-secondary transition-colors leading-none">0{idx+1}</span>
-                        <div className="flex flex-col">
-                           <h3 className="text-xl font-heading font-black text-white tracking-tight">{p.t}</h3>
-                           <p className="text-white/40 font-medium text-sm leading-relaxed">{p.d}</p>
-                        </div>
-                     </div>
-                   ))}
-                </div>
-             </div>
-             <div className="relative">
-                <div className="absolute -inset-10 bg-secondary/10 blur-[140px] pointer-events-none rounded-full" />
-                <div className="relative bg-white/5 border border-white/10 p-16 rounded-[80px] backdrop-blur-3xl flex flex-col items-center text-center gap-12">
-                   <div className="w-24 h-24 bg-secondary rounded-[32px] flex items-center justify-center text-white shadow-2xl shadow-secondary/30"><HardHat size={48} /></div>
-                   <h3 className="text-4xl font-heading font-black leading-tight tracking-tighter italic">Ready For A <br /> Perfect Setup?</h3>
-                   <button onClick={handleBookNow} className="px-12 py-7 bg-white text-primary rounded-[28px] font-black uppercase tracking-widest shadow-2xl hover:bg-secondary hover:text-white transition-all border-b-4 border-slate-200">Schedule Expert Visit</button>
-                   <div className="flex items-center gap-4 text-white/30 font-bold text-xs uppercase tracking-widest">
-                      <ShieldCheck size={20} /> 100% Structural Guarantee
-                   </div>
-                </div>
-             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 6. WHY CHOOSE US (Trust & Quality) */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="flex flex-col gap-10">
-               <div className="flex flex-col gap-6">
-                 <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full w-fit">The Elite Choice</span>
-                 <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Expert Hands For <br /> Your New AC</h2>
-                 <p className="text-lg text-primary/50 font-medium leading-relaxed italic border-l-4 border-gray-100 pl-8">
-                   We treat every installation as an engineering project. From the first bolt to the final gas charge, our team ensures absolute precision.
-                 </p>
-               </div>
-               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  {[
-                    { t: "Experienced AC Technicians", i: <Users /> },
-                    { t: "Fast Riyadh Coverage", i: <MapPin /> },
-                    { t: "Professional Equipment", i: <Compass /> },
-                    { t: "Safe Installation Standards", i: <ShieldCheck /> },
-                    { t: "Affordable Pricing", i: <ThumbsUp /> },
-                    { t: "Clean & Neat Work", i: <Sparkles /> }
-                  ].map((w, idx) => (
-                    <div key={idx} className="flex items-center gap-4 text-primary/70 font-bold text-base"><CheckCircle2 size={20} className="text-secondary shrink-0" /> {w.t}</div>
-                  ))}
-               </div>
-               <button onClick={handleBookNow} className="w-fit px-12 py-7 bg-primary text-white rounded-[28px] font-black uppercase tracking-widest shadow-2xl border-b-4 border-slate-800 hover:bg-secondary transition-all">Hire Installation Experts</button>
-            </div>
-            <div className="relative group">
-               <div className="absolute inset-0 bg-secondary rounded-[80px] -rotate-3 opacity-5 group-hover:rotate-0 transition-transform duration-700" />
-               <img src="/optimized/pexels-5691629.webp" alt="Professional AC Technicians" className="w-full h-[650px] object-cover rounded-[72px] shadow-2xl" />
-               <div className="absolute -bottom-8 -right-8 bg-white p-10 rounded-[40px] shadow-2xl border border-gray-50 text-center">
-                  <span className="block text-4xl font-black text-secondary leading-none">100%</span>
-                  <span className="text-[10px] font-black text-primary/30 uppercase tracking-widest mt-2 block">Customer Satisfaction</span>
-               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. AREAS WE SERVE */}
-      <section className="py-40 bg-[#FAFAFA]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-col items-center text-center gap-6 mb-24">
-             <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full">Regional Hubs</span>
-             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Every Corner Of Riyadh</h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {[
-              { name: "Al Olaya, Riyadh", slug: "al-olaya" },
-              { name: "Al Malaz, Riyadh", slug: "al-malaz" },
-              { name: "Al Yasmin, Riyadh", slug: "al-yasmin" },
-              { name: "Al Narjis, Riyadh", slug: "al-narjis" },
-              { name: "Hittin, Riyadh", slug: "hittin" },
-              { name: "Al Nakheel, Riyadh", slug: "al-nakheel" },
-              { name: "Al Sulaymaniyah, Riyadh", slug: "al-sulaymaniyah" },
-              { name: "Al Malqa, Riyadh", slug: "al-malqa" },
-              { name: "Al Rawdah, Riyadh", slug: "al-rawdah" },
-              { name: "Jeddah", slug: "jeddah" },
-              { name: "Dammam", slug: "dammam" },
-              { name: "Al Khobar", slug: "al-khobar" },
-              { name: "Makkah", slug: "makkah" },
-              { name: "Madinah", slug: "madinah" },
-              { name: "Taif", slug: "taif" },
-              { name: "Jubail", slug: "jubail" },
-              { name: "Yanbu", slug: "yanbu" },
-              { name: "Abha", slug: "abha" },
-              { name: "Tabuk", slug: "tabuk" },
-              { name: "Jazan", slug: "jazan" },
-            ].map(loc => (
-              <a href={`/locations/${loc.slug}`} key={loc.slug} className="p-10 bg-white rounded-[40px] border border-gray-50 flex flex-col items-center gap-5 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
-                <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-black text-primary leading-[1.1]">
+              Professional <span className="text-secondary">AC Installation</span> Across Saudi Arabia
+            </h1>
+            <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed">
+              Get expert AC installation services for homes, villas, apartments, offices and commercial spaces. Flawless execution, peak energy efficiency, and total warranty protection.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-4">
+              <a href="tel:+966510942150" className="px-8 py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-800 transition-all flex items-center gap-3 text-lg">
+                <Phone size={24} /> Call Now
               </a>
-            ))}
+              <button onClick={() => handleBookNow("WhatsApp Consult")} className="px-8 py-5 bg-[#25D366] text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-[#20b858] transition-all flex items-center gap-3 text-lg">
+                <MessageSquare size={24} /> WhatsApp Now
+              </button>
+            </div>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="lg:col-span-6 relative h-[500px] lg:h-[650px] w-full rounded-[40px] shadow-2xl border-4 border-white">
+            <Image src="/Ac Services/AC Installation.webp" alt="AC Installation KSA" fill className="object-cover rounded-[36px]" priority />
+            {/* Floating Stats */}
+            <div className="absolute -left-8 top-16 bg-white p-6 rounded-2xl shadow-2xl border border-gray-100 flex items-center gap-4">
+              <div className="bg-secondary/10 p-3 rounded-full text-secondary"><CheckCircle2 size={32}/></div>
+              <div>
+                <p className="text-2xl font-black text-primary">100%</p>
+                <p className="text-sm text-slate-500 font-bold uppercase tracking-wider">Flawless Setup</p>
+              </div>
+            </div>
+            <div className="absolute -right-8 bottom-16 bg-white p-6 rounded-2xl shadow-2xl border border-gray-100 flex items-center gap-4">
+              <div className="bg-primary/10 p-3 rounded-full text-primary"><TrendingDown size={32}/></div>
+              <div>
+                <p className="text-2xl font-black text-primary">Max</p>
+                <p className="text-sm text-slate-500 font-bold uppercase tracking-wider">Energy Savings</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 2. AI OVERVIEW SECTION */}
+      <section className="py-20 bg-primary text-white text-center">
+        <div className="container mx-auto px-4 max-w-4xl relative">
+          <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-secondary w-20 h-20 rounded-2xl rotate-45 flex items-center justify-center shadow-xl border-4 border-white text-white">
+            <Search size={32} className="-rotate-45" />
           </div>
-          <p className="mt-20 text-center text-primary/30 font-black italic tracking-widest uppercase text-[11px]">“We provide professional AC installation services across all major areas of Riyadh.”</p>
-          <div className="mt-20 flex justify-center"><a href="/locations" className="px-12 py-6 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest shadow-xl border-b-4 border-slate-800 hover:bg-secondary transition-all">View All {Object.keys(locations).length} Districts</a></div>
+          <div className="bg-white/5 p-12 rounded-3xl border border-white/10 mt-8 shadow-inner">
+            <h2 className="text-3xl font-heading font-black mb-6 text-white">What is AC Installation?</h2>
+            <p className="text-lg md:text-xl font-medium leading-relaxed text-slate-300">
+              AC installation is the highly technical process of mounting the indoor and outdoor units, routing insulated copper piping, ensuring perfectly sloped drainage, and establishing safe electrical connections. Proper installation is critical to maximize cooling performance, prevent dangerous refrigerant leaks, ensure energy efficiency, and protect the manufacturer's warranty.
+            </p>
+          </div>
+          <div className="text-center mt-12">
+            <button onClick={() => handleBookNow("Overview Inquiry")} className="px-10 py-5 bg-secondary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-secondary transition-all inline-flex items-center gap-3">
+              <Lightbulb size={24} /> Get Expert Advice
+            </button>
+          </div>
         </div>
       </section>
 
-      {/* 8. EMERGENCY SECTION (Urgent Priority Setup) */}
-      <section className="py-40 bg-white overflow-hidden">
+      {/* 3. WHICH AC IS RIGHT FOR YOU? */}
+      <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 max-w-7xl">
-           <div className="relative bg-secondary p-12 md:p-24 rounded-[80px] overflow-hidden flex flex-col lg:flex-row items-center gap-16 shadow-[0_60px_100px_-20px_rgba(0,115,230,0.3)]">
-              <div className="absolute top-0 right-0 p-32 opacity-5 rotate-12 pointer-events-none"><Zap size={400} /></div>
-              <div className="flex-1 flex flex-col gap-8 text-center lg:text-left relative z-10">
-                 <span className="bg-white/20 text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-[0.4em] shadow-xl w-fit mx-auto lg:mx-0 italic">Urgent Setup Priority</span>
-                 <h2 className="text-[44px] md:text-[68px] font-heading font-black text-white leading-tight tracking-tighter">Emergency <br /><span className="text-primary italic">Same-Day</span> Installation</h2>
-                 <p className="text-xl text-white/80 font-medium leading-relaxed max-w-xl">New AC delivered but no installer? We provide emergency setup across Saudi Arabia during peak summer weeks. Technicians on standby 24/7.</p>
-              </div>
-              <div className="flex-1 w-full max-w-md relative z-10">
-                 <div className="bg-white p-12 rounded-[64px] shadow-2xl flex flex-col gap-8 text-center">
-                    <span className="text-primary font-black text-xl tracking-tight leading-none uppercase tracking-[0.2em]">Priority Request</span>
-                    <a href="tel:+966 51 094 2150" className="w-full px-12 py-7 bg-primary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-slate-800 shadow-xl hover:bg-secondary transition-all">
-                       <Phone size={24} fill="currentColor" /> Call Emergency Team
-                    </a>
-                    <button onClick={handleBookNow} className="w-full px-12 py-7 bg-white border-2 border-gray-100 text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 shadow-sm hover:border-secondary transition-all">
-                       <Zap size={24} /> Request Urgent Fix
-                    </button>
-                 </div>
-              </div>
-           </div>
-        </div>
-      </section>
-
-      {/* 9. REVIEWS (The Grid of Success) */}
-      <section className="py-40 bg-[#F8FAFC]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <SectionHeading sub="Success Stories" title="Riyadh Residents Love Our Setup" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary mb-4">Which AC is Right For You?</h2>
+            <p className="text-lg text-slate-600 font-medium">Compare different AC types to find the perfect cooling solution for your space.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Omar Al-Rashed", text: "They installed 4 split ACs in my new villa. Perfectly aligned, hidden pipes, and worked beautifully. Best team across Saudi Arabia." },
-              { name: "Junaid", text: "Fastest response I've seen. Same-day installation during August heat. Very professional and clean team." },
-              { name: "Latifa", text: "The technicians were very knowledgeable. They recommended the perfect AC size for my living room. Great service." }
-            ].map((r, idx) => (
-              <div key={idx} className="p-16 bg-white rounded-[64px] border border-gray-50 flex flex-col gap-12 shadow-sm hover:shadow-2xl transition-all duration-700">
-                <div className="flex gap-2">{[1,2,3,4,5].map(i => <Star key={i} size={20} fill="#0073E6" stroke="#0073E6" />)}</div>
-                <p className="text-xl text-primary/50 font-sans italic leading-relaxed text-left">"{r.text}"</p>
-                <div className="flex items-center gap-6">
-                   <div className="w-16 h-16 bg-secondary/10 rounded-3xl flex items-center justify-center text-secondary font-black text-2xl shadow-inner">{r.name[0]}</div>
-                   <div className="flex flex-col">
-                      <span className="font-heading font-black text-primary text-xl tracking-tight">{r.name}</span>
-                      <span className="text-[10px] font-black text-secondary uppercase tracking-[0.2em]">Verified Installation</span>
-                   </div>
+              { t: "Split AC", img: "/Ac Services/AC Installation.webp", for: "Bedrooms, Living Rooms", area: "Small to Medium", eff: "High (Inverter)", time: "2-3 Hours" },
+              { t: "Central AC", img: "/Ac Services/AC Duct Cleaning.webp", for: "Large Villas, Offices", area: "Entire Building", eff: "Very High", time: "3-7 Days" },
+              { t: "Window AC", img: "/Ac Services/AC Repair.webp", for: "Small Rooms, Rentals", area: "Small", eff: "Moderate", time: "1 Hour" },
+              { t: "Cassette AC", img: "/Ac Services/AC Maintenance.webp", for: "Retail Shops, Cafes", area: "Medium to Large", eff: "High", time: "4-6 Hours" },
+              { t: "Ducted AC", img: "/Ac Services/AC Cleaning.webp", for: "Aesthetic Homes", area: "Large", eff: "High", time: "2-4 Days" },
+              { t: "Inverter AC", img: "/hero.webp", for: "High-Usage Areas", area: "Any Size", eff: "Maximum Energy Savings", time: "2-3 Hours" }
+            ].map((card, i) => (
+              <div key={i} className="bg-white rounded-3xl overflow-hidden shadow-md border border-gray-100 flex flex-col group hover:border-secondary transition-all">
+                <div className="relative h-48 w-full">
+                  <Image src={card.img} alt={card.t} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur text-primary px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">{card.t}</div>
+                </div>
+                <div className="p-8 flex flex-col gap-4 flex-grow">
+                  <p className="text-sm text-slate-600 flex justify-between"><strong className="text-primary">Best For:</strong> {card.for}</p>
+                  <p className="text-sm text-slate-600 flex justify-between"><strong className="text-primary">Cooling Area:</strong> {card.area}</p>
+                  <p className="text-sm text-slate-600 flex justify-between"><strong className="text-primary">Energy Efficiency:</strong> {card.eff}</p>
+                  <p className="text-sm text-slate-600 flex justify-between"><strong className="text-primary">Install Time:</strong> {card.time}</p>
+                  <button onClick={() => handleBookNow(`${card.t} Installation`)} className="w-full mt-auto py-4 bg-slate-50 text-secondary font-black uppercase tracking-widest text-sm rounded-xl border border-gray-200 group-hover:bg-secondary group-hover:text-white transition-colors">
+                    Select {card.t}
+                  </button>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* 10. FAQ SECTION */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <SectionHeading sub="Engineering Guide" title="Installation FAQs" />
-          <div className="flex flex-col gap-8">
-            {[
-              { q: "How long does AC installation take?", a: "A standard split AC installation takes about 2-3 hours including testing." },
-              { q: "Do you install central and split AC systems?", a: "Yes, we handle everything from single split units to complex central HVAC systems." },
-              { q: "Do you provide same-day installation?", a: "Absolutely. We have emergency crews stationed across Saudi Arabia for same-day setup." },
-              { q: "What AC brands do you install?", a: "We install all major brands including Samsung, LG, Gree, Carrier, Zamil, and Daikin." }
-            ].map((f, idx) => (
-              <div key={idx} className="p-14 bg-[#F8FAFC] rounded-[48px] border border-gray-100 hover:border-secondary transition-all shadow-sm">
-                <h3 className="text-2xl font-heading font-black text-primary mb-6 leading-tight">{f.q}</h3>
-                <p className="text-primary/50 text-xl font-medium leading-relaxed">{f.a}</p>
-              </div>
-            ))}
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Help Me Choose AC")} className="px-10 py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-800 transition-all inline-flex items-center gap-3">
+              <Search size={24} /> Help Me Choose
+            </button>
           </div>
         </div>
       </section>
 
-      {/* 11. FINAL CTA (The High-Impact Close) */}
-      <section className="py-40 bg-white">
+      {/* 4. OUR INSTALLATION SERVICES */}
+      <section className="py-24 bg-white border-y border-gray-100">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary">Comprehensive Installation Services</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { t: "Split AC Installation", img: "/Ac Services/AC Installation.webp", o: "Wall-mounted cooling solutions.", b: "Fast, unobtrusive, quiet." },
+              { t: "Central AC Installation", img: "/Ac Services/AC Duct Cleaning.webp", o: "Ducted whole-house cooling.", b: "Uniform temperature control." },
+              { t: "Window AC Installation", img: "/Ac Services/AC Repair.webp", o: "Classic single-room unit.", b: "Cost-effective setup." },
+              { t: "Cassette AC Installation", img: "/Ac Services/AC Cleaning.webp", o: "Ceiling-mounted 4-way flow.", b: "Saves wall space." },
+              { t: "Ducted AC Installation", img: "/Ac Services/AC Maintenance.webp", o: "Concealed aesthetic cooling.", b: "Invisible, elegant comfort." },
+              { t: "Inverter AC Installation", img: "/hero.webp", o: "Variable speed compressors.", b: "Slashes electricity bills." },
+              { t: "Commercial Installation", img: "/Ac Services/Plumbing.webp", o: "Heavy-duty HVAC systems.", b: "Built for massive spaces." },
+              { t: "Residential Installation", img: "/Ac Services/Home Maintenance.webp", o: "Villa and apartment focus.", b: "Safe for families." }
+            ].map((service, i) => (
+              <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100 hover:shadow-xl transition-all flex flex-col group">
+                <div className="relative h-32 w-full rounded-2xl overflow-hidden mb-6">
+                  <Image src={service.img} alt={service.t} fill className="object-cover" />
+                </div>
+                <h3 className="text-lg font-heading font-black text-primary mb-2">{service.t}</h3>
+                <p className="text-sm text-slate-600 mb-2">{service.o}</p>
+                <p className="text-xs text-secondary font-bold uppercase tracking-wider mb-6">{service.b}</p>
+                <button onClick={() => handleBookNow(service.t)} className="mt-auto flex items-center text-primary font-black group-hover:text-secondary transition-colors uppercase text-sm tracking-wider">
+                  Book Service <ArrowRight size={16} className="ml-2 group-hover:translate-x-2 transition-transform" />
+                </button>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("General Installation Request")} className="px-10 py-5 bg-secondary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-primary transition-all inline-flex items-center gap-3">
+              <Wrench size={24} /> Request Installation
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. AC INSTALLATION PROCESS (Horizontal Timeline) */}
+      <section className="py-24 bg-primary text-white overflow-hidden">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-white">Our 8-Step Installation Process</h2>
+          </div>
+          <div className="flex overflow-x-auto pb-8 snap-x hide-scrollbar">
+            <div className="flex gap-6 px-4">
+              {[
+                { s: "Step 1", t: "Site Inspection" }, { s: "Step 2", t: "Cooling Load Calculation" },
+                { s: "Step 3", t: "AC Selection" }, { s: "Step 4", t: "Indoor Unit Installation" },
+                { s: "Step 5", t: "Outdoor Unit Setup" }, { s: "Step 6", t: "Copper Pipe Routing" },
+                { s: "Step 7", t: "Electrical Connections" }, { s: "Step 8", t: "Testing & Commissioning" }
+              ].map((step, i) => (
+                <div key={i} className="snap-center shrink-0 w-[250px] bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 relative">
+                  <div className="absolute -top-6 -right-6 text-9xl font-black text-white/5 pointer-events-none">{i+1}</div>
+                  <span className="text-secondary font-black uppercase tracking-widest text-xs mb-4 block">{step.s}</span>
+                  <h3 className="text-xl font-heading font-bold">{step.t}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <button onClick={() => handleBookNow("Process Inquiry")} className="px-10 py-5 bg-white text-primary rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-200 transition-all inline-flex items-center gap-3">
+              <CheckCircle2 size={24} /> Start Process
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. WHY PROFESSIONAL INSTALLATION MATTERS */}
+      <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 max-w-6xl">
-           <div className="relative bg-primary p-12 md:p-24 rounded-[84px] overflow-hidden text-center flex flex-col items-center gap-14 shadow-[0_80px_160px_-40px_rgba(15,23,42,0.5)]">
-              <div className="absolute top-0 right-0 p-32 opacity-10 rotate-12 pointer-events-none scale-150"><Hammer size={500} /></div>
-              <div className="absolute bottom-0 left-0 p-32 opacity-5 -rotate-12 pointer-events-none scale-150"><Compass size={500} /></div>
-              
-              <div className="relative z-10 flex flex-col gap-6">
-                 <span className="bg-secondary text-white px-10 py-3 rounded-full font-black text-xs uppercase tracking-[0.4em] shadow-xl w-fit mx-auto italic">Ready To Set Up?</span>
-                 <h2 className="text-[44px] md:text-[68px] lg:text-[84px] font-heading font-black text-white leading-[0.9] tracking-tighter">Professional <br /><span className="text-secondary">AC Installation</span></h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary">Why Professional Installation Matters</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { t: "Correct Cooling Capacity", i: <ThermometerSun size={32}/> },
+              { t: "Lower Electricity Bills", i: <BatteryCharging size={32}/> },
+              { t: "Longer AC Life", i: <Activity size={32}/> },
+              { t: "Peak Cooling Performance", i: <Wind size={32}/> },
+              { t: "Safe Electrical Connections", i: <Zap size={32}/> },
+              { t: "Warranty Protection", i: <Shield size={32}/> }
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-6 p-8 bg-white rounded-3xl border border-secondary/20 shadow-md hover:-translate-y-2 transition-all">
+                <div className="bg-primary/10 text-primary p-4 rounded-full">
+                  {item.i}
+                </div>
+                <h3 className="text-lg font-black text-slate-900 leading-tight">{item.t}</h3>
               </div>
-              <p className="text-xl md:text-2xl font-medium text-white/70 max-w-3xl leading-relaxed relative z-10">Book expert AC installation technicians today for safe setup, efficient cooling & long-lasting performance. Technician at your door in 30 mins!</p>
-              
-              <div className="flex flex-col sm:flex-row gap-8 w-full max-w-3xl relative z-10">
-                 <button onClick={handleBookNow} className="flex-1 px-14 py-8 bg-secondary text-white rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all">
-                    <Check size={32} /> Book Now
-                 </button>
-                 <a href="tel:+966 51 094 2150" className="flex-1 px-14 py-8 bg-white text-primary rounded-[32px] font-black uppercase tracking-widest flex items-center justify-center gap-6 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all">
-                    <Phone size={32} fill="currentColor" /> Call AC Experts
-                 </a>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Professional Service")} className="px-10 py-5 bg-secondary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-primary transition-all inline-flex items-center gap-3">
+              <ShieldCheck size={24} /> Hire Professionals
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. ENERGY EFFICIENT AC INSTALLATION */}
+      <section className="py-24 bg-white border-y border-gray-100">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-12 md:p-16 rounded-[40px] border border-green-200 shadow-lg text-center relative overflow-hidden">
+            <Leaf size={150} className="absolute -bottom-10 -right-10 text-green-500/10 rotate-45 pointer-events-none" />
+            <h2 className="text-3xl md:text-5xl font-heading font-black text-green-900 mb-8">Energy Efficient AC Installation</h2>
+            <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base font-black uppercase tracking-widest text-green-800">
+              <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Inverter Technology</span>
+              <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Energy Saving</span>
+              <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">SEER Rating</span>
+              <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Smart Thermostats</span>
+              <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Eco Friendly Cooling</span>
+              <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Electricity Savings</span>
+            </div>
+            <button onClick={() => handleBookNow("Energy Efficient Setup")} className="mt-12 px-10 py-5 bg-green-600 text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-green-700 transition-all inline-flex items-center gap-3">
+              <BatteryCharging size={24} /> Save Electricity
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 8 & 9. RESIDENTIAL & COMMERCIAL INSTALLATION */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Residential */}
+            <div className="bg-white rounded-[40px] overflow-hidden border border-gray-200 shadow-xl flex flex-col">
+              <div className="relative h-80 w-full">
+                <Image src="/Ac Services/Home Maintenance.webp" alt="Residential AC Installation" fill className="object-cover" />
+                <div className="absolute inset-0 bg-primary/20" />
+                <div className="absolute bottom-6 left-6 bg-white text-primary px-6 py-2 rounded-full font-black uppercase tracking-widest shadow-lg flex items-center gap-2"><Home size={18}/> Residential</div>
               </div>
-           </div>
+              <div className="p-10 flex-grow flex flex-col justify-center">
+                <div className="grid grid-cols-2 gap-4 text-sm font-black text-slate-700 uppercase tracking-wider mb-8">
+                  <div className="flex items-center gap-2"><Check className="text-secondary"/> Villa</div>
+                  <div className="flex items-center gap-2"><Check className="text-secondary"/> Apartment</div>
+                  <div className="flex items-center gap-2"><Check className="text-secondary"/> Flat</div>
+                  <div className="flex items-center gap-2"><Check className="text-secondary"/> Home</div>
+                </div>
+                <button onClick={() => handleBookNow("Residential Installation")} className="w-full py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-slate-800 transition-all">
+                  Book Home Install
+                </button>
+              </div>
+            </div>
+            {/* Commercial */}
+            <div className="bg-white rounded-[40px] overflow-hidden border border-gray-200 shadow-xl flex flex-col">
+              <div className="relative h-80 w-full">
+                <Image src="/Ac Services/Plumbing.webp" alt="Commercial AC Installation" fill className="object-cover" />
+                <div className="absolute inset-0 bg-secondary/20" />
+                <div className="absolute bottom-6 left-6 bg-white text-secondary px-6 py-2 rounded-full font-black uppercase tracking-widest shadow-lg flex items-center gap-2"><Factory size={18}/> Commercial</div>
+              </div>
+              <div className="p-10 flex-grow flex flex-col justify-center">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm font-black text-slate-700 uppercase tracking-wider mb-8">
+                  <div className="flex items-center gap-2"><Check className="text-primary"/> Office</div>
+                  <div className="flex items-center gap-2"><Check className="text-primary"/> Restaurant</div>
+                  <div className="flex items-center gap-2"><Check className="text-primary"/> Hospital</div>
+                  <div className="flex items-center gap-2"><Check className="text-primary"/> School</div>
+                  <div className="flex items-center gap-2"><Check className="text-primary"/> Hotel</div>
+                  <div className="flex items-center gap-2"><Check className="text-primary"/> Warehouse</div>
+                  <div className="flex items-center gap-2"><Check className="text-primary"/> Mall</div>
+                </div>
+                <button onClick={() => handleBookNow("Commercial Installation")} className="w-full py-5 bg-secondary text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-[#d97706] transition-all">
+                  Book Commercial Install
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. SERVICE AREAS */}
+      <section className="py-24 bg-white border-y border-gray-100">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary">Service Areas Across KSA</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+            {[
+              "Riyadh", "Jeddah", "Dammam", "Al Khobar", "Makkah", "Madinah", 
+              "Taif", "Jubail", "Yanbu", "Abha", "Najran", "Tabuk", 
+              "Jazan", "Al Ahsa", "Hail", "Buraidah"
+            ].map((city, i) => (
+              <div key={i} className="px-4 py-6 bg-slate-50 border border-gray-100 rounded-2xl text-center hover:bg-primary hover:text-white hover:border-primary transition-colors cursor-pointer group">
+                <MapPin className="mx-auto mb-2 text-secondary group-hover:text-white transition-colors" size={24} />
+                <span className="text-xs font-black uppercase tracking-widest">{city}</span>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Regional Installation")} className="px-10 py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-800 transition-all inline-flex items-center gap-3">
+              <MapPin size={24} /> Locate Your City
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 11. COMMON INSTALLATION MISTAKES */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary">Avoid These Common Mistakes</h2>
+            <p className="text-lg text-slate-600 mt-4">Why DIY or cheap installations end up costing you thousands in repairs.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { t: "Wrong AC Size", d: "Installing an AC too small wastes energy; too big causes high humidity." },
+              { t: "Improper Drainage", d: "Incorrect slope leading to massive indoor water leakage and mold." },
+              { t: "Poor Pipe Insulation", d: "Causes condensation drips and loss of refrigerant cooling power." },
+              { t: "Bad Unit Placement", d: "Blocking airflow or placing outdoor units in direct scorching sun." },
+              { t: "Incorrect Wiring", d: "Using under-rated cables leading to circuit trips or electrical fires." },
+              { t: "Poor Airflow Planning", d: "Putting units in corners where cool air cannot circulate the room." },
+              { t: "Weak Mounting", d: "Failing to secure the heavy outdoor compressor properly, causing dangerous falls." }
+            ].map((mistake, i) => (
+              <div key={i} className="bg-white p-6 rounded-2xl border-l-4 border-red-500 shadow-sm">
+                <AlertTriangle size={24} className="text-red-500 mb-4" />
+                <h3 className="font-black text-slate-900 mb-2">{mistake.t}</h3>
+                <p className="text-sm text-slate-600">{mistake.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Error Free Setup")} className="px-10 py-5 bg-red-600 text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-red-700 transition-all inline-flex items-center gap-3">
+              <ShieldAlert size={24} /> Get Error-Free Setup
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 12. WHY CHOOSE US */}
+      <section className="py-24 bg-primary text-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-white">Why We Are The Best Choice</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              { t: "Certified HVAC Technicians", i: <ShieldCheck size={20}/> },
+              { t: "Latest Equipment", i: <PenTool size={20}/> },
+              { t: "Fast Installation", i: <Zap size={20}/> },
+              { t: "Affordable Pricing", i: <Droplet size={20}/> },
+              { t: "Warranty", i: <Shield size={20}/> },
+              { t: "24/7 Support", i: <Phone size={20}/> },
+              { t: "Transparent Pricing", i: <Search size={20}/> }
+            ].map((reason, i) => (
+              <div key={i} className="bg-white/10 backdrop-blur border border-white/20 px-8 py-4 rounded-full flex items-center gap-3 font-black tracking-widest uppercase text-sm">
+                <span className="text-secondary">{reason.i}</span> {reason.t}
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Hire The Best")} className="px-10 py-5 bg-secondary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-secondary transition-all inline-flex items-center gap-3">
+              <ThumbsUp size={24} /> Choose Quality
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 13. FAQ */}
+      <section className="py-24 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-primary">Frequently Asked Questions</h2>
+          </div>
+          <div className="grid grid-cols-1 gap-4">
+            {faqs.map((faq, i) => (
+              <div key={i} className="p-6 bg-slate-50 border border-gray-200 rounded-2xl">
+                <h3 className="font-black text-lg text-primary mb-2">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("FAQ Contact")} className="px-10 py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-800 transition-all inline-flex items-center gap-3">
+              <MessageSquare size={24} /> Still Have Questions?
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 14. LONG FORM CONTENT */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-black text-primary mb-8 text-center">Comprehensive AC Installation Services Across Saudi Arabia</h2>
+          <div className="text-slate-700 font-medium leading-relaxed space-y-6">
+            <p>In the extreme climate of the Middle East, having a reliable cooling system is essential. Finding a trustworthy partner for <strong>AC Installation Saudi Arabia</strong> can save you thousands of riyals in the long run. Whether you need a simple wall-mounted unit for a bedroom or a complex climate control system for an entire building, professional <strong>AC Installation KSA</strong> guarantees that your investment operates at absolute peak efficiency. We proudly provide state-of-the-art <strong>Air Conditioner Installation</strong> services for homes, villas, and massive corporate headquarters alike.</p>
+            
+            <p>Choosing between different types of systems can be overwhelming. A standard <strong>Split AC Installation</strong> is the most popular choice for modern apartments and villas, offering localized temperature control and whisper-quiet operation. For larger, open-plan spaces or newly constructed villas, a <strong>Central AC Installation</strong> provides seamless, invisible cooling through concealed ductwork. Regardless of your choice, integrating an <strong>Inverter AC Installation</strong> is crucial for combating high electricity bills. Inverter technology dynamically adjusts compressor speeds, resulting in profound energy savings and consistent room temperatures.</p>
+
+            <h3 className="text-2xl font-heading font-black text-primary mt-12 mb-6">Expertise in Commercial and Residential Setup</h3>
+            <p>Our scope of work spans across two major sectors. Our <strong>Commercial AC Installation</strong> division is equipped to handle heavy-duty VRF, VRV, and Cassette systems required by restaurants, hospitals, malls, and large offices. These installations require meticulous planning, precise cooling load calculations, and robust electrical panel upgrades. On the flip side, our <strong>Residential AC Installation</strong> team focuses on aesthetics, minimal disruption, and family-safe execution, ensuring that your home remains a pristine sanctuary during and after the setup process.</p>
+
+            <h3 className="text-2xl font-heading font-black text-primary mt-12 mb-6">The True Value of a Certified HVAC Technician</h3>
+            <p>A high-quality air conditioner is only as good as the person installing it. A poorly executed <strong>Cooling System Installation</strong> can lead to disastrous consequences: improper drainage slopes cause indoor flooding, poor copper pipe flaring leaks expensive refrigerant gas, and underrated electrical wiring risks severe fire hazards. This is why hiring a certified <strong>HVAC Technician</strong> is non-negotiable. Our experts ensure absolute compliance with manufacturer specifications, validating your warranty and setting the foundation for years of flawless, <strong>Energy Efficient AC</strong> performance.</p>
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Final Booking Action")} className="px-12 py-6 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-primary transition-all inline-flex items-center gap-3 text-lg">
+              <CheckCircle2 size={28} /> Book Your Installation
+            </button>
+          </div>
         </div>
       </section>
 
       <Footer />
       <FloatingActions />
-      
     </main>
   );
 }
