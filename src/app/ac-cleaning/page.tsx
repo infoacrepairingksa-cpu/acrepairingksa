@@ -1,370 +1,448 @@
 "use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import { motion } from "framer-motion";
 import { 
-  Phone, ShieldCheck, Clock, Zap, CheckCircle2, ArrowRight, Star, MapPin, 
-  Droplets, Sparkles, Wind, Snowflake, Thermometer, Trash2, Filter, 
-  Settings, Gauge, LayoutGrid, Users, Briefcase, Building2, Home, Fan,
-  BadgeCheck, Hammer, CalendarCheck2, Maximize, Activity, Search, 
-  ThumbsUp, MessageSquare, Heart, ZapOff, MousePointer2, ShieldAlert, 
-  Wrench, Smartphone, AlertTriangle, Check
+  Phone, ShieldCheck, Zap, ArrowRight, Star, MapPin, Wrench, AlertTriangle, 
+  Check, MessageSquare, ThumbsUp, Search, Activity, Gauge, Droplets, Leaf, 
+  Wind, HeartPulse, BatteryCharging, Sparkles, ThermometerSun, ShieldAlert,
+  ArrowRightCircle, CheckCircle2, Factory, Home, Droplet, ArrowDown
 } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { locations } from "@/data/locations";
-import Schema, { generateServiceSchema, generateBreadcrumbSchema } from "@/components/Schema";
+import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
 
 export default function ACCleaningPage() {
-  
-  const handleBookNow = (service?: any) => {
-    const sName = service && typeof service === 'string' ? service : "Home Maintenance and AC Repair";
+  const handleBookNow = (service: string) => {
+    const sName = service && typeof service === 'string' ? service : "AC Cleaning";
     const text = `Hello, I need ${sName} services. Can you help?`;
     window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
   };
 
+  const faqs = [
+    { q: "How often should AC be cleaned in Saudi Arabia?", a: "Due to frequent sandstorms and high dust levels in KSA, we highly recommend deep AC cleaning every 3 to 6 months to maintain air quality and prevent compressor failure." },
+    { q: "What happens if AC is not cleaned?", a: "An uncleaned AC will suffer from restricted airflow, frozen evaporator coils, massive electricity consumption, foul odors, and eventual compressor breakdown. It also circulates mold and allergens." },
+    { q: "How much does AC cleaning cost in Saudi Arabia?", a: "Prices vary based on the type (Split, Central, Window) and the level of cleaning (basic filter wash vs. deep chemical coil cleaning). We offer highly affordable, transparent pricing." },
+    { q: "Does AC cleaning improve cooling?", a: "Yes, drastically. Removing thick dust layers from the condenser and evaporator coils allows the refrigerant to absorb and release heat efficiently, restoring factory-level cooling." },
+    { q: "Can a dirty AC affect my health?", a: "Absolutely. Dirty air conditioners breed bacteria, fungi, and mold within the dark, damp drain lines and coils, triggering asthma, allergies, and respiratory issues." },
+    { q: "How long does AC deep cleaning take?", a: "A professional deep clean for a standard Split AC takes about 45 to 60 minutes. Central and Ducted systems require more time depending on the ductwork." },
+    { q: "Do you use chemicals for AC cleaning?", a: "We use safe, eco-friendly, non-corrosive foaming coils cleaners that dissolve stubborn grime without damaging the delicate aluminum fins or copper pipes." },
+    { q: "Is water leakage a sign that my AC needs cleaning?", a: "Yes, the most common cause of indoor water dripping is a clogged condensate drain pipe filled with dirt and algae, which requires high-pressure cleaning." },
+    { q: "What is included in a deep AC cleaning service?", a: "Our deep cleaning includes washing the air filters, chemically foaming the evaporator and condenser coils, unblocking the drain line, sanitizing the blower fan, and checking refrigerant levels." },
+    { q: "Do you clean Central AC ducts?", a: "Yes, we offer specialized HVAC duct cleaning using advanced rotary brushes and high-powered vacuums to remove years of accumulated dust and allergens." },
+    { q: "Will AC cleaning lower my electricity bill?", a: "Yes. A clean AC reaches the target temperature faster and cycles off sooner, consuming up to 30% less electricity compared to a severely clogged unit." },
+    { q: "Do you service commercial properties?", a: "Yes, we provide bulk AC cleaning and preventive maintenance contracts for offices, hotels, hospitals, restaurants, and warehouses across all major Saudi cities." },
+    { q: "Is it messy? Will my walls get dirty?", a: "Not at all. We use specialized waterproof catch-bags and indoor pressure washers designed specifically for ACs, ensuring zero mess or water damage to your walls and furniture." },
+    { q: "Can I just clean the filters myself?", a: "While cleaning the removable mesh filters helps, it does not reach the embedded dirt deep inside the coils, blower fan, and drain pan. Professional deep cleaning is essential." },
+    { q: "Do you offer AC cleaning in Jeddah and Dammam?", a: "Yes, our certified AC cleaning teams are dispatched across Riyadh, Jeddah, Dammam, Makkah, Madinah, and all major cities in Saudi Arabia." }
+  ];
+
   return (
-    <main className="min-h-screen bg-white font-sans selection:bg-secondary selection:text-white overflow-x-hidden">
+    <main className="min-h-screen bg-slate-50 font-sans overflow-x-hidden">
       <Schema 
         type="Service" 
         data={generateServiceSchema(
-          "Deep AC Cleaning Riyadh",
-          "Professional AC cleaning and sanitization services across Saudi Arabia. We use high-pressure water and antibacterial chemical spray to restore ice-cold cooling.",
+          "Professional AC Cleaning Services Across Saudi Arabia",
+          "Deep AC Cleaning, Coil Washing, Filter Cleaning, and HVAC Sanitization across KSA.",
           "/ac-cleaning"
         )} 
       />
-      <Schema 
-        type="BreadcrumbList" 
-        data={generateBreadcrumbSchema([
-          { name: "Home", item: "/" },
-          { name: "AC Cleaning", item: "/ac-cleaning" }
-        ])} 
-      />
+      <Schema type="FAQPage" data={generateFAQSchema(faqs)} />
+      <Schema type="BreadcrumbList" data={generateBreadcrumbSchema([ { name: "Home", item: "/" }, { name: "AC Cleaning", item: "/ac-cleaning" } ])} />
+      
       <Navbar onBookNow={handleBookNow} />
 
-      {/* 1. ULTRA-PREMIUM HERO (Asymmetric & Dynamic) */}
-      <section className="relative min-h-screen flex items-center pt-32 pb-20 bg-white overflow-hidden">
-        {/* Animated Background Elements */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/[0.03] -skew-x-12 translate-x-20 pointer-events-none" />
-        <motion.div 
-          animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
-          transition={{ duration: 10, repeat: Infinity }}
-          className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none" 
-        />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }} 
-              animate={{ opacity: 1, x: 0 }}
-              className="flex flex-col gap-8"
-            >
-              <div className="inline-flex items-center gap-3 bg-secondary/10 text-secondary px-6 py-2.5 rounded-full w-fit">
-                <Sparkles size={16} />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em]">KSA's #1 Hygiene Experts</span>
-              </div>
-              <h1 className="text-[52px] md:text-[72px] lg:text-[84px] font-heading font-black text-primary leading-[0.95] tracking-tight">
-                Deep AC <span className="text-secondary text-stroke">Cleaning</span> & Sanitization across Saudi Arabia
-              </h1>
-              <p className="text-xl md:text-2xl text-primary/60 font-medium max-w-xl leading-relaxed italic">
-                “Professional AC cleaning that removes 99.9% of Riyadh's dust and bacteria. Restore your cooling today.”
-              </p>
-              
-              <div className="flex flex-col sm:flex-row items-center gap-6 mt-4">
-                <button onClick={handleBookNow} className="w-full sm:w-auto px-12 py-6 bg-secondary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-2xl hover:-translate-y-2 border-b-4 border-blue-700 active:scale-95 flex items-center justify-center gap-4">
-                  <Zap size={20} /> Book Cleaning
-                </button>
-                <a href="tel:+966 51 094 2150" className="w-full sm:w-auto px-12 py-6 bg-primary text-white rounded-[24px] font-black text-lg tracking-widest transition-all shadow-xl hover:-translate-y-2 border-b-4 border-slate-800 active:scale-95 flex items-center justify-center gap-4">
-                  <Phone size={20} /> Call Expert
-                </a>
-              </div>
-
-              <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
-                <div className="flex flex-col">
-                  <span className="text-3xl font-black text-primary tracking-tighter leading-none">5000+</span>
-                  <span className="text-[10px] font-bold text-primary/40 uppercase tracking-widest mt-1">Deep Washes</span>
-                </div>
-                <div className="w-px h-10 bg-gray-100" />
-                <div className="flex items-center gap-3">
-                   <div className="flex gap-1"><Star size={12} fill="#0073E6" className="text-secondary" /> <Star size={12} fill="#0073E6" className="text-secondary" /> <Star size={12} fill="#0073E6" className="text-secondary" /> <Star size={12} fill="#0073E6" className="text-secondary" /> <Star size={12} fill="#0073E6" className="text-secondary" /></div>
-                   <span className="text-xs font-bold text-primary/40 tracking-widest">4.9/5 Rating</span>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }} 
-              animate={{ opacity: 1, scale: 1 }}
-              className="relative"
-            >
-              <div className="relative z-10 rounded-[80px] overflow-hidden shadow-[0_60px_100px_-20px_rgba(0,115,230,0.2)] border-[16px] border-white group h-[700px]">
-                <Image 
-                  src="/optimized/pexels-5691632.webp" 
-                  alt="AC Cleaning" 
-                  fill 
-                  className="object-cover group-hover:scale-105 transition-transform duration-1000" 
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
-                
-                <div className="absolute bottom-12 left-12 right-12 bg-white/10 backdrop-blur-md p-8 rounded-[40px] border border-white/20">
-                   <div className="flex items-center justify-between">
-                      <div className="flex flex-col gap-1">
-                         <span className="text-white font-black text-2xl tracking-tight leading-none">Healthy Air</span>
-                         <span className="text-white/60 text-xs font-bold uppercase tracking-widest">Zero Dust Policy</span>
-                      </div>
-                      <div className="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center text-white shadow-xl"><Droplets size={24} /></div>
-                   </div>
-                </div>
-              </div>
-              
-              {/* Floating Badge */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-white rounded-full shadow-2xl flex flex-col items-center justify-center border border-gray-50 animate-bounce">
-                 <span className="text-secondary font-black text-4xl">100%</span>
-                 <span className="text-[10px] font-black text-primary/40 uppercase tracking-widest">Sanitized</span>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. THE DUST CRISIS (Narrative Intro) */}
-      <section className="py-40 bg-[#FAFAFA] relative">
-        <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
-           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#0073E6_1px,transparent_1px)] [background-size:40px_40px]" />
-        </div>
-        <div className="container mx-auto px-4 max-w-6xl relative z-10">
-          <div className="flex flex-col gap-20">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
-               <div className="lg:col-span-8">
-                  <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px] mb-6 block">Saudi Arabia Climate Report</span>
-                  <h2 className="text-[42px] md:text-[56px] font-heading font-black text-primary leading-tight tracking-tighter">
-                    Why Regular Cleaning is a <br /><span className="text-secondary italic">Must across Saudi Arabia</span>
-                  </h2>
-               </div>
-               <div className="lg:col-span-4">
-                  <p className="text-lg text-primary/60 font-medium leading-relaxed border-l-4 border-secondary pl-8">
-                    Saudi Arabia's desert climate causes rapid sand buildup inside your AC. This doesn't just block air—it creates a breeding ground for bacteria and mold.
-                  </p>
-               </div>
+      {/* 1. FULL WIDTH HERO (Image Left, Content Right) */}
+      <section className="relative min-h-[85vh] flex items-center pt-24 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} className="relative h-[600px] w-full rounded-r-[60px] overflow-hidden shadow-2xl">
+            <Image src="/optimized/pexels-4421110.webp" alt="AC Cleaning Saudi Arabia" fill className="object-cover" priority />
+            <div className="absolute inset-0 bg-gradient-to-r from-teal-900/40 to-transparent" />
+          </motion.div>
+          <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} className="flex flex-col gap-6 lg:pl-8 py-12">
+            <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-black uppercase tracking-widest w-fit border border-teal-100">
+              <Leaf size={16} /> Eco-Friendly Cleaning
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-               {[
-                 { t: "Better Health", d: "Removes allergens & bacteria that cause respiratory issues.", i: <Heart /> },
-                 { t: "Colder Air", d: "Clean coils transfer heat 40% more effectively.", i: <Snowflake /> },
-                 { t: "Lower Bills", d: "Dirty ACs use 30% more energy to cool your home.", i: <Zap /> }
-               ].map((x, i) => (
-                 <div key={i} className="flex flex-col gap-6 p-12 bg-white rounded-[48px] shadow-sm hover:shadow-xl transition-all">
-                    <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary">{x.i}</div>
-                    <h3 className="text-2xl font-heading font-black text-primary tracking-tight">{x.t}</h3>
-                    <p className="text-primary/50 font-medium leading-relaxed">{x.d}</p>
-                 </div>
-               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. CLEANING SERVICES (Interactive Grid) */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-col items-center text-center gap-6 mb-24">
-             <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full">Service Menu</span>
-             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">Elite Deep Cleaning <br /> For Every Unit</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            {[
-              { t: "Split AC Cleaning", d: "Deep jet washing for wall-mounted units.", i: <LayoutGrid /> },
-              { t: "Central AC System", d: "Full commercial & villa central cleaning.", i: <Building2 /> },
-              { t: "Duct Sanitization", d: "Killing bacteria inside the airflow vents.", i: <Wind /> },
-              { t: "Coil Deep Wash", d: "Power flush for the evaporator coils.", i: <Droplets /> },
-              { t: "Filter Treatment", d: "Anti-bacterial wash for all mesh filters.", i: <Filter /> },
-              { t: "Outdoor Condenser", d: "Removing sand buildup from external units.", i: <Fan /> },
-              { t: "Drain Pipe Flush", d: "Preventing water leakage and blockages.", i: <Activity /> },
-              { t: "Full Sanitization", d: "Hospital-grade anti-mold treatment.", i: <ShieldCheck /> }
-            ].map((s, idx) => (
-              <div key={idx} className="group relative p-12 bg-[#FAFAFA] rounded-[56px] border border-gray-100 flex flex-col gap-10 overflow-hidden transition-all duration-500 hover:bg-primary hover:-translate-y-4">
-                <div className="absolute -top-10 -right-10 w-32 h-32 bg-secondary/5 rounded-full group-hover:bg-white/5 transition-colors" />
-                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-sm transition-transform group-hover:rotate-12">{s.i}</div>
-                <div className="flex flex-col gap-4">
-                   <h3 className="text-2xl font-heading font-black text-primary group-hover:text-white tracking-tight leading-tight">{s.t}</h3>
-                   <p className="text-primary/40 group-hover:text-white/50 font-medium text-sm leading-relaxed">{s.d}</p>
-                </div>
-                <button onClick={handleBookNow} className="text-secondary font-black uppercase tracking-widest text-[10px] flex items-center gap-3 group-hover:text-white">Book Cleaning <ArrowRight size={14} /></button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 4. THE CLEANING PROCESS (Visual Step-by-Step) */}
-      <section className="py-40 bg-primary text-white relative">
-        <div className="absolute top-0 right-0 p-32 opacity-5 pointer-events-none"><Activity size={400} /></div>
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="flex flex-col gap-12">
-               <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px]">The Hygiene Protocol</span>
-               <h2 className="text-[46px] md:text-[64px] font-heading font-black text-white leading-[1.1] tracking-tighter">Our 6-Step <br /><span className="text-secondary">Deep Clean</span> Process</h2>
-               <div className="flex flex-col gap-6">
-                 {[
-                   { s: "01", t: "Booking Confirmation", d: "Instant WhatsApp & Call verification." },
-                   { s: "02", t: "Technician Arrival", i: "30-Min promise across Saudi Arabia." },
-                   { s: "03", t: "Unit Inspection", d: "Checking performance before cleaning." },
-                   { s: "04", t: "Pressure Wash", d: "High-pressure jet washing for deep dirt." },
-                   { s: "05", t: "Sanitization", d: "Medical-grade anti-bacterial coating." },
-                   { s: "06", t: "Performance Test", d: "Ensuring icy-cold air delivery." }
-                 ].map((p, idx) => (
-                   <div key={idx} className="flex items-start gap-8 group">
-                      <span className="text-3xl font-heading font-black text-secondary/30 group-hover:text-secondary transition-colors">{p.s}</span>
-                      <div className="flex flex-col gap-1">
-                         <h3 className="text-xl font-heading font-black text-white">{p.t}</h3>
-                         <p className="text-white/40 font-medium text-sm leading-relaxed">{p.d || p.i}</p>
-                      </div>
-                   </div>
-                 ))}
-               </div>
-            </div>
-            <div className="relative">
-               <div className="absolute -inset-10 bg-secondary/20 blur-[120px] pointer-events-none rounded-full" />
-               <div className="relative bg-white/5 border border-white/10 p-16 rounded-[64px] backdrop-blur-3xl flex flex-col items-center text-center gap-10">
-                  <Sparkles size={80} className="text-secondary animate-pulse" />
-                  <h3 className="text-3xl font-heading font-black leading-tight tracking-tight">Ready to Restore <br /> Your Air Quality?</h3>
-                  <button onClick={handleBookNow} className="px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest shadow-2xl hover:bg-white hover:text-secondary transition-all border-b-4 border-blue-700">Schedule Service Now</button>
-                  <p className="text-white/40 font-bold text-xs uppercase tracking-widest">Available 24/7 across Saudi Arabia</p>
-               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. RESIDENTIAL vs COMMERCIAL (Targeted Selection) */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-             <div className="relative p-16 bg-[#FAFAFA] rounded-[64px] flex flex-col gap-10 overflow-hidden group">
-                <div className="absolute top-0 right-0 p-12 opacity-5 -rotate-12 group-hover:rotate-0 transition-transform duration-700"><Home size={200} /></div>
-                <span className="bg-secondary/10 text-secondary px-6 py-2 rounded-full w-fit text-[10px] font-black uppercase tracking-widest">For Homes</span>
-                <h3 className="text-[36px] md:text-[48px] font-heading font-black text-primary leading-[1.1] tracking-tighter">Villa & Apartment <br /> Deep Cleaning</h3>
-                <p className="text-primary/50 text-lg font-medium leading-relaxed max-w-sm">We cover all major KSA cities including Al Malqa, Hittin, and Al Nakheel with 30-min response.</p>
-                <button onClick={handleBookNow} className="w-fit flex items-center gap-4 text-primary font-black uppercase tracking-widest text-sm group-hover:text-secondary transition-all">Book Home Cleaning <ArrowRight size={20} /></button>
-             </div>
-
-             <div className="relative p-16 bg-primary text-white rounded-[64px] flex flex-col gap-10 overflow-hidden group">
-                <div className="absolute top-0 right-0 p-12 opacity-5 rotate-12 group-hover:rotate-0 transition-transform duration-700"><Building2 size={200} /></div>
-                <span className="bg-white/10 text-secondary px-6 py-2 rounded-full w-fit text-[10px] font-black uppercase tracking-widest">For Business</span>
-                <h3 className="text-[36px] md:text-[48px] font-heading font-black text-white leading-[1.1] tracking-tighter">Commercial HVAC <br /> Maintenance</h3>
-                <p className="text-white/50 text-lg font-medium leading-relaxed max-w-sm">Specialized cleaning for offices, restaurants, and retail stores across Saudi Arabia's business districts.</p>
-                <button onClick={handleBookNow} className="w-fit flex items-center gap-4 text-white font-black uppercase tracking-widest text-sm group-hover:text-secondary transition-all">Get B2B Quote <ArrowRight size={20} /></button>
-             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 6. AREAS WE SERVE (District Map) */}
-      <section className="py-40 bg-[#FAFAFA]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-col items-center text-center gap-6 mb-24">
-             <span className="bg-secondary/10 text-secondary font-black tracking-[0.4em] uppercase text-[10px] px-6 py-2.5 rounded-full">Local Coverage</span>
-             <h2 className="text-[46px] md:text-[64px] font-heading font-black text-primary tracking-tighter leading-tight">AC Services Across Saudi Arabia</h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {[
-              { name: "Al Olaya, Riyadh", slug: "al-olaya" },
-              { name: "Al Malaz, Riyadh", slug: "al-malaz" },
-              { name: "Al Yasmin, Riyadh", slug: "al-yasmin" },
-              { name: "Al Narjis, Riyadh", slug: "al-narjis" },
-              { name: "Hittin, Riyadh", slug: "hittin" },
-              { name: "Al Nakheel, Riyadh", slug: "al-nakheel" },
-              { name: "Al Sulaymaniyah, Riyadh", slug: "al-sulaymaniyah" },
-              { name: "Al Malqa, Riyadh", slug: "al-malqa" },
-              { name: "Al Rawdah, Riyadh", slug: "al-rawdah" },
-              { name: "Jeddah", slug: "jeddah" },
-              { name: "Dammam", slug: "dammam" },
-              { name: "Al Khobar", slug: "al-khobar" },
-              { name: "Makkah", slug: "makkah" },
-              { name: "Madinah", slug: "madinah" },
-              { name: "Taif", slug: "taif" },
-              { name: "Jubail", slug: "jubail" },
-              { name: "Yanbu", slug: "yanbu" },
-              { name: "Abha", slug: "abha" },
-              { name: "Tabuk", slug: "tabuk" },
-              { name: "Jazan", slug: "jazan" },
-            ].map(loc => (
-              <a href={`/locations/${loc.slug}`} key={loc.slug} className="p-10 bg-white rounded-[40px] border border-gray-50 flex flex-col items-center gap-5 group hover:border-secondary transition-all cursor-pointer shadow-sm text-center">
-                <MapPin size={28} className="text-secondary group-hover:scale-125 transition-transform duration-500" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-primary/40 group-hover:text-primary transition-colors">{loc.name}</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-slate-900 leading-tight">
+              Professional AC Cleaning Services Across Saudi Arabia
+            </h1>
+            <p className="text-lg text-slate-600 font-medium leading-relaxed border-l-4 border-teal-500 pl-4">
+              Breathe pure, fresh air. Our deep AC sanitization removes mold, toxic dust, and bacteria, restoring your cooling efficiency, lowering electricity bills, and extending your AC&apos;s lifespan.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-6">
+              <button onClick={() => handleBookNow("Book AC Cleaning")} className="px-8 py-4 bg-teal-600 text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-teal-700 transition-all flex items-center gap-2">
+                <Sparkles size={20} /> Book AC Cleaning
+              </button>
+              <button onClick={() => handleBookNow("WhatsApp Consult")} className="px-8 py-4 bg-[#25D366] text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-[#20b858] transition-all flex items-center gap-2">
+                <MessageSquare size={20} /> WhatsApp Now
+              </button>
+              <a href="tel:+966510942150" className="px-8 py-4 bg-slate-900 text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-slate-800 transition-all flex items-center gap-2">
+                <Phone size={20} /> Call Now
               </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 2. QUICK ANSWER BOX (AI OVERVIEW) */}
+      <section className="py-20 bg-teal-900 text-white text-center">
+        <div className="container mx-auto px-4 max-w-4xl relative">
+          <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-teal-500 w-20 h-20 rounded-full flex items-center justify-center shadow-xl border-4 border-white text-white">
+            <Search size={32} />
+          </div>
+          <div className="bg-white/10 backdrop-blur-md p-12 rounded-[40px] border border-white/20 mt-8 shadow-2xl">
+            <h2 className="text-3xl font-heading font-black mb-6 text-teal-100">What is AC Cleaning?</h2>
+            <p className="text-lg md:text-xl font-medium leading-relaxed">
+              AC cleaning is a comprehensive maintenance service that involves chemically washing the evaporator and condenser coils, clearing clogged drain lines, sanitizing the blower fan, and replacing air filters. Deep AC cleaning eradicates mold, dust, and bacteria, restoring maximum cooling performance, reducing energy consumption, and vastly improving indoor air quality.
+            </p>
+          </div>
+        </div>
+        <div className="text-center mt-12">
+          <button onClick={() => handleBookNow("Quick Answer Cleaning Booking")} className="px-10 py-4 bg-white text-teal-900 rounded-full font-black uppercase tracking-widest shadow-xl hover:bg-teal-50 transition-all inline-flex items-center gap-2">
+            Schedule Deep Clean <ArrowRight size={18} />
+          </button>
+        </div>
+      </section>
+
+      {/* 3. BENEFITS OF AC CLEANING (Big Icon Cards) */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">Incredible Benefits of AC Cleaning</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { t: "Improved Cooling", i: <ThermometerSun size={48}/>, d: "Restores factory-level ice-cold airflow instantly.", c: "bg-blue-100 text-blue-600" },
+              { t: "Lower Bills", i: <BatteryCharging size={48}/>, d: "Reduces compressor strain and electricity consumption by 30%.", c: "bg-green-100 text-green-600" },
+              { t: "Better Air Quality", i: <Wind size={48}/>, d: "Breathe fresh air free from toxic desert dust.", c: "bg-teal-100 text-teal-600" },
+              { t: "Remove Dust & Mold", i: <ShieldAlert size={48}/>, d: "Eliminates highly toxic black mold from damp coils.", c: "bg-red-100 text-red-600" },
+              { t: "Longer Lifespan", i: <Activity size={48}/>, d: "Prevents fatal compressor burnout and system failures.", c: "bg-purple-100 text-purple-600" },
+              { t: "Healthier Environment", i: <HeartPulse size={48}/>, d: "Crucial for families with asthma, allergies, or kids.", c: "bg-rose-100 text-rose-600" }
+            ].map((b, i) => (
+              <div key={i} className="bg-white p-10 rounded-[32px] border border-gray-100 shadow-sm flex flex-col items-center text-center gap-6 hover:-translate-y-2 transition-all">
+                <div className={`w-24 h-24 rounded-3xl flex items-center justify-center ${b.c}`}>
+                  {b.i}
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-slate-900 mb-3">{b.t}</h3>
+                  <p className="text-slate-600 font-medium">{b.d}</p>
+                </div>
+              </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* 7. CUSTOMER REVIEWS (The Mosaic) */}
-      <section className="py-40 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-             <div className="lg:col-span-1 flex flex-col gap-10">
-                <span className="text-secondary font-black tracking-[0.4em] uppercase text-[10px]">Real Feedback</span>
-                <h2 className="text-[42px] font-heading font-black text-primary leading-tight tracking-tighter">What Our <br /> Clients Think</h2>
-                <p className="text-lg text-primary/50 font-medium leading-relaxed">Join 5000+ happy residents across Saudi Arabia who breathe fresh air every day.</p>
-                <div className="flex flex-col gap-4">
-                   <div className="flex items-center gap-2"><Star fill="#0073E6" className="text-secondary" /> <span className="font-black text-3xl">4.9/5</span></div>
-                   <span className="text-xs font-black uppercase tracking-widest text-primary/40">Average Google Rating</span>
-                </div>
-             </div>
-             <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-                {[
-                  { name: "Yousef", text: "Dust was a big issue for my kids. After their deep cleaning, the air feels completely different. Highly professional." },
-                  { name: "Mona Al-Suwaidi", text: "Fastest response I've had across Saudi Arabia. The team arrived on time and cleaned everything perfectly. No mess left." },
-                  { name: "Fahad", text: "My electricity bill dropped by 200 SAR after they cleaned my central AC coils. It's an investment!" },
-                  { name: "Sara", text: "Excellent sanitization service. They use high-pressure pumps that really get the dirt out. Very polite team." }
-                ].map((r, i) => (
-                  <div key={i} className="p-12 bg-[#FAFAFA] rounded-[56px] border border-gray-50 flex flex-col gap-10 shadow-sm">
-                    <p className="text-lg text-primary/60 font-sans italic leading-relaxed">"{r.text}"</p>
-                    <div className="flex items-center gap-5">
-                       <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-black">{r.name[0]}</div>
-                       <span className="font-heading font-black text-primary">{r.name}</span>
-                    </div>
-                  </div>
-                ))}
-             </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Claim Benefits")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-700 transition-all inline-flex items-center gap-3">
+              <Sparkles size={24} /> Transform Your AC Today
+            </button>
           </div>
         </div>
       </section>
 
-      {/* 8. FINAL HIGH-CONVERSION CTA */}
-      <section className="py-40 bg-white">
+      {/* 4. SIGNS YOUR AC NEEDS CLEANING (Timeline) */}
+      <section className="py-24 bg-white border-y border-gray-100">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">7 Signs Your AC Urgently Needs Cleaning</h2>
+          </div>
+          <div className="relative border-l-4 border-teal-100 ml-6 md:ml-12 space-y-12 py-4">
+            {[
+              { s: "Weak Cooling", d: "AC takes hours to cool the room down." },
+              { s: "Dust Around Vents", d: "Visible black or gray dust blowing out of the louvers." },
+              { s: "Bad Smell", d: "A sour, musty, or vinegar-like odor when turned on." },
+              { s: "Water Leakage", d: "Water dripping inside the room from a choked drain pan." },
+              { s: "High Electricity Bills", d: "Sudden unexplained spike in your monthly power bill." },
+              { s: "Poor Airflow", d: "Barely feeling any breeze even on maximum fan speed." },
+              { s: "Allergy Symptoms", d: "Constant sneezing, coughing, or asthma flare-ups." }
+            ].map((item, i) => (
+              <div key={i} className="relative pl-10 md:pl-16">
+                <div className="absolute -left-[22px] top-0 w-10 h-10 bg-teal-600 rounded-full border-4 border-white flex items-center justify-center text-white font-black shadow-md">
+                  {i + 1}
+                </div>
+                <div className="bg-slate-50 p-6 rounded-2xl border border-gray-100 hover:border-teal-300 transition-colors">
+                  <h3 className="text-xl font-black text-slate-900">{item.s}</h3>
+                  <p className="text-slate-600 mt-2">{item.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Fix AC Signs")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-600 transition-all inline-flex items-center gap-3">
+              <AlertTriangle size={24} /> Fix These Signs Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. WHAT WE CLEAN (Visual Cards) */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">What Exactly Do We Clean?</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { t: "Indoor Unit", i: "/optimized/pexels-5691629.webp", b: "Removes visible mold.", p: "Foam wash and brush." },
+              { t: "Outdoor Unit", i: "/optimized/pexels-5691657.webp", b: "Stops overheating.", p: "High-pressure water jet." },
+              { t: "Air Filters", i: "/optimized/pexels-5691632.webp", b: "Restores airflow.", p: "Deep sanitization." },
+              { t: "Evaporator Coils", i: "/optimized/pexels-4421110.webp", b: "Improves cooling.", p: "Chemical descaling." },
+              { t: "Condenser Coils", i: "/optimized/pexels-5691631.webp", b: "Saves electricity.", p: "Debris and sand removal." },
+              { t: "Drain Line", i: "/optimized/pexels-5445425.webp", b: "Prevents leaking.", p: "Vacuum and flush." },
+              { t: "Blower Fan", i: "/optimized/pexels-5691638.webp", b: "Quieter operation.", p: "Blade-by-blade scrubbing." },
+              { t: "Air Vents", i: "/optimized/pexels-5691630.webp", b: "Pure air delivery.", p: "Anti-bacterial wipe." }
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-gray-100 shadow-sm group">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image src={item.i} alt={item.t} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-black text-teal-800 mb-3">{item.t}</h3>
+                  <p className="text-sm text-slate-600 mb-2"><strong className="text-slate-900">Benefits:</strong> {item.b}</p>
+                  <p className="text-sm text-slate-600"><strong className="text-slate-900">Process:</strong> {item.p}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Comprehensive Cleaning")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-700 transition-all inline-flex items-center gap-3">
+              <CheckCircle2 size={24} /> Request Full Cleaning
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. DEEP AC CLEANING PROCESS (Infographic Timeline) */}
+      <section className="py-24 bg-teal-900 text-white">
         <div className="container mx-auto px-4 max-w-6xl">
-           <div className="relative bg-primary p-12 md:p-24 rounded-[80px] overflow-hidden text-center flex flex-col items-center gap-12 shadow-[0_60px_120px_-20px_rgba(15,23,42,0.4)]">
-              <div className="absolute top-0 right-0 p-32 opacity-5 rotate-12 pointer-events-none scale-150"><Droplets size={400} /></div>
-              <div className="absolute bottom-0 left-0 p-32 opacity-5 -rotate-12 pointer-events-none scale-150"><Wind size={400} /></div>
-              
-              <div className="relative z-10 flex flex-col gap-6">
-                 <span className="bg-secondary text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-[0.3em] shadow-xl w-fit mx-auto">Instant Booking</span>
-                 <h2 className="text-[44px] md:text-[68px] lg:text-[76px] font-heading font-black text-white leading-[0.95] tracking-tighter">Ready For <br /><span className="text-secondary">Fresh Air?</span></h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-teal-50">Our Deep Cleaning Process</h2>
+          </div>
+          <div className="flex flex-col md:flex-row flex-wrap justify-center gap-4">
+            {[
+              { s: 1, t: "Inspection" }, { s: 2, t: "Dust Removal" }, { s: 3, t: "Filter Washing" }, 
+              { s: 4, t: "Coil Cleaning" }, { s: 5, t: "Drain Flush" }, { s: 6, t: "Sanitization" }, { s: 7, t: "Testing" }
+            ].map((step, i) => (
+              <div key={i} className="flex-1 min-w-[140px] bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-teal-500/30 text-center flex flex-col items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center font-black text-xl shadow-lg">
+                  {step.s}
+                </div>
+                <span className="font-black tracking-wide text-sm">{step.t}</span>
               </div>
-              <p className="text-xl md:text-2xl font-medium text-white/70 max-w-2xl leading-relaxed relative z-10">Don't wait for the next dust storm. Book your professional deep cleaning today and restore your AC's performance.</p>
-              
-              <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl relative z-10">
-                 <button onClick={handleBookNow} className="flex-1 px-12 py-7 bg-secondary text-white rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-blue-700 shadow-2xl hover:bg-white hover:text-secondary transition-all">
-                    <Zap size={24} /> Book Now
-                 </button>
-                 <a href="tel:+966 51 094 2150" className="flex-1 px-12 py-7 bg-white text-primary rounded-[24px] font-black uppercase tracking-widest flex items-center justify-center gap-5 border-b-4 border-slate-200 shadow-2xl hover:bg-secondary hover:text-white transition-all">
-                    <Phone size={24} fill="currentColor" /> Call Expert
-                 </a>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Book Process")} className="px-10 py-5 bg-white text-teal-900 rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-teal-50 transition-all inline-flex items-center gap-3">
+              <ArrowRightCircle size={24} /> Get Started Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. BEFORE & AFTER SECTION */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">The Difference is Clear</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="relative rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
+              <div className="absolute top-6 left-6 bg-red-500 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest z-10 shadow-lg">Before Cleaning</div>
+              <div className="relative h-80">
+                <Image src="/optimized/pexels-443383.webp" alt="Dirty AC" fill className="object-cover grayscale contrast-125" />
+                <div className="absolute inset-0 bg-amber-900/40 mix-blend-multiply" />
               </div>
-           </div>
+              <div className="p-8 bg-slate-50">
+                <ul className="space-y-3 font-medium text-slate-700">
+                  <li className="flex items-center gap-3"><AlertTriangle className="text-red-500" size={18}/> Coils choked with black dust</li>
+                  <li className="flex items-center gap-3"><AlertTriangle className="text-red-500" size={18}/> Warm, weak, suffocating airflow</li>
+                  <li className="flex items-center gap-3"><AlertTriangle className="text-red-500" size={18}/> 40% higher electricity consumption</li>
+                </ul>
+              </div>
+            </div>
+            <div className="relative rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
+              <div className="absolute top-6 left-6 bg-teal-500 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest z-10 shadow-lg">After Cleaning</div>
+              <div className="relative h-80">
+                <Image src="/optimized/pexels-5691657.webp" alt="Clean AC" fill className="object-cover" />
+                <div className="absolute inset-0 bg-teal-900/10" />
+              </div>
+              <div className="p-8 bg-teal-50">
+                <ul className="space-y-3 font-medium text-teal-800">
+                  <li className="flex items-center gap-3"><Sparkles className="text-teal-600" size={18}/> Shining, bacteria-free coils</li>
+                  <li className="flex items-center gap-3"><Wind className="text-teal-600" size={18}/> Ice-cold, powerful, pure breeze</li>
+                  <li className="flex items-center gap-3"><BatteryCharging className="text-teal-600" size={18}/> Peak energy efficiency restored</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("See Results")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
+              <Sparkles size={24} /> Get These Results
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. TYPES OF AC WE CLEAN */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">Types of AC We Clean</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { t: "Split AC", i: "/optimized/pexels-5691629.webp" },
+              { t: "Central AC", i: "/optimized/pexels-4421110.webp" },
+              { t: "Window AC", i: "/optimized/pexels-5691632.webp" },
+              { t: "Cassette AC", i: "/optimized/pexels-5691631.webp" },
+              { t: "Ducted AC", i: "/optimized/pexels-5445425.webp" },
+              { t: "Inverter AC", i: "/optimized/pexels-5691638.webp" },
+              { t: "VRF Systems", i: "/optimized/pexels-5691630.webp" },
+              { t: "VRV Systems", i: "/optimized/pexels-443383.webp" }
+            ].map((type, i) => (
+              <div key={i} className="bg-white rounded-3xl overflow-hidden border border-gray-100 text-center shadow-sm hover:shadow-md transition-all group">
+                <div className="relative h-32 w-full overflow-hidden">
+                  <Image src={type.i} alt={type.t} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-black text-slate-900 tracking-wide">{type.t}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Book AC Type Cleaning")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-600 transition-all inline-flex items-center gap-3">
+              <CheckCircle2 size={24} /> Clean My AC System
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. HEALTH BENEFITS (Green Highlight) */}
+      <section className="py-24 bg-emerald-600 text-white">
+        <div className="container mx-auto px-4 max-w-5xl text-center">
+          <HeartPulse size={80} className="mx-auto mb-8 text-emerald-200 animate-pulse" />
+          <h2 className="text-4xl md:text-5xl font-heading font-black mb-12 tracking-tight">Protect Your Family&apos;s Health</h2>
+          <div className="flex flex-wrap justify-center gap-4 text-lg font-black uppercase tracking-widest">
+            {["Remove Allergens", "Reduce Mold", "Cleaner Air", "Reduce Bacteria", "Healthier Environment", "Better Sleep"].map((h, i) => (
+              <span key={i} className="px-6 py-3 bg-white/10 border border-white/20 rounded-full">{h}</span>
+            ))}
+          </div>
+          <div className="mt-16">
+            <button onClick={() => handleBookNow("Health Focus Cleaning")} className="px-12 py-6 bg-white text-emerald-700 rounded-2xl font-black text-lg uppercase tracking-widest shadow-2xl hover:bg-emerald-50 transition-all inline-flex items-center gap-3">
+              <ShieldCheck size={28} /> Ensure Clean Air Today
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. SERVICE AREAS */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">We Clean ACs Across Saudi Arabia</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {[
+              "Riyadh", "Jeddah", "Dammam", "Al Khobar", "Makkah", "Madinah", 
+              "Taif", "Jubail", "Yanbu", "Abha", "Khamis Mushait", "Najran", 
+              "Tabuk", "Jazan", "Al Ahsa", "Hail", "Buraidah"
+            ].map((city, i) => (
+              <div key={i} className="p-4 bg-slate-50 rounded-xl border border-gray-100 flex flex-col items-center gap-2 hover:bg-teal-50 hover:border-teal-200 transition-colors cursor-pointer group">
+                <MapPin className="text-teal-600 group-hover:-translate-y-1 transition-transform" size={24} />
+                <span className="text-xs font-black uppercase tracking-widest text-slate-700 group-hover:text-teal-900">{city}</span>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Regional AC Cleaning")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
+              <MapPin size={24} /> Book In Your City
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 11. WHY CHOOSE US */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">Why Choose Our Cleaning Service?</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { t: "Certified Technicians", i: <ShieldCheck size={32}/> },
+              { t: "Eco-Friendly Products", i: <Leaf size={32}/> },
+              { t: "Fast Service", i: <Zap size={32}/> },
+              { t: "Affordable Prices", i: <Droplet size={32}/> },
+              { t: "24/7 Support", i: <Phone size={32}/> },
+              { t: "100% Satisfaction", i: <Star size={32}/> }
+            ].map((w, i) => (
+              <div key={i} className="flex items-center gap-6 p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                <div className="text-teal-600 bg-teal-50 p-4 rounded-2xl">
+                  {w.i}
+                </div>
+                <h3 className="font-black text-lg text-slate-900">{w.t}</h3>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Book Trusted Service")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-600 transition-all inline-flex items-center gap-3">
+              <ShieldCheck size={24} /> Hire The Best
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 12. FAQ */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-slate-50 p-8 rounded-3xl border border-gray-100">
+                <h3 className="text-xl font-black text-slate-900 mb-3">{faq.q}</h3>
+                <p className="text-slate-600 font-medium leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("FAQ Inquiry")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
+              <MessageSquare size={24} /> Ask Another Question
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 13. LONG SEO CONTENT */}
+      <section className="py-24 bg-slate-50 border-t border-gray-200">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-black text-slate-900 mb-8 text-center">Exceptional AC Cleaning Services Across Saudi Arabia</h2>
+          <div className="text-slate-700 font-medium leading-relaxed space-y-6">
+            <p>Living in Saudi Arabia means dealing with extreme summer heat and frequent sandstorms. These environmental factors take a massive toll on your cooling systems. Professional <strong>AC Cleaning Saudi Arabia</strong> services are not an optional luxury; they are an absolute necessity to maintain indoor air quality, ensure energy efficiency, and prolong the life of your equipment. Whether you are searching for top-tier <strong>AC Cleaning KSA</strong> solutions in Riyadh, Jeddah, Dammam, or any other major city, our certified HVAC technicians are equipped to handle the rigorous demands of the desert climate.</p>
+            
+            <p>Our comprehensive cleaning protocols cover every critical component of your system. <strong>Split AC Cleaning</strong> and <strong>Central AC Cleaning</strong> require distinctly different approaches, yet both suffer from similar issues: choked <strong>Evaporator Coils</strong> and blocked <strong>Condenser Coils</strong>. Over time, these coils accumulate thick layers of dust, pet dander, and biological growth like mold and bacteria. This insulating layer of grime forces the compressor to work overtime, destroying your <strong>Cooling Efficiency</strong> and sending your electricity bills skyrocketing. A thorough <strong>HVAC Cleaning</strong> directly resolves this by chemically washing away the insulation layer, instantly restoring optimal thermal transfer.</p>
+
+            <h3 className="text-2xl font-heading font-black text-slate-900 mt-12 mb-6">The Dangers of Skipping Deep AC Cleaning</h3>
+            <p>Ignoring routine maintenance leads to severe consequences. When the <strong>Indoor Unit Cleaning</strong> is neglected, the <strong>Air Filter Cleaning</strong> process is entirely bypassed, leading to restricted airflow. This not only weakens the breeze you feel in the room but can also cause the evaporator coils to freeze over completely. Furthermore, dirt inevitably washes down into the <strong>Drain Line</strong>. When mixed with the natural condensation of the AC, this dirt forms a thick, slimy algae that blocks the pipe, resulting in disastrous indoor water leakage.</p>
+
+            <h3 className="text-2xl font-heading font-black text-slate-900 mt-12 mb-6">Complete Outdoor and Indoor Sanitization</h3>
+            <p>While the indoor unit affects your immediate air quality, <strong>Outdoor Unit Cleaning</strong> is just as critical for system survival. The outdoor condenser unit is exposed to intense heat, sand, and pollution. If the outdoor coils are blocked, the heat absorbed from inside your home cannot be dissipated outside. This causes the compressor to overheat and trip the circuit breaker. By investing in regular <strong>Deep AC Cleaning</strong>, you eliminate the risk of these expensive compressor failures.</p>
+            
+            <p>Our commitment to excellence means we don&#39;t just rinse the filters. We scrub the <strong>Blower Fan</strong> blade by blade to ensure silent operation, sanitize the drip pan to eliminate musty odors, and use eco-friendly foaming chemicals that are safe for your family and pets. From health benefits like reduced allergies and better sleep to financial benefits like massive energy savings, the value of a professional AC cleaning is unmatched. Trust the leading experts across Saudi Arabia to keep your environment cool, clean, and healthy all year round.</p>
+          </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Final Booking")} className="px-12 py-6 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-teal-600 transition-all inline-flex items-center gap-3 text-lg">
+              <CheckCircle2 size={28} /> Secure Your Booking
+            </button>
+          </div>
         </div>
       </section>
 
       <Footer />
       <FloatingActions />
-      
     </main>
   );
 }
