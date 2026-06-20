@@ -262,10 +262,10 @@ export default function ACInstallationPage() {
       {/* 7. ENERGY EFFICIENT AC INSTALLATION */}
       <section className="py-24 bg-white border-y border-gray-100">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-12 md:p-16 rounded-[40px] border border-green-200 shadow-lg text-center relative overflow-hidden">
-            <Leaf size={150} className="absolute -bottom-10 -right-10 text-green-500/10 rotate-45 pointer-events-none" />
-            <h2 className="text-3xl md:text-5xl font-heading font-black text-green-900 mb-8">Energy Efficient AC Installation</h2>
-            <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base font-black uppercase tracking-widest text-green-800">
+          <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-12 md:p-16 rounded-[40px] border border-primary/20 shadow-lg text-center relative overflow-hidden">
+            <Leaf size={150} className="absolute -bottom-10 -right-10 text-primary/5 rotate-45 pointer-events-none" />
+            <h2 className="text-3xl md:text-5xl font-heading font-black text-primary mb-8">Energy Efficient AC Installation</h2>
+            <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base font-black uppercase tracking-widest text-primary">
               <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Inverter Technology</span>
               <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Energy Saving</span>
               <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">SEER Rating</span>
@@ -273,7 +273,7 @@ export default function ACInstallationPage() {
               <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Eco Friendly Cooling</span>
               <span className="bg-white/60 px-6 py-3 rounded-full shadow-sm">Electricity Savings</span>
             </div>
-            <button onClick={() => handleBookNow("Energy Efficient Setup")} className="mt-12 px-10 py-5 bg-green-600 text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-green-700 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Energy Efficient Setup")} className="mt-12 px-10 py-5 bg-secondary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-primary transition-all inline-flex items-center gap-3">
               <BatteryCharging size={24} /> Save Electricity
             </button>
           </div>
@@ -372,15 +372,15 @@ export default function ACInstallationPage() {
               { t: "Poor Airflow Planning", d: "Putting units in corners where cool air cannot circulate the room." },
               { t: "Weak Mounting", d: "Failing to secure the heavy outdoor compressor properly, causing dangerous falls." }
             ].map((mistake, i) => (
-              <div key={i} className="bg-white p-6 rounded-2xl border-l-4 border-red-500 shadow-sm">
-                <AlertTriangle size={24} className="text-red-500 mb-4" />
+              <div key={i} className="bg-white p-6 rounded-2xl border-l-4 border-secondary shadow-sm">
+                <AlertTriangle size={24} className="text-secondary mb-4" />
                 <h3 className="font-black text-slate-900 mb-2">{mistake.t}</h3>
                 <p className="text-sm text-slate-600">{mistake.d}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Error Free Setup")} className="px-10 py-5 bg-red-600 text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-red-700 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Error Free Setup")} className="px-10 py-5 bg-primary text-white rounded-xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-800 transition-all inline-flex items-center gap-3">
               <ShieldAlert size={24} /> Get Error-Free Setup
             </button>
           </div>
