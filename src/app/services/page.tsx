@@ -38,16 +38,14 @@ export default function ServicesPage() {
   );
 
   const allServices = [
-    { title: "AC Repair", id: "ac-repair", href: "/ac-repair", img: "/optimized/pexels-5691632.webp", icon: <Settings />, desc: "Fast restoration of cooling for all unit types." },
-    { title: "AC Cleaning", id: "ac-cleaning", href: "/ac-cleaning", img: "/optimized/pexels-5445425.webp", icon: <Sparkles />, desc: "Deep-wash sanitization for pure, healthy air." },
-    { title: "AC Installation", id: "ac-installation", href: "/ac-installation", img: "/optimized/pexels-2219024.webp", icon: <LayoutGrid />, desc: "Professional setup for new homes and offices." },
-    { title: "AC Maintenance", id: "ac-maintenance", href: "/ac-maintenance", img: "/optimized/pexels-5691657.webp", icon: <Clock />, desc: "Scheduled preventive care to stop breakdowns." },
-    { title: "AC Gas Refill", id: "ac-gas-refill", href: "/ac-gas-refill", img: "/optimized/pexels-443383.webp", icon: <Snowflake />, desc: "Precision refrigerant charging and leak tests." },
-    { title: "AC Duct Cleaning", id: "ac-duct-cleaning", href: "/ac-duct-cleaning", img: "/optimized/pexels-5445424.webp", icon: <Wind />, desc: "Medical-grade air vent & duct purification." },
-    { title: "AC Filter Cleaning", id: "ac-filter-cleaning", href: "/ac-filter-cleaning", img: "/optimized/pexels-5445425.webp", icon: <Filter />, desc: "Instant airflow boost with mesh deep-washing." },
-    { title: "AC Coil Cleaning", id: "ac-coil-cleaning", href: "/ac-coil-cleaning", img: "/optimized/pexels-5691632.webp", icon: <Cog />, desc: "Thermal restoration for unit lifespan extension." },
-    { title: "Plumbing Services", id: "plumbing", href: "/plumbing", img: "/optimized/pexels-2219024.webp", icon: <Wrench />, desc: "Expert leak repair and sonar detection services." },
-    { title: "Home Maintenance", id: "home-maintenance", href: "/home-maintenance", img: "/optimized/pexels-5691657.webp", icon: <Shield />, desc: "Total property shield for structural repairs." },
+    { title: "AC Repair", id: "ac-repair", href: "/ac-repair", img: "/Ac Services/AC Repair.webp", icon: <Settings />, desc: "Fast restoration of cooling for all unit types." },
+    { title: "AC Cleaning", id: "ac-cleaning", href: "/ac-cleaning", img: "/Ac Services/AC Cleaning.webp", icon: <Sparkles />, desc: "Deep-wash sanitization for pure, healthy air." },
+    { title: "AC Installation", id: "ac-installation", href: "/ac-installation", img: "/Ac Services/AC Installation.webp", icon: <LayoutGrid />, desc: "Professional setup for new homes and offices." },
+    { title: "AC Maintenance", id: "ac-maintenance", href: "/ac-maintenance", img: "/Ac Services/AC Maintenance.webp", icon: <Clock />, desc: "Scheduled preventive care to stop breakdowns." },
+    { title: "AC Gas Refill", id: "ac-gas-refill", href: "/ac-gas-refill", img: "/Ac Services/AC Gas Refill.webp", icon: <Snowflake />, desc: "Precision refrigerant charging and leak tests." },
+    { title: "AC Duct Cleaning", id: "ac-duct-cleaning", href: "/ac-duct-cleaning", img: "/Ac Services/AC Duct Cleaning.webp", icon: <Wind />, desc: "Medical-grade air vent & duct purification." },
+    { title: "Plumbing", id: "plumbing", href: "/plumbing", img: "/Ac Services/Plumbing.webp", icon: <Wrench />, desc: "Expert leak repair and sonar detection services." },
+    { title: "Home Maintenance", id: "home-maintenance", href: "/home-maintenance", img: "/Ac Services/Home Maintenance.webp", icon: <Shield />, desc: "Total property shield for structural repairs." },
   ];
 
   return (
