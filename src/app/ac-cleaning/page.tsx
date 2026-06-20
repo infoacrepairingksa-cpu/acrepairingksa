@@ -58,21 +58,21 @@ export default function ACCleaningPage() {
       <section className="relative min-h-[85vh] flex items-center pt-24 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} className="relative h-[600px] w-full rounded-r-[60px] overflow-hidden shadow-2xl">
-            <Image src="/optimized/pexels-4421110.webp" alt="AC Cleaning Saudi Arabia" fill className="object-cover" priority />
+            <Image src="/Ac Services/AC Cleaning.webp" alt="AC Cleaning Saudi Arabia" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-r from-teal-900/40 to-transparent" />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} className="flex flex-col gap-6 lg:pl-8 py-12">
-            <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-black uppercase tracking-widest w-fit border border-teal-100">
+            <div className="inline-flex items-center gap-2 bg-slate-50 text-secondary px-4 py-2 rounded-full text-sm font-black uppercase tracking-widest w-fit border border-secondary/20">
               <Leaf size={16} /> Eco-Friendly Cleaning
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-slate-900 leading-tight">
               Professional AC Cleaning Services Across Saudi Arabia
             </h1>
-            <p className="text-lg text-slate-600 font-medium leading-relaxed border-l-4 border-teal-500 pl-4">
+            <p className="text-lg text-slate-600 font-medium leading-relaxed border-l-4 border-secondary pl-4">
               Breathe pure, fresh air. Our deep AC sanitization removes mold, toxic dust, and bacteria, restoring your cooling efficiency, lowering electricity bills, and extending your AC&apos;s lifespan.
             </p>
             <div className="flex flex-wrap gap-4 mt-6">
-              <button onClick={() => handleBookNow("Book AC Cleaning")} className="px-8 py-4 bg-teal-600 text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-teal-700 transition-all flex items-center gap-2">
+              <button onClick={() => handleBookNow("Book AC Cleaning")} className="px-8 py-4 bg-secondary text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-secondary transition-all flex items-center gap-2">
                 <Sparkles size={20} /> Book AC Cleaning
               </button>
               <button onClick={() => handleBookNow("WhatsApp Consult")} className="px-8 py-4 bg-[#25D366] text-white rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-[#20b858] transition-all flex items-center gap-2">
@@ -87,20 +87,20 @@ export default function ACCleaningPage() {
       </section>
 
       {/* 2. QUICK ANSWER BOX (AI OVERVIEW) */}
-      <section className="py-20 bg-teal-900 text-white text-center">
+      <section className="py-20 bg-primary text-white text-center">
         <div className="container mx-auto px-4 max-w-4xl relative">
-          <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-teal-500 w-20 h-20 rounded-full flex items-center justify-center shadow-xl border-4 border-white text-white">
+          <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-secondary w-20 h-20 rounded-full flex items-center justify-center shadow-xl border-4 border-white text-white">
             <Search size={32} />
           </div>
           <div className="bg-white/10 backdrop-blur-md p-12 rounded-[40px] border border-white/20 mt-8 shadow-2xl">
-            <h2 className="text-3xl font-heading font-black mb-6 text-teal-100">What is AC Cleaning?</h2>
+            <h2 className="text-3xl font-heading font-black mb-6 text-secondary">What is AC Cleaning?</h2>
             <p className="text-lg md:text-xl font-medium leading-relaxed">
               AC cleaning is a comprehensive maintenance service that involves chemically washing the evaporator and condenser coils, clearing clogged drain lines, sanitizing the blower fan, and replacing air filters. Deep AC cleaning eradicates mold, dust, and bacteria, restoring maximum cooling performance, reducing energy consumption, and vastly improving indoor air quality.
             </p>
           </div>
         </div>
         <div className="text-center mt-12">
-          <button onClick={() => handleBookNow("Quick Answer Cleaning Booking")} className="px-10 py-4 bg-white text-teal-900 rounded-full font-black uppercase tracking-widest shadow-xl hover:bg-teal-50 transition-all inline-flex items-center gap-2">
+          <button onClick={() => handleBookNow("Quick Answer Cleaning Booking")} className="px-10 py-4 bg-white text-primary rounded-full font-black uppercase tracking-widest shadow-xl hover:bg-slate-50 transition-all inline-flex items-center gap-2">
             Schedule Deep Clean <ArrowRight size={18} />
           </button>
         </div>
@@ -114,12 +114,12 @@ export default function ACCleaningPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { t: "Improved Cooling", i: <ThermometerSun size={48}/>, d: "Restores factory-level ice-cold airflow instantly.", c: "bg-blue-100 text-blue-600" },
-              { t: "Lower Bills", i: <BatteryCharging size={48}/>, d: "Reduces compressor strain and electricity consumption by 30%.", c: "bg-green-100 text-green-600" },
-              { t: "Better Air Quality", i: <Wind size={48}/>, d: "Breathe fresh air free from toxic desert dust.", c: "bg-teal-100 text-teal-600" },
-              { t: "Remove Dust & Mold", i: <ShieldAlert size={48}/>, d: "Eliminates highly toxic black mold from damp coils.", c: "bg-red-100 text-red-600" },
-              { t: "Longer Lifespan", i: <Activity size={48}/>, d: "Prevents fatal compressor burnout and system failures.", c: "bg-purple-100 text-purple-600" },
-              { t: "Healthier Environment", i: <HeartPulse size={48}/>, d: "Crucial for families with asthma, allergies, or kids.", c: "bg-rose-100 text-rose-600" }
+              { t: "Improved Cooling", i: <ThermometerSun size={48}/>, d: "Restores factory-level ice-cold airflow instantly.", c: "bg-secondary/10 text-secondary" },
+              { t: "Lower Bills", i: <BatteryCharging size={48}/>, d: "Reduces compressor strain and electricity consumption by 30%.", c: "bg-primary/10 text-primary" },
+              { t: "Better Air Quality", i: <Wind size={48}/>, d: "Breathe fresh air free from toxic desert dust.", c: "bg-secondary/20 text-secondary" },
+              { t: "Remove Dust & Mold", i: <ShieldAlert size={48}/>, d: "Eliminates highly toxic black mold from damp coils.", c: "bg-primary/10 text-primary" },
+              { t: "Longer Lifespan", i: <Activity size={48}/>, d: "Prevents fatal compressor burnout and system failures.", c: "bg-secondary/10 text-secondary" },
+              { t: "Healthier Environment", i: <HeartPulse size={48}/>, d: "Crucial for families with asthma, allergies, or kids.", c: "bg-primary/10 text-primary" }
             ].map((b, i) => (
               <div key={i} className="bg-white p-10 rounded-[32px] border border-gray-100 shadow-sm flex flex-col items-center text-center gap-6 hover:-translate-y-2 transition-all">
                 <div className={`w-24 h-24 rounded-3xl flex items-center justify-center ${b.c}`}>
@@ -133,7 +133,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Claim Benefits")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-700 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Claim Benefits")} className="px-10 py-5 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all inline-flex items-center gap-3">
               <Sparkles size={24} /> Transform Your AC Today
             </button>
           </div>
@@ -146,7 +146,7 @@ export default function ACCleaningPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900">7 Signs Your AC Urgently Needs Cleaning</h2>
           </div>
-          <div className="relative border-l-4 border-teal-100 ml-6 md:ml-12 space-y-12 py-4">
+          <div className="relative border-l-4 border-secondary/20 ml-6 md:ml-12 space-y-12 py-4">
             {[
               { s: "Weak Cooling", d: "AC takes hours to cool the room down." },
               { s: "Dust Around Vents", d: "Visible black or gray dust blowing out of the louvers." },
@@ -157,7 +157,7 @@ export default function ACCleaningPage() {
               { s: "Allergy Symptoms", d: "Constant sneezing, coughing, or asthma flare-ups." }
             ].map((item, i) => (
               <div key={i} className="relative pl-10 md:pl-16">
-                <div className="absolute -left-[22px] top-0 w-10 h-10 bg-teal-600 rounded-full border-4 border-white flex items-center justify-center text-white font-black shadow-md">
+                <div className="absolute -left-[22px] top-0 w-10 h-10 bg-secondary rounded-full border-4 border-white flex items-center justify-center text-white font-black shadow-md">
                   {i + 1}
                 </div>
                 <div className="bg-slate-50 p-6 rounded-2xl border border-gray-100 hover:border-teal-300 transition-colors">
@@ -168,7 +168,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Fix AC Signs")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-600 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Fix AC Signs")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all inline-flex items-center gap-3">
               <AlertTriangle size={24} /> Fix These Signs Now
             </button>
           </div>
@@ -183,14 +183,14 @@ export default function ACCleaningPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { t: "Indoor Unit", i: "/optimized/pexels-5691629.webp", b: "Removes visible mold.", p: "Foam wash and brush." },
-              { t: "Outdoor Unit", i: "/optimized/pexels-5691657.webp", b: "Stops overheating.", p: "High-pressure water jet." },
-              { t: "Air Filters", i: "/optimized/pexels-5691632.webp", b: "Restores airflow.", p: "Deep sanitization." },
-              { t: "Evaporator Coils", i: "/optimized/pexels-4421110.webp", b: "Improves cooling.", p: "Chemical descaling." },
-              { t: "Condenser Coils", i: "/optimized/pexels-5691631.webp", b: "Saves electricity.", p: "Debris and sand removal." },
-              { t: "Drain Line", i: "/optimized/pexels-5445425.webp", b: "Prevents leaking.", p: "Vacuum and flush." },
-              { t: "Blower Fan", i: "/optimized/pexels-5691638.webp", b: "Quieter operation.", p: "Blade-by-blade scrubbing." },
-              { t: "Air Vents", i: "/optimized/pexels-5691630.webp", b: "Pure air delivery.", p: "Anti-bacterial wipe." }
+              { t: "Indoor Unit", i: "/Ac Services/AC Cleaning.webp", b: "Removes visible mold.", p: "Foam wash and brush." },
+              { t: "Outdoor Unit", i: "/Ac Services/AC Cleaning.webp", b: "Stops overheating.", p: "High-pressure water jet." },
+              { t: "Air Filters", i: "/Ac Services/AC Filter Cleaning.webp", b: "Restores airflow.", p: "Deep sanitization." },
+              { t: "Evaporator Coils", i: "/Ac Services/AC Coil Cleaning.webp", b: "Improves cooling.", p: "Chemical descaling." },
+              { t: "Condenser Coils", i: "/Ac Services/AC Coil Cleaning.webp", b: "Saves electricity.", p: "Debris and sand removal." },
+              { t: "Drain Line", i: "/Ac Services/AC Maintenance.webp", b: "Prevents leaking.", p: "Vacuum and flush." },
+              { t: "Blower Fan", i: "/Ac Services/AC Repair.webp", b: "Quieter operation.", p: "Blade-by-blade scrubbing." },
+              { t: "Air Vents", i: "/Ac Services/AC Duct Cleaning.webp", b: "Pure air delivery.", p: "Anti-bacterial wipe." }
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-[32px] overflow-hidden border border-gray-100 shadow-sm group">
                 <div className="relative h-48 w-full overflow-hidden">
@@ -198,7 +198,7 @@ export default function ACCleaningPage() {
                   <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-black text-teal-800 mb-3">{item.t}</h3>
+                  <h3 className="text-xl font-black text-primary mb-3">{item.t}</h3>
                   <p className="text-sm text-slate-600 mb-2"><strong className="text-slate-900">Benefits:</strong> {item.b}</p>
                   <p className="text-sm text-slate-600"><strong className="text-slate-900">Process:</strong> {item.p}</p>
                 </div>
@@ -206,7 +206,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Comprehensive Cleaning")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-700 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Comprehensive Cleaning")} className="px-10 py-5 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all inline-flex items-center gap-3">
               <CheckCircle2 size={24} /> Request Full Cleaning
             </button>
           </div>
@@ -214,7 +214,7 @@ export default function ACCleaningPage() {
       </section>
 
       {/* 6. DEEP AC CLEANING PROCESS (Infographic Timeline) */}
-      <section className="py-24 bg-teal-900 text-white">
+      <section className="py-24 bg-primary text-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-black text-teal-50">Our Deep Cleaning Process</h2>
@@ -224,8 +224,8 @@ export default function ACCleaningPage() {
               { s: 1, t: "Inspection" }, { s: 2, t: "Dust Removal" }, { s: 3, t: "Filter Washing" }, 
               { s: 4, t: "Coil Cleaning" }, { s: 5, t: "Drain Flush" }, { s: 6, t: "Sanitization" }, { s: 7, t: "Testing" }
             ].map((step, i) => (
-              <div key={i} className="flex-1 min-w-[140px] bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-teal-500/30 text-center flex flex-col items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center font-black text-xl shadow-lg">
+              <div key={i} className="flex-1 min-w-[140px] bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-secondary/30 text-center flex flex-col items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-black text-xl shadow-lg">
                   {step.s}
                 </div>
                 <span className="font-black tracking-wide text-sm">{step.t}</span>
@@ -233,7 +233,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Book Process")} className="px-10 py-5 bg-white text-teal-900 rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-teal-50 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Book Process")} className="px-10 py-5 bg-white text-primary rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-slate-50 transition-all inline-flex items-center gap-3">
               <ArrowRightCircle size={24} /> Get Started Now
             </button>
           </div>
@@ -250,7 +250,7 @@ export default function ACCleaningPage() {
             <div className="relative rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
               <div className="absolute top-6 left-6 bg-red-500 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest z-10 shadow-lg">Before Cleaning</div>
               <div className="relative h-80">
-                <Image src="/optimized/pexels-443383.webp" alt="Dirty AC" fill className="object-cover grayscale contrast-125" />
+                <Image src="/Ac Services/AC Filter Cleaning.webp" alt="Dirty AC" fill className="object-cover grayscale contrast-125" />
                 <div className="absolute inset-0 bg-amber-900/40 mix-blend-multiply" />
               </div>
               <div className="p-8 bg-slate-50">
@@ -262,22 +262,22 @@ export default function ACCleaningPage() {
               </div>
             </div>
             <div className="relative rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
-              <div className="absolute top-6 left-6 bg-teal-500 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest z-10 shadow-lg">After Cleaning</div>
+              <div className="absolute top-6 left-6 bg-secondary text-white px-6 py-2 rounded-full font-black uppercase tracking-widest z-10 shadow-lg">After Cleaning</div>
               <div className="relative h-80">
-                <Image src="/optimized/pexels-5691657.webp" alt="Clean AC" fill className="object-cover" />
-                <div className="absolute inset-0 bg-teal-900/10" />
+                <Image src="/Ac Services/Home Maintenance.webp" alt="Clean AC" fill className="object-cover" />
+                <div className="absolute inset-0 bg-primary/10" />
               </div>
-              <div className="p-8 bg-teal-50">
-                <ul className="space-y-3 font-medium text-teal-800">
-                  <li className="flex items-center gap-3"><Sparkles className="text-teal-600" size={18}/> Shining, bacteria-free coils</li>
-                  <li className="flex items-center gap-3"><Wind className="text-teal-600" size={18}/> Ice-cold, powerful, pure breeze</li>
-                  <li className="flex items-center gap-3"><BatteryCharging className="text-teal-600" size={18}/> Peak energy efficiency restored</li>
+              <div className="p-8 bg-slate-50">
+                <ul className="space-y-3 font-medium text-primary">
+                  <li className="flex items-center gap-3"><Sparkles className="text-secondary" size={18}/> Shining, bacteria-free coils</li>
+                  <li className="flex items-center gap-3"><Wind className="text-secondary" size={18}/> Ice-cold, powerful, pure breeze</li>
+                  <li className="flex items-center gap-3"><BatteryCharging className="text-secondary" size={18}/> Peak energy efficiency restored</li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("See Results")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("See Results")} className="px-10 py-5 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
               <Sparkles size={24} /> Get These Results
             </button>
           </div>
@@ -292,14 +292,14 @@ export default function ACCleaningPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { t: "Split AC", i: "/optimized/pexels-5691629.webp" },
-              { t: "Central AC", i: "/optimized/pexels-4421110.webp" },
-              { t: "Window AC", i: "/optimized/pexels-5691632.webp" },
-              { t: "Cassette AC", i: "/optimized/pexels-5691631.webp" },
-              { t: "Ducted AC", i: "/optimized/pexels-5445425.webp" },
-              { t: "Inverter AC", i: "/optimized/pexels-5691638.webp" },
-              { t: "VRF Systems", i: "/optimized/pexels-5691630.webp" },
-              { t: "VRV Systems", i: "/optimized/pexels-443383.webp" }
+              { t: "Split AC", i: "/Ac Services/AC Cleaning.webp" },
+              { t: "Central AC", i: "/Ac Services/AC Duct Cleaning.webp" },
+              { t: "Window AC", i: "/Ac Services/AC Maintenance.webp" },
+              { t: "Cassette AC", i: "/Ac Services/AC Cleaning.webp" },
+              { t: "Ducted AC", i: "/Ac Services/AC Duct Cleaning.webp" },
+              { t: "Inverter AC", i: "/Ac Services/AC Maintenance.webp" },
+              { t: "VRF Systems", i: "/Ac Services/AC Coil Cleaning.webp" },
+              { t: "VRV Systems", i: "/Ac Services/AC Repair.webp" }
             ].map((type, i) => (
               <div key={i} className="bg-white rounded-3xl overflow-hidden border border-gray-100 text-center shadow-sm hover:shadow-md transition-all group">
                 <div className="relative h-32 w-full overflow-hidden">
@@ -312,7 +312,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Book AC Type Cleaning")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-600 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Book AC Type Cleaning")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all inline-flex items-center gap-3">
               <CheckCircle2 size={24} /> Clean My AC System
             </button>
           </div>
@@ -320,9 +320,9 @@ export default function ACCleaningPage() {
       </section>
 
       {/* 9. HEALTH BENEFITS (Green Highlight) */}
-      <section className="py-24 bg-emerald-600 text-white">
+      <section className="py-24 bg-secondary text-white">
         <div className="container mx-auto px-4 max-w-5xl text-center">
-          <HeartPulse size={80} className="mx-auto mb-8 text-emerald-200 animate-pulse" />
+          <HeartPulse size={80} className="mx-auto mb-8 text-white animate-pulse" />
           <h2 className="text-4xl md:text-5xl font-heading font-black mb-12 tracking-tight">Protect Your Family&apos;s Health</h2>
           <div className="flex flex-wrap justify-center gap-4 text-lg font-black uppercase tracking-widest">
             {["Remove Allergens", "Reduce Mold", "Cleaner Air", "Reduce Bacteria", "Healthier Environment", "Better Sleep"].map((h, i) => (
@@ -330,7 +330,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="mt-16">
-            <button onClick={() => handleBookNow("Health Focus Cleaning")} className="px-12 py-6 bg-white text-emerald-700 rounded-2xl font-black text-lg uppercase tracking-widest shadow-2xl hover:bg-emerald-50 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Health Focus Cleaning")} className="px-12 py-6 bg-white text-primary rounded-2xl font-black text-lg uppercase tracking-widest shadow-2xl hover:bg-slate-50 transition-all inline-flex items-center gap-3">
               <ShieldCheck size={28} /> Ensure Clean Air Today
             </button>
           </div>
@@ -349,14 +349,14 @@ export default function ACCleaningPage() {
               "Taif", "Jubail", "Yanbu", "Abha", "Khamis Mushait", "Najran", 
               "Tabuk", "Jazan", "Al Ahsa", "Hail", "Buraidah"
             ].map((city, i) => (
-              <div key={i} className="p-4 bg-slate-50 rounded-xl border border-gray-100 flex flex-col items-center gap-2 hover:bg-teal-50 hover:border-teal-200 transition-colors cursor-pointer group">
-                <MapPin className="text-teal-600 group-hover:-translate-y-1 transition-transform" size={24} />
-                <span className="text-xs font-black uppercase tracking-widest text-slate-700 group-hover:text-teal-900">{city}</span>
+              <div key={i} className="p-4 bg-slate-50 rounded-xl border border-gray-100 flex flex-col items-center gap-2 hover:bg-slate-50 hover:border-teal-200 transition-colors cursor-pointer group">
+                <MapPin className="text-secondary group-hover:-translate-y-1 transition-transform" size={24} />
+                <span className="text-xs font-black uppercase tracking-widest text-slate-700 group-hover:text-primary">{city}</span>
               </div>
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Regional AC Cleaning")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Regional AC Cleaning")} className="px-10 py-5 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
               <MapPin size={24} /> Book In Your City
             </button>
           </div>
@@ -379,7 +379,7 @@ export default function ACCleaningPage() {
               { t: "100% Satisfaction", i: <Star size={32}/> }
             ].map((w, i) => (
               <div key={i} className="flex items-center gap-6 p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                <div className="text-teal-600 bg-teal-50 p-4 rounded-2xl">
+                <div className="text-secondary bg-slate-50 p-4 rounded-2xl">
                   {w.i}
                 </div>
                 <h3 className="font-black text-lg text-slate-900">{w.t}</h3>
@@ -387,7 +387,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Book Trusted Service")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-teal-600 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("Book Trusted Service")} className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all inline-flex items-center gap-3">
               <ShieldCheck size={24} /> Hire The Best
             </button>
           </div>
@@ -409,7 +409,7 @@ export default function ACCleaningPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("FAQ Inquiry")} className="px-10 py-5 bg-teal-600 text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
+            <button onClick={() => handleBookNow("FAQ Inquiry")} className="px-10 py-5 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-slate-900 transition-all inline-flex items-center gap-3">
               <MessageSquare size={24} /> Ask Another Question
             </button>
           </div>
@@ -434,7 +434,7 @@ export default function ACCleaningPage() {
             <p>Our commitment to excellence means we don&#39;t just rinse the filters. We scrub the <strong>Blower Fan</strong> blade by blade to ensure silent operation, sanitize the drip pan to eliminate musty odors, and use eco-friendly foaming chemicals that are safe for your family and pets. From health benefits like reduced allergies and better sleep to financial benefits like massive energy savings, the value of a professional AC cleaning is unmatched. Trust the leading experts across Saudi Arabia to keep your environment cool, clean, and healthy all year round.</p>
           </div>
           <div className="text-center mt-16">
-            <button onClick={() => handleBookNow("Final Booking")} className="px-12 py-6 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-teal-600 transition-all inline-flex items-center gap-3 text-lg">
+            <button onClick={() => handleBookNow("Final Booking")} className="px-12 py-6 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-secondary transition-all inline-flex items-center gap-3 text-lg">
               <CheckCircle2 size={28} /> Secure Your Booking
             </button>
           </div>
