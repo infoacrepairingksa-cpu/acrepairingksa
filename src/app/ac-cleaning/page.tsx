@@ -15,7 +15,7 @@ import {
 import Schema, { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/components/Schema";
 
 export default function ACCleaningPage() {
-  const handleBookNow = (service: string) => {
+  const handleBookNow = (service?: any) => {
     const sName = service && typeof service === 'string' ? service : "AC Cleaning";
     const text = `Hello, I need ${sName} services. Can you help?`;
     window.open(`https://wa.me/966510942150?text=${encodeURIComponent(text)}`, '_blank');
