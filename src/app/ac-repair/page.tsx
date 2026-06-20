@@ -83,7 +83,7 @@ export default function ACRepairPage() {
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative h-[500px] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
-              <Image src="/optimized/pexels-5691657.webp" alt="AC Repair Services Saudi Arabia" fill className="object-cover" priority />
+              <Image src="/hero.webp" alt="AC Repair Services Saudi Arabia" fill className="object-cover" priority />
             </motion.div>
           </div>
         </div>
@@ -129,15 +129,15 @@ export default function ACRepairPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { t: "AC Not Cooling", img: "/optimized/pexels-5691629.webp", prob: "Air Conditioner blowing warm air.", sym: "High indoor temp, compressor running non-stop.", cau: "Low refrigerant gas, dirty condenser coils.", rep: "Leak repair, gas recharge, coil cleaning." },
-              { t: "Water Leakage", img: "/optimized/pexels-5691632.webp", prob: "Water dripping from indoor unit.", sym: "Wet walls, water pooling under AC.", cau: "Clogged condensate drain line, frozen coils.", rep: "High-pressure drain unblocking, ice thawing." },
-              { t: "Gas Leakage", img: "/optimized/pexels-5691631.webp", prob: "Loss of refrigerant pressure.", sym: "Hissing sounds, ice on coils, warm air.", cau: "Cracked copper pipes or loose flare joints.", rep: "Weld copper pipes, pull vacuum, refill gas." },
-              { t: "Compressor Failure", img: "/optimized/pexels-4421110.webp", prob: "Outdoor unit dead or tripping breaker.", sym: "AC trips breaker, loud grinding noise.", cau: "Overheating, bad capacitor, old age.", rep: "Replace run capacitor or entire compressor." },
-              { t: "Thermostat Issues", img: "/optimized/pexels-5691624.webp", prob: "AC won't turn on or off correctly.", sym: "Incorrect room reading, blank digital screen.", cau: "Dead batteries, faulty wiring, sensor failure.", rep: "Recalibrate sensors or replace thermostat." },
-              { t: "Electrical Faults", img: "/optimized/pexels-5691638.webp", prob: "System losing power completely.", sym: "Burning smell, frequent main breaker trips.", cau: "Burnt contactor, damaged wiring, power surge.", rep: "Replace damaged electrical components safely." },
-              { t: "Weak Airflow", img: "/optimized/pexels-5445425.webp", prob: "Barely any air coming out of vents.", sym: "Room takes hours to cool, weak breeze.", cau: "Clogged air filter, failing blower motor.", rep: "Deep clean filters, replace blower fan." },
-              { t: "Frozen Coils", img: "/optimized/pexels-5691630.webp", prob: "Ice building up inside the unit.", sym: "Low airflow, water dripping indoors.", cau: "Low refrigerant gas, severely restricted airflow.", rep: "Thaw ice, fix gas leak, clean system." },
-              { t: "Bad Smell", img: "/optimized/pexels-443383.webp", prob: "Foul or sour odor from AC vents.", sym: "Musty, sour smell when AC runs.", cau: "Mold and bacteria on evaporator coil.", rep: "Deep chemical wash and sanitization." }
+              { t: "AC Not Cooling", img: "/Ac Services/AC Repair.webp", prob: "Air Conditioner blowing warm air.", sym: "High indoor temp, compressor running non-stop.", cau: "Low refrigerant gas, dirty condenser coils.", rep: "Leak repair, gas recharge, coil cleaning." },
+              { t: "Water Leakage", img: "/Ac Services/AC Maintenance.webp", prob: "Water dripping from indoor unit.", sym: "Wet walls, water pooling under AC.", cau: "Clogged condensate drain line, frozen coils.", rep: "High-pressure drain unblocking, ice thawing." },
+              { t: "Gas Leakage", img: "/Ac Services/AC Gas Refill.webp", prob: "Loss of refrigerant pressure.", sym: "Hissing sounds, ice on coils, warm air.", cau: "Cracked copper pipes or loose flare joints.", rep: "Weld copper pipes, pull vacuum, refill gas." },
+              { t: "Compressor Failure", img: "/AC Companies/YORK AC.webp", prob: "Outdoor unit dead or tripping breaker.", sym: "AC trips breaker, loud grinding noise.", cau: "Overheating, bad capacitor, old age.", rep: "Replace run capacitor or entire compressor." },
+              { t: "Thermostat Issues", img: "/Ac Services/Fast & Reliable AC Repair.webp", prob: "AC won't turn on or off correctly.", sym: "Incorrect room reading, blank digital screen.", cau: "Dead batteries, faulty wiring, sensor failure.", rep: "Recalibrate sensors or replace thermostat." },
+              { t: "Electrical Faults", img: "/AC Companies/Gree AC.webp", prob: "System losing power completely.", sym: "Burning smell, frequent main breaker trips.", cau: "Burnt contactor, damaged wiring, power surge.", rep: "Replace damaged electrical components safely." },
+              { t: "Weak Airflow", img: "/hero.webp", prob: "Barely any air coming out of vents.", sym: "Room takes hours to cool, weak breeze.", cau: "Clogged air filter, failing blower motor.", rep: "Deep clean filters, replace blower fan." },
+              { t: "Frozen Coils", img: "/AC Companies/Mitsubishi AC.webp", prob: "Ice building up inside the unit.", sym: "Low airflow, water dripping indoors.", cau: "Low refrigerant gas, severely restricted airflow.", rep: "Thaw ice, fix gas leak, clean system." },
+              { t: "Bad Smell", img: "/AC Companies/Hitachi AC.png", prob: "Foul or sour odor from AC vents.", sym: "Musty, sour smell when AC runs.", cau: "Mold and bacteria on evaporator coil.", rep: "Deep chemical wash and sanitization." }
             ].map((p, i) => (
               <div key={i} className="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-2xl transition-all">
                 <div className="relative h-56 w-full">
@@ -154,6 +154,11 @@ export default function ACRepairPage() {
               </div>
             ))}
           </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("AC Problem Repair")} className="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-secondary border border-transparent hover:border-secondary transition-all">
+              <Wrench size={20} /> Fix My AC Problem
+            </button>
+          </div>
         </div>
       </section>
 
@@ -165,14 +170,14 @@ export default function ACRepairPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { t: "Split AC Repair", i: "/optimized/pexels-5691632.webp", d: "Wall-mounted units for homes.", f: "Fast repair, gas refill.", b: "Quiet operation.", c: "Book Split AC Repair" },
-              { t: "Central AC Repair", i: "/optimized/pexels-5691657.webp", d: "Whole-house ducted systems.", f: "Duct cleaning, compressor fix.", b: "Even cooling.", c: "Book Central AC Repair" },
-              { t: "Window AC Repair", i: "/optimized/pexels-5691629.webp", d: "Compact single-room units.", f: "Motor replacement, deep clean.", b: "Cost-effective.", c: "Book Window AC Repair" },
-              { t: "Cassette AC Repair", i: "/optimized/pexels-5691631.webp", d: "Ceiling mounted units.", f: "Drain unblocking, PCB repair.", b: "Space-saving.", c: "Book Cassette AC Repair" },
-              { t: "Ducted AC Repair", i: "/optimized/pexels-4421110.webp", d: "Hidden ceiling cooling.", f: "Airflow balancing.", b: "Aesthetic design.", c: "Book Ducted AC Repair" },
-              { t: "Inverter AC Repair", i: "/optimized/pexels-5691638.webp", d: "Energy-saving variable compressors.", f: "Inverter board repair.", b: "Lower electricity bills.", c: "Book Inverter AC Repair" },
-              { t: "VRF Systems", i: "/optimized/pexels-5445425.webp", d: "Variable Refrigerant Flow.", f: "Multi-zone control repair.", b: "High commercial efficiency.", c: "Book VRF Repair" },
-              { t: "VRV Systems", i: "/optimized/pexels-5691630.webp", d: "Variable Refrigerant Volume.", f: "Advanced diagnostics.", b: "Ultimate climate control.", c: "Book VRV Repair" }
+              { t: "Split AC Repair", i: "/Ac Services/AC Installation.webp", d: "Wall-mounted units for homes.", f: "Fast repair, gas refill.", b: "Quiet operation.", c: "Book Split AC Repair" },
+              { t: "Central AC Repair", i: "/Ac Services/AC Duct Cleaning.webp", d: "Whole-house ducted systems.", f: "Duct cleaning, compressor fix.", b: "Even cooling.", c: "Book Central AC Repair" },
+              { t: "Window AC Repair", i: "/Ac Services/AC Maintenance.webp", d: "Compact single-room units.", f: "Motor replacement, deep clean.", b: "Cost-effective.", c: "Book Window AC Repair" },
+              { t: "Cassette AC Repair", i: "/Ac Services/AC Gas Refill.webp", d: "Ceiling mounted units.", f: "Drain unblocking, PCB repair.", b: "Space-saving.", c: "Book Cassette AC Repair" },
+              { t: "Ducted AC Repair", i: "/Ac Services/AC Cleaning.webp", d: "Hidden ceiling cooling.", f: "Airflow balancing.", b: "Aesthetic design.", c: "Book Ducted AC Repair" },
+              { t: "Inverter AC Repair", i: "/hero.webp", d: "Energy-saving variable compressors.", f: "Inverter board repair.", b: "Lower electricity bills.", c: "Book Inverter AC Repair" },
+              { t: "VRF Systems", i: "/Ac Services/AC Coil Cleaning.webp", d: "Variable Refrigerant Flow.", f: "Multi-zone control repair.", b: "High commercial efficiency.", c: "Book VRF Repair" },
+              { t: "VRV Systems", i: "/Ac Services/Fast & Reliable AC Repair.webp", d: "Variable Refrigerant Volume.", f: "Advanced diagnostics.", b: "Ultimate climate control.", c: "Book VRV Repair" }
             ].map((type, i) => (
               <div key={i} className="bg-slate-50 rounded-[32px] border border-gray-100 overflow-hidden group hover:border-secondary transition-all">
                 <div className="relative h-48">
@@ -190,6 +195,11 @@ export default function ACRepairPage() {
               </div>
             ))}
           </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Book AC Type Repair")} className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all border border-transparent">
+              <Settings size={20} /> Book Service Now
+            </button>
+          </div>
         </div>
       </section>
 
@@ -201,16 +211,16 @@ export default function ACRepairPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
-              { b: "Daikin", img: "/optimized/pexels-5691629.webp", o: "Premium VRV leader.", p: "PCB errors.", r: "Inverter board fixes." },
-              { b: "Carrier", img: "/optimized/pexels-5691631.webp", o: "Heavy-duty HVAC.", p: "Capacitor failure.", r: "Compressor overhauls." },
-              { b: "LG", img: "/optimized/pexels-5691632.webp", o: "Smart dual inverter.", p: "Gas leakage.", r: "Refrigerant recharge." },
-              { b: "Samsung", img: "/optimized/pexels-5691657.webp", o: "Wind-free tech.", p: "Water dripping.", r: "Drain line unblocking." },
-              { b: "York", img: "/optimized/pexels-4421110.webp", o: "Reliable central units.", p: "Thermostat issues.", r: "Sensor calibration." },
-              { b: "Gree", img: "/optimized/pexels-5691638.webp", o: "Affordable cooling.", p: "Frozen coils.", r: "Airflow restoration." },
-              { b: "Midea", img: "/optimized/pexels-5445425.webp", o: "Popular residential.", p: "Overheating.", r: "Motor replacement." },
-              { b: "Panasonic", img: "/optimized/pexels-5691630.webp", o: "Nanoe-G purification.", p: "Filter blockage.", r: "Deep chemical wash." },
-              { b: "Hitachi", img: "/optimized/pexels-443383.webp", o: "Durable components.", p: "Noisy operation.", r: "Bearing replacement." },
-              { b: "TCL", img: "/optimized/pexels-1065084.webp", o: "Budget friendly.", p: "Electrical faults.", r: "Contactor swap." }
+              { b: "Daikin", img: "/AC Companies/Daikin AC.jpg", o: "Premium VRV leader.", p: "PCB errors.", r: "Inverter board fixes." },
+              { b: "Carrier", img: "/AC Companies/Carrier ac.png", o: "Heavy-duty HVAC.", p: "Capacitor failure.", r: "Compressor overhauls." },
+              { b: "LG", img: "/AC Companies/LG AC.webp", o: "Smart dual inverter.", p: "Gas leakage.", r: "Refrigerant recharge." },
+              { b: "Samsung", img: "/AC Companies/Samsung AC.jpg", o: "Wind-free tech.", p: "Water dripping.", r: "Drain line unblocking." },
+              { b: "York", img: "/AC Companies/YORK AC.webp", o: "Reliable central units.", p: "Thermostat issues.", r: "Sensor calibration." },
+              { b: "Gree", img: "/AC Companies/Gree AC.webp", o: "Affordable cooling.", p: "Frozen coils.", r: "Airflow restoration." },
+              { b: "Midea", img: "/hero.webp", o: "Popular residential.", p: "Overheating.", r: "Motor replacement." },
+              { b: "Panasonic", img: "/AC Companies/Mitsubishi AC.webp", o: "Nanoe-G purification.", p: "Filter blockage.", r: "Deep chemical wash." },
+              { b: "Hitachi", img: "/AC Companies/Hitachi AC.png", o: "Durable components.", p: "Noisy operation.", r: "Bearing replacement." },
+              { b: "TCL", img: "/Ac Services/AC Repair.webp", o: "Budget friendly.", p: "Electrical faults.", r: "Contactor swap." }
             ].map((brand, i) => (
               <div key={i} className="bg-white p-6 rounded-3xl border border-gray-100 text-center flex flex-col items-center gap-4 hover:shadow-lg transition-all">
                 <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-slate-50 shadow-sm">
@@ -223,6 +233,11 @@ export default function ACRepairPage() {
               </div>
             ))}
           </div>
+          <div className="text-center mt-16">
+            <button onClick={() => handleBookNow("Book Brand Repair")} className="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-white hover:text-secondary border border-transparent hover:border-secondary transition-all">
+              <Wrench size={20} /> Repair My AC Brand
+            </button>
+          </div>
         </div>
       </section>
 
@@ -232,7 +247,7 @@ export default function ACRepairPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-slate-50 rounded-[40px] border border-gray-100 overflow-hidden flex flex-col">
               <div className="relative h-72 w-full">
-                <Image src="/optimized/pexels-5691632.webp" alt="Residential AC Repair Saudi Arabia" fill className="object-cover" />
+                <Image src="/Ac Services/Home Maintenance.webp" alt="Residential AC Repair Saudi Arabia" fill className="object-cover" />
                 <div className="absolute top-6 left-6 w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-secondary shadow-xl"><Home size={32}/></div>
               </div>
               <div className="p-12">
@@ -247,7 +262,7 @@ export default function ACRepairPage() {
             
             <div className="bg-primary rounded-[40px] shadow-2xl overflow-hidden flex flex-col text-white">
               <div className="relative h-72 w-full">
-                <Image src="/optimized/pexels-5691657.webp" alt="Commercial AC Repair Saudi Arabia" fill className="object-cover opacity-80" />
+                <Image src="/Ac Services/Plumbing.webp" alt="Commercial AC Repair Saudi Arabia" fill className="object-cover opacity-80" />
                 <div className="absolute top-6 left-6 w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center text-white shadow-xl"><Building2 size={32}/></div>
               </div>
               <div className="p-12">
@@ -432,6 +447,11 @@ export default function ACRepairPage() {
             <p>Attempting DIY fixes on modern air conditioning systems often leads to further damage and voided manufacturer warranties. Professional HVAC Services ensure that intricate tasks, such as R410A refrigerant gas refilling, PCB board micro-soldering, and thermostat sensor recalibration, are executed flawlessly. Our commitment to excellence means we not only fix the immediate problem but also optimize the entire system for peak energy efficiency. Routine maintenance and timely repairs prevent minor issues—like a failing run capacitor or a small gas leak—from escalating into catastrophic compressor failures that demand expensive replacements.</p>
 
             <p>By choosing our expert team for your AC repair needs across Saudi Arabia, you are investing in longevity, reliability, and unparalleled indoor comfort. From the indoor unit to the outdoor unit, from proper ventilation to optimal energy efficiency, we provide a holistic solution. Contact us today to experience the highest standard of HVAC technical support in the Kingdom.</p>
+          </div>
+          <div className="text-center mt-12">
+            <button onClick={() => handleBookNow("Comprehensive Repair Request")} className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white rounded-2xl font-black uppercase tracking-widest shadow-xl hover:bg-secondary transition-all border border-transparent text-lg">
+              <Phone size={24} /> Contact Us Today
+            </button>
           </div>
         </div>
       </section>
